@@ -1,0 +1,103 @@
+#wrap {
+  width:100%;
+  
+}
+#wrap #header {
+  width:100%; 
+  height:123px; 
+  background-color: rgb(246,245,239,1);
+  /* border-top : 선두께 선종류(실선, 점선) 선색상; */
+  border-top: 2px solid rgb(0,0,0);
+  border-bottom: 1px solid rgb(229,229,229);
+  color:rgb(0,0,0);
+  /* 수직, 수평정렬 레이아웃 */
+  /* 현재요소 아래 자식요소를 수평정렬과 수직정렬을 할 수 있다. */
+  /* 단 자신의 너비 높이가 설정되어야 가능하다. */
+  /* 플렉스를 지정하면 자식요소는 인라인요소로 바뀐다. */
+  display : flex;
+  justify-content:center;  /* 수평 가운데 */
+  justify-content:flex-end;  /* 수평 오른쪽 */
+  justify-content:flex-start;  /* 수평 왼쪽 */
+  justify-content:center;  /* 수평 가운데 */
+  align-items: center;  /* 수직 가운데 */
+  align-items: flex-end;  /* 수직 오른쪽 */
+  align-items: flex-start;  /* 수직 왼쪽 */
+  align-items: center;  /* 수직 가운데 */
+}
+
+#wrap #main {width:100%;}
+#wrap #main #section1 {
+  width:100%; 
+  height: 652.797px; 
+  background-color: rgba(230,150,0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#wrap #main #section2 {
+  width:100%; 
+  height: 62px; 
+  background-color: rgba(130,180,0,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #main #section3 {
+  width:100%; 
+  height: 240.172px; 
+  background-color: rgba(140,0,220,1);
+  padding : 30px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #main #section4 {
+  width:100%; 
+  height: 573px;
+  background-color: rgb(0,150,200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #main #section5 {
+  width:100%; 
+  height: 400px;
+  background-color: rgb(0,200,150);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #main #section6 {
+  width:100%;   
+  height: 800px;
+  background-color: rgb(220,150,150);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #main #section7 {
+  width:100%; 
+  height: 400px;
+  background-color: rgb(150,150,220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #main #section8 {
+  width:100%; 
+  height: 400px;
+  background-color: rgb(150,220,150);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+#wrap #footer{
+  width:100%; 
+  height:601px;
+  background-color: rgb(44,42,41);
+  padding : 32px 0 35px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
