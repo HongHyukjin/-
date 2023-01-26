@@ -7,12 +7,16 @@
   <title>박스모델링</title>
   <meta name="publisher" content="Hong HyukJin">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- 제이쿼리 오픈소스 -->
+  <script src="./js/lib/jquery-2.2.4.min.js"></script>
+  
   
 </head>
 <body>
 <div id="wrap">
-  <header id="header"><h1>header</h1></header>
+  <header id="header"><h1>헤더 영역</h1></header>
   <main id="main">
     <section id="section1">
       <img src="./img/img_02.png" alt="">
@@ -34,5 +38,17 @@
   </main>
   <footer id="footer"><h1>footer</h1></footer>
 </div>
+
+
+
+<script>
+  $(function(){
+    console.log('제이쿼리 $ ', $ );
+  });
+  jQuery(function(){
+    console.log('제이쿼리 jQuery', jQuery );
+  });
+
+</script>
 </body>
 </html>
