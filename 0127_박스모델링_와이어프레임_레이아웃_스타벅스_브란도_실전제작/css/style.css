@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* style.css에서 fonts.css와 reset.css를 불러서 사용 */
+@import url('./fonts.css');
+@import url('./reset.css');
+/* DOM(Document Object Model) */
+
+#wrap {
+  width:100%;
+}
+
+/* #wrap > ul {}  직계 자식 */
+/* #wrap ul {} 자손(자식 손자 모두 포함) */
+
+#wrap #skip{
+  width: 100%;
+}
+#wrap #skip li{
+  width: 100%;
+}
+#wrap #skip li a{
+  width: 100%;
+  background-color: rgb(0,0,0);
+  font-size: 0;
+  color: rgb(255,255,255);
+  display: block;
+  text-align: center;
+  line-height: 0;
+}
+
+#wrap #skip li a:focus{
+  font-size: 20px;
+  line-height: 40px;
+}
+
+#wrap #header{
+  height:120px;
+  border-top: 2px solid rgb(0,0,0);
+  border-bottom: 1px solid rgb(229,229,229);
+
+  background-color: rgb(246,245,239);
+}
+
+#wrap #main #section1{
+  height : 652.797px;
+  background: url(../img/img_01.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section2{
+  height : 62px;
+  display: flex;
+}
+#wrap #main #section2 .left{
+  width:50%;
+  background-color: rgb(0,0,0);
+}
+#wrap #main #section2 .right{
+  width:50%;
+  background-color: rgb(255,255,255);
+}
+#wrap #main #section3{
+  height:170.172px;
+  background: rgb(30,57,50);
+  padding : 30px 0 40px 0;
+}
+#wrap #main #section4{
+  height : 573px;
+  background: url(../img/2023_newyear_promotion_bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section5{  
+  height : 400px;
+  background: url(../img/221220_pc_reserve_bg.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section6{
+  height : 800px;
+  background: url(../img/2022_Chrismas2_PTF_bg.png) no-repeat 50% 50% fixed;
+  background-size: cover;
+}
+#wrap #main #section7{
+  height : 400px;
+  background: url(../img/reserve_bg_pc.png) no-repeat 50% 50%;
+  background-size: auto 350px;
+}
+#wrap #main #section8{
+  height : 400px;
+  background: url(../img/store_bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#wrap #footer{
+  height : 534px;
+  padding : 32px 0 35px 0;
+  background-color: rgb(44,42,41);
+}
+
