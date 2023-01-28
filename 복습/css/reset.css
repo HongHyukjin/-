@@ -1,0 +1,26 @@
+* {
+    margin : 0;
+    padding : 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+body{
+    font : normal 14px/1 'Nanum Gothic', 'Noto Sans' 'Roboto';
+}
+a {
+    color : rgb(60,60,60);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(160,160,160);
+}
+a:hover{
+    color : rgb(0, 100, 170);
+    text-decoration: underline;
+}
+a:focus{
+    color : rgb(60,60,60);
+}
+a:active{
+    color: rgb(60,60,60);
+}
