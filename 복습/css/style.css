@@ -9,7 +9,7 @@
     position: fixed;
     left : 0;
     top : 0;
-    z-index: 4;
+    z-index: 4;     /* z-index - 해당 블럭의 z축 높은 블럭이 낮은 블럭을 덮음 */
     width : 100%;
     font-size: 0;
 }
@@ -32,7 +32,7 @@
 }
 
 #wrap #header{
-    position: fixed;
+    position: fixed;    /* 드래그 화면고정 */
     left : 0;
     top : 0;
     width : 100%;
