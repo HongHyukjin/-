@@ -18,48 +18,42 @@
   left : 0;
   z-index: 3;
 }
-
-#wrap #header .container{
+#wrap #header .container {
   width : 100%;
   height : 75px;
   max-width: 1170px;
-  margin : 0 auto 0 auto;  /* 박스 가운데 정렬 */
-  margin : 0 0 0 auto;  /* 박스 오른쪽 정렬 */
-  margin : 0 auto 0 0;  /* 박스 오른쪽 정렬 */
-  margin : 0 auto;  /* 박스 가운데 정렬 */
+  margin : 0 auto;
 }
-#wrap #header .container .gap{
-  width: 100%;
+#wrap #header .container .gap {
+  width : 100%;
   height : 100%;
   padding : 0 15px;
-  /* background-color: aqua; */
 }
 #wrap #header .container .gap .content{
   width : 100%;
   height : 100%;
-  display: flex;  /* 인라인 */
+  display : flex;
   justify-content: space-between;
   align-items: center;
-  
-}  
-
-/* 로고 왼쪽 시작*/
+}
 #wrap #header .container .gap .content .logo{width : 156px;}
 #wrap #header .container .gap .content .logo h1{width : 100%;}
-#wrap #header .container .gap .content .logo h1 a{} 
-#wrap #header .container .gap .content .logo h1 a img{width: 100%;}
-
-/* 네비게이션 오른쪽 끝*/
+#wrap #header .container .gap .content .logo h1 a{
+  display: block;
+  width : 100%;}
+#wrap #header .container .gap .content .logo h1 a img{
+  display: block;
+  width : 100%;
+}
 #wrap #header .container .gap .content .nav{}
 #wrap #header .container .gap .content .nav ul{
   display: flex;
 }
 #wrap #header .container .gap .content .nav ul li{
-  margin : 15px 20px;
-  margin : 0 0 0 40px;
+  padding : 15px 20px;
 }
 #wrap #header .container .gap .content .nav ul li a{
-  color: rgba(255,255,255,1);
+  color : rgba(255,255,255,1);
   font-size: 12px;
   font-weight: 600;
 }
@@ -79,7 +73,7 @@
 #wrap #main .sec1234{
   /* 섹션1234 공통 스타일 */
   /* 창높이 반응형단위 100vh 100vw */
-  position : relative;
+  position: relative;
   width : 100%;
   height : 100vh;
   background: url() no-repeat 50% 50% fixed;
@@ -89,38 +83,31 @@
   align-items: center;
 }
 #wrap #main .sec1234 h2{
-  /* font-size : 200px;  */
-  font-size : 10.50972vw; 
+  font-size : 200px; 
+  font-size : 10.50972vw;
   color : rgba(0,255,151,0.5);
   font-weight: 600;
 }
-#wrap #main .sec1234 .foot-box{
-  position : absolute;
-  bottom : 50px;  /* y좌표(수직) */
-  bottom : 5.15995872vh;  /* y좌표(수직) */
-  left : 0; /* x좌표(수평) */
-  /* background-color: blueviolet; */
+#wrap #main .sec1234 .footbox{
+  position: absolute;
+  bottom : 50px;
+  bottom : 5.15995872vh;
+  left : 0;
   width : 100%;
   text-align: center;
-  /* display: flex;
-  justify-content: center;
-  flex-flow : column nowrap;
-  align-items: center; */
 }
-#wrap #main .sec1234 .foot-box h6{
-  font-size:13px;
+#wrap #main .sec1234 .footbox h6{
+  font-size : 13px;
   font-weight: 500;
   color : rgb(255,255,255);
   padding : 0 0 1.547987616vh 0;
 }
-#wrap #main .sec1234 .foot-box i{
+#wrap #main .sec1234 .footbox i{
   display: inline-block;
   width : 80px;
   height : 3px;
-  background: rgba(0,239,255,0.5);
-  /* margin : 0 auto; */
+  background-color: rgba(0,239,255,0.5);
 }
-
 #wrap #main #section1{
   background-image: url(../img/photography-img1.jpg);
 }
@@ -136,19 +123,61 @@
 #wrap #main #section4{
   background-image: url(../img/photography-img4.jpg);
 }
-#wrap #main #section5{width : 100%;height : 100vh;background-color: rgba(200,0,0,0.6);}
-#wrap #main #section6{width : 100%;height : 100vh;background-color: rgba(0,200,0,0.6);}
-#wrap #main #section7{width : 100%;height : 100vh;background-color: rgba(200,200,0,0.6);}
-#wrap #main #section8{width : 100%;height : 100vh;background-color: rgba(0,200,200,0.6);}
-#wrap #main #section9{width : 100%;height : 100vh;background-color: rgba(200,0,200,0.6);}
-#wrap #main #section10{width : 100%;height : 100vh;background-color: rgba(200,0,0,0.6);}
-#wrap #main #section11{width : 100%;height : 100vh;background-color: rgba(200,200,0,0.6);}
-#wrap #main #section12{width : 100%;height : 100vh;background-color: rgba(200,0,200,0.6);}
-#wrap #main #section13{width : 100%;height : 100vh;background-color: rgba(0,200,200,0.6);}
-#wrap #main #section14{width : 100%;height : 100vh;background-color: rgba(200,0,200,0.6);}
-#wrap #main #section15{width : 100%;height : 100vh;background-color: rgba(200,200,200,0.6);}
-
-
+#wrap #main #section5{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(200,0,0,0.5);
+}
+#wrap #main #section6{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(0,200,0,0.5);
+}
+#wrap #main #section7{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(0,0,200,0.5)
+}
+#wrap #main #section8{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(200,0,0,0.5)
+}
+#wrap #main #section9{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(0,200,0,0.5)
+}
+#wrap #main #section10{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(0,0,200,0.5)
+}
+#wrap #main #section11{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(200,0,0,0.5)
+}
+#wrap #main #section12{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(0,200,0,0.5)
+}
+#wrap #main #section13{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(0,0,200,0.5)
+}
+#wrap #main #section14{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(200,0,0,0.5)
+}
+#wrap #main #section15{
+  width : 100%;
+  height : 100vh;
+  background-color: rgba(0,200,0,0.5)
+}
 /* ////////////////////////////////////////////////// */
 /* 푸터영역 */
 /* ////////////////////////////////////////////////// */
