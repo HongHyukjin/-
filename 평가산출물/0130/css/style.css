@@ -92,9 +92,9 @@
   position: absolute;
   bottom : 50px;
   bottom : 5.15995872vh;
-  left : 0;
+  left : 50vw;
   width : 100%;
-  text-align: center;
+  /* text-align: center; */
 }
 #wrap #main .sec1234 .footbox h6{
   font-size : 13px;

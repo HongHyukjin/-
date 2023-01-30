@@ -1,0 +1,49 @@
+@charset 'utf-8';
+@import url(./fonts.css);
+@import url(./reset.css);
+@import url(./skip.css);
+
+#wrap #header{
+  width : 100%;
+  height : 76px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  background-color: rgba(0,0,0,0);
+  position : fixed;
+  /* top : 0;
+  left : 0; */
+  z-index: 3;
+}
+#wrap #main{
+  width : 100%;
+}
+#wrap #main .sec1234{
+  width : 100%;
+  height : 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #main .sec1234 h2{
+  font-size : 200px;
+  font-weight: 600;
+  color : rgba(0,255,151,0.5);
+}
+#wrap #main #section1{
+  background: url(../img/photography-img1.jpg) no-repeat 50% 50% fixed;
+  background-size: cover;
+}
+#wrap #main #section2{
+  background: url(../img/photography-img2.jpg) no-repeat 50% 50% fixed;
+  background-size: cover;
+}
+#wrap #main #section3{
+  background: url(../img/photography-img3.jpg) no-repeat 50% 50% fixed;
+  background-size: cover;
+}
+#wrap #main #section3 h2{
+  color : rgba(0,239,255,0.5);
+}
+#wrap #main #section4{
+  background: url(../img/photography-img4.jpg) no-repeat 50% 50% fixed;
+  background-size: cover;
+}
