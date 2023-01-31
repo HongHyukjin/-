@@ -1,0 +1,16 @@
+/* 마진 속성값 시계방향 회전
+body {
+  margin-top:0;
+  margin-right:0;
+  margin-bottom:0;
+  margin-left:0;
+} 
+권장사항
+body {margin:0 0 0 0;}
+수정할때
+body {margin-right:100px;}
+
+위쪽 아래쪽이 같고 오른쪽 왼쪽이 같을때
+body {margin:100px 0 100px 0;}
+body {margin:100px 0;} 
+* {margin:0; padding: 0 0 0 0;} */
