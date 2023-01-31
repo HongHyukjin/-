@@ -145,40 +145,127 @@
 #wrap #main .sec-10-14{
   width:100%; 
   height:246.391px;
-  background: url()  no-repeat 50% 40%;
-  background-size: cover;
-  filter : brightness(60%) blur(0) grayscale(0);
+  color : rgb(255,255,255);
+  position: relative;
 }
-/* #wrap #main .sec-10-14 .bg{
+#wrap #main .sec-10-14 .bg{
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left:0;
   width:100%; 
   height:246.391px;
   background: url()  no-repeat 50% 40%;
   background-size: cover;
   filter : brightness(60%) blur(0) grayscale(0);
-} */
-#wrap #main .sec-10-14 .container{}
-#wrap #main .sec-10-14 .container .gap{}
-#wrap #main .sec-10-14 .container .gap{}
-#wrap #main .sec-10-14 .container .gap .content{}
-#wrap #main .sec-10-14 .container .gap .content .left{}
-#wrap #main .sec-10-14 .container .gap .content .left h2{}
-#wrap #main .sec-10-14 .container .gap .content .left h4{}
-#wrap #main .sec-10-14 .container .gap .content .left i{}
-#wrap #main .sec-10-14 .container .gap .content .right{}
+  transition: all 0.5s;
+}
+#wrap #main .sec-10-14:hover .bg{
+  background-position: 50% 20%;
+}
+#wrap #main .sec-10-14 .bg-up{
+  z-index : 2;
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  background: rgba(70,70,70,0.8);
+  transition: all 0.3s;
+}
+#wrap #main .sec-10-14:hover .bg-up{
+  background: rgba(80,80,80,0);
+}
+#wrap #main .sec-10-14 .container{
+  z-index: 3;
+  position: relative;
+  width : 1170px;
+  height : 100%;
+  margin : 0 auto;
+}
+#wrap #main .sec-10-14 .container .gap{
+  height : 100%;  
+  padding : 0 15px;
+}
+#wrap #main .sec-10-14 .container .gap .content{
+  width: 100%;
+  height : 100%;
+  display: flex;
+  align-items: center;
+}
+/* 좌측박스 */
+#wrap #main .sec-10-14 .container .gap .content .left{
+  width : 50%;
+  height : 100%;
+  display: flex;
+  align-items: center;
+}
+#wrap #main .sec-10-14 .container .gap .content .left h2{
+  font-size : 80px;
+  font-weight : 500;
+  color : rgb(133,238,165);
+  margin : 0 50px 0 0;
+}
+#wrap #main .sec-10-14 .container .gap .content .left div{
+  display: flex;
+  /* 가로줄 줄바꿈 없음 */
+  /* flex-flow: row nowrap; */
+  /* 가로줄 줄바꿈 있음 */
+  /* 정렬방식을 세로로 방향전환 */
+  flex-flow: column nowrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+#wrap #main .sec-10-14 .container .gap .content .left div h4{
+  font-size : 12px;
+  font-weight: 600;
+  padding : 0 0 5px 0;
+  width : 100%;
+}
+#wrap #main .sec-10-14 .container .gap .content .left div i{
+  display: block;
+  width : 132.281px;
+  height : 2px;
+  background : rgb(0,255,151);
+  transition : all 0.3s;
+}
+#wrap #main .sec-10-14:hover .container .gap .content .left div i{
+  width : 162.281px;
+}
+/* 우측박스 */
+#wrap #main .sec-10-14 .container .gap .content .right{width : 50%;}
+#wrap #main .sec-10-14 .container .gap .content .right p{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+  color : rgb(255,255,255);
+  transition: color 0.3s;
+}
+#wrap #main .sec-10-14 .container .gap .content .right p:hover{
+  color : rgba(255,255,255,0.6);
+}
+#wrap #main .sec-10-14 .container .gap .content .right h5{
+  padding : 25px 0 0 0;
+  font-size: 11px;
+  color : rgba(255,255,255,0.6);
+}
+#wrap #main .sec-10-14 .container .gap .content .right h5 span{
+  cursor : pointer;
+}
 
-#wrap #main #section10{
+#wrap #main #section10 .bg{
   background-image: url(../img/photography-img35.jpg);
 }
-#wrap #main #section11{
+#wrap #main #section11 .bg{
   background-image: url(../img/photography-img36.jpg);
 }
-#wrap #main #section12{
+#wrap #main #section12 .bg{
   background-image: url(../img/photography-img37.jpg);
 }
-#wrap #main #section13{
+#wrap #main #section13 .bg{
   background-image: url(../img/photography-img38.jpg);
 }
-#wrap #main #section14{
+#wrap #main #section14 .bg{
   background-image: url(../img/photography-img39.jpg);
 }
 #wrap #main #section15{width : 100%;height : 100vh;background-color: rgba(200,200,200,0.6);}
