@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import url('./font.css');
+@import url('./reset.css');
+
+#wrap{
+    width : 100%;
+}
+#wrap #skip{
+    position: fixed;
+    left : 0;
+    top : 0;
+    z-index: 4;     /* z-index - 해당 블럭의 z축 높은 블럭이 낮은 블럭을 덮음 */
+    width : 100%;
+    font-size: 0;
+}
+#wrap #skip li{
+    width : 100%;
+}
+
+#wrap #skip li a{
+    width : 100%;
+    background-color: rgb(0,0,0);
+    color : rgb(255,255,255);
+    display: block;
+    text-align: center;
+    line-height: 0;
+}
+
+#wrap #skip li a:focus{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#wrap #header{
+    position: fixed;    /* 드래그 화면고정 */
+    left : 0;
+    top : 0;
+    width : 100%;
+    height : 123px;
+    background: url(../img/logo.png) no-repeat 22% 50%;
+    background-color: rgb(246,245,239);
+    border-top: 2px solid rgb(0,0,0) ;
+    border-bottom: 1px solid rgb(246,245,239);
+}
+
+#wrap #main{
+    width : 100%;
+    z-index: 2;
+    margin : 120px 0 0 0;
+}
+
+#wrap #main #section1{
+    width : 100%;
+    height : 652.797px;
+    background: url(../img/2023_newyear_top_logo.png) no-repeat 20% 50%,
+                url(../img/2023_newyear_top_drink_2_1.png) no-repeat 62% 75%,
+                url(../img/2023_newyear_top_drink_1_1.png) no-repeat 50% 65%,
+                url(../img/2023_newyear_top_drink_3_1.png) no-repeat 75% 45%,
+                url(../img/2023_newyear_top_bg.jpg) no-repeat 50% 50%;
+    background-size: auto auto, auto auto, auto auto, auto auto, cover;
+}
+#wrap #main #section2{
+    width : 100%;
+    height : 62px;
+    background-image: linear-gradient(to right, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+}
+#wrap #main #section3{
+    width : 100%;
+    height : 240.172px;
+    padding : 30px 0 40px 0;
+    background: rgb(30,57,50) url(../img/rewards-logo.png) no-repeat 25% 50%;
+    background-size: 176px 153px;
+}
+#wrap #main #section3 h2{
+    text-align: center;
+    /* line-height: 240.172px; */
+    font-size : 26px;
+    color : rgb(255,255,255)
+}
+#wrap #main #section4{
+    width : 100%;
+    height : 573px;
+    background: url(../img/2023_newyear_promotion_img.png) no-repeat 35% 50%,
+                url(../img/2023_m_newyear_promotion_txt.png) no-repeat 65% 50%,
+                url(../img/2023_newyear_promotion_bg.jpg) no-repeat 50% 50%;
+}
+#wrap #main #section5{
+    width : 100%;
+    height : 400px;
+    background: url(../img/221220_pc_reserve_left_bg.png) no-repeat 0 50%,
+                url(../img/221220_pc_reserve_logo.png) no-repeat 30% 50%,
+                url(../img/221220_pc_resserve_right_bg.png) no-repeat 100% 50%,
+                url(../img/2212201_pc_reserve_coffee_bg.png) no-repeat 63% 50%,
+                url(../img/221220_pc_reserve_bg.png) no-repeat 0 0;
+                
+}
+#wrap #main #section6{
+    width : 100%;
+    height : 800px;
+    background : url(../img/230105_newyear_pick_img.png) no-repeat 85% 50%,
+                url(../img/fav_prod_txt01.png) no-repeat 30% 50%,
+                url(../img/2022_Chrismas2_PTF_bg.png) no-repeat 50% 50% fixed rgb(69, 67, 76);
+                
+    background-size: auto auto, auto auto, auto 100%;
+}
+#wrap #main #section7{
+    width : 100%;
+    height : 400px;
+    background: url(../img/reserve_text_pc.png) no-repeat 35% 50%,
+                url(../img/reserve_visual_pc.png) no-repeat 70% 50%,
+                url(../img/reserve_bg_pc.png) no-repeat 50% 50%;
+    background-size: auto 353px auto auto;
+}
+#wrap #main #section8{
+    width : 100%;
+    height : 400px;
+    background: url(../img/221212_main_story_2.png) no-repeat 50% 70%,
+                url(../img/221212_main_story_1.png) no-repeat 35% 0,
+                url(../img/221212_pc_main_story_txt_1.png) no-repeat 70% 30%,
+                url(../img/221212_pc_main_story_txt_2.png) no-repeat 70% 60%,
+                url(../img/store_bg.jpg) no-repeat 50% 50%;
+    background-size: auto auto, auto auto, auto auto, auto auto, cover;
+}
+
+#wrap #footer{
+    width : 100%;
+    height : 534px;
+    background-color: rgb(44, 42, 41);
+}
