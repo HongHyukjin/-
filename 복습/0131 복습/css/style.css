@@ -177,7 +177,7 @@
 }
 
 #wrap #main .sec10-14 .container{
-  /* position : relative; */
+  position : relative;
   z-index : 3;
   width : 100%;
   max-width : 1170px;
@@ -187,6 +187,9 @@
 
 #wrap #main .sec10-14 .container .gap{
   padding : 0 15px;
+}
+#wrap #main .sec10-14 .container .gap{
+
 }
 
 #wrap #main #section10{background-image: url(../img/photography-img35.jpg);}

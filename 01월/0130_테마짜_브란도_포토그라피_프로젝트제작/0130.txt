@@ -1,0 +1,2 @@
+vh(viewport height)
+vw(viewport width) : 해상도에 따라 높이를 달리할때 사용하는 단위

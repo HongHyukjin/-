@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* style.css에서 fonts.css와 reset.css를 불러서 사용 */
+@import url('./fonts.css');
+@import url('./reset.css');
+/* DOM(Document Object Model) */
+
+#wrap {
+  width:100%;
+}
+
+/* ////////////////////////////////////////////////// */
+/* 스킵메뉴 */
+/* ////////////////////////////////////////////////// */
+/* #wrap > ul {}  직계 자식 */
+/* #wrap ul {} 자손(자식 손자 모두 포함) */
+#wrap #skip{
+  position : fixed;
+  left : 0; /* x좌표 */
+  top : 0;  /* y좌표 */
+  z-index : 4;
+  width: 100%;
+  font-size: 0;
+}
+#wrap #skip li{
+  width: 100%;
+}
+#wrap #skip li a{
+  width: 100%;
+  background-color: rgb(0,0,0);
+  color: rgb(255,255,255);
+  display: block;
+  text-align: center;
+  line-height: 0;
+}
+
+#wrap #skip li a:focus{
+  font-size: 20px;
+  line-height: 40px;
+}
+/* ////////////////////////////////////////////////// */
+/* 헤더영역 */
+/* ////////////////////////////////////////////////// */
+#wrap #header{
+  position : fixed;
+  left : 0; /* x좌표 */
+  top : 0;  /* y좌표 */
+  z-index : 3;
+  width : 100%;
+  height:120px;
+  border-top: 2px solid rgb(0,0,0);
+  border-bottom: 1px solid rgb(229,229,229);
+  background-color: rgb(246,245,239);
+}
+/* ////////////////////////////////////////////////// */
+/* 메인영역 */
+/* ////////////////////////////////////////////////// */
+#wrap #main{
+  /* position: relative; */
+  z-index : 2;
+  width : 100%;
+  margin : 120px 0 0 0;
+}
+#wrap #main #section1{
+  width : 100%;
+  height : 652.797px;
+  background: url(../img/img_01.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#wrap #main #section2{
+  width : 100%;
+  height : 62px;
+  /* 백그라운드 이미지를 활용 그라이디언트 지정*/
+  /* background-image: linear-gradient(방향, 색상 백분율, 색상 백분율); */
+  background-image: linear-gradient(to right, rgb(0,0,0) 50%, rgb(255,255,255) 50%);
+}
+
+#wrap #main #section3{
+  width : 100%;
+  height:170.172px;
+  background: rgb(30,57,50);
+  padding : 30px 0 40px 0;
+}
+#wrap #main #section4{
+  width : 100%;
+  height : 573px;
+  background: url(../img/2023_newyear_promotion_bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section5{  
+  width : 100%;
+  height : 400px;
+  /* background 이미지 여러개 넣으면 먼저넣은게 위로오고 나중에 넣은게 아래로감 */
+  /* url repeat 좌표 한번에 하는거 권장 */
+  /* background: url(../img/221220_pc_reserve_left_bg.png) no-repeat 0 50%,   좌측 배경 이미지 
+              url(../img/221220_pc_resserve_right_bg.png) no-repeat 100% 50%,    우측 배경 이미지 
+              url(../img/221220_pc_reserve_logo.png) no-repeat 35% 40%,  가운데 로고 글자 배경 이미지 
+              url(../img/2212201_pc_reserve_coffee_bg.png) no-repeat 50% 50%,  가운데 커피잔 배경 이미지 
+              url(../img/221220_pc_reserve_bg.png) no-repeat 0 0;    배경 이미지
+               */
+
+  background-image: url(../img/221220_pc_reserve_left_bg.png),
+                    url(../img/221220_pc_resserve_right_bg.png),
+                    url(../img/221220_pc_reserve_logo.png),
+                    url(../img/2212201_pc_reserve_coffee_bg.png),
+                    url(../img/221220_pc_reserve_bg.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 0 50%, 100% 50%, 35% 50%, 35% 50%, 50% 50%;
+  background-attachment: scroll, scroll, scroll, scroll, scroll;       
+  background-size: auto 100%, auto 100%, auto auto, auto 100%, cover;
+}
+#wrap #main #section6{
+  width : 100%;
+  height : 800px;
+  background: url(../img/2022_Chrismas2_PTF_bg.png) no-repeat 50% 50% fixed;
+  background-size: cover;
+}
+#wrap #main #section7{
+  width : 100%;
+  height : 400px;
+  background: url(../img/reserve_bg_pc.png) no-repeat 50% 50%;
+  background-size: auto 350px;
+}
+#wrap #main #section8{
+  width : 100%;
+  height : 400px;
+  background: url(../img/store_bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+/* ////////////////////////////////////////////////// */
+/* 푸터영역 */
+/* ////////////////////////////////////////////////// */
+#wrap #footer{
+  position: relative;
+  z-index : 1;
+  width : 100%;
+  height : 534px;
+  padding : 32px 0 35px 0;
+  background-color: rgb(44,42,41);
+}
+
