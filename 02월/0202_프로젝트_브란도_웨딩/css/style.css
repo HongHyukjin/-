@@ -48,10 +48,96 @@
 }
 #wrap #main #section4 {
   width: 100%;
-  height: 701.219px;
   padding: 130px 0;
   background: #fff;
   border-bottom: 1px solid #e5e5e5;
+}
+#wrap #main #section4 .container {
+  width: 1179px;
+  margin: 0 auto;
+}
+#wrap #main #section4 .container > .gap {
+  width: 100%;
+}
+#wrap #main #section4 .container > .gap .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 80px 0;
+}
+#wrap #main #section4 .container > .gap .title h2 {
+  display: inline-block;
+  color: #e15276;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+#wrap #main #section4 .container > .gap .title h2::before {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  margin-top: 0.5px;
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #93e4cf;
+}
+#wrap #main #section4 .container > .gap .title h2::after {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  margin-top: 0.5px;
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #93e4cf;
+}
+#wrap #main #section4 .container > .gap .content {
+  width: 100%;
+}
+#wrap #main #section4 .container > .gap .content ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #section4 .container > .gap .content ul li {
+  width: 33.33333%;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap {
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box {
+  width: 100%;
+  border: 6px solid #ddd;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap {
+  width: 100%;
+  padding: 60px 70px;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap h2 {
+  padding: 0 0 15px 0;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap h2 i {
+  font-size: 60px;
+  color: #85d4c0;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap hr {
+  border: 0;
+  background: #ccc;
+  width: 100%;
+  height: 1px;
+  margin: 25px 0;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap p {
+  color: #85d4c0;
+  padding: 0 0 10px 0;
+}
+#wrap #main #section4 .container > .gap .content ul li .col-gap .box .gap h4 {
+  color: #929292;
 }
 #wrap #main #section5 {
   width: 100%;
