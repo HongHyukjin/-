@@ -26144,7 +26144,7 @@ you can use the generic selector below, but it's slower:
 	content: "\e056";
 }
 .icon-quote:before {
-	content: "\e057";
+	content: "\e057"; 
 }
 .icon-scope:before {
 	content: "\e058";
