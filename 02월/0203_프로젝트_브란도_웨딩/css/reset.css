@@ -32,6 +32,25 @@ a {
   text-decoration: none;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #626262;
+}
+
+a:focus {
+  -webkit-text-decoration: #d32b55;
+          text-decoration: #d32b55;
+}
+
 h1, h2, h3, h4, h5, h6, b, strong {
   font-weight: normal;
 }
