@@ -13,114 +13,54 @@
   left: 0;
   z-index: 3;
 }
-#wrap #header .nav {
+#wrap #header .container {
   width: 100%;
-  height: 100%;
-}
-#wrap #header .nav .container {
-  width: 100%;
-  height: 100%;
   max-width: 1170px;
-  margin: 0 auto;
-}
-#wrap #header .nav .container .gap {
-  width: 100%;
   height: 100%;
+  margin: auto;
+}
+#wrap #header .container .gap {
   padding: 0 15px;
-}
-#wrap #header .nav .container .gap .content {
-  width: 100%;
-  height: 100%;
-}
-#wrap #header .nav .container .gap .content ul {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-#wrap #header .nav .container .gap .content ul li {
-  margin: 0 15px;
-}
-#wrap #header .nav .container .gap .content ul li h4 {
-  width: 100%;
-}
-#wrap #header .nav .container .gap .content ul li h4 a {
-  font-size: 14px;
-  font-weight: 600;
-  color: #2e443f;
-}
-#wrap #header .nav .container .gap .content ul li figure {
-  width: 269px;
-  height: 86px;
-}
-#wrap #header .nav .container .gap .content ul li figure img {
-  width: 100%;
+#wrap #header .container .gap .left {
+  width: 38%;
   height: 100%;
+  background-color: #99c;
+}
+#wrap #header .container .gap .center {
+  width: 24%;
+  height: 100%;
+  background-color: #e15276;
+}
+#wrap #header .container .gap .right {
+  width: 38%;
+  height: 100%;
+  background-color: #99c;
 }
 #wrap #main {
-  z-index: 1;
+  z-index: 2;
   position: relative;
   width: 100%;
 }
 #wrap #main #section1 {
   position: relative;
-  z-index: 2;
   width: 100%;
   height: 100vh;
   background: url(../img/wedding-img3.jpg) no-repeat 50% 50%;
 }
 #wrap #main #section1::before {
   content: "";
-  z-index: 3;
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(37, 37, 37, 0.7);
-}
-#wrap #main #section1 .container {
-  position: relative;
-  z-index: 4;
-  width: 100%;
-  max-width: 1170px;
-  height: 100%;
-  margin: 0 auto;
-}
-#wrap #main #section1 .container .gap {
-  width: 100%;
-  height: 100%;
-  padding: 0 15px;
-}
-#wrap #main #section1 .container .gap .content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-}
-#wrap #main #section1 .container .gap .content figure {
-  width: 307px;
-  height: 202px;
-  padding: 0 0 40px 0;
-  text-align: center;
-  border-bottom: 4px double rgba(147, 228, 208, 0.5019607843);
-}
-#wrap #main #section1 .container .gap .content figure img {
-  width: 100%;
-  height: 100%;
-}
-#wrap #main #section1 .container .gap .content p {
-  color: #ffffff;
-  padding: 30px 0 5px 0;
-  font-size: 18px;
-  font-weight: 500;
-}
-#wrap #main #section1 .container .gap .content h2 {
-  color: #85d4c0;
-  font-size: 24px;
-  font-weight: 700;
+  background: rgba(37, 37, 37, 0.4);
 }
 #wrap #main #section2 {
   width: 100%;
@@ -129,31 +69,10 @@
   background: #fff;
 }
 #wrap #main #section3 {
-  z-index: 1;
-  position: relative;
   width: 100%;
   height: 346px;
   background: url(../img/wedding-img7.jpg) no-repeat 50% 50% fixed;
   background-size: cover;
-}
-#wrap #main #section3::before {
-  content: "";
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(37, 37, 37, 0.7);
-}
-#wrap #main #section3 h1 {
-  z-index: 3;
-  position: relative;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 346px;
-  color: #85d4c0;
 }
 #wrap #main #section4 {
   width: 100%;
@@ -205,15 +124,10 @@
 }
 #wrap #main #section4 .container > .gap .content ul {
   width: 100%;
-}
-#wrap #main #section4 .container > .gap .content ul::after {
-  content: "";
-  display: block;
-  clear: both;
+  display: flex;
 }
 #wrap #main #section4 .container > .gap .content ul li {
   width: 33.33333%;
-  float: left;
 }
 #wrap #main #section4 .container > .gap .content ul li .col-gap {
   padding: 0 15px;
@@ -308,15 +222,11 @@
 }
 #wrap #main #section5 .container .gap .content .gallery-box ul {
   width: 100%;
-}
-#wrap #main #section5 .container .gap .content .gallery-box ul::after {
-  content: "";
-  display: block;
-  clear: both;
+  display: flex;
+  flex-flow: row wrap;
 }
 #wrap #main #section5 .container .gap .content .gallery-box ul li {
   width: 25%;
-  float: left;
 }
 #wrap #main #section5 .container .gap .content .gallery-box ul li .col-gap {
   width: auto;

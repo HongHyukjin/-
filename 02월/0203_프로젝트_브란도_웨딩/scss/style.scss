@@ -13,113 +13,54 @@
     top : 0;
     left : 0;
     z-index : 3;
-    .nav{
+    .container{
       width : 100%;
+      max-width: 1170px;
       height : 100%;
-      .container{
+      margin : auto;
+      .gap{
+        padding : 0 15px;
         width : 100%;
         height : 100%;
-        max-width: 1170px;
-        margin : 0 auto;
-        .gap{
-          width : 100%;
+        display: flex;
+        align-items: center;
+        .left{
+          width : 38%;
           height : 100%;
-          padding : 0 15px;
-          .content{
-            width : 100%;
-            height : 100%;
-            ul{
-              width : 100%;
-              height : 100%;
-              display: flex;
-              align-items: center;
-              li{
-                margin : 0 15px;
-                // text-align: center;
-                h4{
-                  width : 100%;
-                  // text-align: center;
-                  a{ 
-                    font-size : 14px;
-                    font-weight : 600;
-                    color : #2e443f;
-                  }
-                }
-                figure{
-                  width : 269px;
-                  height : 86px;
-                  img{
-                    width : 100%;
-                    height : 100%;
-                  }
-                }
-              }
-            }
-          }
+          background-color: #99c;
+        }
+        .center{
+          width : 24%;
+          height : 100%;
+          background-color: #e15276;
+        }
+        .right{
+          width : 38%;
+          height : 100%;
+          background-color: #99c;
         }
       }
     }
   }
   #main{
-    z-index: 1;
+    z-index: 2;
     position: relative;
     width: 100%;
     #section1{
       position: relative;
-      z-index: 2;
       width : 100%;
       //height : 100%;  // 반드시 부모요소의 높이가 창높이로 잡혀있어야 적용된다. */
       height : 100vh;
       background: url(../img/wedding-img3.jpg) no-repeat 50% 50%;
       &::before{
         content: '';
-        z-index: 3;
+        z-index: 1;
         position : absolute;
         top : 0;
         left : 0;
         width : 100%;
         height : 100%;
-        background: rgba(37,37,37,0.7);
-      }
-      .container{
-        position : relative;
-        z-index : 4;
-        width : 100%;
-        max-width: 1170px;
-        height : 100%;
-        margin : 0 auto;
-        .gap{
-          width : 100%;
-          height : 100%;
-          padding : 0 15px;
-          .content{
-            width : 100%;
-            height : 100%;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            justify-content: center;
-            figure{
-              width : 307px;
-              height : 202px;
-              padding : 0 0 40px 0;
-              text-align: center;
-              border-bottom: 4px double #93e4d080;
-              img{width : 100%; height : 100%;}
-            }
-            p{
-              color : #ffffff;
-              padding : 30px 0 5px 0;
-              font-size : 18px;
-              font-weight: 500;
-            }
-            h2{
-              color : #85d4c0;
-              font-size: 24px;
-              font-weight: 700;
-            }
-          }
-        }
+        background: rgba(37,37,37,0.4);
       } 
     }
     #section2{
@@ -129,31 +70,10 @@
       background: #fff;
     }
     #section3{
-      z-index: 1;
-      position: relative;
       width : 100%;
       height : 346px;
       background: url(../img/wedding-img7.jpg) no-repeat 50% 50% fixed;
       background-size: cover;
-      &::before{
-        content: '';
-        z-index: 2;
-        position : absolute;
-        top : 0;
-        left : 0;
-        width : 100%;
-        height : 100%;
-        background: rgba(37,37,37,0.7);
-      }
-      h1{
-        z-index: 3;
-        position: relative;
-        font-size : 24px;
-        font-weight: 600;
-        text-align: center;
-        line-height: 346px;
-        color : #85d4c0;
-      }
     }
     #section4{
       width : 100%;
@@ -201,14 +121,9 @@
             width : 100%;
             ul{
               width : 100%;
-              &::after{
-                content: '';
-                display: block;
-                clear: both;
-              }
+              display: flex;
               li{
                 width : 33.33333%;
-                float : left;
                 .col-gap{
                   padding : 0 15px;
                   width : 100%;
@@ -289,14 +204,10 @@
               overflow: hidden;
               ul{
                 width: 100%;
-                &::after{
-                  content: '';
-                  display: block;
-                  clear: both;
-                }
+                display: flex;
+                flex-flow: row wrap;
                 li{
                   width: 25%;
-                  float : left;
                   .col-gap{
                     width: auto;
                     margin : 0 0 11px 11px;
