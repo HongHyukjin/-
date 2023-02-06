@@ -296,79 +296,99 @@
 #wrap #main #section2 .container .gap .content .left .icon-box .right {
   width: 100%;
 }
-#wrap #main #section2 .container .gap .content .left .right {
-  width: 100%;
-}
-#wrap #main #section2 .container .right {
+#wrap #main #section2 .container .gap .content .right {
   width: 50%;
   height: 350px;
 }
-#wrap #main #section2 .container .right .content-box {
+#wrap #main #section2 .container .gap .content .right .content-box {
   width: 100%;
 }
-#wrap #main #section2 .container .right .content-box > ul {
+#wrap #main #section2 .container .gap .content .right .content-box > ul {
   width: 100%;
   display: flex;
 }
-#wrap #main #section2 .container .right .content-box > ul > li {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li {
   width: 50%;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-image {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-image {
   width: 100%;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-image > .gap {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-image > .gap {
   padding: 0 15px;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-image > .gap .img-box {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-image > .gap .img-box {
   width: 100%;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-image > .gap .img-box figure {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-image > .gap .img-box figure {
   width: 100%;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-image > .gap .img-box figure img {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-image > .gap .img-box figure img {
   width: 100%;
   outline: 4px solid rgba(255, 255, 255, 0.3);
   outline-offset: -17px;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text {
   width: 100%;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text .gap {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text .gap {
   padding: 0 15px;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text .gap .text-box {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text .gap .text-box {
   width: 100%;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text .gap .text-box ul {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text .gap .text-box ul {
   width: 100%;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text .gap .text-box ul li {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text .gap .text-box ul li {
   width: 80%;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text .gap .text-box ul li h2 {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text .gap .text-box ul li h2 {
   padding: 0 0 10px 0;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text .gap .text-box ul li h2 i {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text .gap .text-box ul li h2 i {
   font-size: 40px;
   color: #85d4c0;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text .gap .text-box ul li h3 {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text .gap .text-box ul li h3 {
   font-size: 18px;
   font-weight: 600;
   color: #85d4c0;
   line-height: 130%;
   letter-spacing: -0.3px;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text .gap .text-box ul li h4 {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text .gap .text-box ul li h4 {
   font-size: 13px;
   font-weight: 600;
   padding: 20px 0;
 }
-#wrap #main #section2 .container .right .content-box > ul > li.content-text .gap .text-box ul li p {
+#wrap #main #section2 .container .gap .content .right .content-box > ul > li.content-text .gap .text-box ul li p {
   font-size: 13px;
   font-family: "Roboto";
   letter-spacing: 0px;
   line-height: 170%;
+}
+#wrap #main #section2 .container .gap .content .right .icon-box {
+  width: 100%;
+  display: flex;
+  padding: 30px 0 0 0;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#wrap #main #section2 .container .gap .content .right .icon-box .left {
+  width: 100%;
+}
+#wrap #main #section2 .container .gap .content .right .icon-box .left a {
+  margin: 0 10px;
+  color: #626262;
+}
+#wrap #main #section2 .container .gap .content .right .icon-box .left a i {
+  font-size: 14px;
+}
+#wrap #main #section2 .container .gap .content .right .icon-box .right {
+  width: 100%;
 }
 #wrap #main #section3 {
   position: relative;
