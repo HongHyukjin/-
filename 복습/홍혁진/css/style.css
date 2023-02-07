@@ -1,0 +1,133 @@
+@import url(./fonts.css);
+@import url(./reset.css);
+@import url(./skip.css);
+#wrap {
+  width: 100%;
+}
+#wrap #messageForm {
+  width: 100%;
+  padding: 130px 0;
+}
+#wrap #messageForm .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #messageForm .container .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px 100px 15px;
+}
+#wrap #messageForm .container .title h2 {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+}
+#wrap #messageForm .container .title span {
+  display: block;
+  width: 100%;
+  padding: 10px 0 0 0;
+}
+#wrap #messageForm .container .title span img {
+  width: auto;
+}
+#wrap #messageForm .container .content {
+  width: 100%;
+  display: flex;
+}
+#wrap #messageForm .container .content .left-box {
+  width: 44%;
+}
+#wrap #messageForm .container .content .left-box .col-gap {
+  padding: 0 15px;
+}
+#wrap #messageForm .container .content .left-box .col-gap ul {
+  width: 100%;
+}
+#wrap #messageForm .container .content .left-box .col-gap ul li {
+  position: relative;
+  width: 100%;
+  padding: 0 0 60px 90px;
+  display: flex;
+}
+#wrap #messageForm .container .content .left-box .col-gap ul li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  color: #c8a64b;
+}
+#wrap #messageForm .container .content .left-box .col-gap ul li div h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+#wrap #messageForm .container .content .left-box .col-gap ul li div h4, #wrap #messageForm .container .content .left-box .col-gap ul li div h5 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #626262;
+  font-family: "Roboto";
+  padding: 7px 0 0 0;
+}
+#wrap #messageForm .container .content .right-box {
+  width: 56%;
+}
+#wrap #messageForm .container .content .right-box .col-gap {
+  width: 100%;
+  padding: 0 15px;
+}
+#wrap #messageForm .container .content .right-box .col-gap form ul li {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+#wrap #messageForm .container .content .right-box .col-gap form ul li input {
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  transition: all 0.3s;
+}
+#wrap #messageForm .container .content .right-box .col-gap form ul li input:focus {
+  outline: 2px solid #999;
+  outline-offset: -1px;
+}
+#wrap #messageForm .container .content .right-box .col-gap form ul li select {
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #626262;
+}
+#wrap #messageForm .container .content .right-box .col-gap form ul li select:focus {
+  outline: 0;
+}
+#wrap #messageForm .container .content .right-box .col-gap form ul li textarea {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #626262;
+  resize: none;
+}
+#wrap #messageForm .container .content .right-box .col-gap form ul li button {
+  height: 48px;
+  padding: 0 20px;
+  background-color: #000;
+  font-family: "Montserrat";
+  color: #fff;
+  transition: all 0.3s;
+}
+#wrap #messageForm .container .content .right-box .col-gap form ul li button:hover {
+  background-color: #fff;
+  color: #000;
+}

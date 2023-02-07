@@ -1,0 +1,142 @@
+@import url(./fonts.css);
+@import url(./reset.css);
+@import url(./skip.css);
+
+//중첩코딩
+#wrap{
+  width : 100%;
+  #messageForm{
+    width : 100%;
+    padding : 130px 0;
+    .container{
+      width : 100%;
+      max-width: 1170px;
+      margin : 0 auto;
+      .title{
+        width : 100%;
+        text-align: center;
+        padding : 0 15px 100px 15px;
+        h2{
+          width : 100%;
+          font-size : 28px;
+          font-weight: 600;
+          color : #000;
+        }
+        span{
+          display: block;
+          width : 100%;
+          padding : 10px 0 0 0;
+          img{
+            width : auto;
+          }
+        }
+      }
+      .content{
+        width : 100%;
+        display: flex;
+        .left-box{
+          width : 44%;
+          .col-gap{
+            padding : 0 15px;
+            ul{
+              width : 100%;
+              li{
+                position: relative;
+                width : 100%;
+                padding : 0 0 60px 90px;
+                display: flex;
+                i{
+                  position: absolute;
+                  top : 0;
+                  left : 0;
+                  font-size : 40px;
+                  color : #c8a64b;
+                }
+                div{
+                  h3{
+                    font-size : 15px;
+                    font-weight: 700;
+                    color : #000;
+                  }
+                  h4,h5{
+                    font-size : 15px;
+                    font-weight : 400;
+                    color : #626262;
+                    font-family: 'Roboto';
+                    padding : 7px 0 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .right-box{
+          width : 56%;
+          .col-gap{
+            width : 100%;
+            padding : 0 15px;
+            form{
+              ul{
+                li{
+                  width : 100%;
+                  padding : 0 0 20px 0;
+                  input{
+                    width : 100%;
+                    height : 48px;
+                    padding : 0 15px;
+                    border : 1px solid #ccc;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-family: 'Montserrat';
+                    transition : all 0.3s;
+                    &:focus{
+                      outline : 2px solid #999;
+                      outline-offset: -1px;
+                    }
+                  }
+                  select{
+                    width : 100%;
+                    height : 48px;
+                    padding : 0 15px;
+                    border : 1px solid #ccc;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-family: 'Montserrat';
+                    color : #626262;
+                    &:focus{
+                      outline : 0;
+                    }
+                  }
+                  textarea{
+                    width : 100%;
+                    height : 100px;
+                    padding : 15px;
+                    border : 1px solid #ccc;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-family: 'Montserrat';
+                    color : #626262;
+                    resize: none;
+                  }
+                  button{
+                    height : 48px;
+                    padding : 0 20px;
+                    background-color: #000;
+                    font-family: 'Montserrat';
+                    color : #fff;
+                    transition : all 0.3s;
+                    &:hover{
+                      background-color: #fff;
+                      color : #000;
+                    }
+                  }
+                }
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}

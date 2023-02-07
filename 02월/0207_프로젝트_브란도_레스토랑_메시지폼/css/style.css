@@ -47,6 +47,7 @@
 }
 #wrap #main #section1 .container .content .left ul {
   width: 100%;
+  padding: 0 15px;
 }
 #wrap #main #section1 .container .content .left ul li {
   width: 100%;
