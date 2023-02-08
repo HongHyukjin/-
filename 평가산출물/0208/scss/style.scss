@@ -90,66 +90,109 @@
     position: relative;
     width: 100%;
     #section1{
-      position: relative;
       width : 100%;
-      //height : 100%;  // 반드시 부모요소의 높이가 창높이로 잡혀있어야 적용된다. */
-      height : 100vh;
-      background: url(../img/wedding-img3.jpg) no-repeat 50% 50%;
-      &::after{
-        content: '';
-        z-index: 1;
-        position : absolute;
-        top : 0;
-        left : 0;
-        width : 100%;
-        height : 100%;
-        background: rgba(37,37,37,0.7);
-      } 
+      overflow: hidden;
       .container{
-        z-index: 2;
-        position: relative;
         width : 100%;
-        max-width: 1170px;
-        height : 100%;
-        margin : 0 auto;
-        .gap{
+        .title{
+          z-index: 2;
+          position: absolute;
           width : 100%;
-          height : 100%;
+          height : 100vh;
           display: flex;
           align-items: center;
           justify-content: center;
-          .title{
-            width : 307px;
+          div{
             text-align: center;
             figure{
-              margin : 0 0 40px 0;
+              width : 100%;
+              padding : 0 0 40px 0;
               img{
-                width : 100%;
+                width : auto;
               }
             }
             hr{
+              border : 0;
               width : 100%;
-              height : 3px;
-              border-top: 1px solid #93e4d080;
-              border-bottom: 1px solid #93e4d080;
-              border-left: 0px;
-              border-right: 0px;
-              margin : 0 0 35px 0;
+              height : 4px;
+              border-top: 1px solid #626262;
+              border-bottom: 1px solid #626262;
             }
             h3{
               font-size : 18px;
               font-weight: 500;
+              font-family: 'Montserrat';
               color : #fff;
-              margin : 0 0 7px 0;
+              padding : 35px 0 0 0;
             }
-            h2{
+            h4{
               font-size : 24px;
               font-weight: 700;
-              color : #85d4c0;
+              font-family: 'Montserrat';
+              color : #fff;
+              padding : 7px 0 0 0;
+            }
+          }
+        }
+        .slide-container{
+          z-index: 1;
+          position: relative;
+          width : 100%;
+          .slide-view{
+            width : 100%;
+            .slide-wrap{
+              width : 400%;
+              display: flex;
+              animation: slide 15s ease-in-out infinite;
+              .slide{
+                z-index: 1;
+                position: relative;
+                width : 100%;
+                height : 100vh;
+                background: url() no-repeat 50% 50%;
+                background-size: cover;
+                &.slide1{
+                  background-image: url(../img/wedding-img1.jpg);
+                }
+                &.slide2{
+                  background-image: url(../img/wedding-img2.jpg);
+                }
+                &.slide3{
+                  background-image: url(../img/wedding-img3.jpg);
+                }
+                &::before{
+                  content: '';
+                  z-index : 2;
+                  position: absolute;
+                  top : 0;
+                  left : 0;
+                  width : 100%;
+                  height : 100%;
+                  background: rgba(0,0,0,0.4);
+                }
+              }
             }
           }
         }
       }
+    }
+    @keyframes slide {
+        0.00% {transform: translateX(-1903px * 0);}
+        6.67% {transform: translateX(-1903px * 0);}
+       13.33% {transform: translateX(-1903px * 0);}
+       20.00% {transform: translateX(-1903px * 0);}
+       26.67% {transform: translateX(-1903px * 0);}
+       33.33% {transform: translateX(-1903px * 1);}
+       40.00% {transform: translateX(-1903px * 1);}
+       46.67% {transform: translateX(-1903px * 1);}
+       53.33% {transform: translateX(-1903px * 1);}
+       60.00% {transform: translateX(-1903px * 1);}
+       66.67% {transform: translateX(-1903px * 2);}
+       73.33% {transform: translateX(-1903px * 2);}
+       80.00% {transform: translateX(-1903px * 2);}
+       86.67% {transform: translateX(-1903px * 2);}
+       93.33% {transform: translateX(-1903px * 2);}
+      100.00% {transform: translateX(-1903px * 3);}
     }
     #section2{
       width : 100%;
@@ -970,8 +1013,6 @@
         }
       }
     }
-<<<<<<< HEAD
-=======
     // 애니메이션 이름
     // slide-ani
     // 3초대기 1초 이동
@@ -979,7 +1020,6 @@
     // 키프레임
     // 이동 트랜스폼 : X 이동 우측에서 좌측으로 이동 트렌스레이트X( -475.75px )
     // 이동 transform : translateX( -475.75px )
->>>>>>> c05146336b0b092bd8ca5f10470bb597c9eab3c6
     @keyframes slide-ani {
         0% {transform: translateX(-475.75px * 0);}
        25% {transform: translateX(-475.75px * 0);}
@@ -990,16 +1030,156 @@
 
     #section9{
       width : 100%;
-      height : 614.594px + 130px + 130px;
       padding: 130px 0;
       background: #fff;
       border-bottom: 1px solid #e5e5e5;
+      .container{
+        width : 100%;
+        max-width: 1170px;
+        margin : 0 auto;
+        .title{
+          width : 100%;
+          text-align: center;
+          padding : 0 0 80px 0;
+          h2{
+            display: inline-block;
+            color : #e15276;
+            font-size : 24px;
+            font-weight: 700;
+            position: relative;
+            &::before{
+              position: absolute;
+              left:-60px;
+              top:50%;
+              margin-top : 0.5px;
+              content: '';
+              width : 40px;
+              height : 1px;
+              background: #93e4cf;
+            }
+            &::after{
+              position: absolute;
+              right:-60px;
+              top:50%;
+              margin-top : 0.5px;
+              content: '';
+              width : 40px;
+              height : 1px;
+              background: #93e4cf;
+            }
+          }
+        }
+        .content{
+          width : 100%;
+          >ul{
+            width : 100%;
+            display: flex;
+            >li{
+              width : 33%;
+              .col-gap{
+                padding : 0 15px;
+                .img-box{
+                  width : 100%;
+                  margin : 0 0 15px 0;
+                  img{
+                    width : 100%;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    &:hover{
+                      filter: grayscale(1);
+                    }
+                  }
+                }
+                .txt-box{
+                  ul{
+                    li{
+                      padding : 15px 0;
+                      a{
+                        font-size : 10px;
+                        font-weight: 500;
+                        background: #000;
+                        color : #fff;
+                        padding : 3px 8px;
+                      }
+                      h3{
+                        font-size : 15px;
+                        font-weight: 600;
+                        font-family: 'Montserrat';
+                        color : #000;
+                      }
+                      p{
+                        font-size: 13px;
+                        font-family: 'Roboto';
+                      }
+                      hr{
+                        width : 100%;
+                        height : 1px;
+                        border : 0;
+                        background: #e5e5e5;
+                      }
+                      h4{
+                        font-size : 11px;
+                        font-weight: 500;
+                        font-family: 'Montserrat';
+                      }
+                    }
+                  }
+                }
+                }
+              }
+            }
+          }
+        }
+
     }
     #section10{
       width : 100%;
-      height : 294.375px + 130px + 80px;
       padding: 130px 0 80px 0;
       background: #fff;
+      .container{
+        .title{
+          width : 100%;
+          text-align: center;
+          padding : 0 0 80px 0;
+          h2{
+            display: inline-block;
+            color : #e15276;
+            font-size : 24px;
+            font-weight: 700;
+            position: relative;
+            &::before{
+              position: absolute;
+              left:-60px;
+              top:50%;
+              margin-top : 0.5px;
+              content: '';
+              width : 40px;
+              height : 1px;
+              background: #93e4cf;
+            }
+            &::after{
+              position: absolute;
+              right:-60px;
+              top:50%;
+              margin-top : 0.5px;
+              content: '';
+              width : 40px;
+              height : 1px;
+              background: #93e4cf;
+            }
+          }
+        }
+        .content{
+          width : 456px;
+          margin : 0 auto;
+          text-align: center;
+          p{
+            font-size: 13px;
+            font-family: 'Roboto';
+            line-height: 180%;
+          }
+        }
+      }
     }
     #section11{
       width : 100%;
@@ -1016,7 +1196,63 @@
     z-index: 1;
     position: relative;
     width: 100%;
-    height : 300px;
-    background: #dcdcdc;
+    .container{
+      width : 100%;
+      max-width: 1170px;
+      margin : 0 auto;
+      .gap{
+        padding : 0 15px;
+          .content{
+            width : 100%;
+            text-align: center;
+            .icon{
+              width : 100%;
+              padding : 50px 0;
+              a{
+                i{
+                  font-size : 22px;
+                  font-weight: 400;
+                  color : #575757;
+                  margin : 0 25px;
+                }
+              }
+            }
+            hr{
+              border: 0;
+              width : 100%;
+              height : 1px;
+              background: #e5e5e5;
+            }
+            p{
+              padding : 30px 0;
+              font-size : 11px;
+              font-weight: 500;
+              
+            }
+          }
+      }
+    }
+  }
+  .gotop{
+    z-index: 3;
+    position: fixed;
+    bottom : 50px;
+    right : 40px;
+    width : 30px;
+    height : 30px;
+    background: #000;
+    border-radius: 30px;
+    a{
+      display: block;
+      color : #fff;
+      width : 100%;
+      height : 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i{
+        font-size : 20px;
+      }
+    }
   }
 }

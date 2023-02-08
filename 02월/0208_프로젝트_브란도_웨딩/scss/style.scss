@@ -90,66 +90,110 @@
     position: relative;
     width: 100%;
     #section1{
-      position: relative;
       width : 100%;
-      //height : 100%;  // 반드시 부모요소의 높이가 창높이로 잡혀있어야 적용된다. */
-      height : 100vh;
-      background: url(../img/wedding-img3.jpg) no-repeat 50% 50%;
-      &::after{
-        content: '';
-        z-index: 1;
-        position : absolute;
-        top : 0;
-        left : 0;
-        width : 100%;
-        height : 100%;
-        background: rgba(37,37,37,0.7);
-      } 
+      overflow: hidden;
       .container{
-        z-index: 2;
         position: relative;
         width : 100%;
-        max-width: 1170px;
-        height : 100%;
-        margin : 0 auto;
-        .gap{
+        .title{
+          z-index: 2;
+          position: absolute;
+          top : 0;
+          left : 0;
           width : 100%;
-          height : 100%;
+          height : 100vh;
           display: flex;
           align-items: center;
           justify-content: center;
-          .title{
-            width : 307px;
-            text-align: center;
-            figure{
-              margin : 0 0 40px 0;
-              img{
-                width : 100%;
-              }
+          text-align: center;
+          div{
+            width : 100%;
+            max-width: 307px;
+            img{
+              width : 100%;
+              padding : 0 0 40px 0;
             }
             hr{
+              border : 0;
               width : 100%;
-              height : 3px;
-              border-top: 1px solid #93e4d080;
-              border-bottom: 1px solid #93e4d080;
-              border-left: 0px;
-              border-right: 0px;
-              margin : 0 0 35px 0;
-            }
-            h3{
-              font-size : 18px;
-              font-weight: 500;
-              color : #fff;
-              margin : 0 0 7px 0;
+              height : 4px;
+              border-top : 1px solid #ddd;
+              border-bottom: 1px solid #ddd;
             }
             h2{
+              font-size : 18px;
+              font-weight: 500;
+              font-family: 'Montserrat';
+              color : #fff;
+              margin : 35px 0 0 0;
+            }
+            h3{
               font-size : 24px;
               font-weight: 700;
+              font-family: 'Montserrat';
               color : #85d4c0;
             }
           }
         }
+        .slide-container{
+          z-index: 1;
+          position: relative;
+          width : 100%;
+          .slide-view{
+            width : 100%;
+            .slide-wrap{
+              width : 400%;
+              display: flex;
+              // 4초대기 1초 이동
+              animation : slide 15s ease-in-out infinite;
+              .slide{
+                position: relative;
+                width : 100%;
+                height : 100vh;
+                background: url() no-repeat 50% 50%;
+                background-size: cover;
+                &.slide1{
+                  background-image: url(../img/wedding-img1.jpg);
+                }
+                &.slide2{
+                  background-image: url(../img/wedding-img2.jpg);
+                }
+                &.slide3{
+                  background-image: url(../img/wedding-img3.jpg);
+                }
+                //슬라이드 이미지 검정 투명 캡
+                &:before{
+                  content: '';
+                  position: absolute;
+                  top : 0;
+                  left : 0;
+                  width : 100%;
+                  height : 100%;
+                  background: rgba(0,0,0,0.3);
+                }
+              }
+            }
+          }
+        }
       }
+    }
+    @keyframes slide {
+        0.00% {transform:  translateX(-1903px * 0);}
+        6.67% {transform:  translateX(-1903px * 0);}
+       13.33% {transform:  translateX(-1903px * 0);}
+       20.00% {transform:  translateX(-1903px * 0);}
+       26.67% {transform:  translateX(-1903px * 0);}
+       33.33% {transform:  translateX(-1903px * 1);}
+       40.00% {transform:  translateX(-1903px * 1);}
+       46.67% {transform:  translateX(-1903px * 1);}
+       53.33% {transform:  translateX(-1903px * 1);}
+       60.00% {transform:  translateX(-1903px * 1);}
+       66.67% {transform:  translateX(-1903px * 2);}
+       73.33% {transform:  translateX(-1903px * 2);}
+       80.00% {transform:  translateX(-1903px * 2);}
+       86.67% {transform:  translateX(-1903px * 2);}
+       93.33% {transform:  translateX(-1903px * 2);}
+      100.00% {transform:  translateX(-1903px * 3);}
     }
     #section2{
       width : 100%;
@@ -515,45 +559,73 @@
       padding : 130px 0;
       background: #fff;
       .container{
-        width : 1170px;
+        width: 100%;
+        max-width: 1170px;
         margin : 0 auto;
         .gap{
           width : 100%;
           .title{
             width : 100%;
-            padding : 0 0 80px 0;
             text-align: center;
+            padding : 0 0 80px 0;
             h2{
+              display: inline-block;
               color : #e15276;
               font-size : 24px;
+              font-weight: 700;
+              position: relative;
+              &::before{
+                position: absolute;
+                left:-60px;
+                top:50%;
+                margin-top : 0.5px;
+                content: '';
+                width : 40px;
+                height : 1px;
+                background: #93e4cf;
+              }
+              &::after{
+                position: absolute;
+                right:-60px;
+                top:50%;
+                margin-top : 0.5px;
+                content: '';
+                width : 40px;
+                height : 1px;
+                background: #93e4cf;
+              }
             }
           }
           .content{
-            width : 100%; //1170 영역 오버되는 부분 숨긴다.
-            overflow: hidden;
+            width : 100%;
             .gallery-box{
-              width : 1170px + 11px;
+              width : 1181px;
               margin : 0 0 0 -11px;
+              overflow: hidden;
               ul{
-                width : 100%;;
-                &::after{
-                  content: '';
-                  display: block;
-                  clear: left;
-                }
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
                 li{
-                  float : left;
-                  width : 25%;
+                  width: 25%;
                   .col-gap{
-                    width : auto;  //마진을 사용하는 경우
+                    width: auto;
                     margin : 0 0 11px 11px;
+                    overflow: hidden;
                     a{
                       display: block;
-                      width : 100%;
+                      width: 100%;
                       figure{
-                        width : 100%;
+                        width: 100%;
                         img{
-                          width : 100%;
+                          width: 100%;
+                          transition : all 0.3s;
+                          &:hover{
+                            //모양변형 : 크기(1.2)
+                            transform: scale(1.2);
+                            opacity: 0.2;
+                            cursor: url(../img/icon-zoom.png), auto;
+                          }
                         }
                       }
                     }
@@ -864,6 +936,7 @@
                   animation: slide-ani 4s cubic-bezier(1,0,0.8,1) both /* forwards backwards */;
                   .slide{
                     width : 25%;
+                    user-select: none;
                     .col-gap{
                       position: relative;
                       width: auto;
@@ -970,8 +1043,6 @@
         }
       }
     }
-<<<<<<< HEAD
-=======
     // 애니메이션 이름
     // slide-ani
     // 3초대기 1초 이동
@@ -979,7 +1050,6 @@
     // 키프레임
     // 이동 트랜스폼 : X 이동 우측에서 좌측으로 이동 트렌스레이트X( -475.75px )
     // 이동 transform : translateX( -475.75px )
->>>>>>> c05146336b0b092bd8ca5f10470bb597c9eab3c6
     @keyframes slide-ani {
         0% {transform: translateX(-475.75px * 0);}
        25% {transform: translateX(-475.75px * 0);}
@@ -990,16 +1060,183 @@
 
     #section9{
       width : 100%;
-      height : 614.594px + 130px + 130px;
       padding: 130px 0;
       background: #fff;
       border-bottom: 1px solid #e5e5e5;
+      .container{
+        width : 100%;
+        max-width: 1170px;
+        margin : 0 auto;
+        .gap{
+          width : 100%;
+          .title{
+            width : 100%;
+            text-align: center;
+            padding : 0 0 80px 0;
+            h2{
+              display: inline-block;
+              color : #e15276;
+              font-size : 24px;
+              font-weight: 700;
+              position: relative;
+              &::before{
+                position: absolute;
+                left:-60px;
+                top:50%;
+                margin-top : 0.5px;
+                content: '';
+                width : 40px;
+                height : 1px;
+                background: #93e4cf;
+              }
+              &::after{
+                position: absolute;
+                right:-60px;
+                top:50%;
+                margin-top : 0.5px;
+                content: '';
+                width : 40px;
+                height : 1px;
+                background: #93e4cf;
+              }
+            }
+          }
+          .content{
+            width : 100%;
+            >ul{
+              width : 100%;
+              display: flex;
+              flex-flow: row wrap;  //줄안바뀜
+              flex-flow: row wrap;  //줄바뀜
+              > li{
+                width : 33%;
+                .col-gap{
+                  padding : 0 15px;
+                  .img-box{
+                    img{
+                      width : 100%;
+                      transition : all 0.3s;
+                      &:hover{
+                        filter: grayscale(1);
+                      }
+                    }
+                  }
+                  .txt-box{
+                    padding : 30px 0 0 0;
+                    ul{
+                      li{
+                        width : 100%;
+                        padding : 0 0 15px 0;
+                        &:first-child{
+                          a{
+                            background: #000;
+                            color : rgba(255,255,255,1);
+                            font-size: 10px;
+                            font-weight : 600;
+                            font-family: 'Montserrat';
+                            border-radius: 2px;
+                            padding : 3px 9px;
+                            transition: all 0.3s;
+                            &:hover{
+                              color : rgba(255,255,255,0.7);
+                            }
+                          }
+                        }
+                        h3{
+                          font-size : 15px;
+                          font-weight: 600;
+                          line-height: 140%;
+                          color : #333;
+                        }
+                        p{
+                          font-size : 13px;
+                          font-family: 'Roboto';
+                          line-height: 180%;
+                          color: #626262;
+                          // margin : 0 0 25px 0;
+                        }
+                        hr{
+                          border : 0;
+                          width : 100%;
+                          height : 1px;
+                          background: #ddd;
+                          margin : 15px 0 20px 0;
+                        }
+                        &:last-child{
+                          a{
+                            font-size : 11px;
+                            font-weight: 500;
+                            font-family: 'Montserrat';
+                            color: #ababab;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
     #section10{
       width : 100%;
-      height : 294.375px + 130px + 80px;
       padding: 130px 0 80px 0;
       background: #fff;
+      .container{
+        width : 100%;
+        max-width: 1170px;
+        margin : 0 auto;
+        .gap{
+          width : 100%;
+          .title{
+            width : 100%;
+            text-align: center;
+            padding : 0 0 80px 0;
+            h2{
+              display: inline-block;
+              color : #e15276;
+              font-size : 24px;
+              font-weight: 700;
+              position: relative;
+              &::before{
+                position: absolute;
+                left:-60px;
+                top:50%;
+                margin-top : 0.5px;
+                content: '';
+                width : 40px;
+                height : 1px;
+                background: #93e4cf;
+              }
+              &::after{
+                position: absolute;
+                right:-60px;
+                top:50%;
+                margin-top : 0.5px;
+                content: '';
+                width : 40px;
+                height : 1px;
+                background: #93e4cf;
+              }
+            }
+          }
+          .content{
+            width : 100%;
+            p{
+              margin : 0 auto;
+              width : 456px;
+              font-size : 13px;
+              font-family: 'Roboto';
+              text-align: center;
+              line-height: 170%;
+              color : #626262;
+              letter-spacing: 0.3px;
+            }
+          }
+        }
+      }
     }
     #section11{
       width : 100%;
@@ -1016,7 +1253,65 @@
     z-index: 1;
     position: relative;
     width: 100%;
-    height : 300px;
-    background: #dcdcdc;
+    .container{
+      width : 100%;
+      max-width: 1170px;
+      margin : 0 auto;
+      .gap{
+        width : 100%;
+        margin : 0 15px;
+        .content{
+          width : 100%;
+          text-align: center;
+          .foot-row1{
+            width : 100%;
+            padding : 50px 0;
+            border-bottom: 1px solid #e5e5e5;
+            a{
+              margin : 0 20px;
+              i{
+                font-size : 22px;
+                font-weight: 400;
+                color : #575757;
+              }
+            }
+          }
+          .foot-row2{
+            width : 100%;
+            padding : 30px 0;
+            p{
+              font-size : 11px;
+              font-weight: 500;
+              color : #575757;
+            }
+          }
+        }
+      }
+    }
+  }
+  .gotop{
+    z-index: 3;
+    position: fixed;
+    bottom : 40px;
+    right : 40px;
+    width : 30px;
+    height : 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    a{
+      display: block;
+      width : 100%;
+      height : 100%;
+      background: rgba(0,0,0,1);
+      color : #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      i{
+        font-size : 20px;
+        margin : -7px;
+      }
+    }
   }
 }
