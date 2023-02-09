@@ -1,0 +1,22 @@
+@media all and (max-width: 1170px) {
+  #wrap #main #section5 {
+    padding: 11.11111vw 0;
+  }
+  #wrap #main #section5 .container {
+    margin: 0 auto;
+  }
+  #wrap #main #section5 .container .gap .title {
+    padding: 0 0 6.837607vw 0;
+  }
+  #wrap #main #section5 .container .gap .title h2 {
+    font-size: 2.051282051vw;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box {
+    width: 100.940171vw;
+    margin: 0 0 0 -0.940171vw;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box ul li {
+    float: left;
+    width: 25%;
+  }
+}

@@ -1,0 +1,32 @@
+@media all and (max-width : 1170px) {
+  #wrap{
+    #main{
+      #section5{
+        padding : 11.11111vw 0;
+        .container{
+          margin : 0 auto;
+          .gap{
+            .title{
+              padding : 0 0 6.837607vw 0;
+              h2{
+                font-size : 2.051282051vw;
+              }
+            }
+            .content{
+              .gallery-box{
+                width : 100vw + 0.940171vw;
+                margin : 0 0 0 -0.940171vw;
+                ul{
+                  li{
+                    float : left;
+                    width : calc(100% / 4);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}
