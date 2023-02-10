@@ -1,0 +1,50 @@
+@import url("./reset.css");
+#root {
+  width: 100%;
+}
+#root #wrap {
+  width: 100%;
+}
+#root #wrap .slide-container {
+  width: 100%;
+  position: relative;
+}
+#root #wrap .slide-container .slide-view {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+#root #wrap .slide-container .slide-view .slide-wrap {
+  width: 400%;
+  display: flex;
+  transition: all 1s;
+}
+#root #wrap .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+}
+#root #wrap .slide-container .slide-view .slide-wrap .slide img {
+  width: 100%;
+}
+#root #wrap .slide-container span {
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+#root #wrap .slide-container span a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background: #000;
+  padding: 10px 20px;
+}
+#root #wrap .slide-container span a:hover {
+  color: #222;
+  background: #fff;
+}

@@ -1,0 +1,52 @@
+@import url("./reset.css");
+
+#root{
+  width : 100%;
+  #wrap{
+    width : 100%;
+    .slide-container{
+      width : 100%;
+      position: relative;
+      .slide-view{
+        width : 100%;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        .slide-wrap{
+          width : 400%;
+          display: flex;
+          transition : all 1s;
+          .slide{
+            width : 100%;
+            img{
+              width : 100%;
+            }
+          }
+        }
+      }
+      span{
+        z-index: 2;
+        position: absolute;
+        bottom : 50px;
+        left : 0;
+        display: block;
+        text-align: center;
+        width : 100%;
+        
+        a{
+          text-decoration: none;
+          margin : 0 10px;
+          font-size : 20px;
+          font-weight: 600;
+          color: #fff;
+          background: #000;
+          padding : 10px 20px;
+          &:hover{
+            color : #222;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}
