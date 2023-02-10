@@ -1,6 +1,6 @@
-location.href => 특정한 웹주소로 이동
-window.open => 새로운 창을 열고 주소 띄움
-console.log => 콘솔에서 로그보기
+location.href="" => 특정한 웹주소로 이동
+window.open() => 새로운 창을 열고 주소 띄움
+console.log() => 콘솔에서 로그보기
 const => 불변 변수
 let => 가변 변수
 event.preventDefault() => a링크의 새로고침 기능을 삭제

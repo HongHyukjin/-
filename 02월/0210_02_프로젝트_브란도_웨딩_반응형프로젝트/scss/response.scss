@@ -97,6 +97,17 @@
   #wrap #main #section5 .container .gap .content .gallery-box ul li {
     width: 50%;
   } 
+  #wrap #main #section6 .container .gap .content > ul {
+    flex-flow: row wrap;
+  }
+  #wrap #main #section6 .container .gap .content > ul > li {
+    width: 100%;
+  }
+  
+  #wrap #main #section6 .container .gap .content > ul > li .col-gap {
+    width: 100%;
+    padding: 15px;
+  }
 }
 
 @media all and (max-width : 600px) {
