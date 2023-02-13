@@ -1,3 +1,55 @@
+@media all and (max-width: 1903px) {
+  @keyframes slide {
+    0.00% {
+      transform: translateX(0vw);
+    }
+    6.67% {
+      transform: translateX(0vw);
+    }
+    13.33% {
+      transform: translateX(0vw);
+    }
+    20.00% {
+      transform: translateX(0vw);
+    }
+    26.67% {
+      transform: translateX(0vw);
+    }
+    33.33% {
+      transform: translateX(-100vw);
+    }
+    40.00% {
+      transform: translateX(-100vw);
+    }
+    46.67% {
+      transform: translateX(-100vw);
+    }
+    53.33% {
+      transform: translateX(-100vw);
+    }
+    60.00% {
+      transform: translateX(-100vw);
+    }
+    66.67% {
+      transform: translateX(-200vw);
+    }
+    73.33% {
+      transform: translateX(-200vw);
+    }
+    80.00% {
+      transform: translateX(-200vw);
+    }
+    86.67% {
+      transform: translateX(-200vw);
+    }
+    93.33% {
+      transform: translateX(-200vw);
+    }
+    100.00% {
+      transform: translateX(-300vw);
+    }
+  }
+}
 @media all and (max-width: 1181px) {
   #wrap #main #section5 .container .gap .content .gallery-box {
     width: 100vw;
@@ -33,11 +85,40 @@
   #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap .slide {
     width: 33.3333333333%;
   }
+  #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap {
+    animation: slide-ani 8s cubic-bezier(1, 0, 0.8, 1) both;
+  }
+  @keyframes slide-ani {
+    0.0% {
+      transform: translateX(0vw);
+    }
+    12.5% {
+      transform: translateX(0vw);
+    }
+    25.0% {
+      transform: translateX(0vw);
+    }
+    37.5% {
+      transform: translateX(0vw);
+    }
+    50.0% {
+      transform: translateX(-33.33vw);
+    }
+    62.5% {
+      transform: translateX(-33.33vw);
+    }
+    75.0% {
+      transform: translateX(-33.33vw);
+    }
+    87.5% {
+      transform: translateX(-33.33vw);
+    }
+    100.0% {
+      transform: translateX(-66.66vw);
+    }
+  }
   #wrap #main #section9 .container .gap .content > ul > li {
     width: 50%;
-  }
-  #wrap #main #section9 .container .gap .content > ul > li .col-gap {
-    padding: 15px;
   }
 }
 @media all and (max-width: 1112px) {
@@ -74,19 +155,55 @@
   #wrap #header .container .gap .content .center a {
     background-image: url(../img/logo-pink-mobile.png);
   }
-  #wrap #main #section1 .container span a {
-    font-size: 15px;
-    font-weight: 600;
-    background: #000;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
-  }
   #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap {
     width: 250%;
   }
   #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap .slide {
     width: 50%;
+  }
+  #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap {
+    animation: slide-ani 12s cubic-bezier(1, 0, 0.8, 1) both;
+  }
+  @keyframes slide-ani {
+    0.00% {
+      transform: translateX(0vw);
+    }
+    8.33% {
+      transform: translateX(0vw);
+    }
+    16.67% {
+      transform: translateX(0vw);
+    }
+    25.00% {
+      transform: translateX(0vw);
+    }
+    33.33% {
+      transform: translateX(-50vw);
+    }
+    41.67% {
+      transform: translateX(-50vw);
+    }
+    50.00% {
+      transform: translateX(-50vw);
+    }
+    58.33% {
+      transform: translateX(-50vw);
+    }
+    66.66% {
+      transform: translateX(-100vw);
+    }
+    75.00% {
+      transform: translateX(-100vw);
+    }
+    83.33% {
+      transform: translateX(-100vw);
+    }
+    91.66% {
+      transform: translateX(-100vw);
+    }
+    100.00% {
+      transform: translateX(-150vw);
+    }
   }
 }
 @media all and (max-width: 968px) {
@@ -116,35 +233,83 @@
   }
 }
 @media all and (max-width: 700px) {
-  #wrap #main #section5 .container .gap .content .gallery-box ul li {
-    width: 100%;
-  }
   #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap {
     width: 500%;
   }
   #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap .slide {
     width: 100%;
   }
+  #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap {
+    animation: slide-ani 16s cubic-bezier(1, 0, 0.8, 1) both;
+  }
+  @keyframes slide-ani {
+    0.00% {
+      transform: translateX(0vw);
+    }
+    6.25% {
+      transform: translateX(0vw);
+    }
+    12.50% {
+      transform: translateX(0vw);
+    }
+    18.75% {
+      transform: translateX(0vw);
+    }
+    25.00% {
+      transform: translateX(-100vw);
+    }
+    31.25% {
+      transform: translateX(-100vw);
+    }
+    37.50% {
+      transform: translateX(-100vw);
+    }
+    43.75% {
+      transform: translateX(-100vw);
+    }
+    50.00% {
+      transform: translateX(-200vw);
+    }
+    56.25% {
+      transform: translateX(-200vw);
+    }
+    62.50% {
+      transform: translateX(-200vw);
+    }
+    68.75% {
+      transform: translateX(-200vw);
+    }
+    75.00% {
+      transform: translateX(-300vw);
+    }
+    81.25% {
+      transform: translateX(-300vw);
+    }
+    87.50% {
+      transform: translateX(-300vw);
+    }
+    93.75% {
+      transform: translateX(-300vw);
+    }
+    100.00% {
+      transform: translateX(-400vw);
+    }
+  }
   #wrap #main #section9 .container .gap .content > ul > li {
     width: 100%;
   }
 }
 @media all and (max-width: 600px) {
-  #wrap #main #section1 .container span a {
-    font-size: 10px;
-    font-weight: 600;
-    background: #000;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
+  #wrap #main #section5 .container .gap .content .gallery-box ul li {
+    width: 100%;
   }
   #wrap #main #section7 .container .gap .content span {
     flex-flow: column nowrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   #wrap #main #section7 .container .gap .content span a {
-    margin: 30px 0;
+    padding: 20px 0;
   }
 }
 @media all and (max-width: 550px) {
@@ -171,6 +336,10 @@
   }
 }
 @media all and (max-width: 500px) {
+  #wrap #main #section7 .container .gap .content p {
+    width: 90%;
+    padding: 50px 0;
+  }
   #wrap #main #section2 .container .gap .content {
     flex-flow: row wrap;
     justify-content: center;
@@ -187,9 +356,8 @@
   #wrap #main #section1 .container .title div {
     transform: scale(0.7);
   }
-  #wrap #main #section7 .container .gap .content p {
+  #wrap #main #section10 .container .gap .content p {
     width: 90%;
-    padding: 50px 0;
   }
   #wrap #footer .container .gap .content .foot-row1 a {
     margin: 0 10px;

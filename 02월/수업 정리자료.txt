@@ -199,4 +199,6 @@ JSON.stringify(obj) 객체형태를 문자열로 변환
 function(){
 	return this.국어 + this.수학;
 }
+Number() : String -> Number
+.toString() : Number -> String
 
