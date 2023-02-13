@@ -1,0 +1,198 @@
+0125/////////////////////////////////////////////////////////////////////////////////////////////////////////
+닷홈 = 무료호스팅 사이트
+
+FTP = 알드라이브
+
+도메인 이름
+gurwlszx.dothome.co.kr/0125/index.html
+
+html editor = visual studio code
+
+확장프로그램
+- open in browser(chrome 기본브라우저로 설정)
+- korean language pack
+- live server
+
+html 파일 우클릭 open in live server -> 5500포트로 연결
+
+shift + alt + 아래 = 해당 블록 복사
+ctrl + shift + alt = 커서 한번에 여러개로 복사
+ctrl + space = 자동완성
+
+h$*6 = h태그 순서대로 생성
+div>h1{내용물} = div안에 h1 안에 내용물
+div>h1^div>h2 = h1에서 하나밖으로 나와서 다시 div
+div>header+main+footer = 세가지 형제 요소
+div#wrap = id를 wrap으로(id는 camelcase기법을 사용, 공백안됨, 시작은 소문자 영어, 중복안됨)
+div.slide-container = 중복을 허용하는 class
+ul.slide.slide$*5 = ul의 클래스가 여러개
+input[type=text id=inputId placeholder='이름을 입력'] = input 박스 생성
+img[src=./img/img_01.jpg alt=''] = 이미지 불러오기, alt는 이미지 대체 이름
+<br>= 줄바꿈
+(ul>li*3)+(ul>li*3) = ul>li*3^ul>li*3
+ul>li*10>lorem = 더미 텍스트 10줄
+
+http://127.0.0.1:5500/index.html
+http://localhost:5500/index.html
+127.0.0.1:5500
+localhost:5500
+192.168.40.79:5500
+gurwlszx.dothome.co.kr/0125
+223.26.138.80/0125
+
+공유폴더
+192.168.40.2
+
+0126/////////////////////////////////////////////////////////////////////////////////////////////////////////
+무료 이미지, 비디오 다운로드  : 픽사베이
+
+0130/////////////////////////////////////////////////////////////////////////////////////////////////////////
+vh(viewport height)
+vw(viewport width) : 해상도에 따라 높이를 달리할때 사용하는 단위
+
+0131/////////////////////////////////////////////////////////////////////////////////////////////////////////
+p태그와 h태그는 서로의 자식, 부모가 될 수 없음
+페이드 인 페이드 아웃 : 글자 투명도에 트랜지션 적용해서 부드럽게 변화
+
+0201/////////////////////////////////////////////////////////////////////////////////////////////////////////
+1011 1100
+=========
+11   12
+B    C
+BC(16)
+
+빨강
+RGB(255,0,0)
+#FF0000
+
+0202/////////////////////////////////////////////////////////////////////////////////////////////////////////
+커서 모양 변경
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.col-resize {cursor: col-resize;}
+.context-menu {cursor: context-menu;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: -webkit-grab; cursor: grab;}
+.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
+</style>
+</head>
+<body>
+
+<h1>The cursor Property</h1>
+<p>Mouse over the words to change the mouse cursor.</p>
+
+<p class="alias">alias</p>
+<p class="all-scroll">all-scroll</p>
+<p class="auto">auto</p>
+<p class="cell">cell</p>
+<p class="col-resize">col-resize</p>
+<p class="context-menu">context-menu</p>
+<p class="copy">copy</p>
+<p class="crosshair">crosshair</p>
+<p class="default">default</p>
+<p class="e-resize">e-resize</p>
+<p class="ew-resize">ew-resize</p>
+<p class="grab">grab</p>
+<p class="grabbing">grabbing</p>
+<p class="help">help</p>
+<p class="move">move</p>
+<p class="n-resize">n-resize</p>
+<p class="ne-resize">ne-resize</p>
+<p class="nesw-resize">nesw-resize</p>
+<p class="ns-resize">ns-resize</p>
+<p class="nw-resize">nw-resize</p>
+<p class="nwse-resize">nwse-resize</p>
+<p class="no-drop">no-drop</p>
+<p class="none">none</p>
+<p class="not-allowed">not-allowed</p>
+<p class="pointer">pointer</p>
+<p class="progress">progress</p>
+<p class="row-resize">row-resize</p>
+<p class="s-resize">s-resize</p>
+<p class="se-resize">se-resize</p>
+<p class="sw-resize">sw-resize</p>
+<p class="text">text</p>
+<p class="url">url</p>
+<p class="w-resize">w-resize</p>
+<p class="wait">wait</p>
+<p class="zoom-in">zoom-in</p>
+<p class="zoom-out">zoom-out</p>
+
+</body>
+</html>
+
+0207/////////////////////////////////////////////////////////////////////////////////////////////////////////
+섹션8
+패딩 130px 0
+
+25% * 5
+
+박스
+2행
+1행
+사진
+
+457 * 322.172
+
+캡션
+padding : 25px
+글자크기 15px 'Montserrat' #626262
+
+h3 35px color:e15276 700
+h4 15px color:333 600
+p 14px 'Roboto' #626262
+
+
+0210/////////////////////////////////////////////////////////////////////////////////////////////////////////
+location.href="" => 특정한 웹주소로 이동
+window.open() => 새로운 창을 열고 주소 띄움
+console.log() => 콘솔에서 로그보기
+const => 불변 변수
+let => 가변 변수
+event.preventDefault() => a링크의 새로고침 기능을 삭제
+
+0213/////////////////////////////////////////////////////////////////////////////////////////////////////////
+var로 선언한 변수는 let으로 재선언이 불가능
+ES6부터는 var보다는 let, const 사용
+document.write() html에 바로 삽입
+'use strict' 선언안하고 변수를 사용하면 오류 발생
+const는 변수값 수정하려고 할시 오류 발생
+'${}' 템플릿 리터럴 방식(ES6)
+arr.length : array 길이
+arr[] 배열
+obj{} 객체
+JSON.stringify(obj) 객체형태를 문자열로 변환
