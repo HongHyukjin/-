@@ -186,13 +186,17 @@ let => 가변 변수
 event.preventDefault() => a링크의 새로고침 기능을 삭제
 
 0213/////////////////////////////////////////////////////////////////////////////////////////////////////////
-var로 선언한 변수는 let으로 재선언이 불가능
+var은 재선언 가능 let은 재선언 불가능
 ES6부터는 var보다는 let, const 사용
 document.write() html에 바로 삽입
 'use strict' 선언안하고 변수를 사용하면 오류 발생
 const는 변수값 수정하려고 할시 오류 발생
-'${}' 템플릿 리터럴 방식(ES6)
+`${}` 템플릿 리터럴 방식(ES6)
 arr.length : array 길이
 arr[] 배열
 obj{} 객체
 JSON.stringify(obj) 객체형태를 문자열로 변환
+function(){
+	return this.국어 + this.수학;
+}
+
