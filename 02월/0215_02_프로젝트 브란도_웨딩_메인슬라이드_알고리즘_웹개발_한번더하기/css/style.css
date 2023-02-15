@@ -221,59 +221,9 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
-@keyframes slide {
-  0.00% {
-    left: 0%;
-  }
-  6.67% {
-    left: 0%;
-  }
-  13.33% {
-    left: 0%;
-  }
-  20.00% {
-    left: 0%;
-  }
-  26.67% {
-    left: 0%;
-  }
-  33.33% {
-    left: -100%;
-  }
-  40.00% {
-    left: -100%;
-  }
-  46.67% {
-    left: -100%;
-  }
-  53.33% {
-    left: -100%;
-  }
-  60.00% {
-    left: -100%;
-  }
-  66.67% {
-    left: -200%;
-  }
-  73.33% {
-    left: -200%;
-  }
-  80.00% {
-    left: -200%;
-  }
-  86.67% {
-    left: -200%;
-  }
-  93.33% {
-    left: -200%;
-  }
-  100.00% {
-    left: -300%;
-  }
-}
 #wrap #main #section2 {
   width: 100%;
-  padding: 130px 0;
+  padding: 11.11% 0;
   background: #fff;
 }
 #wrap #main #section2 .container {
@@ -548,11 +498,10 @@
   font-size: 24px;
   font-weight: 600;
   color: #85d4c0;
-  text-align: center;
 }
 #wrap #main #section4 {
   width: 100%;
-  padding: 130px 0;
+  padding: 11.11% 0;
   background: #fff;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -646,7 +595,7 @@
 }
 #wrap #main #section5 {
   width: 100%;
-  padding: 130px 0;
+  padding: 11.11% 0;
   background: #fff;
 }
 #wrap #main #section5 .container {
@@ -731,7 +680,7 @@
   width: 100%;
   background: url(../img/wedding-img16.jpg) no-repeat 50% 50% fixed;
   background-size: cover;
-  padding: 130px 0;
+  padding: 11.11% 0;
 }
 #wrap #main #section6::before {
   content: "";
@@ -894,7 +843,7 @@
 }
 #wrap #main #section7 {
   width: 100%;
-  padding: 130px 0;
+  padding: 11.11% 0;
   background: #fff;
 }
 #wrap #main #section7 .container {
@@ -960,7 +909,7 @@
 }
 #wrap #main #section8 {
   width: 100%;
-  padding: 130px 0;
+  padding: 11.11% 0;
   background: #f7f7f7;
 }
 #wrap #main #section8 .container {
@@ -1015,7 +964,6 @@
 #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap {
   width: 125%;
   display: flex;
-  animation: slide-ani 4s cubic-bezier(1, 0, 0.8, 1) both;
 }
 #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap .slide {
   width: 25%;
@@ -1068,14 +1016,14 @@
 }
 #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap .bottom-box {
   width: 100%;
-  padding: 25px;
+  padding: 6.254%;
   display: flex;
 }
 #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap .bottom-box h3 {
   font-size: 35px;
   font-weight: 700;
   color: #e15276;
-  margin: 0 25px 0 0;
+  margin: 0 6.254% 0 0;
 }
 #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap .bottom-box div h4 {
   font-size: 15px;
@@ -1088,7 +1036,7 @@
   color: #626262;
   line-height: 180%;
   font-family: "Roboto";
-  margin: 10px 0 30px 0;
+  margin: 3.171% 0 9.513% 0;
 }
 #wrap #main #section8 .container .gap .content .slide-container .slide-view .slide-wrap .slide .col-gap .bottom-box div i {
   display: block;
@@ -1117,24 +1065,24 @@
 }
 @keyframes slide-ani {
   0% {
-    transform: translateX(0vw);
+    transform: translateX(0px);
   }
   25% {
-    transform: translateX(0vw);
+    transform: translateX(0px);
   }
   50% {
-    transform: translateX(0vw);
+    transform: translateX(0px);
   }
   75% {
-    transform: translateX(0vw);
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(-25vw);
+    transform: translateX(-475.75px);
   }
 }
 #wrap #main #section9 {
   width: 100%;
-  padding: 130px 0;
+  padding: 11.11% 0;
   background: #fff;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1188,7 +1136,7 @@
   flex-flow: row wrap;
 }
 #wrap #main #section9 .container .gap .content > ul > li {
-  width: 33%;
+  width: 33.3333333333%;
 }
 #wrap #main #section9 .container .gap .content > ul > li .col-gap {
   padding: 0 15px;
@@ -1247,7 +1195,7 @@
 }
 #wrap #main #section10 {
   width: 100%;
-  padding: 130px 0 80px 0;
+  padding: 11.11% 0 80px 0;
   background: #fff;
 }
 #wrap #main #section10 .container {
@@ -1295,7 +1243,8 @@
 }
 #wrap #main #section10 .container .gap .content p {
   margin: 0 auto;
-  width: 456px;
+  width: 90%;
+  max-width: 456px;
   font-size: 13px;
   font-family: "Roboto";
   text-align: center;

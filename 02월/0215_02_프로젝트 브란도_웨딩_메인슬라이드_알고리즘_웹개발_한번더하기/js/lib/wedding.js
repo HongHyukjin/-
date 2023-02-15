@@ -60,33 +60,26 @@
 
     },
     section1(){
-      //메인슬라이드 웹개발
-      //우측에서 좌측으로 0.6초간 이동하고
-      //3초간 대기(보여줌)한다.
-      //자동 타이머를 이용 슬라이드 구현
       let cnt = 0;
-      //1. 메인슬라이드 함수()
+      //1. 메인슬라이드 함수
       function mainSlide(){
-        $('.slide-wrap').animate({left: `${-100 * cnt}%`},1000,function(){
+        console.log(cnt);
+        console.log(`${-100 * cnt}%`);
+        $('.slide-wrap').animate({left:`${-100 * cnt}%`}, 1000, function(){
           if(cnt === 3) cnt = 0;
-          $('.slide-wrap').animate({left: `${-100 * cnt}%`}, 0);  //리턴할때 타임제로
+          $('.slide-wrap').animate({left:`${-100 * cnt}%`}, 0)
         });
       }
-      mainSlide();
-      //2. 다음카운트함수()
+      //2. 다음 카운트 함수
       function nextCount(){
         cnt++;
         mainSlide();
-        console.log(cnt);
       }
-      //3. 자동타이머함수()
+      //3. 자동 타이머 함수
       function autoTimer(){
-        setInterval(function(){
-          nextCount();
-        }, 3000);
+        setInterval(nextCount, 3000);
       }
       autoTimer();
-
     },
     section2(){
 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    'use strict';
+
+    //선언적 함수
+    //function 함수이름(매개변수) {}의 형식으로 사용
+    // 함수 선언 위아래에서 모두 호출 가능
+    func1();
+    function func1(){
+      console.log(100 + 200);
+    }
+    func1();
+
+    //익명 함수
+    //const 함수이름 = function(매개변수){} 의 형식으로 사용
+    //함수 선언 아래에서만 호출 가능
+    // func2(); => 호출안됨
+    const func2 = function(){
+      console.log(200 + 300);
+    }
+    func2();
+
+    //화살표 함수
+    //익명함수에서 function에 해당하는 부분을 =>로 대체하여 사용
+    // func3(); => 익명함수와 마찬가지로 선언 아래에서만 호출 가능
+    const func3 = ()=>{
+      console.log(300 + 400);
+    }
+    func3();
+
+    //화살표함수는 매개변수가 하나일 경우 생략가능
+    const func4 = p =>{
+      console.log(p);
+    }
+    func4(500);
+    
+    //화살표함수는 반환값이 없을 경우 {}와 return문을 생략가능
+    const func5 = p => console.log(p);
+    func5(600);
+
+    //함수에서 매개변수로 배열 사용
+    //배열이름.속성값으로 조회 가능
+    const member = {이름 : '홍혁진', 전화번호 : '01096629052', 나이 : 27};
+    function 회원(member){
+      console.log(member.이름);
+      console.log(member.전화번호);
+      console.log(member.나이);
+    }
+    회원(member);
+
+    //const {속성값} = 배열이름 으로 비구조화를 통해 함수 내에서
+    //배열의 속성값을 편하게 조회 가능
+    function 회원2(member){
+      const {이름, 전화번호, 나이} = member;
+      console.log(이름);
+      console.log(전화번호);
+      console.log(나이);
+    }
+    회원2(member);
+
+    //화살표함수 + 매개변수 비구조화
+    const 회원3 = ({이름, 전화번호, 나이}) => {
+      console.log(이름);
+      console.log(전화번호);
+      console.log(나이);
+    }
+    회원3(member);
+
+    //화살표 함수를 이용하여 배열 검색
+    const arr = ['사과', '자몽', '귤', '배'];
+    const result = arr.map((item) => item==='자몽')
+    console.log(result);
+    console.log(result.includes(true) ? 'find' : 'not find');
+
+    let idx = 0;
+    const findf = (arr) => {
+      for(let i=0; i<arr.length; i++){
+        if(arr[i] === '자몽'){
+          idx = i;
+        }
+      }
+      return idx;
+    }
+    console.log(findf(arr));
+
+  </script>
+</body>
+</html>

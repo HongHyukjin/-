@@ -190,10 +190,10 @@
             .slide-wrap{
               width : 400%;
               display: flex;
-              position: relative;
-              // left: 0;
+              position : relative;
               // 4초대기 1초 이동
               // animation : slide 15s ease-in-out infinite;
+              // transition : all 0.3s;
               .slide{
                 position: relative;
                 width : 100%;
@@ -225,27 +225,9 @@
         }
       }
     }
-    @keyframes slide {
-        0.00% {left : -100% * 0}
-        6.67% {left : -100% * 0}
-       13.33% {left : -100% * 0}
-       20.00% {left : -100% * 0}
-       26.67% {left : -100% * 0}
-       33.33% {left : -100% * 1}
-       40.00% {left : -100% * 1}
-       46.67% {left : -100% * 1}
-       53.33% {left : -100% * 1}
-       60.00% {left : -100% * 1}
-       66.67% {left : -100% * 2}
-       73.33% {left : -100% * 2}
-       80.00% {left : -100% * 2}
-       86.67% {left : -100% * 2}
-       93.33% {left : -100% * 2}
-      100.00% {left : -100% * 3}
-    }
     #section2{
       width : 100%;
-      padding : 130px 0;
+      padding : 11.11% 0;
       background: #fff;
       .container{
         width : 100%;
@@ -516,7 +498,6 @@
               font-size : 24px;
               font-weight : 600;
               color : #85d4c0;
-              text-align: center;
             }
           }
         }
@@ -524,7 +505,7 @@
     }
     #section4{
       width : 100%;
-      padding : 130px 0;
+      padding : 11.11% 0;
       background: #fff;
       border-bottom: 1px solid #e5e5e5;
       .container{
@@ -604,7 +585,7 @@
     }
     #section5{
       width : 100%;
-      padding : 130px 0;
+      padding : 11.11% 0;
       background: #fff;
       .container{
         width: 100%;
@@ -690,7 +671,7 @@
       width : 100%;
       background: url(../img/wedding-img16.jpg) no-repeat 50% 50% fixed;
       background-size: cover;
-      padding : 130px 0;
+      padding : 11.11% 0;
       &::before{
         content: '';
         z-index: 1;
@@ -855,7 +836,7 @@
     }
     #section7{
       width : 100%;
-      padding: 130px 0;
+      padding: 11.11% 0;
       background: #fff;
       .container{
         width : 100%;
@@ -924,7 +905,7 @@
     }
     #section8{
       width : 100%;
-      padding: 130px 0;
+      padding: 11.11% 0;
       background: #f7f7f7;
       .container{
         width : 100%;
@@ -971,18 +952,18 @@
                 overflow: hidden;
                 overflow: visible;
                 .slide-wrap{  //기차 5칸 : 우측에서 좌측으로 이동하는 애니메이션 구현
-                  width : 25% * 5;
+                  width : calc(100% / 4 * 5);
                   display: flex;
-                  //animation: slide-ani 4s ease both /* forwards backwards */;
-                  //animation: slide-ani 4s ease-in both /* forwards backwards */;
-                  //animation: slide-ani 4s ease-out both /* forwards backwards */;
-                  //animation: slide-ani 4s ease-in-out both /* forwards backwards */;
-                  //animation: slide-ani 4s cubic-bezier(0.075, 0.82, 0.165, 1) both /* forwards backwards */;
-                  //animation: slide-ani 4s cubic-bezier(0.23, 1, 0.320, 1) both /* forwards backwards */;
-                  //animation: slide-ani 4s cubic-bezier(0,0.5,0.8,1) both /* forwards backwards */;
-                  animation: slide-ani 4s cubic-bezier(1,0,0.8,1) both /* forwards backwards */;
+                  // animation: slide-ani 4s ease both /* forwards backwards */;
+                  // animation: slide-ani 4s ease-in both /* forwards backwards */;
+                  // animation: slide-ani 4s ease-out both /* forwards backwards */;
+                  // animation: slide-ani 4s ease-in-out both /* forwards backwards */;
+                  // animation: slide-ani 4s cubic-bezier(0.075, 0.82, 0.165, 1) both /* forwards backwards */;
+                  // animation: slide-ani 4s cubic-bezier(0.23, 1, 0.320, 1) both /* forwards backwards */;
+                  // animation: slide-ani 4s cubic-bezier(0,0.5,0.8,1) both /* forwards backwards */;
+                  // animation: slide-ani 4s cubic-bezier(1,0,0.8,1) both /* forwards backwards */;
                   .slide{
-                    width : 25%;
+                    width : calc(100% / 4);
                     user-select: none;
                     .col-gap{
                       position: relative;
@@ -1028,7 +1009,7 @@
                       }
                       .bottom-box{
                         width : 100%;
-                        padding : 25px;
+                        padding : 6.254%;
                         display: flex;
                         // background: #fff;
                         h3{
@@ -1036,7 +1017,7 @@
                           font-weight: 700;
                           
                           color: #e15276;
-                          margin : 0 25px 0 0;
+                          margin : 0 6.254% 0 0;
                         }
                         div{
                           h4{
@@ -1050,7 +1031,7 @@
                             color: #626262;
                             line-height: 180%;
                             font-family: 'Roboto';
-                            margin : 10px 0 30px 0;
+                            margin : 3.171% 0 9.513% 0;
                           }
                           i{
                             display: block;
@@ -1090,17 +1071,18 @@
         }
       }
     }
+
     @keyframes slide-ani {
-        0% {transform: translateX(-25vw * 0);}
-       25% {transform: translateX(-25vw * 0);}
-       50% {transform: translateX(-25vw * 0);}
-       75% {transform: translateX(-25vw * 0);}
-      100% {transform: translateX(-25vw * 1);}
+        0% {transform: translateX(-475.75px * 0);}
+       25% {transform: translateX(-475.75px * 0);}
+       50% {transform: translateX(-475.75px * 0);}
+       75% {transform: translateX(-475.75px * 0);}
+      100% {transform: translateX(-475.75px * 1);}
     }
 
     #section9{
       width : 100%;
-      padding: 130px 0;
+      padding: 11.11% 0;
       background: #fff;
       border-bottom: 1px solid #e5e5e5;
       .container{
@@ -1149,7 +1131,7 @@
               flex-flow: row wrap;  //줄안바뀜
               flex-flow: row wrap;  //줄바뀜
               > li{
-                width : 33%;
+                width : calc(100% / 3);
                 .col-gap{
                   padding : 0 15px;
                   .img-box{
@@ -1222,7 +1204,7 @@
     }
     #section10{
       width : 100%;
-      padding: 130px 0 80px 0;
+      padding: 11.11% 0 80px 0;
       background: #fff;
       .container{
         width : 100%;
@@ -1266,7 +1248,8 @@
             width : 100%;
             p{
               margin : 0 auto;
-              width : 456px;
+              width : 90%;
+              max-width: 456px;
               font-size : 13px;
               font-family: 'Roboto';
               text-align: center;

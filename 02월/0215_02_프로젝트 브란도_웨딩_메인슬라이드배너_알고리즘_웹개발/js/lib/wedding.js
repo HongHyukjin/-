@@ -66,13 +66,13 @@
       //자동 타이머를 이용 슬라이드 구현
       let cnt = 0;
       //1. 메인슬라이드 함수()
-      function mainSlide(){
-        $('.slide-wrap').animate({left: `${-100 * cnt}%`},1000,function(){
+      function mainSlide(){ //애니메이션 버블링 발생
+        $('.slide-wrap').stop().animate({left: `${-100 * cnt}%`},1000,'easeInOutExpo',function(){
           if(cnt === 3) cnt = 0;
-          $('.slide-wrap').animate({left: `${-100 * cnt}%`}, 0);  //리턴할때 타임제로
+          $('.slide-wrap').stop().animate({left: `${-100 * cnt}%`}, 0);  //리턴할때 타임제로
         });
       }
-      mainSlide();
+      
       //2. 다음카운트함수()
       function nextCount(){
         cnt++;
