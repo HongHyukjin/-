@@ -1,0 +1,63 @@
+@import url(./fonts.css);
+@import url(./reset.css);
+
+
+//중첩코딩
+#wrap{
+  width : 100%;
+  #header{
+    width : 100%;
+    height : 156px;
+  }
+  #main{
+    width: 100%;
+    #section1{
+      width : 100%;
+      .slide-container{
+        width : 100%;
+        .slide-view{
+          width : 100%;
+          overflow: hidden;
+          .slide-wrap{
+            width : 100% * 10;
+            display: flex;
+            position: relative;
+            .slide{
+              width : 100%;
+              height : 370px;
+              background: url() no-repeat 50% 50%;
+              background-size: cover;
+              &.slide1{
+                background-image: url(../img/cbd0be72-9361-4815-9739-82b6f932fff2.jpg);
+              }
+              &.slide2{
+                background-image: url(../img/b9d4c4d7-fe56-4f0c-b5ee-75f6661f0e2d.jpg);
+              }
+              &.slide3{
+                background-image: url(../img/37afa9be-dbab-413e-b610-e278b8e43590.jpg);
+              }
+              &.slide4{
+                background-image: url(../img/05fdf2cc-6faf-413e-a245-12e83d73f511.jpg);
+              }
+              &.slide5{
+                background-image: url(../img/b4eeb598-9cbb-4f84-b5d5-547f0b1f30f7.jpg);
+              }
+              &.slide6{
+                background-image: url(../img/5a96895f-9e30-4e1d-8be1-a34a9750097e.jpg);
+              }
+              &.slide7{
+                background-image: url(../img/64d59ef8-d489-4ae0-b4e4-b77b05826943.jpg);
+              }
+              &.slide8{
+                background-image: url(../img/14a19c99-42d3-449c-b78b-e99e111bb4af.png);
+              }
+              &.slide9{
+                background-image: url(../img/3ced4881-9b4f-4460-adac-7b77785e0e42.jpg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
