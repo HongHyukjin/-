@@ -33,7 +33,8 @@
       //이버튼 안에자식요소에서 line 클래스를 찾아서 find('.line')
       // //on 클래스 추가(addClass('on'))
       $('.mobile-btn').on({
-        click(){
+        click(e){
+          e.preventDefault();
           // $(this).find('.line').addClass('on');
           // $(this).find('.line').removeClass('on');
           $(this).find('.line').toggleClass('on');

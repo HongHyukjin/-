@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>익명함수 이름없는함수</title>
+</head>
+<body>
+  
+
+  <script>
+    //1. 함수를 선언해서 만들고
+    //2. 함수를 호출해야만 실행이된다.
+    //3. 선언적함수는 함수의 위, 아래 어디서든지 호출 실행 가능
+    //4. 익명함수는 함수의 아래에서만 호출 가능
+
+    //선언적 함수 : 함수 선언 위아래 모두에서 호출 가능
+    func2();
+    function func2(){
+      let a = 300;
+      let b = 400;
+      return console.log(`선언적 함수 리턴값 ${a+b}`);
+    }
+    // func2(); 
+
+    // func1(); -> 호출안됨
+    //익명함수 변수 = function(){} 함수 선언 아래에서만 호출 가능
+    const func1 = function(x,y){
+      let a = x;
+      let b = y;
+      return console.log(`익명 함수 리턴값 ${a+b}`);
+    }
+    //실행은 반드시 함수 선언 아래에서만 가능하다.
+
+    func1(78,99);
+
+    //function 키워드는 함수의 기본 키워드
+    //화살표함수
+    function fn(){
+
+    }
+    const fn = () =>{
+
+    }
+    const fn1 = ()=>{
+
+    }
+    //즉시표현함수식 화살표함수
+    (()=>{
+
+    })();
+
+  </script>
+</body>
+</html>
