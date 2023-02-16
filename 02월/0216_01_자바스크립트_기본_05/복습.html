@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>복습</title>
+</head>
+<body>
+  <table id="table1" class="table">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>22</td>
+      <td>23</td>
+      <td>24</td>
+      <td>25</td>
+    </tr>
+  </table>
+  <div id="root">
+
+  </div>
+
+  <div id="root2"></div>
+
+  <style>
+    *{margin : 0; padding : 0; box-sizing: border-box; vertical-align: middle;}
+    .table{
+      width : 250px;
+      margin : 50px auto;
+      border-collapse: collapse;
+    }
+    .table td{
+        width : 50px;
+        height : 50px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+    
+  </style>
+  <script>
+    //구구단
+    for(let i=2; i<=9; i++){
+      for(let j=1; j<=9; j++){
+        // console.log(`${i} * ${j} = ${i*j}`);
+      }
+    }
+    //구구단 가로로
+    let txt = '';
+    for(let i=1; i<=9; i++){
+      for(let j=2; j<=9; j++){
+        txt += `${j} * ${i} = ${i*j < 10 ? `0${i*j}` : i*j} `;
+      }
+      txt += '\n';
+    }
+    // console.log(txt);
+    //2차원배열 저장
+    let arr = [];
+    let cnt = 0;
+    for(let i=0; i<5; i++){
+      arr[i] = [];
+      for(let j=0; j<5; j++){
+        cnt ++;
+        arr[i][j] = String(cnt).padStart(2,0);
+      }
+    }
+    // console.log(arr);
+
+    
+    txt = '';
+    cnt = 0;
+    for(let i=0; i<5; i++){
+      txt += '<tr>';
+      for(let j=0; j<5; j++){
+        cnt++;
+        txt += `<td>${cnt}</td>`;
+      }
+      txt += '</tr>';
+    }
+    // table3.innerHTML = txt;
+    
+    //테이블 생성
+    //create 태그요소 element('태그이름 table')
+    // let table = document.createElement('table');
+
+    // //테이블에 아이디(table3) 클래스(table) 추가
+    // table.setAttribute('id', 'table3');
+    // table.setAttribute('class', 'table');
+
+    // //돔 컨테이너에 만들어진 테이블을 포함시킨다.(부착시킨다.)
+    // let root = document.getElementById('root');
+    // root.appendChild(table);
+
+
+    // const table3 = document.getElementById('table3')
+    // table3.innerHTML = txt;
+
+    //미션
+    txt = ''
+    cnt = 0;
+    for(let i=0; i<5; i++){
+      txt += '<tr>';
+      for(let j=0; j<5; j++){
+        if(j<i){
+          txt += '<td></td>';
+        }
+        else{
+          cnt ++;
+          txt += `<td>${cnt}</td>`;
+        }
+      }
+      txt += '</tr>';
+    }
+    
+
+    let table = document.createElement('table');
+
+    table.setAttribute('id', 'table4');
+    table.setAttribute('class', 'table');
+
+    let root = document.getElementById('root2');
+    root.appendChild(table);
+    const table4 = document.getElementById('table4');
+    console.log(txt);
+    table4.innerHTML = txt;
+    
+
+  </script>
+
+</body>
+</html>

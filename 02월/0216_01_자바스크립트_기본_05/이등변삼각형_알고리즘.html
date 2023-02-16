@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>복습</title>
+</head>
+<body>
+  <div id="root">
+
+  </div>
+
+  <style>
+    .table{
+      width : 250px;
+      margin : 50px auto;
+      border-collapse: collapse;
+    }
+    .table td{
+        width : 50px;
+        height : 50px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+    
+  </style>
+  <script>
+    //테이블 생성
+    //create 태그요소 element('태그이름 table')
+    let table1 = document.createElement('table');
+    let table2 = document.createElement('table');
+    let table3 = document.createElement('table');
+    let table4 = document.createElement('table');
+
+    //테이블에 아이디(table3) 클래스(table) 추가
+    table1.setAttribute('id', 'table1');
+    table1.setAttribute('class', 'table');
+    table2.setAttribute('id', 'table2');
+    table2.setAttribute('class', 'table');
+    table3.setAttribute('id', 'table3');
+    table3.setAttribute('class', 'table');
+    table4.setAttribute('id', 'table4');
+    table4.setAttribute('class', 'table');
+
+    //돔 컨테이너에 만들어진 테이블을 포함시킨다.(부착시킨다.)
+    let root = document.getElementById('root');
+    
+    root.appendChild(table1);
+    root.appendChild(table2);
+    root.appendChild(table3);
+    root.appendChild(table4);
+
+
+    const idtable1 = document.getElementById('table1')
+    const idtable2 = document.getElementById('table2')
+    const idtable3 = document.getElementById('table3')
+    const idtable4 = document.getElementById('table4')
+
+
+    //미션
+    let txt = ''
+    let cnt = 0;
+    for(let i=0; i<5; i++){
+      txt += '<tr>';
+      for(let j=0; j<5; j++){
+        if(j<i){
+          txt += '<td></td>';
+        }
+        else{
+          cnt ++;
+          txt += `<td>${cnt}</td>`;
+        }
+      }
+      txt += '</tr>';
+    }
+    idtable1.innerHTML = txt;
+
+
+    txt = ''
+    cnt = 0;
+    for(let i=0; i<5; i++){
+      txt += '<tr>';
+      for(let j=0; j<5-i; j++){
+        cnt ++;
+        txt += `<td>${cnt}</td>`;
+      }
+      for(let j=5-i; j<5; j++){
+        txt += '<td></td>';
+      }
+      txt += '</tr>';
+    }
+    idtable2.innerHTML = txt;
+
+    txt = '';
+    cnt = 0;
+    for(let i=0; i<5; i++){
+      txt += '<tr>';
+      for(let j=0; j<i+1; j++){
+        cnt ++;
+        txt += `<td>${cnt}</td>`;
+      }
+      for(let j=i+1; j<5; j++){
+        txt += '<td></td>';
+      }
+      txt += '</tr>';
+    }
+    idtable3.innerHTML = txt;
+
+
+    txt = '';
+    cnt = 0;
+    for(let i=0; i<5; i++){
+      txt += '<tr>';
+      for(let j=0; j<4-i; j++){
+        txt += `<td></td>`;
+      }
+      for(let j=4-i; j<5; j++){
+        cnt ++;
+        txt += `<td>${cnt}</td>`;
+      }
+      txt += '</tr>';
+    }
+    idtable4.innerHTML = txt;
+    
+  </script>
+
+</body>
+</html>

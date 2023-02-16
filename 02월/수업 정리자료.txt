@@ -207,8 +207,24 @@ Math.round();
 자바스크립트 호출할때 async, defer
 async : 비동기식 dom 렌더링과 자바스크립트 파일 호출을 동시에 진행
 defer : 동기식 dom 렌더링을 모두 진행한뒤 자바스크립트 파일을 호출
+
 0215/////////////////////////////////////////////////////////////////////////////////////////////////////////
 함수선언 종류 : 선언적함수, 익명함수, 화살표함수
 선언적함수 : 함수 선언 위아래 모두에서 호출 가능
 익명함수 : 함수 선언 아래에서만 호출 가능
 화살표함수 : function을 =>로 대체, return문과 {}를 생략가능, 매개변수가 1개일때 ()도 생략가능
+
+0216/////////////////////////////////////////////////////////////////////////////////////////////////////////
+table : <tr><td>
+//create 태그요소 element('태그이름 table')
+let table1 = document.createElement('table');
+//테이블에 아이디(table3) 클래스(table) 추가
+table1.setAttribute('id', 'table1');
+table1.setAttribute('class', 'table');
+//돔 컨테이너에 만들어진 테이블을 포함시킨다.(부착시킨다.)
+let root = document.getElementById('root');
+root.appendChild(table1);
+//id로 테이블 검색
+const idtable1 = document.getElementById('table1')
+//해당 테이블에 txt 추가
+idtable1.innerHTML = txt;
