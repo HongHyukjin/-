@@ -84,6 +84,7 @@
       //3. 자동 타이머 함수
       function autoTimer(){
         setId = setInterval(nextCount, 3000);
+        
         console.log(setId); //메모리에 할당된 인덱스 번호 확인하기
       }
       autoTimer();
