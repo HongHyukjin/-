@@ -20,6 +20,9 @@
   <table id="tableBox3" class="table">
 
   </table>
+  <table id="tableBox3If" class="table">
+
+  </table>
   <table id="tableBox4" class="table">
 
   </table>
@@ -31,6 +34,7 @@
         this.tableBox2();
         this.tableBox2If();
         this.tableBox3();
+        this.tableBox3If();
         this.tableBox4();
       },
       tableBox1(){
@@ -131,6 +135,33 @@
           t += '</tr>';
         }
         tableBox3.innerHTML = t;
+      },
+
+      tableBox3If(){
+        const tableBox3 = document.getElementById('tableBox3');
+        let i = 0;
+        let j = 0;
+        let k = 0;
+        let t = '';
+        let cnt = 0;
+        while(i < 5){
+          i++;
+          j=0;
+          k=0;
+          t += '<tr>';
+          while(j < 5){
+            j++;
+            if(j < 6-i){
+              t += `<td></td>`;  
+            }
+            else{
+              cnt+=10;
+              t += `<td>${cnt}</td>`;
+            }
+          }
+          t += '</tr>';
+        }
+        tableBox3If.innerHTML = t;
       },
 
       tableBox4(){

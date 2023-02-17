@@ -198,6 +198,35 @@
         }
 
 
+        //do{} while();
+        //1 ~ 100까지의 합
+        console.log('==============================');
+        console.log('do{} while();');
+        i = 0;
+        let hap = 0;
+        do{
+          i++;
+          hap = hap + i;
+        }while(i < 100);
+        console.log('hap : ', hap);
+
+
+        //1 ~ 100까지 짝수합, 홀수합
+        console.log('==============================');
+        i = 0;
+        let evenSum = 0;
+        let oddSum = 0;
+        do{
+          i++;
+          if(i % 2 === 0){
+            evenSum += i;
+          }
+          else{
+            oddSum += i;
+          }
+        }while(i < 100);
+        console.log('1~100까지 짝수의합 : ', evenSum);
+        console.log('1~100까지 홀수의합 : ', oddSum);
       } 
     }
     
