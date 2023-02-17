@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>while문 응용 알고리즘</title>
+</head>
+<body>
+  
+  <table id="tableBox1" class="table">
+
+  </table>
+  <table id="tableBox2" class="table">
+
+  </table>
+  <table id="tableBox2If" class="table">
+
+  </table>
+  <table id="tableBox3" class="table">
+
+  </table>
+  <table id="tableBox4" class="table">
+
+  </table>
+
+  <script>
+    const obj = {
+      init(){
+        this.tableBox1();
+        this.tableBox2();
+        this.tableBox2If();
+        this.tableBox3();
+        this.tableBox4();
+      },
+      tableBox1(){
+        //5행5열에
+        //1부터 25까지 테이블로 출력
+        const tableBox1 = document.getElementById('tableBox1');
+        let i = 0;
+        let j = 0;
+        let t = '';
+        let cnt = 0;
+        while(i < 5){
+          i++;
+          j=0;
+          t += '<tr>';
+          while(j < 5){
+            j++;
+            cnt++;
+            t += `<td>${cnt}</td>`;
+          }
+          t += '</tr>';
+        }
+        tableBox1.innerHTML = t;
+      },
+
+      tableBox2(){
+        const tableBox2 = document.getElementById('tableBox2');
+        let i = 0;
+        let j = 0;
+        let k = 0;
+        let t = '';
+        let cnt = 0;
+        while(i < 5){
+          i++;
+          j=0;
+          k=0;
+          t += '<tr>';
+          while(j <= 5-i){
+            j++;
+            cnt++;
+            t += `<td>${cnt}</td>`;
+          }
+          while(k < i-1){
+            k++;
+            t += `<td></td>`;
+          }
+          t += '</tr>';
+        }
+        tableBox2.innerHTML = t;
+      },
+
+      tableBox2If(){
+        const tableBox2If = document.getElementById('tableBox2If');
+        let i = 0;
+        let j = 0;
+        let t = '';
+        let cnt = 0;
+        while(i < 5){
+          i++;
+          j=0;
+          k=0;
+          t += '<tr>';
+          while(j < 5){
+            j++;
+            if(j <= 6-i){
+              cnt+=10;
+              t += `<td>${cnt}</td>`;
+            }
+            else{
+              t += `<td></td>`;
+            }
+          }
+          t += '</tr>';
+        }
+        tableBox2If.innerHTML = t;
+      },
+
+      tableBox3(){
+        const tableBox3 = document.getElementById('tableBox3');
+        let i = 0;
+        let j = 0;
+        let k = 0;
+        let t = '';
+        let cnt = 0;
+        while(i < 5){
+          i++;
+          j=0;
+          k=0;
+          t += '<tr>';
+          while(j < 5-i){
+            j++;
+            t += `<td></td>`;
+          }
+          while(k <= i-1){
+            k++;
+            cnt++;
+            t += `<td>${cnt}</td>`;
+          }
+          t += '</tr>';
+        }
+        tableBox3.innerHTML = t;
+      },
+
+      tableBox4(){
+        const tableBox4 = document.getElementById('tableBox4');
+        let i = 0;
+        let j = 0;
+        let k = 0;
+        let t = '';
+        let cnt = 0;
+        while(i < 5){
+          i++;
+          j=0;
+          k=0;
+          t += '<tr>';
+          while(j < i-1){
+            j++;
+            t += `<td></td>`;
+          }
+          while(k <= 5-i){
+            k++;
+            cnt++;
+            t += `<td>${cnt}</td>`;
+          }
+          t += '</tr>';
+        }
+        tableBox4.innerHTML = t;
+      }
+    }
+    obj.init();
+  </script>
+
+  <style>
+    *{
+      margin : 0;
+      padding : 0;
+      box-sizing: border-box;
+      vertical-align: middle;
+    }
+    .table{
+      border-collapse: collapse;
+      margin : 50px auto;
+    }
+    .table td{
+      width : 50px;
+      height : 50px;
+      border : 1px solid #aaa;
+      text-align: center;
+    }
+  </style>
+
+</body>
+</html>
