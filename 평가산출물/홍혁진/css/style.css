@@ -25,9 +25,10 @@
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap {
   pointer-events: none;
-  width: 1000%;
+  width: 1100%;
   display: flex;
   position: relative;
+  margin: 0 0 0 -100%;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {
   width: 100%;

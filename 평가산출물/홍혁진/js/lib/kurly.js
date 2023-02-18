@@ -13,9 +13,10 @@
             let setId = 0;
             //1.메인슬라이드
             function mainSlide(){
-                console.log(cnt);
+                // console.log(cnt);
                 $('.slide-wrap').animate({left: `${-100 * cnt}%`}, 1000, 'easeInOutExpo', function(){
-                    if(cnt === 9) cnt = 0;
+                    if(cnt > 8) cnt = 0;
+                    if(cnt < 0) cnt = 8;
                     $('.slide-wrap').animate({left: `${-100 * cnt}%`}, 0);
                 })
             }
@@ -31,14 +32,20 @@
             }
             //3.자동타이머
             function autoTimer(){
-                setId = setInterval(nextCount, 3000)
+                setId = setInterval(nextCount, 4000)
+                console.log('반복시작');
+            }
+            function stopTimer(){
+                clearInterval(setId);
+                console.log('반복종료');
             }
             autoTimer();
 
             //이전버튼, 다음버튼
             $('.next-btn').on({
                 mouseenter(){
-                    clearInterval(setId);
+                    // clearInterval(setId);
+                    stopTimer();
                 },
                 mouseleave(){
                     autoTimer();
@@ -51,7 +58,8 @@
             });
             $('.prev-btn').on({
                 mouseenter(){
-                    clearInterval(setId);
+                    // clearInterval(setId);
+                    stopTimer();
                 },
                 mouseleave(){
                     autoTimer();
@@ -71,12 +79,12 @@
             let winWidth = $(window).innerWidth();
             let mousedown = false;
 
-            $('#section1').on({
+            $('.slide-view').on({
                 mousedown(e){
                     mousedown = true;
                     touchStart = e.clientX;
-                    dragStart = touchStart - $('.slide-wrap').offset().left;
-                    clearInterval(setId);
+                    dragStart = touchStart - $('.slide-wrap').offset().left - winWidth;
+                    stopTimer();
                 },
                 mouseup(e){
                     mousedown = false;

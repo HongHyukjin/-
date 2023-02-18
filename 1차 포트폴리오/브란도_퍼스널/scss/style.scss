@@ -1,0 +1,257 @@
+@import url(./fonts.css);
+@import url(./reset.css);
+
+#wrap{
+  position: relative;
+  width : 100%;
+  overflow: hidden;
+  #header{
+    z-index: 2;
+    position : fixed;
+    width : 250px;
+    height : 100vh;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    background-color: #fff;
+    .container{
+      width : 100%;
+      height : 100%;
+      .gap{
+        width : 100%;
+        height : 100%;
+        padding : 60px 25px;
+        .content{
+          width : 100%;
+          .top{
+            width : 100%;
+            height : 71.891px;
+            // margin : 0 0 19.891px 0;
+            padding : 0 15px 19.891px 15px;
+            a{
+              display: block;
+              width : 100%;
+              height : 100%;
+              padding : 11px 0;
+              img{
+                width : 156px;
+                height : 100%;
+              }
+            }
+          }
+          .mid{
+            width : 100%;
+            padding : 0 15px;
+            margin : 29.844px 0;
+            ul{
+              width : 100%;
+              height : 100%;
+              li{
+                width : 100%;
+                height : 54px;
+                padding : 15px 0;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+                a{
+                  display: block;
+                  position: relative;
+                  padding : 0 0 0 15px;
+                  color : #000;
+                  font-size : 12px;
+                  font-weight : 600;
+                  font-family: 'Montserrat';
+                  line-height: 20px;
+                  margin : 0 auto 0 0;
+                  &::before{
+                    position: absolute;
+                    left : -1px;
+                    top : 9px;
+                    content : '';
+                    width : 6px;
+                    height : 2px;
+                    background: #ef106e;
+                  }
+                }
+              }
+            }
+          }
+          .bottom{
+            width : 100%;
+            padding : 25.344px 15px 0 15px;
+            .icon{
+              display: flex;
+              a{
+                display: block;
+                margin : 0 10px;
+                i{
+                  font-size : 16px;
+                  color : #575757;
+                  margin : 0 0 0 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #main{
+    width : 86.86%;
+    margin : 0 0 0 auto;
+    #section1{
+      z-index: 1;
+      position: relative;
+      width : 100%;
+      cursor : url(../img/icon-move-light.png), auto;
+      .container{
+        position: relative;
+        width : 100%;
+        .title{
+          z-index: 2;
+          position: absolute;
+          top : 0;
+          left : 0;
+          width : 100%;
+          height : 100%;
+          user-select: none;
+          .content{
+            width : 100%;
+            height : 100%;
+            max-width: 1170px;
+            margin : 0 auto;
+            display: flex;
+            align-items: center;
+            div{
+              width : 100%;
+              h3{
+                font-size: 35px;
+                font-weight: 500;
+                font-family: 'Montserrat';
+                color : #fff;
+              }
+              h2{
+                font-size: 50px;
+                font-weight: 700;
+                font-family: 'Montserrat';
+                color : #fff;
+              }
+              p{
+                width : 305.891px;
+                height : 33px;
+                font-size: 13px;
+                font-weight: 500;
+                font-family: 'Montserrat';
+                line-height: 20px;
+                color : #ef106e;
+                background-color: #000;
+                padding : 5px 15px;
+                margin : 23.391px 0;
+              }
+            }
+          }
+        }
+        .slide-container{
+          z-index: 1;
+          position: relative;
+          width : 100%;
+          .slide-view{
+            width : 100%;
+            .slide-wrap{
+              pointer-events: none;
+              position: relative;
+              width : 300%;
+              display: flex;
+              .slide{
+                width : 100%;
+                height : 100vh;
+                background: url() no-repeat 50% 50%;
+                background-size: cover;
+                &.slide1{
+                  background-image: url(../img/personal-img1.jpg);
+                }
+                &.slide2{
+                  background-image: url(../img/personal-img22.jpg);
+                }
+                &.slide3{
+                  background-image: url(../img/personal-img23.jpg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #section2{
+      width : 100%;
+      padding : 130px 0;
+      background: url(../img/personal-img2.jpg) no-repeat 50% 50%;
+      .container{
+        width : 100%;
+        max-width: 1170px;
+        height : 500px;
+        margin : 0 auto;
+        
+        .gap{
+          width : 390px;
+          padding : 0 15px;
+          .content{
+            width : 100%;
+            .title{
+              h2{
+                position: relative;
+                font-size : 28px;
+                font-weight: 700;
+                line-height: 34px;
+                color : #000;
+                margin : 0 0 46.797px 0;
+                &::before{
+                  position: absolute;
+                  top : 15px;
+                  left : -30px;
+                  content: '';
+                  width : 12px;
+                  border-bottom: 4px solid #ef106e;
+                }
+              }
+            }
+            .text{
+              p{
+                font-size : 15px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0.26px;
+                margin : 0 0 10px 0;
+              }
+              ul{
+                margin : 21.594px 0 0 0;
+                li{
+                  font-size : 13px;
+                  font-weight: 500;
+                  padding : 13px 0 13px 18px;
+                  border-bottom: 1px solid rgba(0,0,0,0.1);
+                  span{
+                    display: inline-block;
+                    width : 110px;
+                    height : 23px;
+                    font-size : 13px;
+                    font-weight: 500;
+                    line-height: 20px;
+                  }
+                }
+                .no_line{
+                  border : 0;
+                }
+                a{
+                  display: block;
+                  width : 206.078px;
+                  height : 40px;
+                  margin : 21.594px 0 0 0;
+                  background-color: #000;
+                  padding : 10px 22px;
+                  color : #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+}
