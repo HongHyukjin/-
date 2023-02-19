@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(./fonts.css);
 @import url(./reset.css);
 #wrap {
@@ -249,4 +250,374 @@
   background-color: #000;
   padding: 10px 22px;
   color: #fff;
+}
+#wrap #main #section3 {
+  width: 100%;
+  padding: 130px 0;
+  background: #f7f7f7;
+}
+#wrap #main #section3 .container {
+  width: 100%;
+  max-width: 1170px;
+  height: 403.69px;
+  margin: 0 auto;
+}
+#wrap #main #section3 .container .gap {
+  width: 100%;
+}
+#wrap #main #section3 .container .gap .content {
+  width: 100%;
+}
+#wrap #main #section3 .container .gap .content .title {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 81.891px 0;
+}
+#wrap #main #section3 .container .gap .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+  padding: 0 0 25px 0;
+}
+#wrap #main #section3 .container .gap .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section3 .container .gap .content .text {
+  width: 100%;
+}
+#wrap #main #section3 .container .gap .content .text ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section3 .container .gap .content .text ul li {
+  width: 33%;
+  display: flex;
+  padding: 0 15px;
+  margin: 0 0 46.797px 0;
+}
+#wrap #main #section3 .container .gap .content .text ul li .icon {
+  width: 16.66%;
+}
+#wrap #main #section3 .container .gap .content .text ul li .icon i {
+  font-size: 40px;
+  font-weight: 400;
+  color: #9a9a9a;
+}
+#wrap #main #section3 .container .gap .content .text ul li div {
+  width: 83.33%;
+}
+#wrap #main #section3 .container .gap .content .text ul li div h4 {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: #000;
+  margin: 0 0 6px 0;
+}
+#wrap #main #section3 .container .gap .content .text ul li div p {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: #626262;
+  line-height: 23px;
+  letter-spacing: 0.26px;
+  margin: 0 0 10px 0;
+}
+#wrap #main #section4 {
+  width: 100%;
+  height: 193.968px;
+  padding: 66.109px 0;
+  background: #ffd800;
+}
+#wrap #main #section4 .container {
+  width: 100%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+#wrap #main #section4 .container ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #section4 .container ul li {
+  position: relative;
+  width: 25%;
+  padding: 0 15px;
+  display: flex;
+}
+#wrap #main #section4 .container ul li div {
+  width: 43.75px;
+}
+#wrap #main #section4 .container ul li div i {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: 19.688px;
+  height: 6px;
+  background: #fff;
+  margin: 3.063px 12.031px;
+}
+#wrap #main #section4 .container ul li .text {
+  width: 218.75px;
+}
+#wrap #main #section4 .container ul li .text h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #000;
+}
+#wrap #main #section4 .container ul li .text h4 {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #000;
+  line-height: 20px;
+  margin: 4.375px 0;
+}
+#wrap #main #section5 {
+  width: 100%;
+  padding: 130px 0;
+  background: url(../img/personal-img3.jpg);
+}
+#wrap #main #section5 .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #section5 .container .content {
+  width: 780px;
+}
+#wrap #main #section5 .container .content .title {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 45px 0;
+}
+#wrap #main #section5 .container .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+}
+#wrap #main #section5 .container .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section5 .container .content .text p {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  margin: 0 0 10px 0;
+  color: #626262;
+  line-height: 22px;
+  letter-spacing: 0.26px;
+  padding: 0 15px;
+}
+#wrap #main #section5 .container .content .text i {
+  display: block;
+  width: 750px;
+  height: 1px;
+  margin: 45px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+#wrap #main #section5 .container .content .text ul {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 15px;
+}
+#wrap #main #section5 .container .content .text ul li {
+  width: 50%;
+  height: 82.013px;
+  display: flex;
+  margin: 0 0 52.5px 0;
+}
+#wrap #main #section5 .container .content .text ul li h2 {
+  width: 62.6px;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 34px;
+  color: #ababab;
+}
+#wrap #main #section5 .container .content .text ul li div {
+  padding: 0 0 0 11.25px;
+}
+#wrap #main #section5 .container .content .text ul li div h4 {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  color: #000;
+  margin: 0 0 9.031px;
+}
+#wrap #main #section5 .container .content .text ul li div h3 {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 20px;
+  color: #929292;
+}
+#wrap #main #section5 .container .content .text ul .pad {
+  margin: 0;
+}
+#wrap #main #section5 .container .content .text span p {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 0 0 0 85px;
+  color: #626262;
+}
+#wrap #main #section5 .container .content .text span p::before {
+  content: "“";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 62px;
+  font-size: 200px;
+  color: #ef106e;
+}
+#wrap #main #section6 {
+  width: 100%;
+  padding: 130px 0;
+  background: #f7f7f7;
+}
+#wrap #main #section6 .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #section6 .container .content {
+  width: 100%;
+}
+#wrap #main #section6 .container .content .title {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 81.891px 0;
+}
+#wrap #main #section6 .container .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+  padding: 0 0 25px 0;
+}
+#wrap #main #section6 .container .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section6 .container .content .text ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #section6 .container .content .text ul li {
+  width: 25%;
+  padding: 0 15px;
+}
+#wrap #main #section6 .container .content .text ul li h3 {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  line-height: 23px;
+  color: #000;
+}
+#wrap #main #section6 .container .content .text ul li h4 {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 23px;
+  color: #929292;
+}
+#wrap #main #section6 .container .content .text ul li h5 {
+  z-index: 2;
+  position: relative;
+  width: 85.19px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 23px;
+  color: #fff;
+  background-color: #000;
+  padding: 2px 13px;
+  margin: 10px 0 15px 0;
+}
+#wrap #main #section6 .container .content .text ul li h5::after {
+  content: "";
+  width: 247.5px;
+  z-index: 1;
+  position: absolute;
+  top: 13px;
+  border-bottom: 1px solid #000;
+}
+#wrap #main #section6 .container .content .text ul li p {
+  font-size: 13px;
+  font-family: "Roboto";
+  line-height: 23px;
+  color: #626262;
+}
+#wrap #main #section7 {
+  width: 100%;
+  height: 463.594px;
+  padding: 130px 0;
+  background: url(../img/personal-img4.jpg) no-repeat 50% 50%;
+}
+#wrap #main #section7 .container {
+  width: 100%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+#wrap #main #section7 .container .gap {
+  width: 50%;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 0 0 auto;
+}
+#wrap #main #section7 .container .gap .content p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 30px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+#wrap #main #section7 .container .gap .content i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 33.297px 0;
+}
+#wrap #main #section7 .container .gap .content ul {
+  display: flex;
+}
+#wrap #main #section7 .container .gap .content ul li {
+  display: flex;
+}
+#wrap #main #section7 .container .gap .content ul li h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #000;
+}
+#wrap #main #section7 .container .gap .content ul li h4 {
+  width: 231.25px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff;
+  padding: 0 0 0 18.5px;
 }
