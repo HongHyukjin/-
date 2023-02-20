@@ -81,6 +81,18 @@
                       transition: all 0.3s;
                     }
                   }
+                  &:hover{
+                    &::before{
+                      position: absolute;
+                      left : -1px;
+                      top : 9px;
+                      content : '';
+                      width : 130px;
+                      height : 1px;
+                      background: #ef106e;
+                      transition: all 0.3s;
+                    }
+                  }
                 }
               }
             }
@@ -98,6 +110,12 @@
                   color : #575757;
                   margin : 0 0 0 5px;
                 }
+              }
+              .n_1{
+                margin : 0 10px 0 0;
+              }
+              .n_3{
+                margin : 0 0 0 10px;
               }
             }
           }
@@ -706,6 +724,7 @@
                     color : #9b9b9b;
                     padding : 10px 21px 10px 0;
                     line-height: 17px;
+                    transition: all 0.3s;
                     &:hover{
                       color : #000;
                       // text-align: center;
@@ -801,8 +820,18 @@
                   width: 50%;
                   padding : 0 0 15px 15px;
                   a{
-                    img{
+                    width : 100%;
+                    figure{
                       width : 100%;
+                      overflow: hidden;
+                      img{
+                        width : 100%;
+                        &:hover{
+                          transform: scale(1.1);
+                          transition: all 0.3s;
+                          opacity: 0.1;
+                        }
+                      }
                     }
                   }
                 }
