@@ -25,11 +25,17 @@
           cnt ++;
           mainSlide();
         }
+        if(cnt === 2){
+          mainSlide();
+        }
       }
 
       function prevCount(){
         if(cnt > 0){
           cnt --;
+          mainSlide();
+        }
+        if(cnt === 0){
           mainSlide();
         }
       }

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열과 객체</title>
+</head>
+<body>
+  
+
+
+  <script>
+
+    // let arr = ['딸기', '사과', '자몽', '포도', '바나나'];
+    // console.log(arr[0]);
+    // console.log(arr[1]);
+    // console.log(arr[2]);
+    // console.log(arr[3]);
+    // console.log(arr[4]);
+
+    // console.log(arr);
+    // console.log(JSON.stringify(arr));
+
+    // for(let i=0; i<arr.length; i++){
+    //   console.log(arr[i]);
+    // }
+
+    // arr.map(function(item,idx){
+    //   console.log(idx, item);
+    // })
+
+    // arr.map((item,idx)=>{
+    //   console.log(idx, item);
+    // })
+
+    // arr.forEach(function(item, idx){
+    //   console.log(idx, item);
+    // });
+
+    // for(let i in arr){
+    //   console.log(i, arr[i]);
+    // }
+
+    // let i = 1;
+    // while(i<arr.length-1){
+    //   i++;
+    //   console.log(i, arr[i]);
+    // }
+
+    // i = 1
+    // do{
+    //   i++;
+    //   console.log(i, arr[i]);
+    // }while(i<arr.length-1)
+
+
+    // let arr = ['딸기', '사과', '자몽', '포도', '바나나'];
+    // arr.map((item,idx)=>{
+    //   console.log(idx, item);
+    // })
+
+    //배열 매서드
+    //배열 항목을 추가(ADD) 하기 => push() 배열 맨끝에 추가
+    //배열 항목을 추가(ADD) 하기 => unshift() 배열 맨앞에 추가
+    //배열 항목을 삭제(Delete) 하기 => pop() 배열 맨뒤(마지막)
+    //배열 항목을 삭제(Delete) 하기 => shift() 배열 맨앞(첫번째)
+
+    //삭제(첫번째 배열 항목)
+    // let imsi = arr.shift(); //삭제할때는 추가된 항목 반환
+
+    // console.log('Push before', arr);
+    // arr.push('앵두');
+    // console.log('Push after', arr);
+    // console.log('Push after', arr.length);
+
+
+    // arr.push('자두');
+    // console.log('Push after', arr);
+    // console.log('Push after', arr.length);
+
+    // console.log('imsi', imsi);
+    // console.log('shift after', arr);
+    // console.log('shift after', arr.length);
+
+    // arr.shift();
+    // console.log('shift after', arr);
+    // console.log('shift after', arr.length);
+
+    //let temp = arr.unshift('홍시'); //삽입할때는 배열 개수 반환
+    // console.log('temp', temp);
+    // console.log('shift after', arr);
+    // console.log('shift after', arr.length);
+
+    // arr.unshift('딸기');
+    // console.log('shift after', arr);
+    // console.log('shift after', arr.length);
+
+    // arr.unshift('단감');
+    // console.log('shift after', arr);
+    // console.log('shift after', arr.length);
+
+    //배열의 맨뒤 배열항목 앵두를 맨앞으로 이동
+    //1. 팝핑
+    //2. 임시저장
+    //3.임시저장값을 맨앞에 삽입 언쉬프팅
+    // imsi = arr.pop();
+    // arr.unshift(imsi);
+    // console.log(arr);
+
+    //배열의 항목중 바나나를 배열의 맨앞에 삽입하라
+    // imsi = arr.pop();
+    // arr.unshift(imsi);
+    // imsi = arr.pop();
+    // arr.unshift(imsi);
+    // console.log(arr);
+
+    //배열의 항목중 맨앞 바나나를 맨뒤로
+    // imsi = arr.shift();
+    // arr.push(imsi);
+    // console.log(arr);
+
+    // let arr1 = [1,2,3,4,5];
+    // let arr2 = [5,4,3,2,1];
+
+    // console.log(arr1);
+    // console.log(arr2);
+
+    // for(let i=1; i<5; i++){
+    //   imsi = arr1.shift();
+    //   arr1.push(imsi);
+    // }
+    // console.log(arr1);
+
+
+    // for(let i=1; i<5; i++){
+    //   imsi = arr2.pop();
+    //   arr2.unshift(imsi);
+    // }
+    // console.log(arr2);
+
+
+    //전개연산자
+    // let arr3 = ['벤츠', '포니', '포드', 'BMW', '제네시스', '소나타', '체어맨'];
+
+    //전개연산자 이용 배열의 항목 추가
+    // console.log(arr3);
+    // arr3 = [...arr3, '테슬라'];
+    // console.log(arr3);
+
+    // arr3 = ['코나',...arr3];
+    // console.log(arr3);
+
+    //특정 배열 삭제하기
+    //filter(); 삭제할 항목 제외하고 배열을 재구성
+    //pop(), shift()
+    //배열 항목중 포니 차를 삭제하라
+    // arr3 = arr3.filter((item)=>item!=='포니');
+    // console.log(arr3);
+
+    let arr3 = ['벤츠', '포니', '포드', 'BMW', '제네시스', '소나타', '체어맨'];
+    let imsiArr1= arr3.slice(1) // 0 1 2 3 4 5 6
+    let imsiArr2 = arr3.slice(2,3) // 0 1 2 3 4 5 6
+    let imsiArr3 = arr3.slice(0) // 0 1 2 3 4 5 6
+    let imsiArr4 = arr3.slice(-3) // 0 1 2 3 4 5 6
+    let imsiArr5 = arr3.slice() // 0 1 2 3 4 5 6
+    console.log(arr3);
+    console.log('arr3.slice(1) ', imsiArr1);
+    console.log('arr3.slice(2) ', imsiArr2);
+    console.log('arr3.slice(3) ', imsiArr3);
+    console.log('arr3.slice(4) ', imsiArr4);
+    console.log('arr3.slice(5) ', imsiArr5);
+
+    let obj = {
+      이름 : '이순신',
+      아이디 : 'leesoonsin',
+      비밀번호 : 'lee123',
+      취미 : ['서핑', '낚시', '등산']
+    }
+
+    //비구조화 === 구조 분할 할당
+    //속성(프로퍼티)만 입력하면 속성의 값만 출력
+    const {이름, 아이디, 비밀번호, 취미} = obj;
+    console.log(이름);
+    console.log(아이디);
+    console.log(비밀번호);
+    console.log(취미);
+
+    obj = {...obj, 휴대폰: '010-9662-9052'}
+    console.log(obj);
+
+    // obj = {...obj, 취미:[...취미, '쇼핑']}
+    // console.log(obj);
+    
+    obj = {...obj, 취미:[...취미, '쇼핑']}
+    console.log(obj);
+
+    
+
+
+
+  </script>
+
+</body>
+</html>
