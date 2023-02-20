@@ -5,15 +5,18 @@
     init(){
       this.header();
       this.section1();
+      this.section8();
     },
     header(){
       $('.main-btn').on({
         click(){
           let pos = $(this).attr('href');
           $('html, body').animate({scrollTop : $(pos).offset().top},500);
+          $(this).toggleClass('on');
         }
       })
     },
+
     section1(){
       let cnt = 0;
       let setId = 0;
@@ -94,7 +97,17 @@
           }
         }
       });
+    },
+
+    section8(){
+      $('.a_1,.a_2,.a_3,.a_4,.a_5').on({
+        click(e){
+          e.preventDefault();
+          $(this).toggleClass('on');
+        }
+      });
     }
+
   }
   personal.init();
 

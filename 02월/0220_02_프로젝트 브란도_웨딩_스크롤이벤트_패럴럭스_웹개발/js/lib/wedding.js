@@ -2,7 +2,7 @@
 //   console.log($);
 // });
 
-(function($){
+(function($, window, document){
   
   //객체 생성 : 변수의 중복을 피한다.
   const wedding = {
@@ -13,6 +13,36 @@
       this.section3();
     },
     header(){
+      let newScroll = $(window).scrollTop();  //새로운 스크롤값
+      let oldScroll = newScroll;              //이전 스크롤값
+      //패럴럭스 구현
+      //스크롤탑값이 아래로 내려가면 헤더에 on 클래스를 추가한다
+      //스크롤탑값이 위로 올라가면 헤더에 on 클래스를 삭제한다
+      console.log(`윈도우 스크롤 이벤트 $(window).scrollTop() ${$(window).scrollTop()}`);
+      // $(window).resize();
+      //스크롤 이벤트는 스크롤 이벤트가 발생 되어야만 동작한다.
+      $(window).scroll(function(e){
+        newScroll = $(window).scrollTop();
+        // console.log(`newScroll  ${newScroll}`);
+
+        // console.log(`newScroll - oldScroll  ${newScroll - oldScroll}`);
+        if(newScroll - oldScroll > 0){
+          // console.log('아래로');
+          $('#header').addClass('on');
+          $('#header').removeClass('off');
+        }
+        if(newScroll - oldScroll < 0){
+          // console.log('위로');
+          $('#header').removeClass('on');
+          $('#header').addClass('off');
+        }
+
+        oldScroll = newScroll;
+        // console.log(`oldScroll  ${oldScroll}`);
+      });
+      
+
+
 
       //메인버튼 클릭 이벤트 : 스무스 스크롤링 이벤트
       $('.main-btn').on({
@@ -90,7 +120,7 @@
       function autoTimer(){
         setId = setInterval(nextCount, 3000);
         
-        console.log(setId); //메모리에 할당된 인덱스 번호 확인하기
+        // console.log(setId); //메모리에 할당된 인덱스 번호 확인하기
       }
       autoTimer();
 
@@ -178,7 +208,7 @@
           //마우스가 다운이되면 그때부터 따라다녀라
           //마우스다운할 때 변수에 다운상태를 저장한다.
           dragEnd = e.clientX;
-          console.log(dragEnd - dragStart);
+          // console.log(dragEnd - dragStart);
           $('.slide-wrap').css({left : dragEnd - dragStart});
         } 
       });
@@ -228,4 +258,4 @@
   }
   wedding.init();
 
-})(jQuery); //즉시실행함수 IIFE
+})(jQuery, window, document); //즉시실행함수 IIFE

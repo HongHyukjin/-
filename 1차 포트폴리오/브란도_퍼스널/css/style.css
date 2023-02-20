@@ -77,7 +77,7 @@
   height: 2px;
   background: #ef106e;
 }
-#wrap #header .container .gap .content .mid ul li a:hover::before {
+#wrap #header .container .gap .content .mid ul li a.on::before {
   position: absolute;
   left: -1px;
   top: 9px;
@@ -693,6 +693,7 @@
   width: 100%;
 }
 #wrap #main #section8 .container .content .img_content .text ul li a {
+  position: relative;
   display: block;
   font-size: 15px;
   font-weight: 500;
@@ -702,6 +703,81 @@
 }
 #wrap #main #section8 .container .content .img_content .text ul li a:hover {
   color: #000;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_1 {
+  width: 65.594px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_1.on {
+  padding: 10px 21px 10px 15px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_1.on::before {
+  position: absolute;
+  left: -1px;
+  top: 18px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ef106e;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_2 {
+  width: 124.312px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_2.on {
+  padding: 10px 21px 10px 15px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_2.on::before {
+  position: absolute;
+  left: -1px;
+  top: 18px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ef106e;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_3 {
+  width: 97.734px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_3.on {
+  padding: 10px 21px 10px 15px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_3.on::before {
+  position: absolute;
+  left: -1px;
+  top: 18px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ef106e;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_4 {
+  width: 119.219px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_4.on {
+  padding: 10px 21px 10px 15px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_4.on::before {
+  position: absolute;
+  left: -1px;
+  top: 18px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ef106e;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_5 {
+  width: 161.469px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_5.on {
+  padding: 10px 21px 10px 15px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li .a_5.on::before {
+  position: absolute;
+  left: -1px;
+  top: 18px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ef106e;
 }
 #wrap #main #section8 .container .content .img_content .img {
   width: 75%;
@@ -816,6 +892,20 @@
 #wrap #main #section9 .container .content .text ul li {
   width: 33.33%;
   padding: 58.5px 50.688px;
+}
+#wrap #main #section9 .container .content .text ul li:hover p {
+  margin: 10% 0 15% 0;
+  transition: all 0.3s;
+}
+#wrap #main #section9 .container .content .text ul li:hover p::before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  font-size: 120px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
 }
 #wrap #main #section9 .container .content .text ul li p {
   position: relative;
