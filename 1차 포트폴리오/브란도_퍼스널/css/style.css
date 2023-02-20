@@ -185,6 +185,7 @@
   width: 100%;
   padding: 130px 0;
   background: url(../img/personal-img2.jpg) no-repeat 50% 50%;
+  background-size: cover;
 }
 #wrap #main #section2 .container {
   width: 100%;
@@ -383,6 +384,7 @@
   width: 100%;
   padding: 130px 0;
   background: url(../img/personal-img3.jpg);
+  background-size: cover;
 }
 #wrap #main #section5 .container {
   width: 100%;
@@ -573,6 +575,7 @@
   height: 463.594px;
   padding: 130px 0;
   background: url(../img/personal-img4.jpg) no-repeat 50% 50%;
+  background-size: cover;
 }
 #wrap #main #section7 .container {
   width: 100%;
@@ -796,12 +799,22 @@
   padding: 58.5px 50.688px;
 }
 #wrap #main #section9 .container .content .text ul li p {
+  position: relative;
   font-size: 18px;
   font-weight: 600;
   font-family: "Montserrat";
   color: #000;
   line-height: 27px;
   margin: 15% 0 10% 0;
+}
+#wrap #main #section9 .container .content .text ul li p::before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: -15px;
+  font-size: 120px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
 }
 #wrap #main #section9 .container .content .text ul li h4 {
   font-size: 13px;
@@ -838,6 +851,7 @@
   width: 100%;
   padding: 130px 0;
   background: url(../img/personal-img15.jpg) no-repeat 50% 50%;
+  background-size: cover;
 }
 #wrap #main #section10 .container {
   width: 100%;
@@ -915,7 +929,12 @@
   font-size: 14px;
   font-weight: 500;
   font-family: "Montserrat";
-  color: #626262;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li input::-moz-placeholder {
+  color: #ccc;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li input::placeholder {
+  color: #ccc;
 }
 #wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li select {
   width: 100%;
@@ -925,7 +944,7 @@
   font-size: 14px;
   font-weight: 500;
   font-family: "Montserrat";
-  color: #626262;
+  color: #ccc;
 }
 #wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li textarea {
   width: 100%;
@@ -936,6 +955,12 @@
   font-weight: 500;
   font-family: "Montserrat";
   color: #626262;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li textarea::-moz-placeholder {
+  color: #ccc;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li textarea::placeholder {
+  color: #ccc;
 }
 #wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li button {
   width: 86.72px;
@@ -948,7 +973,78 @@
   font-family: "Montserrat";
   padding: 12px 15px;
 }
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li button::-moz-placeholder {
+  color: #626262;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li button::placeholder {
+  color: #626262;
+}
 #wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li button:hover {
   color: #000;
   background: #fff;
+}
+#wrap #main #footer {
+  width: 100%;
+  background: url(../img/bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #footer .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #footer .container .content {
+  width: 100%;
+}
+#wrap #main #footer .container .content .top {
+  width: 100%;
+  padding: 57px 0;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+}
+#wrap #main #footer .container .content .top .icon {
+  width: 780px;
+  padding: 0 15px;
+}
+#wrap #main #footer .container .content .top .icon ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #footer .container .content .top .icon ul li {
+  margin: 0 25px;
+}
+#wrap #main #footer .container .content .top .icon ul li i {
+  display: block;
+  font-size: 26px;
+  line-height: 30px;
+}
+#wrap #main #footer .container .content .top .icon ul .first {
+  margin: 0 25px 0 0;
+}
+#wrap #main #footer .container .content .top .icon ul .last {
+  margin: 0 0 0 25px;
+}
+#wrap #main #footer .container .content .top .mark {
+  width: 390px;
+  padding: 0 15px;
+}
+#wrap #main #footer .container .content .top .mark img {
+  display: block;
+  height: 30px;
+  margin: 0 0 0 auto;
+}
+#wrap #main #footer .container .content .bottom {
+  width: 100%;
+}
+#wrap #main #footer .container .content .bottom .text {
+  width: 100%;
+  padding: 30px 0;
+}
+#wrap #main #footer .container .content .bottom .text p {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #626262;
+  text-align: center;
+  line-height: 23px;
 }

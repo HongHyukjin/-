@@ -180,11 +180,11 @@
 
     //비구조화 === 구조 분할 할당
     //속성(프로퍼티)만 입력하면 속성의 값만 출력
-    const {이름, 아이디, 비밀번호, 취미} = obj;
-    console.log(이름);
-    console.log(아이디);
-    console.log(비밀번호);
-    console.log(취미);
+    // const {이름, 아이디, 비밀번호, 취미} = obj;
+    // console.log(이름);
+    // console.log(아이디);
+    // console.log(비밀번호);
+    // console.log(취미);
 
     obj = {...obj, 휴대폰: '010-9662-9052'}
     console.log(obj);
@@ -192,10 +192,70 @@
     // obj = {...obj, 취미:[...취미, '쇼핑']}
     // console.log(obj);
     
-    obj = {...obj, 취미:[...취미, '쇼핑']}
+    obj = {
+      ...obj,
+      비밀번호 : '1234',
+      취미:[...obj.취미, '쇼핑']
+    }
     console.log(obj);
 
-    
+    let a1 = [1,2,3,4];
+    let a2 = [5,6,7,8];
+    //es6
+    //배열 복사
+    let a3 = [...a1];
+    //배열 결합(병합) Merge
+    let a4 = [...a1, ...a2];
+    console.log(a1);
+    console.log(a2);
+    console.log(a3);
+    console.log(a4);
+
+    //es5
+    //배열 결합(병합) Merge
+    let a5 = a1.concat(a2);
+    console.log('a5', a5);
+
+    //객체 결합
+    let obj1 = {
+      번호 : 1,
+      이름 : '김유신',
+      성별 : '남성'
+    }
+
+
+    let obj2 = {
+      아이디 : 1,
+      비밀번호 : '1234',
+      휴대폰 : '01096629052',
+      자격증 : ['운전면허증', '정보처리기사', '웹디자인기능사', '중등교사자격증']
+    }
+
+    let obj3 = {...obj1, ...obj2}
+    console.log(obj3);
+
+    let txt = '운전면허증, 정보처리기사, 웹디자인기능사, 중등교사자격증, 컴퓨터활용능력1급';
+    console.log(txt);
+    let result1 = txt.split(',');  //자격증 텍스트 데이터 : 콤마(,)를 기준으로 배열을 생성
+    console.log('공백제거 전', result1);
+    //문자열 앞뒤 공백제거
+    result1.map((item)=>{
+      return item.trim();
+    })
+    console.log('공백제거 후', result1);
+
+    let txt2 = '운전면허증 정보처리기사 웹디자인기능사 중등교사자격증 컴퓨터활용능력1급';
+    let result2 = txt.split(' ');
+    console.log(result2)
+
+
+    let txt3 = '운전면허증 정보처리기사 웹디자인기능사 중등교사자격증 컴퓨터활용능력1급';
+    let result3 = txt.split('');
+    console.log(result3)
+
+    let txt4 = '운전면허증; 정보처리기사; 웹디자인기능사; 중등교사자격증; 컴퓨터활용능력1급';
+    let result4 = txt.split(';');
+    console.log(result4)
 
 
 

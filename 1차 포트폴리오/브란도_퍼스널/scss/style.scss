@@ -182,6 +182,7 @@
       width : 100%;
       padding : 130px 0;
       background: url(../img/personal-img2.jpg) no-repeat 50% 50%;
+      background-size: cover;
       .container{
         width : 100%;
         max-width: 1170px;
@@ -385,6 +386,7 @@
       width : 100%;
       padding : 130px 0;
       background: url(../img/personal-img3.jpg);
+      background-size: cover;
       .container{
         width : 100%;
         max-width: 1170px;
@@ -582,6 +584,7 @@
       height : 463.594px;
       padding : 130px 0;
       background: url(../img/personal-img4.jpg) no-repeat 50% 50%;
+      background-size: cover;
       .container{
         width : 100%;
         max-width: 1170px;
@@ -803,12 +806,22 @@
                 width : 33.33%;
                 padding : 58.5px 50.688px;
                 p{
+                  position: relative;
                   font-size : 18px;
                   font-weight: 600;
                   font-family: 'Montserrat';
                   color : #000;
                   line-height: 27px;
                   margin : 15% 0 10% 0;
+                  &::before{
+                    content: "“";
+                    position: absolute;
+                    left : 0;
+                    top : -15px;
+                    font-size: 120px;
+                    font-weight: 600;
+                    color : rgba(0,0,0,0.5);
+                  }
                 }
                 h4{
                   font-size : 13px;
@@ -851,6 +864,7 @@
       width : 100%;
       padding : 130px 0;
       background: url(../img/personal-img15.jpg) no-repeat 50% 50%;
+      background-size: cover;
       .container{
         width : 100%;
         max-width: 1170px;
@@ -924,7 +938,9 @@
                           font-size: 14px;
                           font-weight: 500;
                           font-family: 'Montserrat';
-                          color : #626262;
+                          &::placeholder{
+                            color : #ccc;
+                          }
                         }
                         select{
                           width : 100%;
@@ -934,7 +950,8 @@
                           font-size: 14px;
                           font-weight: 500;
                           font-family: 'Montserrat';
-                          color : #626262;
+                          color : #ccc;
+                          
                         }
                         textarea{
                           width : 100%;
@@ -945,6 +962,9 @@
                           font-weight: 500;
                           font-family: 'Montserrat';
                           color : #626262;
+                          &::placeholder{
+                            color : #ccc;
+                          }
                         }
                         button{
                           width : 86.72px;
@@ -956,6 +976,9 @@
                           font-weight: 600;
                           font-family: 'Montserrat';
                           padding : 12px 15px;
+                          &::placeholder{
+                            color : #626262;
+                          }
                           &:hover{
                             color : #000;
                             background : #fff;
@@ -970,6 +993,72 @@
           }
         }
       }      
+    }
+    #footer{
+      width : 100%;
+      background: url(../img/bg.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      .container{
+        width : 100%;
+        max-width: 1170px;
+        margin : 0 auto;
+        .content{
+          width : 100%;
+          .top{
+            width : 100%;
+            padding : 57px 0;
+            display: flex;
+            border-bottom : 1px solid #e5e5e5;
+            .icon{
+              width : 780px;
+              padding : 0 15px;
+              ul{
+                width : 100%;
+                display: flex;
+                li{
+                  margin : 0 25px;
+                  i{
+                    display: block;
+                    font-size: 26px;
+                    line-height: 30px;
+                    // margin : 0 25px 0 0;
+                  }
+                }
+                .first{
+                  margin : 0 25px 0 0;
+                }
+                .last{
+                  margin : 0 0 0 25px;
+                }
+              }
+            }
+            .mark{
+              width : 390px;
+              padding : 0 15px;
+              img{
+                display: block;
+                height : 30px;
+                margin : 0 0 0 auto;
+              }
+            }
+          }
+          .bottom{
+            width : 100%;
+            .text{
+              width : 100%;
+              padding : 30px 0;
+              p{
+                font-size: 11px;
+                font-weight: 500;
+                font-family: 'Montserrat';
+                color : #626262;
+                text-align: center;
+                line-height: 23px;
+              }
+            }
+          }
+        }
+      }
     }
   } 
 }
