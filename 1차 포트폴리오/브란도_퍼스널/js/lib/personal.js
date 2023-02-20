@@ -7,7 +7,12 @@
       this.section1();
     },
     header(){
-
+      $('.main-btn').on({
+        click(){
+          let pos = $(this).attr('href');
+          $('html, body').animate({scrollTop : $(pos).offset().top},500);
+        }
+      })
     },
     section1(){
       let cnt = 0;
