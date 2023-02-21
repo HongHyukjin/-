@@ -203,40 +203,40 @@
       let cnt4 = 0;
 
       let setId1 = setInterval(function(){
-        cnt1++;
+        cnt1+=10;
         if(cnt1 > 2530){
           cnt1 = 2530;
           clearInterval(setId1);
         }
         $('.cnt1').html(cnt1);
-      }, 4.743);
+      }, 59.29);  //4.743
 
       let setId2 = setInterval(function(){
-        cnt2++;
+        cnt2+=10;
         if(cnt2 > 3200){
           cnt2 = 3200;
           clearInterval(setId2);
         }
         $('.cnt2').html(cnt2);
-      }, 3.750);
+      }, 46.88);  //3.750
 
       let setId3 = setInterval(function(){
-        cnt3++;
+        cnt3+=10;
         if(cnt3 > 2830){
           cnt3 = 2830;
           clearInterval(setId3);
         }
         $('.cnt3').html(cnt3);
-      }, 4.240);
+      }, 53);  //4.240
 
       let setId4 = setInterval(function(){
-        cnt4++;
+        cnt4+=10;
         if(cnt4 > 1035){
           cnt4 = 1035;
           clearInterval(setId4);
         }
         $('.cnt4').html(cnt4);
-      }, 11.594);
+      }, 145.94); //11.594
 
     },
 
