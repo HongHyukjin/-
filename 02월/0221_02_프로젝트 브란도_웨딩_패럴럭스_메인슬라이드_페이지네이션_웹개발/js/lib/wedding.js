@@ -86,6 +86,7 @@
           if(cnt > 2) cnt = 0;  //슬라이드 3개 0 1 2
           if(cnt < 0) cnt = 2;  //첫번째 왼쪽으로 이동하면 마지막 슬라이드
           $('.slide-wrap').animate({left:`${-100 * cnt}%`}, 0)
+          pageNation();
         });
 
         //슬라이드 박스 좌표 구하기
@@ -107,7 +108,7 @@
       function autoTimer(){
         setId = setInterval(nextCount, 3000);
         
-        console.log(setId); //메모리에 할당된 인덱스 번호 확인하기
+        //console.log(setId); //메모리에 할당된 인덱스 번호 확인하기
       }
       autoTimer();
 
@@ -200,7 +201,7 @@
         } 
       });
 
-      //모바일 손가락으로 터치
+      //6. 모바일 손가락으로 터치
       $('#section1').on({
         touchstart(e){ //mousedown
           winWidth = $(window).innerWidth();  
@@ -234,6 +235,55 @@
           $('.slide-wrap').css({left : dragEnd - dragStart});
         } 
       });
+
+      //7. 페이지네이션 함수
+      function pageNation(){
+        console.log(cnt > 2 ? 0 : cnt);
+        $('.page-btn').removeClass('on');   //페이지버튼 모두 클래스 삭제
+        $('.page-btn').eq(cnt > 2 ? 0 : cnt).addClass('on');  //현재슬라이드 번호 클래스 추가
+      }
+
+      //8. 페이지버튼 클릭 이벤트
+      //슬라이드 1
+      // $('.page-btn').eq(0).on({
+      //   click(e){
+      //     clearInterval(setId);
+      //     e.preventDefault();
+      //     cnt = 0;
+      //     mainSlide();
+      //   }
+      // })
+      // //슬라이드 2
+      // $('.page-btn').eq(1).on({
+      //   click(e){
+      //     clearInterval(setId);
+      //     e.preventDefault();
+      //     cnt = 1;
+      //     mainSlide();
+      //   }
+      // })
+      // //슬라이드 3
+      // $('.page-btn').eq(2).on({
+      //   click(e){
+      //     clearInterval(setId);
+      //     e.preventDefault();
+      //     cnt = 2;
+      //     mainSlide();
+      //   }
+      // })
+
+      //페이지버튼 클릭 이벤트 선택자 배열처리
+      $('.page-btn').each(function(idx){
+        $(this).on({
+          click(e){
+            clearInterval(setId);
+            e.preventDefault();
+            cnt = idx;  //cnt 전역변수 값이 수정
+            mainSlide();
+          }
+        })
+      });
+
 
     },
     section2(){

@@ -284,6 +284,29 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
+#wrap #main #section1 .container .page-btn-box {
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#wrap #main #section1 .container .page-btn-box span {
+  margin: 0 10px;
+}
+#wrap #main #section1 .container .page-btn-box span a {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+#wrap #main #section1 .container .page-btn-box span a.on {
+  border: 3px solid rgb(255, 255, 255);
+  transform: scale(1.5);
+}
 #wrap #main #section2 {
   width: 100%;
   padding: 11.11% 0;
