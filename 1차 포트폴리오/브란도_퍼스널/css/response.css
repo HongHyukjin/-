@@ -1,3 +1,11 @@
+@media all and (max-width: 1400px) {
+  #wrap #main #section3 .container .gap .content .text ul li .icon {
+    width: 20%;
+  }
+  #wrap #main #section3 .container .gap .content .text ul li div {
+    width: 80%;
+  }
+}
 @media all and (max-width: 1200px) {
   #wrap #main #section1 .container .title .content div h3 {
     text-align: center;
@@ -7,6 +15,15 @@
   }
   #wrap #main #section1 .container .title .content div p {
     margin: 23.391px auto;
+  }
+  #wrap #main #section3 .container .gap .content .text ul li .icon {
+    width: 25%;
+  }
+  #wrap #main #section3 .container .gap .content .text ul li div {
+    width: 75%;
+  }
+  #wrap #main #section3 .container .gap .content .text ul li {
+    width: 50%;
   }
 }
 @media all and (max-width: 990px) {
@@ -31,6 +48,7 @@
   }
   #wrap #main #section2 {
     background: #fff;
+    padding: 100px 0;
   }
   #wrap #main #section2 .container {
     width: 100%;
@@ -38,5 +56,51 @@
   }
   #wrap #main #section2 .container .gap {
     width: 100%;
+  }
+  #wrap #main #section3 {
+    padding: 100px 0;
+  }
+  #wrap #main #section3 .container {
+    width: 100%;
+  }
+  #wrap #main #section3 .container .gap .content .text ul li .icon {
+    width: 16.66%;
+  }
+  #wrap #main #section3 .container .gap .content .text ul li div {
+    width: 83.33%;
+  }
+  #wrap #main #section4 .container {
+    width: 100%;
+  }
+}
+@media all and (max-width: 770px) {
+  #wrap #main #section3 .container .gap .content .text ul li {
+    width: 100%;
+  }
+  #wrap #main #section3 .container .gap .content .text ul li {
+    margin: 0 0 10% 0;
+  }
+  #wrap #main #section4 .container ul li div {
+    width: 0;
+  }
+  #wrap #main #section4 .container ul li .text {
+    width: 100%;
+  }
+  #wrap #main #section4 .container ul li {
+    width: 100%;
+    margin: 0 0 70px 0;
+  }
+  #wrap #main #section4 .container ul .no_mg {
+    margin: 0;
+  }
+  #wrap #main #section4 .container ul li div i {
+    display: none;
+  }
+  #wrap #main #section4 .container ul li .text h2 {
+    text-align: center;
+  }
+  #wrap #main #section4 .container ul li .text h4 {
+    text-align: center;
+    margin: 15px 0;
   }
 }
