@@ -120,6 +120,8 @@
   margin: 0 0 0 10px;
 }
 #wrap #main {
+  z-index: 1;
+  position: relative;
   width: 100%;
   max-width: 1903px;
   padding: 0 0 0 250px;
@@ -232,7 +234,6 @@
 }
 #wrap #main #section2 {
   width: 100%;
-  height: 760px;
   padding: 130px 0;
   background: url(../img/personal-img2.jpg) no-repeat 50% 50%;
   background-size: cover;
@@ -438,16 +439,15 @@
 #wrap #main #section5 {
   width: 100%;
   padding: 130px 0;
-  background: url(../img/personal-img3.jpg);
+  background: url(../img/personal-img3.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 #wrap #main #section5 .container {
-  width: 100%;
-  max-width: 1170px;
+  width: 70.78%;
   margin: 0 auto;
 }
 #wrap #main #section5 .container .content {
-  width: 780px;
+  width: 66.66%;
 }
 #wrap #main #section5 .container .content .title {
   width: 100%;
@@ -470,6 +470,7 @@
   border-bottom: 4px solid #ef106e;
 }
 #wrap #main #section5 .container .content .text p {
+  width: 90%;
   font-size: 15px;
   font-weight: 500;
   font-family: "Montserrat";
@@ -481,7 +482,7 @@
 }
 #wrap #main #section5 .container .content .text i {
   display: block;
-  width: 750px;
+  width: 100%;
   height: 1px;
   margin: 45px 0;
   background: rgba(0, 0, 0, 0.1);
@@ -548,8 +549,7 @@
   background: #f7f7f7;
 }
 #wrap #main #section6 .container {
-  width: 100%;
-  max-width: 1170px;
+  width: 70.78%;
   margin: 0 auto;
 }
 #wrap #main #section6 .container .content {
@@ -579,6 +579,7 @@
 #wrap #main #section6 .container .content .text ul {
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
 }
 #wrap #main #section6 .container .content .text ul li {
   width: 25%;
@@ -613,7 +614,7 @@
 }
 #wrap #main #section6 .container .content .text ul li h5::after {
   content: "";
-  width: 247.5px;
+  width: 200%;
   z-index: 1;
   position: absolute;
   top: 13px;
@@ -627,15 +628,12 @@
 }
 #wrap #main #section7 {
   width: 100%;
-  height: 463.594px;
   padding: 130px 0;
   background: url(../img/personal-img4.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 #wrap #main #section7 .container {
-  width: 100%;
-  max-width: 1170px;
-  height: 100%;
+  width: 70.78%;
   margin: 0 auto;
 }
 #wrap #main #section7 .container .gap {
@@ -661,23 +659,26 @@
 }
 #wrap #main #section7 .container .gap .content ul {
   display: flex;
+  flex-flow: row wrap;
 }
 #wrap #main #section7 .container .gap .content ul li {
   display: flex;
+  width: 50%;
 }
 #wrap #main #section7 .container .gap .content ul li h2 {
+  width: 16.67%;
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
   color: #000;
 }
 #wrap #main #section7 .container .gap .content ul li h4 {
-  width: 231.25px;
+  width: 83.33%;
   font-size: 13px;
   font-weight: 500;
   line-height: 18px;
   color: #fff;
-  padding: 0 0 0 18.5px;
+  padding: 0 0 0 8%;
 }
 #wrap #main #section8 {
   width: 100%;
@@ -719,7 +720,7 @@
   display: flex;
 }
 #wrap #main #section8 .container .content .img_content .text {
-  width: 25%;
+  width: 25.69%;
   padding: 0 15px;
 }
 #wrap #main #section8 .container .content .img_content .text ul {
@@ -817,7 +818,7 @@
   background: #ef106e;
 }
 #wrap #main #section8 .container .content .img_content .img {
-  width: 75%;
+  width: 74.31%;
   padding: 0 15px;
 }
 #wrap #main #section8 .container .content .img_content .img ul {
@@ -833,7 +834,7 @@
 }
 #wrap #main #section8 .container .content .img_content .img ul li a figure {
   position: relative;
-  width: 412.75px;
+  width: 100%;
   overflow: hidden;
 }
 #wrap #main #section8 .container .content .img_content .img ul li a figure img {

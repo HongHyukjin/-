@@ -1,9 +1,29 @@
+@media all and (max-width:1500px){
+  #wrap #main #section5 .container {
+    width: 80%;
+  }
+  #wrap #main #section6 .container {
+    width: 80%;
+  }
+  #wrap #main #section6 .container .content .text ul li h5::after {
+    width: 150%;
+  }
+  #wrap #main #section7 .container {
+    width: 80%;
+  }
+}
+
 @media all and (max-width:1400px) {
   #wrap #main #section3 .container .gap .content .text ul li .icon {
     width: 20%;
   }
   #wrap #main #section3 .container .gap .content .text ul li div {
     width: 80%;
+  }
+}
+@media all and (max-width:1300px) {
+  #wrap #main #section7 .container {
+    width: 87%;
   }
 }
 
@@ -25,6 +45,30 @@
   }
   #wrap #main #section3 .container .gap .content .text ul li {
     width: 50%;
+  }
+  #wrap #main #section5 .container {
+    width: 87%;
+  }
+  #wrap #main #section6 .container {
+    width: 87%;
+  }
+  #wrap #main #section6 .container .content .text ul li {
+    width: 50%;
+  }
+  #wrap #main #section6 .container .content .text ul li h5::after {
+    width: 300%;
+  }
+  #wrap #main #section6 .container .content .text ul li p {
+    margin : 0 0 15% 0;
+  }
+  #wrap #main #section7 .container .gap {
+    width: 66.67%;
+  }
+  #wrap #main #section7 .container .gap .content ul li h2 {
+    width: 25%;
+  }
+  #wrap #main #section7 .container .gap .content ul li h4 {
+    width : 75%;
   }
 } 
 
@@ -74,6 +118,47 @@
   #wrap #main #section4 .container {
     width: 100%;
   } 
+  #wrap #main #section5 {
+    padding: 100px 0;
+    background: #fff;
+  }
+  #wrap #main #section5 .container {
+    width: 100%;
+    margin : 0;
+  }
+  #wrap #main #section5 .container .content {
+    width: 100%;
+  }
+  #wrap #main #section6 {
+    padding: 100px 0;
+  }
+  #wrap #main #section6 .container {
+    width: 100%;
+  } 
+  #wrap #main #section6 .container .content .text ul li h5::after {
+    width: 350%;
+  }
+  #wrap #main #section7 {
+    padding: 100px 0;
+  }
+  #wrap #main #section7 .container {
+    width: 100%;
+  }
+  #wrap #main #section7 .container .gap {
+    width: 100%;
+  }
+  #wrap #main #section7 .container .gap .content i {
+    margin: 6% 0;
+  }
+  #wrap #main #section7 .container .gap .content ul li h2 {
+    color: #fff;
+  }
+  #wrap #main #section7 .container .gap .content ul li h2 {
+    width: 10%;
+  }
+  #wrap #main #section7 .container .gap .content ul li h4 {
+    width : 90%;
+  }
 }
 
 @media all and (max-width:770px){
@@ -105,5 +190,49 @@
   #wrap #main #section4 .container ul li .text h4 {
     text-align: center;
     margin : 15px 0;
+  }
+  #wrap #main #section5 .container .content .text i {
+    margin: 10% 0;
+  }
+  #wrap #main #section5 .container .content .text ul li {
+    width: 100%;
+  }
+  #wrap #main #section5 .container .content .text ul li h2 {
+    width: 16.67%;
+  }
+  #wrap #main #section5 .container .content .text ul li div {
+    width : 83.33%;
+  }
+  #wrap #main #section6 .container .content .text ul li {
+    width: 100%;
+  }
+  #wrap #main #section6 .container .content .text ul li h5::after {
+    width: 700%;
+  }
+  #wrap #main #section6 .container .content .text ul li p {
+    margin : 0 0 6% 0;
+  }
+  #wrap #main #section7 .container {
+    width: 100%;
+  } 
+  #wrap #main #section7 .container .gap .content p {
+    text-align: center;
+  }
+  #wrap #main #section7 .container .gap .content ul li {
+    width: 100%;
+    flex-flow: column wrap;
+  }
+  #wrap #main #section7 .container .gap .content ul .pad_70 {
+    margin : 0 0 72.594px 0;
+  }
+  #wrap #main #section7 .container .gap .content ul li h2 {
+    width : 100%;
+    text-align: center;
+    padding : 0 0 0 0;
+  }
+  #wrap #main #section7 .container .gap .content ul li h4 {
+    width : 100%;
+    text-align: center;
+    padding : 0;
   }
 }
