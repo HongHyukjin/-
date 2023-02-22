@@ -262,7 +262,7 @@
           $('.img_2').css({
             "display" : "block",
             "top" : "0",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_3').css({
             "display" : "block",
@@ -272,7 +272,7 @@
           $('.img_4').css({
             "display" : "block",
             "top" : "313.906px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_5').css({
             "display" : "block",
@@ -282,7 +282,7 @@
           $('.img_6').css({
             "display" : "block",
             "top" : "762.156px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_7').css({
             "display" : "block",
@@ -292,7 +292,7 @@
           $('.img_8').css({
             "display" : "block",
             "top" : "1076.06px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_9').css({
             "display" : "block",
@@ -302,7 +302,7 @@
           $('.img_10').css({
             "display" : "block",
             "top" : "1524.31px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
         }
       })
@@ -323,7 +323,7 @@
           $('.img_3').css({
             "display" : "block",
             "top" : "0",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_4').css({
             "display" : "none"
@@ -339,7 +339,7 @@
           $('.img_7').css({
             "display" : "block",
             "top" : "313.906px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_8').css({
             "display" : "none"
@@ -352,7 +352,7 @@
           $('.img_10').css({
             "display" : "block",
             "top" : "627.812px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
         }
       })
@@ -376,7 +376,7 @@
           $('.img_4').css({
             "display" : "block",
             "top" : "0",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_5').css({
             "display" : "block",
@@ -386,7 +386,7 @@
           $('.img_6').css({
             "display" : "block",
             "top" : "448.25px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_7').css({
             "display" : "none",
@@ -402,7 +402,7 @@
           $('.img_10').css({
             "display" : "block",
             "top" : "762.156px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
         }
       })
@@ -426,7 +426,7 @@
           $('.img_4').css({
             "display" : "block",
             "top" : "0",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_5').css({
             "display" : "block",
@@ -436,7 +436,7 @@
           $('.img_6').css({
             "display" : "block",
             "top" : "448.25px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_7').css({
             "display" : "block",
@@ -446,7 +446,7 @@
           $('.img_8').css({
             "display" : "block",
             "top" : "762.156px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_9').css({
             "display" : "block",
@@ -456,7 +456,7 @@
           $('.img_10').css({
             "display" : "block",
             "top" : "1210.41px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
         }
       })
@@ -477,7 +477,7 @@
           $('.img_3').css({
             "display" : "block",
             "top" : "0",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_4').css({
             "display" : "none"
@@ -485,7 +485,7 @@
           $('.img_5').css({
             "display" : "block",
             "top" : "313.906px",
-            "left" : "434.75px"
+            "left" : "50%"
           });
           $('.img_6').css({
             "display" : "none"

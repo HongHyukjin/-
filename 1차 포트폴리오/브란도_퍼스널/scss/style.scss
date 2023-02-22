@@ -734,7 +734,7 @@
             width : 100%;
             display: flex;
             .text{
-              width : 25.69%;
+              width : 25%;
               padding : 0 15px;
               ul{
                 width : 100%;
@@ -833,19 +833,22 @@
               }
             }
             .img{
-              width : 74.31%;
+              width : 75%;
               padding : 0 15px;
               ul{
                 position: relative;
                 width : 100%;
+                // height : auto;
+                // overflow: hidden;  
                 height : 1838.22px;
-                display: flex;
+                display: flex;  
                 flex-flow: row wrap;
+                margin : 0 -0 0 -22px;
                 li{
                   width: 50%;
                   transition: all 0.3s;
-                  // padding : 0 0 22px 0;
-                  a{  
+                  padding : 0 0 22px 22px;
+                  a{
                     figure{
                       position: relative;
                       width : 100%;
@@ -905,7 +908,7 @@
                 .img_2{
                   position : absolute;
                   top : 0;
-                  left : 434.75px;
+                  left : 50%;
                 }
                 .img_3{
                   position : absolute;
@@ -915,7 +918,7 @@
                 .img_4{
                   position : absolute;
                   top : 313.906px;
-                  left : 434.75px;
+                  left : 50%;
                 }
                 .img_5{
                   position : absolute;
@@ -925,7 +928,7 @@
                 .img_6{
                   position : absolute;
                   top : 762.156px;
-                  left : 434.75px;
+                  left : 50%;
                 }
                 .img_7{
                   position : absolute;
@@ -935,7 +938,7 @@
                 .img_8{
                   position : absolute;
                   top : 1076.06px;
-                  left : 434.75px;
+                  left : 50%;
                 }
                 .img_9{
                   position : absolute;
@@ -945,7 +948,7 @@
                 .img_10{
                   position : absolute;
                   top : 1524.31px;
-                  left : 434.75px;
+                  left : 50%;
                 }
               }
             }
@@ -959,8 +962,7 @@
       background: #fff;
       border-bottom: 1px solid #e5e5e5;
       .container{
-        width : 100%;
-        max-width: 1170px;
+        width : 70.78%;
         margin : 0 auto;
         .content{
           width : 100%;
@@ -1071,11 +1073,10 @@
       background: url(../img/personal-img15.jpg) no-repeat 50% 50%;
       background-size: cover;
       .container{
-        width : 100%;
-        max-width: 1170px;
+        width : 70.78%;
         margin : 0 auto;
         .content{
-          width : 585px;
+          width : 50%;
           .title{
             width : 100%;
             padding : 0 15px;
@@ -1099,9 +1100,13 @@
           }
           .text{
             .top{
+              width : 100%;
               ul{
+                width : 100%;
                 display: flex;
+                flex-flow: row wrap;
                 li{
+                  width : 50%;
                   display: flex;
                   i{
                     font-size: 40px;
@@ -1204,8 +1209,7 @@
       background: url(../img/bg.jpg) no-repeat 50% 50%;
       background-size: cover;
       .container{
-        width : 100%;
-        max-width: 1170px;
+        width : 70.78%;
         margin : 0 auto;
         .content{
           width : 100%;

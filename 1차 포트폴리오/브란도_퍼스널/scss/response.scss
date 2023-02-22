@@ -11,6 +11,12 @@
   #wrap #main #section7 .container {
     width: 80%;
   }
+  #wrap #main #section9 .container {
+    width: 80%;
+  }
+  #wrap #main #section10 .container {
+    width: 80%;
+  }
 }
 
 @media all and (max-width:1400px) {
@@ -24,6 +30,12 @@
 @media all and (max-width:1300px) {
   #wrap #main #section7 .container {
     width: 87%;
+  }
+  #wrap #main #section9 .container {
+    width: 90%;
+  }
+  #wrap #main #section10 .container {
+    width: 90%;
   }
 }
 
@@ -69,6 +81,12 @@
   }
   #wrap #main #section7 .container .gap .content ul li h4 {
     width : 75%;
+  }
+  #wrap #main #section9 .container .content .text ul li {
+    width: 50%;
+  }
+  #wrap #main #section10 .container .content {
+    width: 66.67%;
   }
 } 
 
@@ -159,6 +177,19 @@
   #wrap #main #section7 .container .gap .content ul li h4 {
     width : 90%;
   }
+  #wrap #main #section9 {
+    padding: 100px 0;
+  }
+  #wrap #main #section10 {
+    padding : 100px 0;
+    background: #fff;
+  }
+  #wrap #main #section10 .container {
+    width : 100%;
+  }
+  #wrap #main #section10 .container .content {
+    width: 100%;
+  }
 }
 
 @media all and (max-width:770px){
@@ -234,5 +265,42 @@
     width : 100%;
     text-align: center;
     padding : 0;
+  }
+  #wrap #main #section9 .container .content .text ul li {
+    width: 100%;
+  }
+  #wrap #main #section10 .container .content .title h2 {
+    text-align: center;
+  }
+  #wrap #main #section10 .container .content .text .top ul li {
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin : 0 0 40px 0;
+  }
+  #wrap #main #section10 .container .content .text .top ul li h3 {
+    text-align: center;
+  }
+  #wrap #main #footer .container{
+    width : 100%; 
+  }
+  #wrap #main #footer .container .content .top {
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #wrap #main #footer .container .content .top .icon {
+    width : 66.67%;
+  }
+  #wrap #main #footer .container .content .top .icon ul li {
+    width : 20%;
+  }
+  #wrap #main #footer .container .content .top .mark {
+    width : 33.33%;
+    margin : 70px 0 0 0;
+  }
+  #wrap #main #footer .container .content .top .mark img {
+    margin : 0;
   }
 }
