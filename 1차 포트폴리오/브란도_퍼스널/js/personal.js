@@ -241,9 +241,13 @@
     },
 
     section8(){
-      let boxW = $('.response_ul').width();
-      let boxH = 0;
-      let rows = 5;
+      const ul = $('.response_ul');
+      const li = $('.response_ul li')
+      let n = li.length;
+
+      let cols = 5;
+      let boxW = ul.width();
+      let rows = Math.ceil();
       let imgW = (boxW - 44) / 2;
       let s_imgH = imgW * 1.032707;
       let l_imgH = imgW * 0.707255756;
