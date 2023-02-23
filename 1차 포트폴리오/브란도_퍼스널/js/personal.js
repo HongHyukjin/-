@@ -253,7 +253,9 @@
       let imgW = (boxW - 44) / 2;
       let l_imgH = imgW * 1.032707;
       let s_imgH = imgW * 0.707255756;
-      let boxH = a*l_imgH + b*s_imgH;
+      let leftBoxH = 0;
+      let rightBoxH = 0;
+      let boxH = 0;
 
       $('.txt_btn').on({
         click(e){
@@ -535,21 +537,19 @@
         else{
           cols = 1;
         }
+
         boxW = ul.width();
         imgW = (boxW - 44) / 2;
         l_imgH = imgW * 1.032707;
         s_imgH = imgW * 0.707255756;
-        boxH = a*l_imgH + b*s_imgH;
+        leftBoxH = 0;
+        rightBoxH = 0;
 
-        console.log(boxW);
-        console.log(imgW);
-        console.log(s_imgH);
-        console.log(l_imgH);
-        console.log(boxH);
+        console.log(`boxW ${boxW}`);
+        console.log(`imgW ${imgW}`);
+        console.log(`s_imgH ${s_imgH}`);
+        console.log(`l_imgH ${l_imgH}`);
 
-        ul.css({
-          height : boxH
-        })
         li.each(function(idx){
           let h = arr[idx]===1 ? l_imgH : s_imgH;
           li.eq(idx).css({
@@ -559,15 +559,58 @@
         })
 
         if(cols === 2){
-          let h_sum = 0;
-          li.eq(0).stop().animate({top:h_sum,left:imgW*0})
-          li.eq(1).stop().animate({top:h_sum,left:imgW*1})
-          if(arr[0] ===1) h_sum+=l_imgH;
-          else h_sum+=s_imgH
-          li.eq(2).stop().animate({top:h_sum,left:imgW*0})
-          li.eq(3).stop().animate({top:h_sum,left:imgW*1})
-          if(arr[0] ===1) h_sum+=l_imgH;
-          else h_sum+=s_imgH
+          li.eq(0).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(1).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += l_imgH;
+          rightBoxH += s_imgH;
+          li.eq(2).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(3).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += s_imgH;
+          rightBoxH += l_imgH;
+          li.eq(4).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(5).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += l_imgH;
+          rightBoxH += s_imgH;
+          li.eq(6).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(7).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += s_imgH;
+          rightBoxH += l_imgH;
+          li.eq(8).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(9).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += s_imgH;
+          rightBoxH += s_imgH;
+          boxH = leftBoxH > rightBoxH ? leftBoxH : rightBoxH;
+          console.log(boxH);
+          ul.css({
+            height : boxH
+          })
+        }
+        if(cols === 1){
+          li.eq(0).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(1).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += l_imgH;
+          rightBoxH += s_imgH;
+          li.eq(2).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(3).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += s_imgH;
+          rightBoxH += l_imgH;
+          li.eq(4).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(5).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += l_imgH;
+          rightBoxH += s_imgH;
+          li.eq(6).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(7).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += s_imgH;
+          rightBoxH += l_imgH;
+          li.eq(8).stop().animate({top:leftBoxH,left:imgW*0})
+          li.eq(9).stop().animate({top:rightBoxH,left:imgW*1})
+          leftBoxH += s_imgH;
+          rightBoxH += s_imgH;
+          boxH = leftBoxH > rightBoxH ? leftBoxH : rightBoxH;
+          console.log(boxH);
+          ul.css({
+            height : boxH
+          })
         }
 
       }
