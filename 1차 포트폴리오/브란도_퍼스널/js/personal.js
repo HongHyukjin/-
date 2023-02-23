@@ -1,5 +1,5 @@
 
-(function($){
+(function($, window, document){
 
   const personal = {
     init(){
@@ -245,14 +245,15 @@
       const li = $('.response_ul li')
       let n = li.length;
 
-      let cols = 5;
+      let cols = 2;
       let boxW = ul.width();
-      let rows = Math.ceil();
+      let arr = [1,0,0,1,1,0,0,1,0,0];
+      let a = 2;
+      let b = 3;
       let imgW = (boxW - 44) / 2;
-      let s_imgH = imgW * 1.032707;
-      let l_imgH = imgW * 0.707255756;
-      let left = 0;
-      let top = 0;
+      let l_imgH = imgW * 1.032707;
+      let s_imgH = imgW * 0.707255756;
+      let boxH = a*l_imgH + b*s_imgH;
 
       $('.txt_btn').on({
         click(e){
@@ -262,290 +263,318 @@
         }
       });
 
-      $('.a_1').on({
-        click(e){
-          boxH = (s_imgH + 22) * 3 + (l_imgH + 22) * 2;
-          $('.response_ul').css({
-            "height" : "1838.22px"
-          });
-          $('.img_1').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "0"
-          });
-          $('.img_2').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "50%"
-          });
-          $('.img_3').css({
-            "display" : "block",
-            "top" : "448.25px",
-            "left" : "0"
-          });
-          $('.img_4').css({
-            "display" : "block",
-            "top" : "313.906px",
-            "left" : "50%"
-          });
-          $('.img_5').css({
-            "display" : "block",
-            "top" : "762.156px",
-            "left" : "0"
-          });
-          $('.img_6').css({
-            "display" : "block",
-            "top" : "762.156px",
-            "left" : "50%"
-          });
-          $('.img_7').css({
-            "display" : "block",
-            "top" : "1210.41px",
-            "left" : "0"
-          });
-          $('.img_8').css({
-            "display" : "block",
-            "top" : "1076.06px",
-            "left" : "50%"
-          });
-          $('.img_9').css({
-            "display" : "block",
-            "top" : "1524.31px",
-            "left" : "0"
-          });
-          $('.img_10').css({
-            "display" : "block",
-            "top" : "1524.31px",
-            "left" : "50%"
-          });
-        }
-      })
-
-      $('.a_2').on({
-        click(e){
-          $('.response_ul').css({
-            "height" : "941.718px"
-          })
-          $('.img_1').css({
-            "display" : "none"
-          });
-          $('.img_2').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "0"
-          });
-          $('.img_3').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "50%"
-          });
-          $('.img_4').css({
-            "display" : "none"
-          });
-          $('.img_5').css({
-            "display" : "none"
-          });
-          $('.img_6').css({
-            "display" : "block",
-            "top" : "313.906px",
-            "left" : "0"
-          });
-          $('.img_7').css({
-            "display" : "block",
-            "top" : "313.906px",
-            "left" : "50%"
-          });
-          $('.img_8').css({
-            "display" : "none"
-          });
-          $('.img_9').css({
-            "display" : "block",
-            "top" : "627.812px",
-            "left" : "0"
-          });
-          $('.img_10').css({
-            "display" : "block",
-            "top" : "627.812px",
-            "left" : "50%"
-          });
-        }
-      })
-
-      $('.a_3').on({
-        click(e){
-          $('.response_ul').css({
-            "height" : "1210.41px"
-          })
-          $('.img_1').css({
-            "display" : "none"
-          });
-          $('.img_2').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "0"
-          });
-          $('.img_3').css({
-            "display" : "none",
-          });
-          $('.img_4').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "50%"
-          });
-          $('.img_5').css({
-            "display" : "block",
-            "top" : "313.906px",
-            "left" : "0"
-          });
-          $('.img_6').css({
-            "display" : "block",
-            "top" : "448.25px",
-            "left" : "50%"
-          });
-          $('.img_7').css({
-            "display" : "none",
-          });
-          $('.img_8').css({
-            "display" : "block",
-            "top" : "762.156px",
-            "left" : "0"
-          });
-          $('.img_9').css({
-            "display" : "none",
-          });
-          $('.img_10').css({
-            "display" : "block",
-            "top" : "762.156px",
-            "left" : "50%"
-          });
-        }
-      })
-
-      $('.a_4').on({
-        click(e){
-          $('.response_ul').css({
-            "height" : "1524.31px"
-          })
-          $('.img_1').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "0"
-          });
-          $('.img_2').css({
-            "display" : "none"
-          });
-          $('.img_3').css({
-            "display" : "none"
-          });
-          $('.img_4').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "50%"
-          });
-          $('.img_5').css({
-            "display" : "block",
-            "top" : "448.25px",
-            "left" : "0"
-          });
-          $('.img_6').css({
-            "display" : "block",
-            "top" : "448.25px",
-            "left" : "50%"
-          });
-          $('.img_7').css({
-            "display" : "block",
-            "top" : "896.5px",
-            "left" : "0"
-          });
-          $('.img_8').css({
-            "display" : "block",
-            "top" : "762.156px",
-            "left" : "50%"
-          });
-          $('.img_9').css({
-            "display" : "block",
-            "top" : "1210.41px",
-            "left" : "0"
-          });
-          $('.img_10').css({
-            "display" : "block",
-            "top" : "1210.41px",
-            "left" : "50%"
-          });
-        }
-      })
-
-      $('.a_5').on({
-        click(e){
-          $('.response_ul').css({
-            "height" : "1076.06px"
-          })
-          $('.img_1').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "0"
-          });
-          $('.img_2').css({
-            "display" : "none"
-          });
-          $('.img_3').css({
-            "display" : "block",
-            "top" : "0",
-            "left" : "50%"
-          });
-          $('.img_4').css({
-            "display" : "none"
-          });
-          $('.img_5').css({
-            "display" : "block",
-            "top" : "313.906px",
-            "left" : "50%"
-          });
-          $('.img_6').css({
-            "display" : "none"
-          });
-          $('.img_7').css({
-            "display" : "block",
-            "top" : "448.25px",
-            "left" : "0"
-          });
-          $('.img_8').css({
-            "display" : "none"
-          });
-          $('.img_9').css({
-            "display" : "none"
-          });
-          $('.img_10').css({
-            "display" : "block",
-            "top" : "762.156px",
-            "left" : "0"
-          });
-        }
-      })
-
-      // $('.txt_btn').each(function(idx){
-      //   $(this).on({
-      //     click(e){
-      //       e.preventDefault();
-      //       console.log(boxW);
-      //       $('.response_ul').css({
-      //         "height" : boxH
-      //       })
-      //       if(arr1[0] === 1) {
-              
-      //       }
-      //       else{
-      //         $('.img_1').css({
-      //           "display" : "none"
-      //         })
-      //       }
-      //     }
-      //   })
+      // $('.a_1').on({
+      //   click(e){
+      //     boxH = (s_imgH + 22) * 3 + (l_imgH + 22) * 2;
+      //     $('.response_ul').css({
+      //       "height" : "1838.22px"
+      //     });
+      //     $('.img_1').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "0"
+      //     });
+      //     $('.img_2').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_3').css({
+      //       "display" : "block",
+      //       "top" : "448.25px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_4').css({
+      //       "display" : "block",
+      //       "top" : "313.906px",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_5').css({
+      //       "display" : "block",
+      //       "top" : "762.156px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_6').css({
+      //       "display" : "block",
+      //       "top" : "762.156px",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_7').css({
+      //       "display" : "block",
+      //       "top" : "1210.41px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_8').css({
+      //       "display" : "block",
+      //       "top" : "1076.06px",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_9').css({
+      //       "display" : "block",
+      //       "top" : "1524.31px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_10').css({
+      //       "display" : "block",
+      //       "top" : "1524.31px",
+      //       "left" : "50%"
+      //     });
+      //   }
       // })
+
+      // $('.a_2').on({
+      //   click(e){
+      //     $('.response_ul').css({
+      //       "height" : "941.718px"
+      //     })
+      //     $('.img_1').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_2').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "0"
+      //     });
+      //     $('.img_3').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_4').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_5').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_6').css({
+      //       "display" : "block",
+      //       "top" : "313.906px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_7').css({
+      //       "display" : "block",
+      //       "top" : "313.906px",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_8').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_9').css({
+      //       "display" : "block",
+      //       "top" : "627.812px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_10').css({
+      //       "display" : "block",
+      //       "top" : "627.812px",
+      //       "left" : "50%"
+      //     });
+      //   }
+      // })
+
+      // $('.a_3').on({
+      //   click(e){
+      //     $('.response_ul').css({
+      //       "height" : "1210.41px"
+      //     })
+      //     $('.img_1').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_2').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "0"
+      //     });
+      //     $('.img_3').css({
+      //       "display" : "none",
+      //     });
+      //     $('.img_4').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_5').css({
+      //       "display" : "block",
+      //       "top" : "313.906px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_6').css({
+      //       "display" : "block",
+      //       "top" : "448.25px",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_7').css({
+      //       "display" : "none",
+      //     });
+      //     $('.img_8').css({
+      //       "display" : "block",
+      //       "top" : "762.156px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_9').css({
+      //       "display" : "none",
+      //     });
+      //     $('.img_10').css({
+      //       "display" : "block",
+      //       "top" : "762.156px",
+      //       "left" : "50%"
+      //     });
+      //   }
+      // })
+
+      // $('.a_4').on({
+      //   click(e){
+      //     $('.response_ul').css({
+      //       "height" : "1524.31px"
+      //     })
+      //     $('.img_1').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "0"
+      //     });
+      //     $('.img_2').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_3').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_4').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_5').css({
+      //       "display" : "block",
+      //       "top" : "448.25px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_6').css({
+      //       "display" : "block",
+      //       "top" : "448.25px",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_7').css({
+      //       "display" : "block",
+      //       "top" : "896.5px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_8').css({
+      //       "display" : "block",
+      //       "top" : "762.156px",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_9').css({
+      //       "display" : "block",
+      //       "top" : "1210.41px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_10').css({
+      //       "display" : "block",
+      //       "top" : "1210.41px",
+      //       "left" : "50%"
+      //     });
+      //   }
+      // })
+
+      // $('.a_5').on({
+      //   click(e){
+      //     $('.response_ul').css({
+      //       "height" : "1076.06px"
+      //     })
+      //     $('.img_1').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "0"
+      //     });
+      //     $('.img_2').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_3').css({
+      //       "display" : "block",
+      //       "top" : "0",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_4').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_5').css({
+      //       "display" : "block",
+      //       "top" : "313.906px",
+      //       "left" : "50%"
+      //     });
+      //     $('.img_6').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_7').css({
+      //       "display" : "block",
+      //       "top" : "448.25px",
+      //       "left" : "0"
+      //     });
+      //     $('.img_8').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_9').css({
+      //       "display" : "none"
+      //     });
+      //     $('.img_10').css({
+      //       "display" : "block",
+      //       "top" : "762.156px",
+      //       "left" : "0"
+      //     });
+      //   }
+      // })
+
+      $(window).resize(function(e){
+        galleryFn();
+      })
+
+      function galleryFn(){
+        if($(window).innerWidth() >= 770){
+          cols = 2;
+        }
+        else{
+          cols = 1;
+        }
+        boxW = ul.width();
+        imgW = (boxW - 44) / 2;
+        l_imgH = imgW * 1.032707;
+        s_imgH = imgW * 0.707255756;
+        boxH = a*l_imgH + b*s_imgH;
+
+        console.log(boxW);
+        console.log(imgW);
+        console.log(s_imgH);
+        console.log(l_imgH);
+        console.log(boxH);
+
+        ul.css({
+          height : boxH
+        })
+        li.each(function(idx){
+          let h = arr[idx]===1 ? l_imgH : s_imgH;
+          li.eq(idx).css({
+            width : imgW,
+            height : h
+          })
+        })
+
+        if(cols === 2){
+          let h_sum = 0;
+          li.eq(0).stop().animate({top:h_sum,left:imgW*0})
+          li.eq(1).stop().animate({top:h_sum,left:imgW*1})
+          if(arr[0] ===1) h_sum+=l_imgH;
+          else h_sum+=s_imgH
+          li.eq(2).stop().animate({top:h_sum,left:imgW*0})
+          li.eq(3).stop().animate({top:h_sum,left:imgW*1})
+          if(arr[0] ===1) h_sum+=l_imgH;
+          else h_sum+=s_imgH
+        }
+
+      }
 
     }
 
   }
   personal.init();
 
-})(jQuery);
+})(jQuery, window, document);
