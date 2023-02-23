@@ -838,16 +838,15 @@
               ul{
                 position: relative;
                 width : 100%;
-                // height : auto;
-                // overflow: hidden;  
                 height : 1838.22px;
                 display: flex;  
                 flex-flow: row wrap;
-                margin : 0 -0 0 -22px;
+                margin : 0 0 0 -22px;
                 li{
                   width: 50%;
-                  transition: all 0.3s;
+                  transition: all 0.5s;
                   padding : 0 0 22px 22px;
+                  position: absolute;
                   a{
                     figure{
                       position: relative;
@@ -901,52 +900,42 @@
                   }
                 }
                 .img_1{
-                  position : absolute;
                   top : 0;
                   left : 0;
                 }
                 .img_2{
-                  position : absolute;
                   top : 0;
                   left : 50%;
                 }
                 .img_3{
-                  position : absolute;
                   top : 448.25px;
                   left : 0;
                 }
                 .img_4{
-                  position : absolute;
                   top : 313.906px;
                   left : 50%;
                 }
                 .img_5{
-                  position : absolute;
                   top : 762.156px;
                   left : 0;
                 }
                 .img_6{
-                  position : absolute;
                   top : 762.156px;
                   left : 50%;
                 }
                 .img_7{
-                  position : absolute;
                   top : 1210.41px;
                   left : 0;
                 }
                 .img_8{
-                  position : absolute;
                   top : 1076.06px;
                   left : 50%;
                 }
                 .img_9{
-                  position : absolute;
                   top : 1524.31px;
                   left : 0;
                 }
                 .img_10{
-                  position : absolute;
                   top : 1524.31px;
                   left : 50%;
                 }
