@@ -778,10 +778,8 @@
 #wrap #main #section8 .container .content .img_content .img ul {
   position: relative;
   width: 100%;
-  height: 1838.22px;
   display: flex;
   flex-flow: row wrap;
-  margin: 0 0 0 -22px;
 }
 #wrap #main #section8 .container .content .img_content .img ul li {
   width: 50%;
@@ -789,28 +787,33 @@
   padding: 0 0 22px 22px;
   position: absolute;
 }
-#wrap #main #section8 .container .content .img_content .img ul li a figure {
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box {
   position: relative;
   width: 100%;
   overflow: hidden;
+  transition: all 0.3s;
+  transform: scale(0);
 }
-#wrap #main #section8 .container .content .img_content .img ul li a figure img {
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box.addZoom {
+  transform: scale(1);
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box img {
   z-index: 2;
   position: relative;
   width: 100%;
 }
-#wrap #main #section8 .container .content .img_content .img ul li a figure img:hover {
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box img:hover {
   transform: scale(1.1);
   transition: all 0.3s;
   opacity: 0.1;
 }
-#wrap #main #section8 .container .content .img_content .img ul li a figure img:hover img {
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box img:hover img {
   z-index: 1;
 }
-#wrap #main #section8 .container .content .img_content .img ul li a figure img:hover div {
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box img:hover div {
   z-index: 3;
 }
-#wrap #main #section8 .container .content .img_content .img ul li a figure div {
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box div {
   z-index: 1;
   width: 100%;
   position: absolute;
@@ -820,7 +823,7 @@
   flex-flow: column nowrap;
   align-items: center;
 }
-#wrap #main #section8 .container .content .img_content .img ul li a figure div h3 {
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box div h3 {
   font-size: 16px;
   font-weight: 600;
   font-family: "Montserrat";
@@ -829,7 +832,7 @@
   text-align: center;
   padding: 0 0 5px 0;
 }
-#wrap #main #section8 .container .content .img_content .img ul li a figure div h4 {
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box div h4 {
   font-size: 11px;
   font-weight: 500;
   font-family: "Montserrat";

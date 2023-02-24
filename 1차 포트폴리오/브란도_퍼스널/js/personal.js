@@ -229,21 +229,13 @@
       const li = $('.response_ul li');
 
       let n = li.length;
-      let l = 0;
-      let r = 0;
-      let cols = 2; //기본 2칸
+      let cols = 2;
       let boxW = ul.width();
-      let imgW = (boxW - 44) / 2;
+      let imgW = (boxW - 44) / cols;
       let arr = [1,0,0,1,1,0,0,1,0,0];
       let l_imgH = imgW * 1.032707;
       let s_imgH = imgW * 0.707255756;
-      let leftBoxH = 0;
-      let rightBoxH = 0;
-      let boxH = 0;
-
       let btnNumber = 0;
-      let a = [];
-      let b = [];
 
       galleryFn();
       galleryBtn.removeClass('on');
@@ -255,46 +247,6 @@
       }) 
 
       function galleryFn(){
-        console.log('버튼 번호', btnNumber);
-        switch(btnNumber){
-          case 0:
-            n = 10;
-            l = 5;
-            r = 5;
-            a = [1,3,5,7,9];
-            b = [2,4,6,8,10];
-            break;
-          case 1:
-            n = 6;
-            l = 3;
-            r = 3;
-            a = [2,6,9];
-            b = [3,7,10];
-            break;
-          case 2:
-            n = 6;
-            l = 3;
-            r = 3;
-            a = [2,5,8];
-            b = [4,6,10];
-            break;
-          case 3:
-            n = 8;
-            l = 4;
-            r = 4;
-            a = [1,6,7,9];
-            b = [4,6,8,10];
-            break;
-          case 4:
-            n = 5;
-            l = 3;
-            r = 2;
-            a = [1,7,10];
-            b = [3,5];
-            break;
-        }
-        console.log('갤러리 리스트 개수', n,l,r);
-
         if($(window).innerWidth() >= 770){
           cols = 2;
         }
@@ -302,77 +254,194 @@
           cols = 1;
         }
 
-
         boxW = ul.width();
-        imgW = (boxW - 44) / 2;
+        imgW = (boxW - 44) / cols; 
         l_imgH = imgW * 1.032707;
         s_imgH = imgW * 0.707255756;
-        leftBoxH = 0;
-        rightBoxH = 0;
+        arr = [1,0,0,1,1,0,0,1,0,0];
+        l_imgH = imgW * 1.032707;
+        s_imgH = imgW * 0.707255756;
 
+        //리스트별 높이 잡기
         li.each(function(idx){
-          
-
-          let h = arr[idx]===1 ? l_imgH : s_imgH;
           li.eq(idx).css({
             width : imgW,
-            height : h
+            height : arr[idx] === 1 ? l_imgH : s_imgH
           })
         })
 
-        if(cols === 2){
-          li.eq(0).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(1).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += l_imgH;
-          rightBoxH += s_imgH;
-          li.eq(2).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(3).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += s_imgH;
-          rightBoxH += l_imgH;
-          li.eq(4).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(5).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += l_imgH;
-          rightBoxH += s_imgH;
-          li.eq(6).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(7).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += s_imgH;
-          rightBoxH += l_imgH;
-          li.eq(8).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(9).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += s_imgH;
-          rightBoxH += s_imgH;
-          boxH = leftBoxH > rightBoxH ? leftBoxH : rightBoxH;
-          ul.css({
-            height : boxH
-          })
-        }
-        if(cols === 1){
-          li.eq(0).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(1).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += l_imgH;
-          rightBoxH += s_imgH;
-          li.eq(2).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(3).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += s_imgH;
-          rightBoxH += l_imgH;
-          li.eq(4).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(5).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += l_imgH;
-          rightBoxH += s_imgH;
-          li.eq(6).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(7).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += s_imgH;
-          rightBoxH += l_imgH;
-          li.eq(8).stop().animate({top:leftBoxH,left:imgW*0})
-          li.eq(9).stop().animate({top:rightBoxH,left:imgW*1})
-          leftBoxH += s_imgH;
-          rightBoxH += s_imgH;
-          boxH = leftBoxH > rightBoxH ? leftBoxH : rightBoxH;
-          ul.css({
-            height : boxH
-          })
+        if(btnNumber === 0){
+          imgBox.removeClass('addZoom');
+          switch(cols){
+            case 2:
+              li.eq(0).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(1).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*1}, 300);
+              li.eq(2).stop().animate({top :l_imgH*1 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(3).stop().animate({top :l_imgH*0 + s_imgH*1, left :imgW*1}, 300);
+              li.eq(4).stop().animate({top :l_imgH*1 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(5).stop().animate({top :l_imgH*1 + s_imgH*1, left :imgW*1}, 300);
+              li.eq(6).stop().animate({top :l_imgH*2 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(7).stop().animate({top :l_imgH*1 + s_imgH*2, left :imgW*1}, 300);
+              li.eq(8).stop().animate({top :l_imgH*2 + s_imgH*2, left :imgW*0}, 300);
+              li.eq(9).stop().animate({top :l_imgH*2 + s_imgH*2, left :imgW*1}, 300);
+              ul.css({
+                height : l_imgH*2 + s_imgH*3
+              })
+              break;
+            case 1:
+              li.eq(0).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(1).stop().animate({top :l_imgH*1 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(2).stop().animate({top :l_imgH*1 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(3).stop().animate({top :l_imgH*1 + s_imgH*2, left :imgW*0}, 300);
+              li.eq(4).stop().animate({top :l_imgH*2 + s_imgH*2, left :imgW*0}, 300);
+              li.eq(5).stop().animate({top :l_imgH*3 + s_imgH*2, left :imgW*0}, 300);
+              li.eq(6).stop().animate({top :l_imgH*3 + s_imgH*3, left :imgW*0}, 300);
+              li.eq(7).stop().animate({top :l_imgH*3 + s_imgH*4 , left :imgW*0}, 300);
+              li.eq(8).stop().animate({top :l_imgH*4 + s_imgH*4, left :imgW*0}, 300);
+              li.eq(9).stop().animate({top :l_imgH*4 + s_imgH*5, left :imgW*0}, 300);
+              ul.css({
+                height : l_imgH*4 + s_imgH*6
+              })
+              break;
+              
+          }
+          imgBox.addClass('addZoom');
+          
         }
 
+        else if(btnNumber === 1){
+          imgBox.removeClass('addZoom');
+          switch(cols){
+            case 2:
+              li.eq(1).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(2).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*1}, 300);
+              li.eq(5).stop().animate({top :l_imgH*0 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(6).stop().animate({top :l_imgH*0 + s_imgH*1, left :imgW*1}, 300);
+              li.eq(8).stop().animate({top :l_imgH*0 + s_imgH*2, left :imgW*0}, 300);
+              li.eq(9).stop().animate({top :l_imgH*0 + s_imgH*2, left :imgW*1}, 300);
+              ul.css({
+                height : l_imgH*0 + s_imgH*3
+              })
+              break;
+            case 1:
+              li.eq(1).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(2).stop().animate({top :l_imgH*0 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(5).stop().animate({top :l_imgH*0 + s_imgH*2, left :imgW*0}, 300);
+              li.eq(6).stop().animate({top :l_imgH*0 + s_imgH*3, left :imgW*0}, 300);
+              li.eq(8).stop().animate({top :l_imgH*0 + s_imgH*4, left :imgW*0}, 300);
+              li.eq(9).stop().animate({top :l_imgH*0 + s_imgH*5, left :imgW*0}, 300);
+              ul.css({
+                height : l_imgH*0 + s_imgH*6
+              })
+              break;
+              
+          }
+          for(let i=0; i<a.length; i++){
+            imgBox.eq(a[i]-1).addClass('addZoom');
+          }
+          
+        }
+
+        else if(btnNumber === 2){
+          imgBox.removeClass('addZoom');
+          switch(cols){
+            case 2:
+              li.eq(1).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(3).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*1}, 300);
+              li.eq(4).stop().animate({top :l_imgH*0 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(5).stop().animate({top :l_imgH*1 + s_imgH*0, left :imgW*1}, 300); 
+              li.eq(7).stop().animate({top :l_imgH*1 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(9).stop().animate({top :l_imgH*1 + s_imgH*1, left :imgW*1}, 300);
+              ul.css({
+                height : l_imgH*2 + s_imgH*1
+              })
+              break;
+            case 1:
+              li.eq(1).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(3).stop().animate({top :l_imgH*0 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(4).stop().animate({top :l_imgH*1 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(5).stop().animate({top :l_imgH*2 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(7).stop().animate({top :l_imgH*2 + s_imgH*2, left :imgW*0}, 300);
+              li.eq(9).stop().animate({top :l_imgH*3 + s_imgH*2, left :imgW*0}, 300);
+              ul.css({
+                height : l_imgH*3 + s_imgH*3
+              })
+              break;
+              
+          }
+          for(let i=0; i<a.length; i++){
+            imgBox.eq(a[i]-1).addClass('addZoom');
+          }
+          
+        }
+
+        else if(btnNumber === 3){
+          imgBox.removeClass('addZoom');
+          switch(cols){
+            case 2:
+              li.eq(0).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(3).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*1}, 300);
+              li.eq(4).stop().animate({top :l_imgH*1 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(5).stop().animate({top :l_imgH*1 + s_imgH*0, left :imgW*1}, 300); 
+              li.eq(6).stop().animate({top :l_imgH*2 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(7).stop().animate({top :l_imgH*1 + s_imgH*1, left :imgW*1}, 300);
+              li.eq(8).stop().animate({top :l_imgH*2 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(9).stop().animate({top :l_imgH*2 + s_imgH*1, left :imgW*1}, 300);
+              ul.css({
+                height : l_imgH*2 + s_imgH*2
+              })
+              break;
+            case 1:
+              li.eq(0).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(3).stop().animate({top :l_imgH*1 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(4).stop().animate({top :l_imgH*2 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(5).stop().animate({top :l_imgH*3 + s_imgH*0, left :imgW*0}, 300); 
+              li.eq(6).stop().animate({top :l_imgH*3 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(7).stop().animate({top :l_imgH*3 + s_imgH*2, left :imgW*0}, 300);
+              li.eq(8).stop().animate({top :l_imgH*4 + s_imgH*2, left :imgW*0}, 300);
+              li.eq(9).stop().animate({top :l_imgH*4 + s_imgH*3, left :imgW*0}, 300);
+              ul.css({
+                height : l_imgH*4 + s_imgH*4
+              })
+              break;
+              
+          }
+          for(let i=0; i<a.length; i++){
+            imgBox.eq(a[i]-1).addClass('addZoom');
+          }
+          
+        }
+
+        else if(btnNumber === 4){
+          imgBox.removeClass('addZoom');
+          switch(cols){
+            case 2:
+              li.eq(0).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(2).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*1}, 300);
+              li.eq(6).stop().animate({top :l_imgH*1 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(4).stop().animate({top :l_imgH*0 + s_imgH*1, left :imgW*1}, 300); 
+              li.eq(9).stop().animate({top :l_imgH*1   + s_imgH*1, left :imgW*0}, 300);
+              ul.css({
+                height : l_imgH*1 + s_imgH*2
+              })
+              break;
+            case 1:
+              li.eq(0).stop().animate({top :l_imgH*0 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(2).stop().animate({top :l_imgH*1 + s_imgH*0, left :imgW*0}, 300);
+              li.eq(6).stop().animate({top :l_imgH*1 + s_imgH*1, left :imgW*0}, 300);
+              li.eq(4).stop().animate({top :l_imgH*1 + s_imgH*2, left :imgW*0}, 300); 
+              li.eq(9).stop().animate({top :l_imgH*2 + s_imgH*2, left :imgW*0}, 300);
+              ul.css({
+                height : l_imgH*2 + s_imgH*3
+              })
+              break;
+              
+          }
+          for(let i=0; i<a.length; i++){
+            imgBox.eq(a[i]-1).addClass('addZoom');
+          }
+          
+        }
       }
 
       galleryBtn.each(function(idx){
