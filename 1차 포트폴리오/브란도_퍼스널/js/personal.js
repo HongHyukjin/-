@@ -197,340 +197,98 @@
     },
 
     section4(){
-      let cnt1 = 0;
-      let cnt2 = 0;
-      let cnt3 = 0;
-      let cnt4 = 0;
+      const num = $('#section4 .num');
+      let countNum = [2530, 3200, 2830, 1035];
+      let countSum = [0,0,0,0];
 
-      let setId1 = setInterval(function(){
-        cnt1+=10;
-        if(cnt1 > 2530){
-          cnt1 = 2530;
-          clearInterval(setId1);
-        }
-        $('.cnt1').html(cnt1);
-      }, 59.29);  //4.743
+      let setId = 0;
+      let cnt = 0;
 
-      let setId2 = setInterval(function(){
-        cnt2+=10;
-        if(cnt2 > 3200){
-          cnt2 = 3200;
-          clearInterval(setId2);
-        }
-        $('.cnt2').html(cnt2);
-      }, 46.88);  //3.750
 
-      let setId3 = setInterval(function(){
-        cnt3+=10;
-        if(cnt3 > 2830){
-          cnt3 = 2830;
-          clearInterval(setId3);
+      function countFn(){
+        cnt++;  //1~1000
+        if(cnt > 1000){
+          clearInterval(setId);
         }
-        $('.cnt3').html(cnt3);
-      }, 53);  //4.240
 
-      let setId4 = setInterval(function(){
-        cnt4+=10;
-        if(cnt4 > 1035){
-          cnt4 = 1035;
-          clearInterval(setId4);
+        for(let i=0; i<=countNum.length; i++){
+          countSum[i] += (countNum[i] / 1000);
+          num.eq(i).html(Math.round(countSum[i]));
         }
-        $('.cnt4').html(cnt4);
-      }, 145.94); //11.594
+      }
+
+      setId = setInterval(countFn, 10);
 
     },
 
     section8(){
-      const ul = $('.response_ul');
-      const li = $('.response_ul li')
-      let n = li.length;
+      const galleryBtn = $('#section8 .txt_btn');
+      const imgBox = $('#section8 .img-box');
 
-      let cols = 2;
+      const ul = $('.response_ul');
+      const li = $('.response_ul li');
+
+      let n = li.length;
+      let l = 0;
+      let r = 0;
+      let cols = 2; //기본 2칸
       let boxW = ul.width();
-      let arr = [1,0,0,1,1,0,0,1,0,0];
-      let a = 2;
-      let b = 3;
       let imgW = (boxW - 44) / 2;
+      let arr = [1,0,0,1,1,0,0,1,0,0];
       let l_imgH = imgW * 1.032707;
       let s_imgH = imgW * 0.707255756;
       let leftBoxH = 0;
       let rightBoxH = 0;
       let boxH = 0;
 
-      $('.txt_btn').on({
-        click(e){
-          e.preventDefault();
-          $('.txt_btn').removeClass('on')
-          $(this).addClass('on');
-        }
-      });
+      let btnNumber = 0;
+      let a = [];
+      let b = [];
 
-      // $('.a_1').on({
-      //   click(e){
-      //     boxH = (s_imgH + 22) * 3 + (l_imgH + 22) * 2;
-      //     $('.response_ul').css({
-      //       "height" : "1838.22px"
-      //     });
-      //     $('.img_1').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "0"
-      //     });
-      //     $('.img_2').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_3').css({
-      //       "display" : "block",
-      //       "top" : "448.25px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_4').css({
-      //       "display" : "block",
-      //       "top" : "313.906px",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_5').css({
-      //       "display" : "block",
-      //       "top" : "762.156px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_6').css({
-      //       "display" : "block",
-      //       "top" : "762.156px",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_7').css({
-      //       "display" : "block",
-      //       "top" : "1210.41px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_8').css({
-      //       "display" : "block",
-      //       "top" : "1076.06px",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_9').css({
-      //       "display" : "block",
-      //       "top" : "1524.31px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_10').css({
-      //       "display" : "block",
-      //       "top" : "1524.31px",
-      //       "left" : "50%"
-      //     });
-      //   }
-      // })
+      galleryFn();
+      galleryBtn.removeClass('on');
+      galleryBtn.eq(btnNumber).addClass('on');
 
-      // $('.a_2').on({
-      //   click(e){
-      //     $('.response_ul').css({
-      //       "height" : "941.718px"
-      //     })
-      //     $('.img_1').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_2').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "0"
-      //     });
-      //     $('.img_3').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_4').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_5').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_6').css({
-      //       "display" : "block",
-      //       "top" : "313.906px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_7').css({
-      //       "display" : "block",
-      //       "top" : "313.906px",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_8').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_9').css({
-      //       "display" : "block",
-      //       "top" : "627.812px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_10').css({
-      //       "display" : "block",
-      //       "top" : "627.812px",
-      //       "left" : "50%"
-      //     });
-      //   }
-      // })
-
-      // $('.a_3').on({
-      //   click(e){
-      //     $('.response_ul').css({
-      //       "height" : "1210.41px"
-      //     })
-      //     $('.img_1').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_2').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "0"
-      //     });
-      //     $('.img_3').css({
-      //       "display" : "none",
-      //     });
-      //     $('.img_4').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_5').css({
-      //       "display" : "block",
-      //       "top" : "313.906px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_6').css({
-      //       "display" : "block",
-      //       "top" : "448.25px",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_7').css({
-      //       "display" : "none",
-      //     });
-      //     $('.img_8').css({
-      //       "display" : "block",
-      //       "top" : "762.156px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_9').css({
-      //       "display" : "none",
-      //     });
-      //     $('.img_10').css({
-      //       "display" : "block",
-      //       "top" : "762.156px",
-      //       "left" : "50%"
-      //     });
-      //   }
-      // })
-
-      // $('.a_4').on({
-      //   click(e){
-      //     $('.response_ul').css({
-      //       "height" : "1524.31px"
-      //     })
-      //     $('.img_1').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "0"
-      //     });
-      //     $('.img_2').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_3').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_4').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_5').css({
-      //       "display" : "block",
-      //       "top" : "448.25px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_6').css({
-      //       "display" : "block",
-      //       "top" : "448.25px",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_7').css({
-      //       "display" : "block",
-      //       "top" : "896.5px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_8').css({
-      //       "display" : "block",
-      //       "top" : "762.156px",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_9').css({
-      //       "display" : "block",
-      //       "top" : "1210.41px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_10').css({
-      //       "display" : "block",
-      //       "top" : "1210.41px",
-      //       "left" : "50%"
-      //     });
-      //   }
-      // })
-
-      // $('.a_5').on({
-      //   click(e){
-      //     $('.response_ul').css({
-      //       "height" : "1076.06px"
-      //     })
-      //     $('.img_1').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "0"
-      //     });
-      //     $('.img_2').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_3').css({
-      //       "display" : "block",
-      //       "top" : "0",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_4').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_5').css({
-      //       "display" : "block",
-      //       "top" : "313.906px",
-      //       "left" : "50%"
-      //     });
-      //     $('.img_6').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_7').css({
-      //       "display" : "block",
-      //       "top" : "448.25px",
-      //       "left" : "0"
-      //     });
-      //     $('.img_8').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_9').css({
-      //       "display" : "none"
-      //     });
-      //     $('.img_10').css({
-      //       "display" : "block",
-      //       "top" : "762.156px",
-      //       "left" : "0"
-      //     });
-      //   }
-      // })
 
       $(window).resize(function(e){
         galleryFn();
-      })
+      }) 
 
       function galleryFn(){
+        console.log('버튼 번호', btnNumber);
+        switch(btnNumber){
+          case 0:
+            n = 10;
+            l = 5;
+            r = 5;
+            a = [1,3,5,7,9];
+            b = [2,4,6,8,10];
+            break;
+          case 1:
+            n = 6;
+            l = 3;
+            r = 3;
+            a = [2,6,9];
+            b = [3,7,10];
+            break;
+          case 2:
+            n = 6;
+            l = 3;
+            r = 3;
+            break;
+          case 3:
+            n = 8;
+            l = 4;
+            r = 4;
+            break;
+          case 4:
+            n = 5;
+            l = 3;
+            r = 2;
+            break;
+        }
+        console.log('갤러리 리스트 개수', n,l,r);
+
         if($(window).innerWidth() >= 770){
           cols = 2;
         }
@@ -538,17 +296,13 @@
           cols = 1;
         }
 
+
         boxW = ul.width();
         imgW = (boxW - 44) / 2;
         l_imgH = imgW * 1.032707;
         s_imgH = imgW * 0.707255756;
         leftBoxH = 0;
         rightBoxH = 0;
-
-        console.log(`boxW ${boxW}`);
-        console.log(`imgW ${imgW}`);
-        console.log(`s_imgH ${s_imgH}`);
-        console.log(`l_imgH ${l_imgH}`);
 
         li.each(function(idx){
           let h = arr[idx]===1 ? l_imgH : s_imgH;
@@ -580,7 +334,6 @@
           leftBoxH += s_imgH;
           rightBoxH += s_imgH;
           boxH = leftBoxH > rightBoxH ? leftBoxH : rightBoxH;
-          console.log(boxH);
           ul.css({
             height : boxH
           })
@@ -607,13 +360,24 @@
           leftBoxH += s_imgH;
           rightBoxH += s_imgH;
           boxH = leftBoxH > rightBoxH ? leftBoxH : rightBoxH;
-          console.log(boxH);
           ul.css({
             height : boxH
           })
         }
 
       }
+
+      galleryBtn.each(function(idx){
+        $(this).on({
+          click(e){
+            e.preventDefault();
+            galleryBtn.removeClass('on');
+            $(this).addClass('on');
+            btnNumber = idx;
+            galleryFn();
+          }
+        })
+      })
 
     }
 
