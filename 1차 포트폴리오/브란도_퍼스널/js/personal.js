@@ -275,16 +275,22 @@
             n = 6;
             l = 3;
             r = 3;
+            a = [2,5,8];
+            b = [4,6,10];
             break;
           case 3:
             n = 8;
             l = 4;
             r = 4;
+            a = [1,6,7,9];
+            b = [4,6,8,10];
             break;
           case 4:
             n = 5;
             l = 3;
             r = 2;
+            a = [1,7,10];
+            b = [3,5];
             break;
         }
         console.log('갤러리 리스트 개수', n,l,r);
@@ -305,6 +311,8 @@
         rightBoxH = 0;
 
         li.each(function(idx){
+          
+
           let h = arr[idx]===1 ? l_imgH : s_imgH;
           li.eq(idx).css({
             width : imgW,
