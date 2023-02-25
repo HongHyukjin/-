@@ -25,6 +25,7 @@
 }
 #wrap #header .container .gap .content {
   width: 100%;
+  height: 100%;
 }
 #wrap #header .container .gap .content .top {
   width: 100%;
@@ -118,6 +119,44 @@
 }
 #wrap #header .container .gap .content .bottom .icon .n_3 {
   margin: 0 0 0 10px;
+}
+#wrap #header .container .gap .content #mobileNav {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap .content #mobileNav a {
+  display: block;
+  padding: 11px 0;
+}
+#wrap #header .container .gap .content #mobileNav a img {
+  width: 156px;
+  height: 100%;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn {
+  display: block;
+  width: 44px;
+  height: 32px;
+  position: relative;
+  background: #000;
+  display: flex;
+  align-items: center;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn i {
+  position: absolute;
+  left: 10px;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn i.line1 {
+  top: 10px;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn i.line2 {
+  top: 50%;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn i.line3 {
+  bottom: 8px;
 }
 #wrap #main {
   z-index: 1;
@@ -214,20 +253,19 @@
 #wrap #main #section1 .container .page-btn-box {
   z-index: 2;
   position: absolute;
-  bottom: 50px;
+  bottom: 37px;
   left: 0;
   width: 100%;
   text-align: center;
 }
 #wrap #main #section1 .container .page-btn-box span {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 #wrap #main #section1 .container .page-btn-box span a {
   display: inline-block;
-  width: 20px;
-  height: 10px;
-  border: 2px solid #fff;
-  border-radius: 5px;
+  width: 28px;
+  height: 3px;
+  background: #626262;
 }
 #wrap #main #section1 .container .page-btn-box span a.on {
   background: rgb(255, 255, 255);

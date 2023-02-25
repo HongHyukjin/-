@@ -213,6 +213,9 @@
 
         for(let i=0; i<=countNum.length; i++){
           countSum[i] += (countNum[i] / 1000);
+          if(countSum[i] > countNum[i]){
+            countSum[i] = countNum[i];
+          }
           num.eq(i).html(Math.round(countSum[i]));
         }
       }
