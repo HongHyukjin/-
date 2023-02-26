@@ -144,7 +144,7 @@
               align-items: center;
               i{
                 position: absolute;
-                left: 10px;
+                left: 11px;
                 width: 22px;
                 height : 2px;
                 background: #fff;
@@ -157,6 +157,26 @@
                 &.line3{
                   bottom : 8px;
                 }
+              }
+            }
+          }
+          #accordian{
+            display: none;
+            width : 100%;
+            background: #fff;
+            &.on{
+              display: block;
+            }
+            ul{
+              width : 100%;
+              padding : 15px 0 0 0;
+              li{
+                font-size: 13px;
+                font-weight: 500;
+                font-family: 'Montserrat';
+                line-height: 20px;
+                padding : 12px 15px;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
               }
             }
           }

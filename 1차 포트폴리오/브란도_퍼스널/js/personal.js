@@ -66,6 +66,20 @@
           $(this).toggleClass('on');
         }
       })
+      const accordian = $('#header #accordian');
+      const li = $('#header li');
+      $('.mobile-btn').on({
+        click(e){
+          e.preventDefault();
+          accordian.toggleClass('on');
+        }
+      })
+      li.on({
+        click(){
+          accordian.removeClass('on');
+        }
+      })
+
     },
 
     section1(){
@@ -239,6 +253,7 @@
       let l_imgH = imgW * 1.032707;
       let s_imgH = imgW * 0.707255756;
       let btnNumber = 0;
+      let a = [];
 
       galleryFn();
       galleryBtn.removeClass('on');
@@ -313,6 +328,7 @@
         }
 
         else if(btnNumber === 1){
+          a = [2,3,6,7,9,10];
           imgBox.removeClass('addZoom');
           switch(cols){
             case 2:
@@ -346,6 +362,7 @@
         }
 
         else if(btnNumber === 2){
+          a = [2,4,5,6,8,10];
           imgBox.removeClass('addZoom');
           switch(cols){
             case 2:
@@ -379,6 +396,7 @@
         }
 
         else if(btnNumber === 3){
+          a = [1,4,5,6,7,8,9,10];
           imgBox.removeClass('addZoom');
           switch(cols){
             case 2:
@@ -416,6 +434,7 @@
         }
 
         else if(btnNumber === 4){
+          a = [1,3,7,5,10];
           imgBox.removeClass('addZoom');
           switch(cols){
             case 2:
