@@ -242,13 +242,13 @@
       const galleryBtn = $('#section8 .txt_btn');
       const imgBox = $('#section8 .img-box');
 
-      const ul = $('.response_ul');
-      const li = $('.response_ul li');
+      const ul = $('#section8 .response_ul');
+      const li = $('#section8 .response_ul li');
 
       let n = li.length;
       let cols = 2;
       let boxW = ul.width();
-      let imgW = (boxW - 44) / cols;
+      let imgW = (boxW - (22 * cols)) / cols;
       let arr = [1,0,0,1,1,0,0,1,0,0];
       let l_imgH = imgW * 1.032707;
       let s_imgH = imgW * 0.707255756;
@@ -273,7 +273,8 @@
         }
 
         boxW = ul.width();
-        imgW = (boxW - 44) / cols; 
+        imgW = boxW / cols; 
+        console.log(imgW);
         l_imgH = imgW * 1.032707;
         s_imgH = imgW * 0.707255756;
         arr = [1,0,0,1,1,0,0,1,0,0];

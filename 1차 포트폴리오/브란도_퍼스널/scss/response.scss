@@ -184,6 +184,9 @@
   #wrap #main #section7 .container .gap .content ul li h4 {
     width : 90%;
   }
+  #wrap #main #section8 {
+    padding: 100px 0;
+  }
   #wrap #main #section8 .container .content .img_content {
     display: block;
   }
@@ -305,6 +308,18 @@
     width : 100%;
     text-align: center;
     padding : 0;
+  }
+  #wrap #main #section8 .container .content .title h2 {
+    text-align: center;
+  }
+  #wrap #main #section8 .container .content .img_content .text ul {
+    flex-flow: column nowrap;
+  }
+  #wrap #main #section8 .container .content .img_content .text ul li {
+    width: 100%;
+  }
+  #wrap #main #section8 .container .content .img_content .img ul li {
+    padding : 0 0 22px 0;
   }
   #wrap #main #section9 .container .content .text ul li {
     width: 100%;

@@ -845,7 +845,14 @@
   padding: 0 0 22px 22px;
   position: absolute;
 }
+#wrap #main #section8 .container .content .img_content .img ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 #wrap #main #section8 .container .content .img_content .img ul li a .img-box {
+  width: 100%;
+  height: 100%;
   position: relative;
   width: 100%;
   overflow: hidden;
