@@ -1117,6 +1117,10 @@
   height: 47px;
   padding: 12px 15px;
   border: 2px solid rgba(0, 0, 0, 0.1);
+  background: #fff url(../img/select-arrow.png) no-repeat 98% 50%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-size: 14px;
   font-weight: 500;
   font-family: "Montserrat";
