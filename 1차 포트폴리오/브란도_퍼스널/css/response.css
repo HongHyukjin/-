@@ -248,7 +248,7 @@
     width: 100%;
     margin: 0 0 70px 0;
   }
-  #wrap #main #section4 .container ul .no_mg {
+  #wrap #main #section4 .container ul li:nth-child(4) {
     margin: 0;
   }
   #wrap #main #section4 .container ul li div i {
@@ -292,7 +292,7 @@
     width: 100%;
     flex-flow: column wrap;
   }
-  #wrap #main #section7 .container .gap .content ul .pad_70 {
+  #wrap #main #section7 .container .gap .content ul li:nth-child(1) {
     margin: 0 0 72.594px 0;
   }
   #wrap #main #section7 .container .gap .content ul li h2 {

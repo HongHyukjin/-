@@ -114,10 +114,10 @@
   color: #575757;
   margin: 0 0 0 5px;
 }
-#wrap #header .container .gap .content .bottom .icon .n_1 {
+#wrap #header .container .gap .content .bottom .icon:nth-child(1) {
   margin: 0 10px 0 0;
 }
-#wrap #header .container .gap .content .bottom .icon .n_3 {
+#wrap #header .container .gap .content .bottom .icon:nth-child(3) {
   margin: 0 0 0 10px;
 }
 #wrap #header .container .gap .content #mobileNav {
@@ -348,7 +348,7 @@
   font-weight: 500;
   line-height: 20px;
 }
-#wrap #main #section2 .container .gap .content .text ul .no_line {
+#wrap #main #section2 .container .gap .content .text ul:nth-child(5) {
   border: 0;
 }
 #wrap #main #section2 .container .gap .content .text ul a {
@@ -583,7 +583,10 @@
   line-height: 20px;
   color: #929292;
 }
-#wrap #main #section5 .container .content .text ul .pad {
+#wrap #main #section5 .container .content .text ul li:nth-child(3) {
+  margin: 0;
+}
+#wrap #main #section5 .container .content .text ul li:nth-child(4) {
   margin: 0;
 }
 #wrap #main #section5 .container .content .text span p {
@@ -952,6 +955,23 @@
   width: 33.33%;
   padding: 58.5px 50.688px;
 }
+#wrap #main #section9 .container .content .text ul li:nth-child(1) {
+  background: #fdd947;
+  outline: 5px solid rgba(255, 255, 255, 0.25);
+  outline-offset: -20px;
+}
+#wrap #main #section9 .container .content .text ul li:nth-child(3) {
+  outline: 5px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -20px;
+}
+#wrap #main #section9 .container .content .text ul li:nth-child(5) {
+  background: #ef106e;
+  outline: 5px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -20px;
+}
+#wrap #main #section9 .container .content .text ul li:nth-child(5) p {
+  color: #fff;
+}
 #wrap #main #section9 .container .content .text ul li:hover p {
   margin: 10% 0 15% 0;
   transition: all 0.3s;
@@ -997,23 +1017,6 @@
   font-family: "Montserrat";
   line-height: 20px;
   color: #626262;
-}
-#wrap #main #section9 .container .content .text ul .txt_1 {
-  background: #fdd947;
-  outline: 5px solid rgba(255, 255, 255, 0.25);
-  outline-offset: -20px;
-}
-#wrap #main #section9 .container .content .text ul .txt_3 {
-  outline: 5px solid rgba(0, 0, 0, 0.1);
-  outline-offset: -20px;
-}
-#wrap #main #section9 .container .content .text ul .txt_5 {
-  background: #ef106e;
-  outline: 5px solid rgba(0, 0, 0, 0.1);
-  outline-offset: -20px;
-}
-#wrap #main #section9 .container .content .text ul .txt_5 p {
-  color: #fff;
 }
 #wrap #main #section10 {
   width: 100%;

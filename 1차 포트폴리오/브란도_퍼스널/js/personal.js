@@ -28,31 +28,31 @@
         }
         if(500 <= scrollTop && scrollTop < 1300){
           $('.main-btn').removeClass('on');
-          $('header').find('.n1').addClass('on');
+          $('.main-btn').eq(1).addClass('on');
         }
         if(1300 <= scrollTop && scrollTop < 2100){
           $('.main-btn').removeClass('on');
-          $('header').find('.n2').addClass('on');
+          $('.main-btn').eq(2).addClass('on');
         }
         if(2100 <= scrollTop && scrollTop < 3000){
           $('.main-btn').removeClass('on');
-          $('header').find('.n3').addClass('on');
+          $('.main-btn').eq(3).addClass('on');
         }
         if(3000 <= scrollTop && scrollTop < 4000){
           $('.main-btn').removeClass('on');
-          $('header').find('.n4').addClass('on');
+          $('.main-btn').eq(4).addClass('on');
         }
         if(4000 <= scrollTop && scrollTop < 6200){
           $('.main-btn').removeClass('on');
-          $('header').find('.n5').addClass('on');
+          $('.main-btn').eq(5).addClass('on');
         }
         if(6200 <= scrollTop && scrollTop < 7200){
           $('.main-btn').removeClass('on');
-          $('header').find('.n6').addClass('on');
+          $('.main-btn').eq(6).addClass('on');
         }
         if(7200 <= scrollTop){
           $('.main-btn').removeClass('on');
-          $('header').find('.n7').addClass('on');
+          $('.main-btn').eq(7).addClass('on');
         }
       });
     },
@@ -88,7 +88,6 @@
 
       //메인슬라이드
       function mainSlide(){
-        // if(cnt < ) return;
         $('.slide-wrap').stop().animate({left : `${-100 * cnt}%`}, 1000, function(){
           pageNation();
         });
@@ -132,6 +131,7 @@
       let dragEnd = 0;
       let mousedown = false;
 
+      //데스크탑용
       $('#section1').on({
         mousedown(e){
           mousedown = true;
@@ -165,35 +165,44 @@
         }
       });
 
+      //모바일용
+      $('#section1').on({
+        touchstart(e){
+          mousedown = true;
+          touchStart = e.originalEvent.changedTouches[0].clientX;
+          dragStart = e.clientX - $('.slide-wrap').offset().left + 250;
+          console.log(e.clientX, $('.slide-wrap').offset().left);
+          stopTimer();
+        },
+        touchend(e){
+          mousedown = false;
+          touchEnd = e.originalEvent.changedTouches[0].clientX;
+          if((touchStart - touchEnd) > 0){
+            if(!$('.slide-wrap').is(':animated')){
+              nextCount();
+            }
+          }
+          if((touchStart - touchEnd) < 0){
+            if(!$('.slide-wrap').is(':animated')){
+              prevCount();
+            }
+          }
+          autoTimer();
+        },
+        touchmove(e){
+          if(mousedown === false) return;
+          dragEnd = e.originalEvent.changedTouches[0].clientX;
+          // console.log(dragEnd - dragStart);
+          if(!$('.slide-wrap').is(':animated') && 0<cnt<2){
+            $('.slide-wrap').css({left : dragEnd - dragStart});
+          }
+        }
+      });
+
       function pageNation(){
         $('.page-btn').removeClass('on');
         $('.page-btn').eq(cnt).addClass('on');
       }
-
-      // $('.page-btn').eq(0).on({
-      //   click(e){
-      //     e.preventDefault();
-      //     clearInterval(setId);
-      //     cnt = 0;
-      //     mainSlide();
-      //   }        
-      // })
-      // $('.page-btn').eq(1).on({
-      //   click(e){
-      //     e.preventDefault();
-      //     clearInterval(setId);
-      //     cnt = 1;
-      //     mainSlide();
-      //   }        
-      // })
-      // $('.page-btn').eq(2).on({
-      //   click(e){
-      //     e.preventDefault();
-      //     clearInterval(setId);
-      //     cnt = 2;
-      //     mainSlide();
-      //   }        
-      // })
 
         $('.page-btn').each(function(idx){
           $(this).on({

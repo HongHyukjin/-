@@ -79,57 +79,45 @@
     section1(){
       let cnt = 0;
       let setId = 0;
-      const $slide = $('#section1 .slide'); //DOM 선택자 변수에 $를 붙여서 구분
-      const $arrowNextBtn = $('#section1 .arrow-next-btn');
-      const $arrowPrevBtn = $('#section1 .arrow-prev-btn');
+      const $slide = $('#section1 .slide');
       const $pageBtn = $('#section1 .page-btn');
 
-      //1-1. 메인 다음슬라이드 : 페이드인 => 현재 슬라이드를 덮고 부드렆게 보이는 다음 슬라이드
       function mainNextSlide(){
-        // $slide.stop().css({zIndex : 2}).animate({opacity : 1}, 0);
-        // $slide.eq(cnt===0?2:cnt-1).css({zIndex : 1}).stop().animate({opacity : 1});
-        // $slide.eq(cnt).css({zIndex : 3}).stop().animate({opacity : 0}, 1000);
-        
-        $slide.css({zIndex : 1}).stop().animate({opacity:1});
-        $slide.eq(cnt===0?2:cnt-1).css({zIndex : 2})  //현재슬라이드
-        $slide.eq(cnt).css({zIndex : 3}).stop().animate({opacity : 0}, 0).animate({opacity : 1},1000);  //다음슬라이드
+        $slide.css({zIndex:1}).stop().animate({opacity:1});
+        $slide.eq(cnt===0?2:cnt-1).css({zIndex:2})
+        $slide.eq(cnt).css({zIndex:3}).stop().animate({opacity:0},0).stop().animate({opacity:1},1000);
         pageBtn();
       }
 
-      //1-2. 메인 이전슬라이드 : 페이드아웃 => 현재 슬라이드를 부드럽게 사라지게 하여 바로 아래 이전 슬라이드가 보임
       function mainPrevSlide(){
-        $slide.css({zIndex : 1, opacity : 1});
-        $slide.eq(cnt).css({zIndex : 2})  //이전슬라이드
-        $slide.eq(cnt===2?0:cnt+1).css({zIndex : 3}).stop().animate({opacity : 1}, 0).animate({opacity : 0},1000);  //다음슬라이드
+        $slide.css({zIndex:1}).stop().animate({opacity:1});
+        $slide.eq(cnt).css({zIndex:2})
+        $slide.eq(cnt===2?0:cnt+1).css({zIndex:3}).stop().animate({opacity:1},0).stop().animate({opacity:0},1000);
         pageBtn();
       }
 
-      //2-1. 다음카운트함수
       function nextCount(){
         cnt++;
-        if(cnt > 2){  //마지막 슬라이드이면 처음으로 리턴 초기화 0으로
+        if(cnt > 2){
           cnt = 0;
         }
         mainNextSlide();
       }
 
-      //2-2. 이전카운트함수
       function prevCount(){
         cnt--;
-        if(cnt < 0){  //마지막 슬라이드이면 처음으로 리턴 초기화 0으로
+        if(cnt < 0){
           cnt = 2;
         }
         mainPrevSlide();
       }
 
-      //3. 자동타이머함수
       function autoTimer(){
-        setId = setInterval(prevCount, 3000);
+        setId = setInterval(nextCount, 3000);
       }
       autoTimer();
 
-      //4-1. 다음 화살버튼클릭 이벤트
-      $arrowNextBtn.on({
+      $('.arrow-next-btn').on({
         click(e){
           e.preventDefault();
           nextCount();
@@ -137,8 +125,7 @@
         }
       })
 
-      //4-2. 이전 화살버튼클릭 이벤트
-      $arrowPrevBtn.on({
+      $('.arrow-prev-btn').on({
         click(e){
           e.preventDefault();
           prevCount();
@@ -160,14 +147,13 @@
               cnt = idx;
               mainNextSlide();
             }
-            else if(idx < cnt){
+            if(idx < cnt){
               cnt = idx;
               mainPrevSlide();
             }
           }
         })
       })
-
     },
     section2(){
 
