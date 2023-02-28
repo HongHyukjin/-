@@ -348,10 +348,10 @@
     width: 20%;
     margin: 0 13px;
   }
-  #wrap #main #footer .container .content .top .icon ul .first {
+  #wrap #main #footer .container .content .top .icon ul li:nth-child(1) {
     margin: 0 13px 0 0;
   }
-  #wrap #main #footer .container .content .top .icon ul .last {
+  #wrap #main #footer .container .content .top .icon ul li:nth-child(5) {
     margin: 0 0 0 13px;
   }
   #wrap #main #footer .container .content .top .mark {

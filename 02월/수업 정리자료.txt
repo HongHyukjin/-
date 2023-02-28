@@ -228,3 +228,9 @@ root.appendChild(table1);
 const idtable1 = document.getElementById('table1')
 //해당 테이블에 txt 추가
 idtable1.innerHTML = txt;
+
+0228/////////////////////////////////////////////////////////////////////////////////////////////////////////
+바닐라 js와 jquery 차이
+$() 요소선택자 못씀
+document.querySelector 써야됨
+.css 대신 .style 써야됨

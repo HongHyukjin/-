@@ -6,8 +6,10 @@
       this.wrap();
       this.header();
       this.section1();
+      this.section2();
       this.section4();
       this.section8();
+      this.section9();
     },
 
     wrap(){
@@ -217,6 +219,15 @@
         })
 
 
+    },
+
+    section2(){
+      const downbtn = $('#section2 a');
+      downbtn.on({
+        click(e){
+          e.preventDefault();
+        }
+      })
     },
 
     section4(){
@@ -488,6 +499,15 @@
         })
       })
 
+    },
+
+    section9(){
+      const ptag = $('#section9 p a');
+      ptag.on({
+        click(e){
+          e.preventDefault();
+        }
+      })
     }
 
   }
