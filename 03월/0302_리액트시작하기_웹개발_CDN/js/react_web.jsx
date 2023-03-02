@@ -1,5 +1,21 @@
 // 2.리액트 컴포넌트 생성(클래스 객체) 명명규칙 파스칼 케이스 기법
 function WrapComponent(props){
+
+  //상태관리 훅(Hook) React.useState() 사용하면 프록스 변경 사용 가능(세터)
+  // const [state, setState] = React.useState(props);
+
+  // console.log(state.이름);
+  // console.log(state.구분);
+  // console.log(state.성별);
+  // console.log(state.취미);
+  // const setterName = () =>{
+  //   setState({
+  //     ...state,
+  //     이름: '안중근'
+  //   })
+  // }
+
+
   return (
     <div id="wrap">
       <SkipComponent 성별={props.성별}/>
@@ -19,7 +35,7 @@ function WrapComponent(props){
 // WrapComponent.기본프롭스 = {}
 WrapComponent.defaultProps = {
   이름 : '유관순',
-  구분 : ' 독립운동가',
+  구분 : '독립운동가',
   성별 : '여성',
   취미 : '독서'
 }
@@ -46,7 +62,7 @@ WrapComponent.defaultProps = {
   }
 
   // 6. 메인 컴포넌트
-  function MainComponent(props){
+  function MainComponent({props}){
     const {이름, 구분, 성별, 취미} = props;
     return(
       <main id="main">
