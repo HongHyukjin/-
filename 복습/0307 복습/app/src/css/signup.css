@@ -1,0 +1,63 @@
+#signUp {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+#signUp .title {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+#signUp .title h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+#signUp .content {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+#signUp .content form {
+  width: 100%;
+}
+#signUp .content form ul {
+  width: 100%;
+}
+#signUp .content form ul li {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+#signUp .content form ul li:nth-child(4), #signUp .content form ul li:nth-child(5) {
+  padding: 0 140px 0 0;
+}
+#signUp .content form ul li div {
+  width: 100%;
+}
+#signUp .content form ul li div input {
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  outline: 0;
+  padding: 0 15px;
+  background: #f6f6f6;
+}
+#signUp .content form ul li div button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 50px;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+#signUp .content form ul li div button:hover {
+  background: #f9f9f9;
+}
+#signUp .content form ul li div button.on {
+  color: #39c;
+  background: #39c;
+}

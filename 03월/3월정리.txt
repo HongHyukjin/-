@@ -2,3 +2,19 @@
 
 components 생성후 rcc(클래스형 컴포넌트) or rsc(함수형 컴포넌트) 자동생성
 함수형은 화살표함수보다는 function 사용
+
+CRA 방식
+npx create-react-app app
+sass dependency 추가
+npm i sass
+
+상태관리, 비구조화{}
+
+부모 자식컴포넌트간의 함수 or state 전달은 비구조화{}를 사용
+
+defaultProbs 안쓰고 useState({})에서 바로 상태관리 가능
+defaultProbs 쓰는게 더 나음
+
+클릭이벤트는 onClick
+input 태그로 입력받은값 상태변수에 넣으려면 onChange, e.target.value 사용
+
