@@ -1,7 +1,15 @@
 import React from 'react';
 import '../../../css/modal.css'
 
-export default function ModalComponent () {
+export default function ModalComponent ({modalMsg, modalCloseFn, timerCounter, isTimer, setId}) {
+
+  const onClickModalClose = (e) => {
+    e.preventDefault();
+    modalCloseFn();
+    clearInterval(setId);
+    isTimer && timerCounter();
+  }
+
   return (
     <div id='modal'>
       <div className="wrap">
@@ -9,11 +17,11 @@ export default function ModalComponent () {
           <div className="content">
             <div className="msg-box">
               <p>
-                인증번호가 전송되었습니다.
+                {modalMsg}
               </p>
             </div>
             <div className="btn-box">
-              <button type='button'>확인</button>
+              <button onClick={onClickModalClose} type='button'>확인</button>
             </div>
           </div>
         </div>

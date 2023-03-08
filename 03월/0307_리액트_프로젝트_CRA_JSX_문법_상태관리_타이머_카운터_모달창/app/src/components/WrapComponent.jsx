@@ -58,7 +58,8 @@ export default function WrapComponent (){
   },[state.isTimer]);
 
   return (
-    <div id='wrap'>
+    <div id='wrap' style={width = 100%}>
+      <h1>{minutes} : {seconds}</h1>
       <SignUpComponent timerClear={timerClear} isTimerFn={isTimerFn} timerCounter={timerCounter} setId={state.setId} seconds={state.seconds} minutes={state.minutes} timerMsg={state.timerMsg} />
     </div>
   );

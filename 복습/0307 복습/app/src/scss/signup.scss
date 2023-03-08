@@ -48,12 +48,28 @@
               height : 50px;
               color : #ccc;
               border : 1px solid #ccc;
+              border-radius: 3px;
+              cursor: pointer;
               &:hover{
                 background: #f9f9f9;
               }
               &.on{
                 color : #39c;
-                background: #39c;
+                border : 1px solid #39c;
+              }
+            }
+            span{
+              position: absolute;
+              top : 0;
+              right : 160px;
+              height : 100%;
+              color : transparent;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              letter-spacing: 2px;
+              &.on{
+                color : #c00;
               }
             }
           }

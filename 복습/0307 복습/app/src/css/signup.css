@@ -53,11 +53,27 @@
   height: 50px;
   color: #ccc;
   border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
 }
 #signUp .content form ul li div button:hover {
   background: #f9f9f9;
 }
 #signUp .content form ul li div button.on {
   color: #39c;
-  background: #39c;
+  border: 1px solid #39c;
+}
+#signUp .content form ul li div span {
+  position: absolute;
+  top: 0;
+  right: 160px;
+  height: 100%;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+#signUp .content form ul li div span.on {
+  color: #c00;
 }
