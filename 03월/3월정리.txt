@@ -12,9 +12,12 @@ npm i sass
 
 부모 자식컴포넌트간의 함수 or state 전달은 비구조화{}를 사용
 
-defaultProbs 안쓰고 useState({})에서 바로 상태관리 가능
-defaultProbs 쓰는게 더 나음
+defaultProps 안쓰고 useState({})에서 바로 상태관리 가능
+defaultProps 쓰는게 더 나음
 
 클릭이벤트는 onClick
 input 태그로 입력받은값 상태변수에 넣으려면 onChange, e.target.value 사용
 
+부모 컴포넌트의 상태변수를 자식에서 전달받아
+자식 컴포넌트의 return문에서 뿌려주는 방식으로 사용가능
+return문의 넣어줄 태그를 return문 밖에서 변수에 담아 변수째로 return문에 뿌려줄수있음

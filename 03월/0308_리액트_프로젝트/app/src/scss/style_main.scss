@@ -1,0 +1,53 @@
+#main{
+  width : 100%;
+  background: #fff;
+  #section1,#section2{
+    width : 100%;
+    padding : 130px 0;
+    .container{
+      width : 800px;
+      height : 100%;
+      margin : 0 auto;
+      .gap{
+        width : 100%;
+        .title{
+          width : 100%;
+          text-align: center;
+          padding : 0 0 50px 0;
+          h2{
+            font-size: 40px;
+            color : #000;
+          }
+        }
+        .content{
+          width : 100%;
+          table{
+            width : 100%;
+            border-collapse: collapse;
+            thead{
+              th{
+                width : calc(100% / 7);
+                height : 100px;
+                border : 1px solid #ccc;
+                background: #f0f0f0;
+                font-size: 20px;
+              }
+            }
+            tbody{
+              td{
+                width : calc(100% / 7);
+                height : 100px;
+                border : 1px solid #ccc;
+                font-size: 16px;
+                color : #666;
+                line-height: 28.8px;
+                text-align: center;
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

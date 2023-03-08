@@ -1,0 +1,9 @@
+설계
+
+components(폴더)
+  WrapComponent.jsx
+  wrap(폴더) 
+    HeaderComponent.jsx - header 버튼에서 버튼을 누르면 메인콤퍼넌트에 과일 목록이 뜨도록
+    MainComponent.jsx
+    FooterComponent.jsx
+    
