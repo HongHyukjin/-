@@ -1,0 +1,74 @@
+#main{
+    width : 100%;
+    #signup{
+        width : 100%;
+        padding : 70px 0;
+        .container{
+            width : 650px;
+            margin : 0 auto;
+            .title{
+                width : 100%;
+                padding : 50px;
+                text-align: center;
+                h1{
+                    font-size: 28px;
+                    line-height: 35px;
+                    font-weight: 500;
+                    color : #333;
+                }
+            }
+            .content{
+                width : 100%;
+                border-top : 2px solid #333;
+                form{
+                    width : 100%;
+                    ul{
+                        width : 100%;
+                        li{
+                            width : 100%;
+                            padding : 10px 0;
+                            &:nth-child(7){
+                                button{
+                                    width : 333px;
+                                    margin : 0;
+                                }
+                            }
+                            span{
+                                display: inline-block;
+                                width : 139px;
+                                font-size: 14px;
+                                color : #333;
+                                font-weight: 700;
+                                font-family: 'Noto Sans';
+                            }
+                            input{
+                                width : 333px;
+                                height : 48px;
+                                padding : 0 11px 0 15px;
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: 'Noto Sans';
+                                color : #333;
+                                border : 1px solid #ddd;
+                                border-radius: 4px;
+                            }
+                            button{
+                                width : 120px;
+                                height : 48px;
+                                margin : 0 0 0 10px;
+                                font-size: 14px;
+                                font-weight: 600;
+                                font-family: 'Noto Sans';
+                                background: #fff;
+                                color : #5f0080;
+                                border : 1px solid #5f0080;
+                                border-radius: 3px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
