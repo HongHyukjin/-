@@ -1397,7 +1397,7 @@
                       &:hover{
                         filter: grayscale(1);
                       }
-                    }
+                    } 
                     span{
                       z-index: 1;
                       position: absolute;
@@ -1409,7 +1409,7 @@
                       background: url() no-repeat 50% 50%;
                       background-size: cover;
                       transform: perspective(360px * 2) rotateY(180deg);
-                      // backface-visibility: hidden;
+                      backface-visibility: hidden;
                       transition: all 1s ease-in-out;
                     }
                     
