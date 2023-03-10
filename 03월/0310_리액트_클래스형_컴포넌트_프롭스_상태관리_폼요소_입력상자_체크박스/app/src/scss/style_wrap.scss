@@ -1,0 +1,121 @@
+#wrap{
+  width: 100%;
+  .container{
+    width : 100%;
+    max-width: 640px;
+    margin : 0 auto;
+    .title{
+      width : 100%;
+      padding : 130px 0 0 0;
+      text-align: center;
+      border-bottom: 1px solid #000;
+      h1{
+        padding : 0 0 50px 0;
+        font-size: 28px;
+        color : #333;
+        font-weight: 600;
+      }
+      h3{
+        text-align: right;
+        padding : 0 0 10px 0;
+        font-size: 12px;
+        i{
+          color : #c33;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+    .content{
+      width : 100%;
+      border-bottom: 1px solid #5f0080;
+      form{
+        width : 100%;
+        ul{
+          width : 100%;
+          padding : 0 20px;
+          li{
+            width : 100%;
+            padding : 10px 0;
+            div{
+              position: relative;
+              width : 100%;
+              padding : 0 130px 0 140px;
+              label{
+                position: absolute;
+                top : 0;
+                left : 0;
+                width : 140px;
+                height : 47px;
+                color : #333;
+                font-size: 14px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                i{
+                  color : #c33;
+                  margin : 0 0 0 3px;
+                }
+              }
+              input{
+                width : 100%;
+                height : 47px;
+                padding : 0 15px;
+                color : #333;
+                border : 1px solid #ccc;
+                border-radius: 3px;
+                background: #fff;
+                outline : 1px solid transparent;
+                outline-offset: -1px;
+                transition: all 0.3s;
+                &:focus{
+                  outline: 1px solid #777;
+                }
+              }
+              button{
+                position: absolute;
+                top : 0;
+                right : 0;
+                width : 120px;
+                height : 47px;
+                font-size: 14px;
+                font-weight: 500;
+                background: #fff;
+                border : 1px solid #5f0080;
+                color : #5f0080;
+                border-radius: 3px;
+              }
+            }
+            &.fruit,&.hobby{
+              text-align: center;
+              label{
+                font-size: 16px;
+                margin : 0 5px;
+                user-select: none;
+                input[type='checkbox']{
+                  width : 15px;
+                  height : 15px;
+                  margin : 0 5px;
+                }
+              }
+            }
+          }
+        }
+        .btn-box{
+          width : 100%;
+          padding : 40px 150px 40px 160px;
+          button{
+            width : 100%;
+            height : 50px;
+            background: #5f0080;
+            color : #fff;
+            font-size: 15px;;
+            font-weight: 500;
+            border-radius: 3px;
+            border : 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
