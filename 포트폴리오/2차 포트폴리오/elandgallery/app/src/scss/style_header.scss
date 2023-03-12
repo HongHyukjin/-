@@ -1,0 +1,44 @@
+#header{
+    width : 100%;
+    .nav_top{
+        background: #000;
+        .container{
+            width : 100%;
+            max-width: 1140px;
+            margin : 0 auto;
+            .gap{
+                width : 100%;
+                padding : 0 15px;
+                .content{
+                    width : 100%;
+                    ul{
+                        display: flex;
+                        justify-content: flex-end;
+                        li{
+                            position: relative;
+                            a{
+                                display: block;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 21px;
+                                color : #fff;
+                                padding : 5px 15px;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top : 50%;
+                                    left : 0;
+                                    height : 50%;
+                                    transform: translateY(-50%);
+                                    border-left : 1px solid #ddd;
+                                    border-right : 1px solid #999;
+                                }
+                            }
+                        }
+                    }
+                    .nav_bottom{}
+                }
+            }
+        }
+    }
+}
