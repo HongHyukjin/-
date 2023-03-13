@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Section1Component from './main/Section1Component';
+import '../../css/style_main.css'
 
-class MainComponent extends Component {
-    render() {
-        return (
-            <main id="main">
-                
-            </main>
-        );
-    }
-}
+export default function MainComponent () {
+    return (
+        <main id="main">
+            <Section1Component />
+        </main>
+    );
+};
 
-export default MainComponent;

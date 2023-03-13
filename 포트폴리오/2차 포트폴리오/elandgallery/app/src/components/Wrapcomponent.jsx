@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
-import FooterComponent from './wrap/FooterComponent';
+import React from 'react';
 import HeaderComponent from './wrap/HeaderComponent'
-import MainComponent from './wrap/MainComponent';
-import '../scss/style_wrap.scss'
+import MainComponent from './wrap/MainComponent'
+import FooterComponent from './wrap/FooterComponent'
 
-class Wrapcomponent extends Component {
-    render() {
-        return (
-            <div id='wrap'>
-                <HeaderComponent />
-                <MainComponent />
-                <FooterComponent />
-            </div>
-        );
-    }
-}
+export default function Wrapcomponent (){
+    return (
+        <div id='wrap'>
+            <HeaderComponent />
+            <MainComponent />
+            <FooterComponent />
+        </div>
+    );
+};
 
-export default Wrapcomponent;
