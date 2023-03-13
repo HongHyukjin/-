@@ -10,6 +10,12 @@
   width: 100%;
   height: 100%;
   position: relative;
+<<<<<<< HEAD
+=======
+  display: flex;
+  align-items: center;
+  justify-content: center;
+>>>>>>> 0c48e945fc9baacac7a9192039bd9cd6b850dedf
 }
 #section1 .container .gap .title {
   z-index: 2;
@@ -17,6 +23,7 @@
   top: 0;
   left: 0;
   width: 100%;
+<<<<<<< HEAD
   height: 100%;
   padding: 0 0 0 75px;
   display: flex;
@@ -26,27 +33,47 @@
   width: 100%;
 }
 #section1 .container .gap .title div h2 {
+=======
+  padding: 0 0 0 75px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+#section1 .container .gap .title h2 {
+>>>>>>> 0c48e945fc9baacac7a9192039bd9cd6b850dedf
   width: 100%;
   font-size: 34px;
   font-weight: 400;
   line-height: 51px;
   color: #fff;
 }
+<<<<<<< HEAD
 #section1 .container .gap .title div h1 {
+=======
+#section1 .container .gap .title h1 {
+>>>>>>> 0c48e945fc9baacac7a9192039bd9cd6b850dedf
   width: 100%;
   font-size: 75px;
   font-weight: 500;
   line-height: 90px;
   color: #fff;
 }
+<<<<<<< HEAD
 #section1 .container .gap .title div h3 {
+=======
+#section1 .container .gap .title h3 {
+>>>>>>> 0c48e945fc9baacac7a9192039bd9cd6b850dedf
   width: 100%;
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
   color: #fff;
 }
+<<<<<<< HEAD
 #section1 .container .gap .title div button {
+=======
+#section1 .container .gap .title button {
+>>>>>>> 0c48e945fc9baacac7a9192039bd9cd6b850dedf
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -54,6 +81,7 @@
   padding: 10px 50px;
   color: #fff;
   background: #000;
+<<<<<<< HEAD
   border: 1px solid #000;
   cursor: pointer;
   outline: 0;
@@ -62,6 +90,8 @@
 #section1 .container .gap .title div button:hover {
   color: #000;
   background: #fff;
+=======
+>>>>>>> 0c48e945fc9baacac7a9192039bd9cd6b850dedf
 }
 #section1 .container .gap .slide-container {
   z-index: 1;
@@ -78,11 +108,15 @@
   height: 100%;
 }
 #section1 .container .gap .slide-container .slide-view .slide-wrap .slide {
+<<<<<<< HEAD
   position: relative;
+=======
+>>>>>>> 0c48e945fc9baacac7a9192039bd9cd6b850dedf
   width: 100%;
   height: 100%;
   background: url(../img/83500fcba2f2f5c5e67992b05335468e.jpg) no-repeat 50% 50%;
   background-size: cover;
+<<<<<<< HEAD
 }
 #section1 .container .gap .slide-container .slide-view .slide-wrap .slide::after {
   content: "";
@@ -93,4 +127,6 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   background-size: cover;
+=======
+>>>>>>> 0c48e945fc9baacac7a9192039bd9cd6b850dedf
 }
