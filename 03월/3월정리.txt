@@ -37,3 +37,13 @@ this.setState()할때 this를 직접 저장하면 전개연산자 필요없이 �
 input 태그에 value로 상태관리의 state로 연결해줘야함
 배열.filter((item)=>조건) 배열에서 조건에 해당하는 것만 걸러짐
 배열.includes('항목') 배열에 항목이 있으면 true 없으면 false 반환
+
+
+라우터 설치
+npm i react-router-dom
+BrowserRouter : 현재 위치의 URL을 저장
+Routes : 자식 route들을 담는곳
+Route : path(본인이 설정)를 통해 url을 이동, index는 기본으로 연결된 페이지
+연결한 path를 Link to를 통해 이동
+
+

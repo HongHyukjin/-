@@ -22,11 +22,19 @@ class HeaderComponent extends Component {
                     <div className="container">
                         <div className="gap">
                             <div className="content">
+                                <a href="!#"><img src="./img/a078b5180d7d267fb2f4300458afeb74.png" alt="" /></a>
                                 <ul>
-                                    <li><a href="!#"></a></li>
-                                    <li><a href="!#"></a></li>
-                                    <li><a href="!#"></a></li>
+                                    <li><a href="!#">ARTWORKS</a></li>
+                                    <li><a href="!#">EXHIBITIONS</a></li>
+                                    <li><a href="!#">FOR GIFT</a></li>
                                 </ul>
+                                <div className='nav'>
+                                    <ul>
+                                        <li><i></i></li>
+                                        <li><i></i></li>
+                                        <li><i></i></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,106 @@
+#header {
+  width: 100%;
+}
+#header .nav_top {
+  background: #000;
+}
+#header .nav_top .container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+#header .nav_top .container .gap {
+  width: 100%;
+  padding: 0 15px;
+}
+#header .nav_top .container .gap .content {
+  width: 100%;
+}
+#header .nav_top .container .gap .content ul {
+  display: flex;
+  justify-content: flex-end;
+}
+#header .nav_top .container .gap .content ul li {
+  position: relative;
+}
+#header .nav_top .container .gap .content ul li a {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fff;
+  padding: 5px 15px;
+}
+#header .nav_top .container .gap .content ul li:nth-child(2) a::before, #header .nav_top .container .gap .content ul li:nth-child(3) a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 50%;
+  transform: translateY(-50%);
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #999;
+}
+#header .nav_bottom {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+#header .nav_bottom .container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+#header .nav_bottom .container .gap {
+  padding: 0 15px;
+  width: 100%;
+}
+#header .nav_bottom .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#header .nav_bottom .container .gap .content a {
+  padding: 4px 0;
+  margin: 0 16px 0 0;
+}
+#header .nav_bottom .container .gap .content a img {
+  width: auto;
+}
+#header .nav_bottom .container .gap .content > ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#header .nav_bottom .container .gap .content > ul li a {
+  margin: 0 50px 0 0;
+  display: block;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #fff;
+  padding: 15px 5px 10px 5px;
+}
+#header .nav_bottom .container .gap .content div {
+  display: flex;
+  align-items: center;
+}
+#header .nav_bottom .container .gap .content div > ul {
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+#header .nav_bottom .container .gap .content div > ul li i {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  background: #fff;
+}
+#header .nav_bottom .container .gap .content div > ul li:nth-child(1) i {
+  top: 24px;
+}
+#header .nav_bottom .container .gap .content div > ul li:nth-child(2) i {
+  top: 36px;
+}

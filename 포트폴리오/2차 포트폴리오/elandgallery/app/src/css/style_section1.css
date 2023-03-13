@@ -1,0 +1,96 @@
+#section1 {
+  width: 100%;
+  height: 570px;
+}
+#section1 .container {
+  width: 100%;
+  height: 100%;
+}
+#section1 .container .gap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#section1 .container .gap .title {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 75px;
+  display: flex;
+  align-items: center;
+}
+#section1 .container .gap .title div {
+  width: 100%;
+}
+#section1 .container .gap .title div h2 {
+  width: 100%;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 51px;
+  color: #fff;
+}
+#section1 .container .gap .title div h1 {
+  width: 100%;
+  font-size: 75px;
+  font-weight: 500;
+  line-height: 90px;
+  color: #fff;
+}
+#section1 .container .gap .title div h3 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #fff;
+}
+#section1 .container .gap .title div button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 30px 0;
+  padding: 10px 50px;
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  outline: 0;
+  transition: all 0.3s;
+}
+#section1 .container .gap .title div button:hover {
+  color: #000;
+  background: #fff;
+}
+#section1 .container .gap .slide-container {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#section1 .container .gap .slide-container .slide-view {
+  width: 100%;
+  height: 100%;
+}
+#section1 .container .gap .slide-container .slide-view .slide-wrap {
+  width: 100%;
+  height: 100%;
+}
+#section1 .container .gap .slide-container .slide-view .slide-wrap .slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/83500fcba2f2f5c5e67992b05335468e.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#section1 .container .gap .slide-container .slide-view .slide-wrap .slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
