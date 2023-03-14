@@ -6,7 +6,8 @@ export default function HeaderComponent () {
 
   const [state, setState] = React.useState({
     isFix : false,
-    isSub1 : false
+    isSub1 : false,
+    isSub2 : false
   })
 
   React.useEffect(() => {
@@ -37,6 +38,13 @@ export default function HeaderComponent () {
     setState({
       ...state,
       isSub1 : false
+    })
+  }
+
+  const onMouseEnterSub2 = () => {
+    setState({
+      ...state,
+      isSub2 : true
     })
   }
 
@@ -89,19 +97,23 @@ export default function HeaderComponent () {
                   </div>
                   <div className="right">
                     <span>
-                      <Link to=''><img src="./img/map.svg" alt="" /></Link>
-                      <div className="sub2">
-                        <ul>
-                          <li>
-                            <span>배송지를 등록</span>하고
-                          </li>
-                          <li>구매 가능한 상품을 확인하세요!</li>
-                          <li>
-                            <button>로그인</button>
-                            <button><img src="./img/ico_search.svg" alt="" />주소 검색</button>
-                          </li>
-                        </ul>
-                      </div>
+                      <Link onMouseEnter={onMouseEnterSub2} to=''><img src="./img/map.svg" alt="" /></Link>
+                      {
+                        state.isSub2&&(
+                            <div className="sub2">
+                              <ul>
+                                <li>
+                                  <span>배송지를 등록</span>하고
+                                </li>
+                                <li>구매 가능한 상품을 확인하세요!</li>
+                                <li>
+                                  <button>로그인</button>
+                                  <button><img src="./img/ico_search.svg" alt="" />주소 검색</button>
+                                </li>
+                              </ul>
+                            </div>
+                            )
+                      }
                     </span>
                     <span><Link to=''><img src="./img/heart.svg" alt="" /></Link></span>
                     <span><Link to=''><img src="./img/cart.svg" alt="" /></Link></span>
