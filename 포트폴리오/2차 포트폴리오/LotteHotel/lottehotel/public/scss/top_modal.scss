@@ -1,0 +1,44 @@
+#topModal{
+    width : 100%;
+    height : 37.19px;
+    background: #432f31;
+    padding : 9px 0;
+    .container{
+        width : 100%;
+        text-align: center;
+        .gap{
+            width : 100%;
+            .content{
+                width : 100%;
+                h1{
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    color : #fff;
+                    letter-spacing: -1px;
+                    display: flex;
+                    justify-content: center;    
+                    align-items: center;
+                    a{
+                        position: relative;
+                        display: flex;                        
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            color : #c7bbb4;   
+                            margin : 0 0 0 11px;
+                            text-decoration: underline;
+                        }
+                        svg{
+                            position: absolute;
+                            top : -3px;
+                            right : 0;
+                            margin-right: -690px;
+                            width : 25px;
+                            height : 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
