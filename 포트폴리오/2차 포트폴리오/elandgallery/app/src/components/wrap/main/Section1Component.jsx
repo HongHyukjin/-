@@ -7,19 +7,16 @@ export default function Section1Component () {
       <div className="container">
         <div className="gap">
           <div className="title">
-<<<<<<< HEAD
             <div>
               <h2>ARTRO 작가 초빙</h2>
               <h1>OPEN CALL</h1>
               <h3>For Artists</h3>
               <button type='button'>자세히 보기 〉</button>
-            </div>
-=======
+            </div>\
             <h2>ARTRO 작가 초빙</h2>
             <h1>OPEN CALL</h1>
             <h3>FOR Artists</h3>
             <button type='button'>자세히 보기 〉</button>
->>>>>>> 0c48e945fc9baacac7a9192039bd9cd6b850dedf
           </div>
           <div className="slide-container">
             <div className="slide-view">

@@ -46,4 +46,8 @@ Routes : 자식 route들을 담는곳
 Route : path(본인이 설정)를 통해 url을 이동, index는 기본으로 연결된 페이지
 연결한 path를 Link to를 통해 이동
 
+리액트에서 제이쿼리 : npm i jquery
+제이쿼리는 useEffect 안에서 써야됨(마운트가 끝난다음에 실행해야해서)
+제이쿼리와 상태관리를 섞어서 사용
+
 
