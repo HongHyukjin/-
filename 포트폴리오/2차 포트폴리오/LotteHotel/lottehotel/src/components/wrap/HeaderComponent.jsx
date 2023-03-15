@@ -29,7 +29,10 @@ export default function HeaderComponent (){
                         </div>
                         <div className="nav-bottom">
                             <ul>
-                                <li><a href="!#">BOOK</a></li>
+                                <li>
+                                    <img src="./img/search.svg" alt="" />
+                                    <a href="!#">BOOK</a>
+                                </li>
                                 <li><a href="!#">DINING</a></li>
                                 <li><a href="!#">SPECIAL OFFERS</a></li>
                                 <li><a href="!#">WEDDING & CONFERENCE</a></li>
