@@ -1,0 +1,64 @@
+#header {
+  width: 100%;
+}
+#header .container {
+  width: 100%;
+}
+#header .container .gap {
+  width: 100%;
+}
+#header .container .gap .content {
+  width: 100%;
+}
+#header .container .gap .content .nav-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #dcdcdc;
+  height: 45.25px;
+}
+#header .container .gap .content .nav-top .left {
+  height: 35px;
+  position: absolute;
+  top: 4px;
+  left: 20px;
+}
+#header .container .gap .content .nav-top .left a {
+  display: block;
+  height: 100%;
+}
+#header .container .gap .content .nav-top .left a img {
+  height: 100%;
+}
+#header .container .gap .content .nav-top .right {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+#header .container .gap .content .nav-top .right ul {
+  display: flex;
+  padding: 15px 0;
+}
+#header .container .gap .content .nav-top .right ul li a {
+  padding: 0 10px;
+}
+#header .container .gap .content .nav-bottom {
+  position: relative;
+}
+#header .container .gap .content .nav-bottom ul {
+  display: flex;
+}
+#header .container .gap .content .nav-bottom button {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  background: #ad9e87;
+  border: 0;
+  letter-spacing: -1px;
+  width: 180px;
+  height: 40px;
+  padding: 0 13px;
+  font-size: 14px;
+  color: #fff;
+}

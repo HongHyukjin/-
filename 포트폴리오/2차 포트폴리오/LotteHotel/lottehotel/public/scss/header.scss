@@ -1,0 +1,72 @@
+#header{
+  width : 100%;
+  .container{
+    width : 100%;
+    .gap{
+      width : 100%;
+      .content{
+        width : 100%;
+        .nav-top{
+          position: relative;
+          width : 100%;
+          display: flex;
+          justify-content: flex-end;
+          border-bottom : 1px solid #dcdcdc;
+          height : 45.25px;
+          .left{
+            height : 35px;
+            position: absolute;
+            top : 4px;
+            left : 20px;
+            a{
+              display: block;
+              height: 100%;
+              img{
+                height : 100%;
+              }
+            }
+          }
+          .right{
+            position: absolute;
+            top : 0;
+            right : 20px;
+            ul{
+              display: flex;
+              padding : 15px 0;
+              li{
+                a{
+                  padding : 0 10px; 
+                }
+                i{}
+              }
+            }
+          }
+        }
+        .nav-bottom{
+          position: relative;
+          ul{
+            display: flex;
+            li{
+              a{
+
+              }
+            }
+          }
+          button{
+            position: absolute;
+            top : 21px; 
+            right : 20px;
+            background: #ad9e87;
+            border : 0;
+            letter-spacing: -1px;
+            width : 180px;
+            height : 40px;
+            padding : 0 13px;
+            font-size: 14px;
+            color : #fff;
+          }
+        }
+      }
+    }
+  }
+}
