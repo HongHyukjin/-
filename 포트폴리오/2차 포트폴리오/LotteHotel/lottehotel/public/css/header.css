@@ -12,7 +12,13 @@
 #header .container .gap .content {
   width: 100%;
 }
-#header .container .gap .content .nav-top {
+#header .container .gap .content .fixed {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+#header .container .gap .content .fixed .nav-top {
+  z-index: 2;
   position: relative;
   width: 100%;
   display: flex;
@@ -21,35 +27,30 @@
   height: 45.25px;
   background: rgba(255, 255, 255, 0.9);
 }
-#header .container .gap .content .nav-top .left {
+#header .container .gap .content .fixed .nav-top .left {
   height: 35px;
   position: absolute;
   top: 4px;
   left: 20px;
 }
-#header .container .gap .content .nav-top .left a {
+#header .container .gap .content .fixed .nav-top .left a {
   display: block;
   height: 100%;
 }
-#header .container .gap .content .nav-top .left a img {
+#header .container .gap .content .fixed .nav-top .left a img {
   height: 100%;
 }
-#header .container .gap .content .nav-top .right {
+#header .container .gap .content .fixed .nav-top .right {
   position: absolute;
   top: 0;
   right: 20px;
 }
-#header .container .gap .content .nav-top .right ul {
+#header .container .gap .content .fixed .nav-top .right ul {
   display: flex;
   padding: 15px 0;
 }
-#header .container .gap .content .nav-top .right ul li a {
+#header .container .gap .content .fixed .nav-top .right ul li a {
   padding: 0 10px;
-}
-#header .container .gap .content .fixed {
-  z-index: 2;
-  position: fixed;
-  width: 100%;
 }
 #header .container .gap .content .fixed .nav-bottom {
   width: 100%;

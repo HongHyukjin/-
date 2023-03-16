@@ -1,0 +1,70 @@
+#section2 {
+  width: 100%;
+  height: 916px;
+  background: #fff;
+}
+#section2 .container {
+  width: 100%;
+  max-width: 1532px;
+  padding: 132px 20px 162px 20px;
+  margin: 0 auto;
+}
+#section2 .container .gap .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 65px 0;
+}
+#section2 .container .gap .title h1 {
+  font-size: 40px;
+  color: #998465;
+  line-height: 48px;
+}
+#section2 .container .gap .title a {
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: -1px;
+}
+#section2 .container .gap .content {
+  width: 100%;
+}
+#section2 .container .gap .content > ul {
+  width: 100%;
+  display: flex;
+}
+#section2 .container .gap .content > ul > li {
+  width: 33%;
+  padding: 0 92.359px 0 0;
+}
+#section2 .container .gap .content > ul > li .img-box {
+  width: 100%;
+}
+#section2 .container .gap .content > ul > li .img-box img {
+  width: 400px;
+}
+#section2 .container .gap .content > ul > li .txt-box {
+  width: 100%;
+}
+#section2 .container .gap .content > ul > li .txt-box > ul {
+  width: 100%;
+}
+#section2 .container .gap .content > ul > li .txt-box > ul > li {
+  width: 100%;
+}
+#section2 .container .gap .content > ul > li .txt-box > ul > li h3 {
+  font-size: 24px;
+  height: 56px;
+  margin: 20px 0;
+  color: #998465;
+}
+#section2 .container .gap .content > ul > li .txt-box > ul > li hr {
+  width: 100%;
+  height: 2px;
+  background: #555;
+  border: 0;
+}
+#section2 .container .gap .content > ul > li .txt-box > ul > li h2 {
+  font-size: 18px;
+  height: 51px;
+  letter-spacing: -1px;
+  line-height: 27px;
+}
