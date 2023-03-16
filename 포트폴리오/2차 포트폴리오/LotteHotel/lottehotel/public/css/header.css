@@ -1,4 +1,6 @@
 #header {
+  z-index: 2;
+  position: relative;
   width: 100%;
 }
 #header .container {
@@ -17,6 +19,7 @@
   justify-content: flex-end;
   border-bottom: 1px solid #dcdcdc;
   height: 45.25px;
+  background: rgba(255, 255, 255, 0.9);
 }
 #header .container .gap .content .nav-top .left {
   height: 35px;
@@ -43,23 +46,29 @@
 #header .container .gap .content .nav-top .right ul li a {
   padding: 0 10px;
 }
-#header .container .gap .content .nav-bottom {
+#header .container .gap .content .fixed {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+#header .container .gap .content .fixed .nav-bottom {
   width: 100%;
   height: 85px;
   position: relative;
   border-bottom: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.9);
 }
-#header .container .gap .content .nav-bottom ul {
+#header .container .gap .content .fixed .nav-bottom ul {
   display: flex;
   justify-content: center;
   width: 100%;
   max-width: 1832px;
   margin: 0 auto;
 }
-#header .container .gap .content .nav-bottom ul li {
+#header .container .gap .content .fixed .nav-bottom ul li {
   position: relative;
 }
-#header .container .gap .content .nav-bottom ul li a {
+#header .container .gap .content .fixed .nav-bottom ul li a {
   display: block;
   padding: 31px 20px;
   font-size: 18px;
@@ -67,17 +76,17 @@
   color: #333;
   letter-spacing: -1px;
 }
-#header .container .gap .content .nav-bottom ul li:nth-child(1) img {
+#header .container .gap .content .fixed .nav-bottom ul li:nth-child(1) img {
   position: absolute;
   top: 27px;
   left: -10px;
   width: 30px;
   height: 30px;
 }
-#header .container .gap .content .nav-bottom ul li:nth-child(1) a {
+#header .container .gap .content .fixed .nav-bottom ul li:nth-child(1) a {
   color: #998465;
 }
-#header .container .gap .content .nav-bottom button {
+#header .container .gap .content .fixed .nav-bottom button {
   position: absolute;
   top: 21px;
   right: 20px;
@@ -89,4 +98,20 @@
   padding: 0 13px;
   font-size: 14px;
   color: #fff;
+}
+#header .container .gap .content .fixed .reservation {
+  width: 100%;
+  height: 113px;
+  border-bottom: 1px solid #ccc;
+  background: rgba(173, 158, 135, 0.97);
+}
+#header .container .gap .content .fixed .reservation .col-gap {
+  width: 100%;
+  max-width: 1696px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+#header .container .gap .content .fixed .reservation .col-gap ul {
+  width: 100%;
+  display: flex;
 }

@@ -27,18 +27,33 @@ export default function HeaderComponent (){
                                 </ul>
                             </div>
                         </div>
-                        <div className="nav-bottom">
-                            <ul>
-                                <li>
-                                    <img src="./img/search.svg" alt="" />
-                                    <a href="!#">BOOK</a>
-                                </li>
-                                <li><a href="!#">DINING</a></li>
-                                <li><a href="!#">SPECIAL OFFERS</a></li>
-                                <li><a href="!#">WEDDING & CONFERENCE</a></li>
-                                <li><a href="!#">L VIBES</a></li>
-                            </ul>
-                            <button>LOTTE HOTEL REWARDS</button>
+                        <div className="fixed">
+                            <div className="nav-bottom">
+                                <ul>
+                                    <li>
+                                        <img src="./img/search.svg" alt="" />
+                                        <a href="!#">BOOK</a>
+                                    </li>
+                                    <li><a href="!#">DINING</a></li>
+                                    <li><a href="!#">SPECIAL OFFERS</a></li>
+                                    <li><a href="!#">WEDDING & CONFERENCE</a></li>
+                                    <li><a href="!#">L VIBES</a></li>
+                                </ul>
+                                <button>LOTTE HOTEL REWARDS</button>
+                            </div>
+                            <div className="reservation">
+                                <div className="col-gap">
+                                    <ul>
+                                        <li>
+                                            <h3>Hotel or city</h3>
+                                            <input type="text" name='city' id='city' placeholder='Enter the city, attraction or hotel' />
+                                        </li>
+                                        <li>
+                                            <h3>Check-in</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
