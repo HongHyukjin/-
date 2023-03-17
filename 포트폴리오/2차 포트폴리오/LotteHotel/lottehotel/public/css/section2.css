@@ -33,13 +33,25 @@
 }
 #section2 .container .gap .content > ul > li {
   width: 33%;
+}
+#section2 .container .gap .content > ul > li:nth-child(1) {
   padding: 0 92.359px 0 0;
+}
+#section2 .container .gap .content > ul > li:nth-child(2) {
+  padding: 0 43px;
+}
+#section2 .container .gap .content > ul > li:nth-child(3) {
+  padding: 0 0 0 92.359px;
 }
 #section2 .container .gap .content > ul > li .img-box {
   width: 100%;
+  transition: all 0.5s;
 }
 #section2 .container .gap .content > ul > li .img-box img {
   width: 400px;
+}
+#section2 .container .gap .content > ul > li .img-box:hover {
+  transform: scale(1.1);
 }
 #section2 .container .gap .content > ul > li .txt-box {
   width: 100%;
@@ -64,7 +76,21 @@
 }
 #section2 .container .gap .content > ul > li .txt-box > ul > li h2 {
   font-size: 18px;
-  height: 51px;
+  font-weight: 400;
   letter-spacing: -1px;
   line-height: 27px;
+  padding: 15px 0;
+}
+#section2 .container .gap .content > ul > li .txt-box > ul > li button {
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  height: 52px;
+  width: 222px;
+  color: #fff;
+  border: 0;
+  background: #998465;
+  cursor: pointer;
+}
+#section2 .container .gap .content > ul > li .txt-box > ul > li button:hover {
+  background: #999065;
 }

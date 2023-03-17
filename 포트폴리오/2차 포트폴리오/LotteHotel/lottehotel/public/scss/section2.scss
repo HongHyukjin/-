@@ -30,11 +30,23 @@
                     display: flex;
                     >li{
                         width : 33%;
-                        padding : 0 92.359px 0 0;
+                        &:nth-child(1){
+                            padding : 0 92.359px 0 0;
+                        }
+                        &:nth-child(2){
+                            padding : 0 43px;
+                        }
+                        &:nth-child(3){
+                            padding : 0 0 0 92.359px;
+                        }
                         .img-box{
                             width : 100%;
+                            transition: all 0.5s;
                             img{
-                                width : 400px;
+                                width : 400px;                                
+                            }
+                            &:hover{
+                                transform: scale(1.1);
                             }
                         }
                         .txt-box{
@@ -57,11 +69,24 @@
                                     }
                                     h2{
                                         font-size: 18px;
-                                        height : 51px;
+                                        font-weight: 400;
                                         letter-spacing: -1px;
                                         line-height: 27px;
+                                        padding : 15px 0;
                                     }
-                                    button{}
+                                    button{
+                                        margin : 20px 0 0 0;
+                                        font-size: 16px;
+                                        height : 52px;
+                                        width: 222px;
+                                        color : #fff;
+                                        border : 0;
+                                        background: #998465;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background: #999065;
+                                        }
+                                    }
                                 }
                             }
                         }

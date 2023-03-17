@@ -24,8 +24,32 @@ export default function Section2Component () {
                                     </ul>
                                 </div>
                             </li>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                <div className="img-box">
+                                    <img src="../img/230119-02-405-mai-GLOBA.jpg.thumb.768.768.jpg" alt="" />
+                                </div>
+                                <div className="txt-box">
+                                    <ul>
+                                        <li><h3>BED & BREAKFAST <br/>PACKAGE</h3></li>
+                                        <li><hr/></li>
+                                        <li><h2>We have prepared breakfast included offers<br/>for your relaxing hotel stay.</h2></li>
+                                        <li><button>GO TO OFFERS</button></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="img-box">
+                                    <img src="../img/230119-03-405-mai-GLOBA.jpg.thumb.768.768.jpg" alt="" />
+                                </div>
+                                <div className="txt-box">
+                                    <ul>
+                                        <li><h3>LOTTE HOTEL <br/>REWARDS ONLY</h3></li>
+                                        <li><hr/></li>
+                                        <li><h2>Find rooms at LOTTE HOTELS & RESORTS around<br/>the world at exclusive prices for REWARDS members.</h2></li>
+                                        <li><button>GO TO OFFERS</button></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
