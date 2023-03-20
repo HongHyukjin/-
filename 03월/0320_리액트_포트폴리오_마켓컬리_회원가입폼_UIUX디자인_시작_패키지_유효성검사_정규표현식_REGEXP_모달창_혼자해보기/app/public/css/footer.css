@@ -1,0 +1,137 @@
+#footer {
+  width: 100%;
+}
+#footer .row {
+  width: 100%;
+}
+#footer .row .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 30px 0 40px 0;
+}
+#footer .row .container .content {
+  width: 100%;
+}
+#footer .row.row1 .container .content {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .row.row1 .container .content .left {
+  width: 45%;
+}
+#footer .row.row1 .container .content .left ul {
+  width: 100%;
+}
+#footer .row.row1 .container .content .left ul li {
+  padding: 0 0 15px 0;
+  letter-spacing: -0.5px;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(1) h2 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(2) {
+  padding: 15px 0 30px 0;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(2) a {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(2) em {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin: 0 0 0 10px;
+  vertical-align: bottom;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(3), #footer .row.row1 .container .content .left ul li:nth-child(4), #footer .row.row1 .container .content .left ul li:nth-child(5) {
+  display: flex;
+  align-items: center;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(3) button, #footer .row.row1 .container .content .left ul li:nth-child(4) button, #footer .row.row1 .container .content .left ul li:nth-child(5) button {
+  width: 140px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #333;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(3) span, #footer .row.row1 .container .content .left ul li:nth-child(4) span, #footer .row.row1 .container .content .left ul li:nth-child(5) span {
+  margin: 0 0 0 10px;
+  line-height: 120%;
+  font-size: 14px;
+  color: #999;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(3) span i, #footer .row.row1 .container .content .left ul li:nth-child(4) span i, #footer .row.row1 .container .content .left ul li:nth-child(5) span i {
+  color: #bbb;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(6) {
+  font-size: 13px;
+  color: #999;
+}
+#footer .row.row1 .container .content .left ul li:nth-child(6) a {
+  color: #999;
+}
+#footer .row.row1 .container .content .right {
+  width: 45%;
+}
+#footer .row.row1 .container .content .right ul li:nth-child(1) a {
+  margin: 0 5px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+#footer .row.row1 .container .content .right ul li:nth-child(2) {
+  padding: 30px 0;
+  font-size: 12px;
+  color: #999;
+  line-height: 140%;
+}
+#footer .row.row1 .container .content .right ul li:nth-child(2) a {
+  color: #5f0080;
+}
+#footer .row.row1 .container .content .right ul li:nth-child(3) a {
+  margin: 0 10px 0 0;
+}
+#footer .row.row1 .container .content .right ul li:nth-child(3) a img {
+  width: 30px;
+  height: 30px;
+}
+#footer .row.row2 {
+  border-top: 1px solid #ddd;
+}
+#footer .row.row2 .container .content ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .row.row2 .container .content ul li {
+  display: flex;
+  align-items: center;
+}
+#footer .row.row2 .container .content ul li img {
+  width: auto;
+  height: 34px;
+  margin: 0 10px 0 0;
+}
+#footer .row.row2 .container .content ul li span {
+  font-size: 10px;
+  line-height: 14.5px;
+  color: #999;
+  letter-spacing: -0.5px;
+}
+#footer .row.row3 {
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+#footer .row.row3 .container .content {
+  font-size: 10px;
+  color: #999;
+  line-height: 140%;
+}
+#footer .row.row3 .container .content p:last-child {
+  padding: 10px 0;
+}

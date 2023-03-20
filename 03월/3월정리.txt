@@ -55,3 +55,22 @@ const regExp1 = /[`~!@#$%^&*()\-_=+[{\]}\\|;:'",<.>/?]/g;  //(특수문자)
 이스케이프 처리 해야되는 문자 : \-    \]   \\
 
 
+open jdk에서 java 8버전 설치
+
+환경변수 설정하고
+vscode에 extension pack for java 설치
+setting.json -> java runtime 설정
+
+"java.inlayHints.parameterNames.enabled": "none",
+"java.configuration.runtimes": [
+        { //자바 JDK 8
+          "name": "JavaSE-1.8",
+          "path": "C:\\Program Files\\java\\java-se-8u42-ri\bin",
+          "default": true
+        },
+        { //자바 JDK 11
+          "name": "JavaSE-11",
+          "path": "C:\\Program Files\\java\\jdk-11\bin",
+          "default": false
+        }
+      ]
