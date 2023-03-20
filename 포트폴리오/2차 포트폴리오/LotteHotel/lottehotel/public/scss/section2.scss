@@ -41,12 +41,13 @@
                         }
                         .img-box{
                             width : 100%;
-                            transition: all 0.5s;
+                            overflow: hidden;                             
                             img{
-                                width : 400px;                                
-                            }
-                            &:hover{
-                                transform: scale(1.1);
+                                width : 400px;
+                                transition: all 0.5s;
+                                &:hover{
+                                    transform: scale(1.1);
+                                }
                             }
                         }
                         .txt-box{

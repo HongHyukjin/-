@@ -1,0 +1,25 @@
+#section4 {
+  width: 100%;
+  height: 892.92px;
+  padding: 40px 0 0 0;
+}
+#section4 .container {
+  width: 100%;
+  height: 852.92px;
+  padding: 60px 0 205px 0;
+}
+#section4 .container .content {
+  width: 100%;
+}
+#section4 .container .content .slide-container {
+  width: 100%;
+}
+#section4 .container .content .slide-container .slide-view {
+  width: 100%;
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap {
+  width: 100%;
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+}

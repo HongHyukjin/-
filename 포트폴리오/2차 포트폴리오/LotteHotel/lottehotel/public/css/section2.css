@@ -45,12 +45,13 @@
 }
 #section2 .container .gap .content > ul > li .img-box {
   width: 100%;
-  transition: all 0.5s;
+  overflow: hidden;
 }
 #section2 .container .gap .content > ul > li .img-box img {
   width: 400px;
+  transition: all 0.5s;
 }
-#section2 .container .gap .content > ul > li .img-box:hover {
+#section2 .container .gap .content > ul > li .img-box img:hover {
   transform: scale(1.1);
 }
 #section2 .container .gap .content > ul > li .txt-box {

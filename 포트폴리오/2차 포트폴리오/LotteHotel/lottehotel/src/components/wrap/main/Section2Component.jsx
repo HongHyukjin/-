@@ -13,7 +13,9 @@ export default function Section2Component () {
                         <ul>
                             <li>
                                 <div className="img-box">
-                                    <img src="../img/main-promo720-g-0228-d.jpg.thumb.768.768.jpg" alt="" />
+                                    <figure>
+                                        <img src="../img/main-promo720-g-0228-d.jpg.thumb.768.768.jpg" alt="" />
+                                    </figure>
                                 </div>
                                 <div className="txt-box">
                                     <ul>
