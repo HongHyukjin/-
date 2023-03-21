@@ -10,12 +10,28 @@
             width : 100%;
             .slide-container{
                 width : 100%;
+                
                 .slide-view{
                     width : 100%;
                     .slide-wrap{
-                        width : 100%;
+                        width : 300%;
+                        display: flex;
                         .slide{
                             width : 100%;
+                            max-width: 1170px;
+                            margin : 0 auto;
+                            height : 587.92px;
+                            background: url() no-repeat 50% 50%;
+                            background-size: cover;
+                            &.slide1{
+                                background-image: url(../img/mai-chain-gallery-ulsan-city-pc.png);
+                            }
+                            &.slide2{
+                                background-image: url(../img/mai-chain-gallery-daejeon-city-pc.jpg);
+                            }
+                            &.slide3{
+                                background-image: url(../img/mai-chain-gallery-tashkentpalace-city-pc.jpg);
+                            }
                         }
                     }
                 }

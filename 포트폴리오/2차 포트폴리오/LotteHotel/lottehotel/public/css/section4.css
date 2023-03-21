@@ -18,8 +18,23 @@
   width: 100%;
 }
 #section4 .container .content .slide-container .slide-view .slide-wrap {
-  width: 100%;
+  width: 300%;
+  display: flex;
 }
 #section4 .container .content .slide-container .slide-view .slide-wrap .slide {
   width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 587.92px;
+  background: url() no-repeat 50% 50%;
+  background-size: cover;
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap .slide.slide1 {
+  background-image: url(../img/mai-chain-gallery-ulsan-city-pc.png);
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap .slide.slide2 {
+  background-image: url(../img/mai-chain-gallery-daejeon-city-pc.jpg);
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap .slide.slide3 {
+  background-image: url(../img/mai-chain-gallery-tashkentpalace-city-pc.jpg);
 }
