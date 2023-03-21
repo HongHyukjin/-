@@ -74,3 +74,10 @@ setting.json -> java runtime 설정
           "default": false
         }
       ]
+
+prettier code format
+
+JAVA_HOME = C:\Program Files\java\jdk-11
+PATH =  %JAVA_HOME%bin
+
+java console internalConsole
