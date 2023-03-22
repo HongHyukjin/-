@@ -7,25 +7,30 @@
 #section4 .container {
   width: 100%;
   height: 852.92px;
-  padding: 60px 0 205px 0;
+  padding: 60px 0 0 0;
 }
 #section4 .container .content {
   width: 100%;
+  height: 100%;
   position: relative;
 }
 #section4 .container .content .slide-container {
   width: 100%;
+  height: 100%;
 }
 #section4 .container .content .slide-container .slide-view {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  height: 100%;
   overflow: hidden;
 }
 #section4 .container .content .slide-container .slide-view .slide-wrap {
-  width: 400%;
+  width: 900%;
+  height: 100%;
   display: flex;
   position: relative;
+  margin: 0 0 0 -200%;
 }
 #section4 .container .content .slide-container .slide-view .slide-wrap .slide {
   width: 100%;
@@ -42,6 +47,43 @@
 }
 #section4 .container .content .slide-container .slide-view .slide-wrap .slide.slide3 {
   background-image: url(../img/mai-chain-gallery-tashkentpalace-city-pc.jpg);
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap .slide.slidezero {
+  background: #eee;
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap .slide .center {
+  width: 100%;
+  max-width: 840px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 40px 37px 34px 37px;
+  transform: translateY(100%);
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap .slide .center h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+  color: #998465;
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap .slide .center p {
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #000;
+}
+#section4 .container .content .slide-container .slide-view .slide-wrap .slide .center button {
+  margin: 20px 0 0 0;
+  padding: 10px 30px;
+  font-size: 16px;
+  letter-spacing: -1px;
+  border: 2px solid #998465;
+  background: #fff;
+  color: #998465;
+  width: 175px;
+  height: 44px;
 }
 #section4 .container .content .arrow-next-btn {
   position: absolute;
