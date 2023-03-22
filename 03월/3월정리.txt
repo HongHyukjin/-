@@ -81,3 +81,11 @@ JAVA_HOME = C:\Program Files\java\jdk-11
 PATH =  %JAVA_HOME%bin
 
 java console internalConsole
+
+카카오 주소 검색 API
+daum postcode 
+postcode v2.js 다른이름으로 저장
+script 복사
+
+initLayerPosition(팝업창 크기, 위치 등 설정) 삭제
+body에 onLoad="sample2_execDaumPostcode();" 추가

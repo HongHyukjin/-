@@ -2,6 +2,7 @@
   width: 100%;
   height: 892.92px;
   padding: 40px 0 0 0;
+  background: #eee;
 }
 #section4 .container {
   width: 100%;
@@ -10,24 +11,28 @@
 }
 #section4 .container .content {
   width: 100%;
+  position: relative;
 }
 #section4 .container .content .slide-container {
   width: 100%;
 }
 #section4 .container .content .slide-container .slide-view {
   width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 #section4 .container .content .slide-container .slide-view .slide-wrap {
-  width: 300%;
+  width: 400%;
   display: flex;
+  position: relative;
 }
 #section4 .container .content .slide-container .slide-view .slide-wrap .slide {
   width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
   height: 587.92px;
   background: url() no-repeat 50% 50%;
   background-size: cover;
+  overflow: hidden;
 }
 #section4 .container .content .slide-container .slide-view .slide-wrap .slide.slide1 {
   background-image: url(../img/mai-chain-gallery-ulsan-city-pc.png);
@@ -37,4 +42,26 @@
 }
 #section4 .container .content .slide-container .slide-view .slide-wrap .slide.slide3 {
   background-image: url(../img/mai-chain-gallery-tashkentpalace-city-pc.jpg);
+}
+#section4 .container .content .arrow-next-btn {
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-top: 1px solid #998465;
+  border-right: 1px solid #998465;
+  transform: rotate(45deg);
+}
+#section4 .container .content .arrow-prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-top: 1px solid #998465;
+  border-right: 1px solid #998465;
+  transform: rotate(-135deg);
 }
