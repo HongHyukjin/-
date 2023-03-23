@@ -1,0 +1,164 @@
+#footer {
+  width: 100%;
+}
+#footer .container {
+  width: 100%;
+}
+#footer .container .gap {
+  width: 100%;
+}
+#footer .container .gap .content {
+  width: 100%;
+}
+#footer .container .gap .content .top {
+  width: 100%;
+  height: 81px;
+  background: #555;
+}
+#footer .container .gap .content .top .top-container {
+  width: 100%;
+  max-width: 1576px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px 20px;
+}
+#footer .container .gap .content .top .top-container .left-box {
+  transform: translateY(-3px);
+}
+#footer .container .gap .content .top .top-container .left-box ul {
+  height: 100%;
+  display: flex;
+}
+#footer .container .gap .content .top .top-container .left-box ul li {
+  padding: 0 27px 0 0;
+  height: 34px;
+}
+#footer .container .gap .content .top .top-container .left-box ul li img {
+  width: auto;
+}
+#footer .container .gap .content .top .top-container .right-box {
+  padding: 15px 0 0 0;
+}
+#footer .container .gap .content .top .top-container .right-box div {
+  display: flex;
+}
+#footer .container .gap .content .top .top-container .right-box div .platform {
+  display: flex;
+}
+#footer .container .gap .content .top .top-container .right-box div .platform li a {
+  display: block;
+  width: 93px;
+  height: 34px;
+}
+#footer .container .gap .content .top .top-container .right-box div .platform li a img {
+  width: auto;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+#footer .container .gap .content .top .top-container .right-box div .platform li a img:hover {
+  opacity: 1;
+}
+#footer .container .gap .content .top .top-container .right-box div .icon {
+  display: flex;
+  margin: 0 0 0 24px;
+}
+#footer .container .gap .content .top .top-container .right-box div .icon li {
+  width: auto;
+  padding: 0 0 0 15px;
+}
+#footer .container .gap .content .top .top-container .right-box div .icon li a {
+  display: block;
+  height: 22px;
+}
+#footer .container .gap .content .top .top-container .right-box div .icon li a img {
+  height: 100%;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+#footer .container .gap .content .top .top-container .right-box div .icon li a img:hover {
+  opacity: 1;
+}
+#footer .container .gap .content .mid {
+  height: 286px;
+  background: #111;
+  border-bottom: 1px solid #3e3e3e;
+}
+#footer .container .gap .content .mid .mid-container {
+  width: 100%;
+  max-width: 1576px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 54px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .container .gap .content .mid .mid-container .left-box a img {
+  display: block;
+}
+#footer .container .gap .content .mid .mid-container .left-box div {
+  padding: 60px 0 0 0;
+}
+#footer .container .gap .content .mid .mid-container .left-box div em {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 22.5px;
+  color: #999;
+  margin: 0 12px 0 0;
+  padding: 7px 0 0 0;
+}
+#footer .container .gap .content .mid .mid-container .left-box div p {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 22.5px;
+  color: #999;
+}
+#footer .container .gap .content .mid .mid-container .right-box {
+  display: flex;
+}
+#footer .container .gap .content .mid .mid-container .right-box ul {
+  width: 180px;
+  padding: 0 5px 0 26px;
+  border-right: 1px solid #3e3e3e;
+}
+#footer .container .gap .content .mid .mid-container .right-box ul li {
+  padding: 0 0 14px 0;
+}
+#footer .container .gap .content .mid .mid-container .right-box ul li a {
+  color: #a7a7a7;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: -1px;
+}
+#footer .container .gap .content .bottom {
+  background: #111;
+}
+#footer .container .gap .content .bottom .bottom-container {
+  width: 100%;
+  max-width: 1576px;
+  margin: 0 auto;
+  height: 91px;
+}
+#footer .container .gap .content .bottom .bottom-container ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 36px 20px;
+  align-items: center;
+}
+#footer .container .gap .content .bottom .bottom-container ul li {
+  padding: 0 15px;
+  border-right: 1px solid #3e3e3e;
+}
+#footer .container .gap .content .bottom .bottom-container ul li a {
+  font-size: 15px;
+  line-height: 18px;
+  color: #a7a7a7;
+  letter-spacing: -1px;
+}

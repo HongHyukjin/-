@@ -1,0 +1,172 @@
+#footer{
+    width : 100%;
+    .container{
+        width : 100%;
+        .gap{
+            width : 100%;
+            .content{
+                width : 100%;
+                .top{
+                    width : 100%;
+                    height : 81px;
+                    background: #555;
+                    .top-container{
+                        width : 100%;
+                        max-width: 1576px;
+                        margin : 0 auto;
+                        height : 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding : 16px 20px;
+                        .left-box{
+                            transform: translateY(-3px);
+                            ul{
+                                height : 100%;
+                                display: flex;
+                                li{
+                                    padding : 0 27px 0 0;
+                                    height : 34px;
+                                    img{
+                                        width : auto;
+                                    }
+                                }
+                            }
+                        }
+                        .right-box{
+                            padding : 15px 0 0 0;
+                            div{
+                                display: flex;
+                                .platform{
+                                    display: flex;
+                                    li{
+                                        a{
+                                            display: block;
+                                            width : 93px;
+                                            height : 34px;
+                                            img{
+                                                width : auto;
+                                                opacity: 0.5;
+                                                transition: all 0.2s;
+                                                &:hover{
+                                                    opacity: 1;
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                                .icon{
+                                    display: flex;
+                                    margin : 0 0 0 24px;
+                                    li{
+                                        width : auto;
+                                        padding : 0 0 0 15px;
+                                        a{
+                                            display: block;
+                                            height : 22px;
+                                            img{
+                                                height : 100%;
+                                                opacity: 0.5;
+                                                transition: all 0.2s;
+                                                &:hover{
+                                                    opacity: 1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .mid{
+                    height : 286px;
+                    background: #111;
+                    border-bottom: 1px solid #3e3e3e;
+                    .mid-container{
+                        width : 100%;
+                        max-width: 1576px;
+                        margin : 0 auto;
+                        height: 100%;
+                        padding : 54px 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        .left-box{
+                            a{
+                                img{
+                                    display: block;
+                                }
+                            }
+                            div{
+                                padding : 60px 0 0 0;
+                                em{
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    letter-spacing: -1px;
+                                    line-height: 22.5px;
+                                    color : #999;
+                                    margin : 0 12px 0 0;
+                                    padding : 7px 0 0 0;
+                                }
+                                p{
+                                    display: inline-block;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    letter-spacing: -1px;
+                                    line-height: 22.5px;
+                                    color : #999;
+                                }
+                            }
+                            
+                        }
+                        .right-box{
+                            display: flex;
+                            ul{
+                                width : 180px;
+                                padding : 0 5px 0 26px;
+                                border-right: 1px solid #3e3e3e;
+                                li{
+                                    padding : 0 0 14px 0;
+                                    a{
+                                        color : #a7a7a7;
+                                        line-height: 18px;
+                                        font-size: 14px;
+                                        text-align: left;
+                                        letter-spacing: -1px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom{
+                    background: #111;
+                    .bottom-container{
+                        width : 100%;
+                        max-width: 1576px;
+                        margin : 0 auto;
+                        height : 91px;
+                        ul{
+                            width : 100%;
+                            height : 100%;
+                            display: flex;
+                            padding : 36px 20px;
+                            align-items: center;
+                            li{
+                                padding : 0 15px;
+                                border-right: 1px solid #3e3e3e;
+                                a{
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    color : #a7a7a7;
+                                    letter-spacing: -1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,10 +4,34 @@ export default function Section5Component (){
 
     React.useEffect(() => {
         let cnt = 0;
+        let setId = 0;
 
         function mainSlide(){
-            $('#section5 .slide-wrap').stop().animate({left:`${-100 * cnt}%`})
+            $('#section5 .slide-wrap').stop().animate({left:`${-100 * cnt}%`},1000, function(){
+                if(cnt>1) cnt = 0;
+                if(cnt<0) cnt = 1;
+                $('#section5 .slide-wrap').stop().animate({left:`${-100 * cnt}%`}, 0)
+            })
         }
+
+        function nextCount(){
+            cnt++;
+            mainSlide();
+        }
+
+        function prevCount(){
+            cnt--;
+            mainSlide();
+        }
+
+        function autoTimer(){
+            setId = setInterval(() => {
+                nextCount();
+            }, 3000);
+        }
+        autoTimer();
+        
+        
     })
 
     return (

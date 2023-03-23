@@ -30,6 +30,8 @@
   width: 400%;
   height: 100%;
   display: flex;
+  margin: 0 0 0 -100%;
+  position: relative;
 }
 #section5 .container .gap .content .top-box .slide-container .slide-view .slide-wrap .slide {
   width: 100%;
