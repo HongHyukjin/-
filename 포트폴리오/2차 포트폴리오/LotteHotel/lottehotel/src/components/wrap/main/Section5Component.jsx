@@ -1,6 +1,15 @@
 import React from 'react';
-
+import $ from 'jquery'
 export default function Section5Component (){
+
+    React.useEffect(() => {
+        let cnt = 0;
+
+        function mainSlide(){
+            $('#section5 .slide-wrap').stop().animate({left:`${-100 * cnt}%`})
+        }
+    })
+
     return (
         <section id="section5">
             <div className="container">
