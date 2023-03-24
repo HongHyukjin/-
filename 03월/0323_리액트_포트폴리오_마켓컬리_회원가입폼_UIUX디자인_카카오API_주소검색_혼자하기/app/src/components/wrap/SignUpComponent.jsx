@@ -492,6 +492,43 @@ export default function SignUpComponent({회원가입, timer, timerCounterFn}) {
         window.open(popupFile, popupName, `width=${popupWidth}, height=${popupHeight}, top=${popupTop}, left=${popupLeft}`)
     }
 
+    const onChangeAddr1 = (e) => {
+        const {value} = e.target;
+        console.log("onChangeAddr1 실행됨");
+        setState({
+            ...state,
+            주소1 : value,
+        })
+    }
+
+    const onChangeAddr2 = (e) => {
+        const {value} = e.target;
+        console.log("onChangeAddr1 실행됨");
+        setState({
+            ...state,
+            주소2 : value,
+        })
+    }
+
+    //화면 마운트 된뒤 한번만 실행(세션스토리지에 저장된 주소 불러와서 주소입력창 1,2에 바운딩)
+    React.useEffect(() => {
+        
+        const key = "HJADDRESS";
+        let result = sessionStorage.getItem(key);
+        let isAddress = false;
+        if(result !== null){
+            result = JSON.parse(result);
+            isAddress = true;
+            setState({
+                ...state,
+                주소1 : result.주소1,
+                주소2 : result.주소2,
+                isAddress : isAddress
+            })
+        }
+        // onChangeAddr1();
+        // onChangeAddr2();
+    }, [])
 
     const onChangeGender=(e)=>{
         setState({
@@ -674,13 +711,13 @@ export default function SignUpComponent({회원가입, timer, timerCounterFn}) {
                                             <div>
                                                 <label htmlFor="userAddress1">주소<i>*</i></label>
                                                 <div className="center-box">
-                                                    <button className='addr-search-btn' onClick={onClickAddrPopupOpenApi} type='button'>주소검색</button>
-                                                    <input className='' type='text' name='user_address1' id='userAddress1' placeholder='검색   주소1' />
-                                                    <input className='' type='text' name='user_address2' id='userAddress2' placeholder='나머지 주소2' />
-                                                    <h5>샛별배송</h5>    
+                                                    <button className={`addr-search-btn ${state.isAddress?' on':''}`} onClick={onClickAddrPopupOpenApi} type='button'>주소검색</button>
+                                                    <input onChange={onChangeAddr1} className={`${state.isAddress?'on':''}`} type='text' name='user_address1' id='userAddress1' placeholder='검색   주소1' value={state.주소1}/>
+                                                    <input onChange={onChangeAddr2} className={`${state.isAddress?'on':''}`} type='text' name='user_address2' id='userAddress2' placeholder='나머지 주소2' value={state.주소2} />
+                                                    <h5>샛별배송</h5>
                                                     <h6>배송지에 따라 상품 정보가 달라질 수 있습니다.</h6>
                                                 </div>
-                                                <button className='addr-research-btn' onClick={onClickAddrPopupOpenApi} type='button'>재검색</button>
+                                                <button className={`addr-research-btn ${state.isAddress?' on':''}`} onClick={onClickAddrPopupOpenApi} type='button'>재검색</button>
                                             </div>
                                         </li>                                 
                                         <li>

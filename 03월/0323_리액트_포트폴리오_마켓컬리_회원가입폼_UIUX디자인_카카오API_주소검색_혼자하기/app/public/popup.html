@@ -81,6 +81,7 @@
 
     <!-- 카카오 주소검색 API -->    
     <div id="root">
+
     </div>
 
     <script>
@@ -137,8 +138,8 @@
             //부모창(opener) 주소1 입력상자 #userAddress1
             const addrSearchBtn = opener.document.querySelector('.addr-search-btn')
             const addrResearchBtn = opener.document.querySelector('.addr-research-btn')
-            const userAddress1 = opener.document.getElementById('userAddress1');
-            const userAddress2 = opener.document.getElementById('userAddress2');
+            const userAddress1 = opener.document.querySelector('#userAddress1');
+            const userAddress2 = opener.document.querySelector('#userAddress2');
             console.log(userAddress1);
 
 
@@ -148,12 +149,17 @@
               addrResearchBtn.classList.add('on');  
               userAddress1.classList.add('on');
               userAddress2.classList.add('on');
-              userAddress1.value = document.getElementById("apiAddr1").value
+              //팝업창의 주소1,주소2를 부모창의 주소1, 주소2에 value로 넣는과정에서 onChange가 적용이 안되는 오류있음
+              userAddress1.value = document.getElementById("apiAddr1").value;
               userAddress2.value = document.getElementById("apiAddr2").value;
 
               const addr = {
-                주소1 : 
+                주소1 : document.getElementById("apiAddr1").value,
+                주소2 : document.getElementById("apiAddr2").value
               }
+              
+              const key = "HJADDRESS";
+              opener.sessionStorage.setItem(key, JSON.stringify(addr));
 
               window.close();
             })

@@ -111,7 +111,7 @@
 
             // 각 주소의 노출 규칙에 따라 주소를 조합한다.
             // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
-            var addr = ''; // 주소 변수
+            var addr = ''; // 주소 변수 
             var extraAddr = ''; // 참고항목 변수
 
             //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
@@ -174,6 +174,7 @@
               addResearchBtn.classList.add('on')
               userAddress1.classList.add('on')
               userAddress2.classList.add('on')
+              //팝업창의 주소1,주소2를 부모창의 주소1, 주소2에 value로 넣는과정에서 onChange가 적용이 안되는 오류있음
               userAddress1.value = document.getElementById("apiAddr1").value;
               userAddress2.value = document.getElementById("apiAddr2").value;
 
