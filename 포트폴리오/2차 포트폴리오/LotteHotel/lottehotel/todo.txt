@@ -1,0 +1,2 @@
+section3 onMouseOver, onMouseLeave 넣고 호텔별로 상태관리변수 만들어서
+논리연산자로 마우스 올리는 호텔의 정보 뜨게하기

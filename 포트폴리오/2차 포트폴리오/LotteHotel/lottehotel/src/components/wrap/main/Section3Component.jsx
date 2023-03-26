@@ -1,6 +1,15 @@
 import React from 'react';
 
 export default function Section3Component (){
+
+    const [state, setState] = React.useState({
+        isSigniel : false,
+    })
+
+    React.useEffect(() => {
+        
+    })
+
     return (
         <section id="section3">
             <div className="container">
@@ -39,7 +48,7 @@ export default function Section3Component (){
                             </ul>
                         </div>
                         <div className="bottom">
-                            <div className="txt_1">
+                            <div className="txt_1 on">
                                 <ul>
                                     <li>
                                         <h2>Life beyond Expectations</h2>
