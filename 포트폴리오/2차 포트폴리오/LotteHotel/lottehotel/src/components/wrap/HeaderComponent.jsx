@@ -12,7 +12,7 @@ export default function HeaderComponent (){
         let headerFix = false;
 
         $(window).scroll(function(){
-            console.log($(window).scrollTop())
+            // console.log($(window).scrollTop())
             // console.log(header_fixed_top)
             if($(window).scrollTop() > 0){
                 headerFix = true;
@@ -75,15 +75,24 @@ export default function HeaderComponent (){
                             </div>
                             <div className="reservation">
                                 <div className="col-gap">
-                                    <ul>
-                                        {/* <li>
-                                            <h3>Hotel or city</h3>
-                                            <input type="text" name='city' id='city' placeholder='Enter the city, attraction or hotel' />
-                                        </li>
-                                        <li>
-                                            <h3>Check-in</h3>
-                                        </li> */}
-                                    </ul>
+                                    <form name="reservation" id="reservation" action="post">
+                                        <ul>
+                                            <li>
+                                                <div>
+                                                    <div className="top">
+                                                        
+                                                    </div>
+                                                    <h4>Hotel or city</h4>
+                                                    <input name="cityOrHotel" id="cityOrHotel" type="text" placeholder='Enter the city, attraction or hotel.' />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
                                 </div>
                             </div>
                         </div>
