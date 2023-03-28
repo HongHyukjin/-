@@ -11,7 +11,7 @@ export default function TopModalComponent() {
         let ModalFix = false;
 
         $(window).scroll(function(){
-            console.log($(window).scrollTop())
+            // console.log($(window).scrollTop())
             if($(window).scrollTop() > 0){
                 ModalFix = true;
             }
