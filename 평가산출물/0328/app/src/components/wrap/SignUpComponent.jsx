@@ -767,6 +767,18 @@ export default function SignUpComponent({회원가입, timer, timerCounterFn, ma
                     이용약관동의 : [...state.이용약관동의, e.target.value, 'SNS', '이메일']
                 })
             }
+            else if(e.target.value === 'SNS' && state.이용약관동의.includes('이메일')){
+                setState({
+                    ...state,
+                    이용약관동의 : [...state.이용약관동의, e.target.value, '무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)']
+                })
+            }
+            else if(e.target.value === '이메일' && state.이용약관동의.includes('SNS')){
+                setState({
+                    ...state,
+                    이용약관동의 : [...state.이용약관동의, e.target.value, '무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)']
+                })
+            }
             else{
                 setState({
                     ...state,
@@ -781,6 +793,12 @@ export default function SignUpComponent({회원가입, timer, timerCounterFn, ma
                     ...state,
                     이용약관동의 : state.이용약관동의.filter((item) => item!==e.target.value && item!=='SNS' && item!=='이메일')
                 })
+            }
+            else if(e.target.value === 'SNS' || e.target.value === '이메일'){
+                setState({
+                    ...state,
+                    이용약관동의 : state.이용약관동의.filter((item) => item!==e.target.value && item!=='무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)')
+                })      
             }
             else{
                 setState({
@@ -1053,7 +1071,7 @@ export default function SignUpComponent({회원가입, timer, timerCounterFn, ma
                                                             <label><input onChange={onChangeUserService} type='checkbox' name='user_service_3' id='userService3' value={'개인정보 수집∙이용 동의(선택)'} checked={state.이용약관동의.includes('개인정보 수집∙이용 동의(선택)')}/>개인정보 수집∙이용 동의</label><span>선택</span>                                                       
                                                         </li>
                                                         <li>
-                                                            <label><input onChange={onChangeUserService} type='checkbox' name='user_service_4' id='userService4' value={'무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)'} checked={state.이용약관동의.includes('무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)') || (state.이용약관동의.includes('SNS') && state.이용약관동의.includes('이메일'))}/>무료배송, 할인쿠폰 등 혜택/정보 수신 동의</label><span>선택</span>                                                       
+                                                            <label><input onChange={onChangeUserService} type='checkbox' name='user_service_4' id='userService4' value={'무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)'} checked={state.이용약관동의.includes('무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)') || (state.이용약관동의.includes('SNS') && state.이용약관동의.includes('이메일')) }/>무료배송, 할인쿠폰 등 혜택/정보 수신 동의</label><span>선택</span>                                                       
                                                         </li>
                                                         <li className='service56'>
                                                             <label><input onChange={onChangeUserService} type='checkbox' name='user_service_5' id='userService5' value={'SNS'} checked={state.이용약관동의.includes('SNS')}/>SNS</label>                                                    
