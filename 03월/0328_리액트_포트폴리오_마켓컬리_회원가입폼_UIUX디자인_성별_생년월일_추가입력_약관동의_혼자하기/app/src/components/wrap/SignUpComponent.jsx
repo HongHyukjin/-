@@ -667,7 +667,7 @@ export default function SignUpComponent({회원가입, timer, timerCounterFn, ma
             생년 : 생년
         })
     }
-
+[...state,  ]
     const onChangeUserBirthMonth = (e) => {
         const {value} = e.target;
         let 생월 = '';
@@ -1058,9 +1058,7 @@ export default function SignUpComponent({회원가입, timer, timerCounterFn, ma
                                                     {/* <label htmlFor="userMale"><input onChange={onChangeGender} type='radio' name='user_gender' id='userMale' value={'남자'} checked={state.성별.includes('남자')===true?true:false} />남자</label> */}
                                                 <ul>
                                                         <li>
-                                                            <label>
-                                                                <input onChange={onChangeUserServiceAll} type='checkbox' name='user_service_all' id='userServiceAll' value={'전체 동의합니다.'} checked={state.이용약관동의.length === 7} />전체 동의합니다.
-                                                            </label>                                                
+                                                            <label><input onChange={onChangeUserServiceAll} type='checkbox' name='user_service_all' id='userServiceAll' value={'전체 동의합니다.'} checked={state.이용약관동의.length === 7}/>전체 동의합니다.</label>                                                
                                                             <h5>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</h5>
                                                         </li>
                                                         
@@ -1074,7 +1072,7 @@ export default function SignUpComponent({회원가입, timer, timerCounterFn, ma
                                                             <label><input onChange={onChangeUserService} type='checkbox' name='user_service_3' id='userService3' value={'개인정보 수집∙이용 동의(선택)'} checked={state.이용약관동의.includes('개인정보 수집∙이용 동의(선택)')}/>개인정보 수집∙이용 동의</label><span>선택</span>                                                       
                                                         </li>
                                                         <li>
-                                                            <label><input onChange={onChangeUserService} type='checkbox' name='user_service_4' id='userService4' value={'무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)'} checked={state.이용약관동의.includes('무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)') || (state.이용약관동의.includes('SNS') && state.이용약관동의.includes('이메일'))} />무료배송, 할인쿠폰 등 혜택/정보 수신 동의</label><span>선택</span>                                                       
+                                                            <label><input onChange={onChangeUserService} type='checkbox' name='user_service_4' id='userService4' value={'무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)'} checked={state.이용약관동의.includes('무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)') || (state.이용약관동의.includes('SNS') && state.이용약관동의.includes('이메일'))}/>무료배송, 할인쿠폰 등 혜택/정보 수신 동의</label><span>선택</span>                                                       
                                                         </li>
                                                         <li className='service56'>
                                                             <label><input onChange={onChangeUserService} type='checkbox' name='user_service_5' id='userService5' value={'SNS'} checked={state.이용약관동의.includes('SNS')}/>SNS</label>                                                    
@@ -1082,7 +1080,7 @@ export default function SignUpComponent({회원가입, timer, timerCounterFn, ma
                                                             <h6>동의 시 한 달간 [5%적립] + [2만원 이상 무료배송] 첫 주문 후 안내</h6>
                                                         </li>
                                                         <li>
-                                                            <label><input onChange={onChangeUserService} type='checkbox' name='user_service_7' id='userService7' value={'본인은 만 14세 이상입니다.(필수)'} checked={state.이용약관동의.includes('본인은 만 14세 이상입니다.(필수)')} />본인은 만 14세 이상입니다.</label><span>본인은 만 14세 이상입니다.</span>                                                       
+                                                            <label><input onChange={onChangeUserService} type='checkbox' name='user_service_7' id='userService7' value={'본인은 만 14세 이상입니다.(필수)'} checked={state.이용약관동의.includes('본인은 만 14세 이상입니다.(필수)')}/>본인은 만 14세 이상입니다.</label><span>본인은 만 14세 이상입니다.</span>                                                       
                                                         </li>
 
                                                 </ul> 
