@@ -108,3 +108,13 @@ System.out.printf("%d %o %x", num_d, num_o, num_x)
 생년, 생월, 생일 각각의 에러메시지를 띄울때 onChange 3개에서 조건을 따로 걸기보단
 useEffect를 이용하여 state.생년, state.생월, state.생일에 변화가 있을 때마다
 if문으로 조건을 걸어서 에러메시지 변경
+
+import java.util.Scanner => Scanner 클래스 불러옴
+Scanner sc = new Scanner(System.in);
+sc.nextLine()
+sc.next()
+sc.nextInt()
+sc.nextDouble()
+sc.next.charAt(index)
+
+React form 전송 고유 이벤트 onSubmit

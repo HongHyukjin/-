@@ -80,16 +80,43 @@ export default function HeaderComponent (){
                                             <li>
                                                 <div>
                                                     <div className="top">
-                                                        
+                                                        <h4>Hotel or city</h4>  
                                                     </div>
-                                                    <h4>Hotel or city</h4>
                                                     <input name="cityOrHotel" id="cityOrHotel" type="text" placeholder='Enter the city, attraction or hotel.' />
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
-                                                    
+                                                    <div className="top">
+                                                        <h4>Check-in</h4>  
+                                                        <h4>Check-out</h4>  
+                                                    </div>
+                                                    <div className="choice">
+                                                        <a href="!#">Wed, Mar 29</a>
+                                                        <a href="!#">1Night(s)</a>
+                                                        <a href="!#">Thu, Mar 30</a>
+                                                    </div>
                                                 </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div className="top">
+                                                        <h4>Room</h4>  
+                                                        <h4>Adults</h4>  
+                                                        <h4>Children</h4>  
+                                                    </div>
+                                                    <div className="choice">
+                                                        <a href="!#">1</a>
+                                                        <a href="!#">2</a>
+                                                        <a href="!#">0</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="!#">Promotion Code</a>
+                                            </li>
+                                            <li>
+                                                <button type='button'>SEARCH</button>
                                             </li>
                                         </ul>
                                     </form>

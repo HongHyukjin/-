@@ -116,3 +116,7 @@
   width: 100%;
   display: flex;
 }
+#header .container .gap .content .fixed .reservation .col-gap ul li div .top {
+  display: flex;
+  justify-content: space-around;
+}
