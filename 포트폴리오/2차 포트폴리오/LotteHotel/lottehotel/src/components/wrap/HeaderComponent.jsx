@@ -79,44 +79,46 @@ export default function HeaderComponent (){
                                         <ul>
                                             <li>
                                                 <div>
-                                                    <div className="top">
-                                                        <h4>Hotel or city</h4>  
-                                                    </div>
+                                                    <h4>Hotel or city</h4>  
                                                     <input name="cityOrHotel" id="cityOrHotel" type="text" placeholder='Enter the city, attraction or hotel.' />
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
-                                                    <div className="top">
-                                                        <h4>Check-in</h4>  
-                                                        <h4>Check-out</h4>  
-                                                    </div>
-                                                    <div className="choice">
-                                                        <a href="!#">Wed, Mar 29</a>
-                                                        <a href="!#">1Night(s)</a>
-                                                        <a href="!#">Thu, Mar 30</a>
-                                                    </div>
+                                                    <h4>Check-in</h4>  
+                                                    <a href="!#">Wed, Mar 29</a>
+                                                </div>
+                                                <div className='pad_top'>
+                                                    <a href="!#">1Night(s)</a>
+                                                </div>
+                                                <div>
+                                                    <h4>Check-out</h4>  
+                                                    <a href="!#">Thu, Mar 30</a>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
-                                                    <div className="top">
-                                                        <h4>Room</h4>  
+                                                    <h4>Room</h4>  
+                                                    <a href="!#">1</a>
+                                                </div>
+                                                <div>
                                                         <h4>Adults</h4>  
-                                                        <h4>Children</h4>  
-                                                    </div>
-                                                    <div className="choice">
-                                                        <a href="!#">1</a>
                                                         <a href="!#">2</a>
+                                                </div>
+                                                <div>
+                                                        <h4>Children</h4>  
                                                         <a href="!#">0</a>
-                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <a href="!#">Promotion Code</a>
+                                                <div>
+                                                    <a className='prom' href="!#">Promotion Code</a>
+                                                </div>
                                             </li>
                                             <li>
-                                                <button type='button'>SEARCH</button>
+                                                <div>
+                                                    <button type='button'>SEARCH</button>
+                                                </div>
                                             </li>
                                         </ul>
                                     </form>

@@ -92,7 +92,7 @@
 }
 #section4 .container .content .arrow-next-btn {
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: 150px;
   display: block;
   width: 35px;
@@ -103,7 +103,7 @@
 }
 #section4 .container .content .arrow-prev-btn {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 150px;
   display: block;
   width: 35px;
