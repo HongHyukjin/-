@@ -47,7 +47,7 @@ export default function Section2Component () {
                                     <ul>
                                         <li><h3>LOTTE HOTEL <br/>REWARDS ONLY</h3></li>
                                         <li><hr/></li>
-                                        <li><h2>Find rooms at LOTTE HOTELS & RESORTS around<br/>the world at exclusive prices for REWARDS members.</h2></li>
+                                        <li><h2>Find rooms at LOTTE HOTELS & RESORTS around the world at exclusive prices for REWARDS members.</h2></li>
                                         <li><button>GO TO OFFERS</button></li>
                                     </ul>
                                 </div>

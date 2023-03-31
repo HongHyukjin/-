@@ -2,59 +2,128 @@
   z-index: 2;
   position: relative;
   width : 100%;
+  transition: all 0.3s;
   .container{
     width : 100%;
     .gap{
       width : 100%;
       .content{
         width : 100%;
-        .fixed{
+        position: relative;
+        .nav-top{
           z-index: 2;
-          position: fixed;
+          position: relative;
           width : 100%;
-          .nav-top{
-            z-index: 2;
-            position: relative;
-            width : 100%;
-            display: flex;
-            justify-content: flex-end;
-            border-bottom : 1px solid #dcdcdc;
-            height : 45.25px;
-            background: rgba(255,255,255,0.9);
-            .left{
-              height : 35px;
-              position: absolute;
-              top : 4px;
-              left : 20px;
-              a{
-                display: block;
-                height: 100%;
-                img{
-                  height : 100%;
-                }
+          display: flex;
+          justify-content: flex-end;
+          border-bottom : 1px solid #dcdcdc;
+          height : 45.25px;
+          background: rgba(255,255,255,0.9);
+          .left{
+            height : 35px;
+            position: absolute;
+            top : 4px;
+            left : 20px;
+            a{
+              display: block;
+              height: 100%;
+              img{
+                height : 100%;
               }
             }
-            .right{
-              position: absolute;
-              top : 0;
-              right : 20px;
-              ul{
-                display: flex;
-                padding : 15px 0;
-                li{
-                  a{
-                    padding : 0 10px; 
+          }
+          .right{
+            position: absolute;
+            top : 0;
+            right : 20px;
+            ul{
+              display: flex;
+              padding : 15px 0;
+              li{
+                a{
+                  padding : 0 10px; 
+                  position: relative;
+                  font-size: 14px;
+                  letter-spacing: -1px;
+                  &.arrow{
+                    &::after{
+                      content: '';
+                      position : absolute;
+                      right : -2px;
+                      top : 3px;
+                      width : 6px;
+                      height : 6px;
+                      border-width: 0 0 2px 2px;
+                      border-color: #999;
+                      border-style: solid;
+                      transform: rotate(-45deg);
+                    }
                   }
                 }
               }
             }
           }
+        }
+        .sub1{
+          z-index: 10;
+          position : absolute;
+          top : 45.25px;
+          right : 10px;
+          width : 160px;
+          height : 222.781px;
+          background: #fff;
+          border : 1px solid #ccc;
+          .wrap{
+            width : 100%;
+            ul{
+              width : 100%;
+              li{
+                width : 100%;
+                a{
+                  font-size: 14px;
+                  display: block;
+                  padding : 10px 17px;
+                  color : #999;
+                  span{
+                    background: url(../img/ico-lang.png) no-repeat left top;
+                    padding : 0 0 0 23px;
+                    &.ko{
+                      background-position: -10px -250px;
+                    }
+                    &.ja{
+                      background-position: -10px -90px;
+                    }
+                    &.ch{
+                      background-position: -10px -9px;
+                    }
+                    &.ru{
+                      background-position: -10px -169px;
+                    }
+                    &.vi{
+                      background-position: -10px -209px;
+                    }
+                    &.my{
+                      background-position: -10px -130px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .fixed{
+          z-index: 2;
+          position: relative;
+          transition: all 1s;
+          width : 100%;
           .nav-bottom{
             width : 100%;
             height : 85px;
-            position: relative;
             border-bottom: 1px solid #ccc;
             background: rgba(255,255,255,0.9);
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
             ul{
               display: flex;
               justify-content: center;
@@ -93,107 +162,132 @@
               border : 0;
               letter-spacing: -1px;
               width : 9.45vw;
+              min-width: 160px;
               height : 40px;
               padding : 0 13px;
-              font-size: 14px;
+              font-size: 12px;
               color : #fff;
             }
           }
           .reservation{
+            z-index: 1;
+            position: absolute;
+            top : 85px;
+            left : 0;
             width : 100%;
             height : 113px;
-            border-bottom: 1px solid #ccc;
-            background: rgba(173,158,135,0.97);
-            .col-gap{
-              width : 100%;
-              max-width : 1696px;
-              height : 100%;
-              margin : 0 auto;
-              padding : 0 80px;
-              form{
+            // border-bottom: 1px solid #ccc;
+            transition: all 0.3s;
+            overflow: hidden;
+            .reserv_content{
+              position: relative;
+              background: rgba(173,158,135,0.97);
+              .col-gap{
+                position: relative;
                 width : 100%;
+                max-width : 1696px;
                 height : 100%;
-                padding : 26px 0 22px 0;
-                ul{
+                margin : 0 auto;
+                padding : 0 80px;
+                form{
                   width : 100%;
                   height : 100%;
-                  display: flex;
-                  li{
+                  padding : 26px 0 22px 0;
+                  ul{
+                    width : 100%;
+                    height : 100%;
                     display: flex;
-                    justify-content: space-around;
-                    border-right: 1px solid #ccc;
-                    &:nth-child(1){
-                      width : 23.96%;
-                      padding : 0 0 0 25px;
-                      justify-content: flex-start;
-                    }
-                    &:nth-child(2){
-                      width : 26.52%;
-                      padding : 0 30px;
-                    }
-                    &:nth-child(3){
-                      width : 18.15%;
-                    }
-                    &:nth-child(4){
-                      width : 12.73%;
-                    }
-                    &:nth-child(5){
-                      width : 18.61%;
-                    }
-                    div{
-                      text-align: center;
-                      &.pad_top{
-                        padding : 24px 0 0 0;
+                    li{
+                      display: flex;
+                      justify-content: space-around;
+                      border-right: 1px solid #ccc;
+                      &:nth-child(1){
+                        width : 23.96%;
+                        padding : 0 0 0 25px;
+                        justify-content: flex-start;
                       }
-                      h4{
-                        text-align: left;
-                        color : #000;
-                        font-size: 14px;
-                        letter-spacing: -1px;
-                        font-family: 'Open Sans';
-                        // font-weight: 400;
-                        padding : 0 0 10px 0;
+                      &:nth-child(2){
+                        width : 26.52%;
+                        padding : 0 30px;
                       }
-                      input{
-                        width : 100%;
-                        font-size: 16px;
-                        color : #fff;
-                        background: transparent;
-                        line-height: 34px;
+                      &:nth-child(3){
+                        width : 18.15%;
+                      }
+                      &:nth-child(4){
+                        width : 12.73%;
                         border : 0;
-                        &::placeholder{
-                          color : #fff;
-                        }
-                        &:focus{
-                          outline : 0;
-                        }
                       }
-                      a{
-                        color : #fff;
-                        line-height: 34px;
-                        font-size: 14px;
+                      &:nth-child(5){
+                        width : 18.61%;
+                        border : 0;
+                      }
+                      div{
                         text-align: center;
-                        &.prom{
-                          display: block;
-                          padding : 10px 0 0 0;
-                          text-decoration: underline;
+                        &.pad_top{
+                          padding : 24px 0 0 0;
+                        }
+                        h4{
+                          text-align: left;
+                          color : #000;
+                          font-size: 14px;
+                          letter-spacing: -1px;
+                          font-family: 'Open Sans';
+                          // font-weight: 400;
+                          padding : 0 0 10px 0;
+                        }
+                        input{
+                          width : 100%;
+                          font-size: 16px;
+                          color : #fff;
+                          background: transparent;
+                          line-height: 34px;
+                          border : 0;
+                          &::placeholder{
+                            color : #fff;
+                          }
+                          &:focus{
+                            outline : 0;
+                          }
+                        }
+                        a{
+                          color : #fff;
+                          line-height: 34px;
+                          font-size: 14px;
+                          text-align: center;
+                          &.prom{
+                            display: block;
+                            padding : 10px 0 0 0;
+                            text-decoration: underline;
+                          }
+                        }
+                        button{
+                          width : 231.922px;
+                          height : 65px;
+                          padding : 0 30px;
+                          background: transparent;
+                          border : 2px solid #fff;
+                          color : #fff;
+                          font-size: 18px;
+                          cursor: pointer;
                         }
                       }
                       button{
-                        width : 231.922px;
-                        height : 65px;
-                        padding : 0 30px;
-                        background: transparent;
-                        border : 2px solid #fff;
-                        color : #fff;
-                        font-size: 18px;
-                        cursor: pointer;
+  
                       }
                     }
-                    button{
-
-                    }
                   }
+                }
+                >button{
+                  position: absolute;
+                  top : 20px;
+                  right : -50px;
+                  font-size: 14px;
+                  color : #fff;
+                  padding : 0 20px 0 0;
+                  background : url(../img/btn_reservation_close.png) no-repeat right 50%;
+                  border: 0;
+                  width : 50px;
+                  cursor: pointer;
                 }
               }
             }

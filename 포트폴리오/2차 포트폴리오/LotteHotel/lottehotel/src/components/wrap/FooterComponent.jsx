@@ -7,7 +7,7 @@ export default function FooterComponent () {
                 <div className="gap">
                     <div className="content">
                         <div className="top">
-                            <div className="top-container">
+                            {/* <div className="top-container">
                                 <div className="left-box">
                                     <ul>
                                         <li><a href="!#"><img src="../img/footer_logo_signiel.png" alt="" /></a></li>
@@ -33,7 +33,7 @@ export default function FooterComponent () {
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="mid">
                             <div className="mid-container">

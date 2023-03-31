@@ -1,0 +1,12 @@
+@media all and (max-width: 1440px) {
+  #header .container .gap .content .fixed .nav-bottom ul {
+    justify-content: flex-start;
+    padding: 0 0 0 30px;
+  }
+  #section4 .container .content .arrow-next-btn {
+    right: 50px;
+  }
+  #section4 .container .content .arrow-prev-btn {
+    left: 50px;
+  }
+}

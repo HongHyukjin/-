@@ -2,6 +2,7 @@
   z-index: 2;
   position: relative;
   width: 100%;
+  transition: all 0.3s;
 }
 #header .container {
   width: 100%;
@@ -11,13 +12,9 @@
 }
 #header .container .gap .content {
   width: 100%;
+  position: relative;
 }
-#header .container .gap .content .fixed {
-  z-index: 2;
-  position: fixed;
-  width: 100%;
-}
-#header .container .gap .content .fixed .nav-top {
+#header .container .gap .content .nav-top {
   z-index: 2;
   position: relative;
   width: 100%;
@@ -27,37 +24,107 @@
   height: 45.25px;
   background: rgba(255, 255, 255, 0.9);
 }
-#header .container .gap .content .fixed .nav-top .left {
+#header .container .gap .content .nav-top .left {
   height: 35px;
   position: absolute;
   top: 4px;
   left: 20px;
 }
-#header .container .gap .content .fixed .nav-top .left a {
+#header .container .gap .content .nav-top .left a {
   display: block;
   height: 100%;
 }
-#header .container .gap .content .fixed .nav-top .left a img {
+#header .container .gap .content .nav-top .left a img {
   height: 100%;
 }
-#header .container .gap .content .fixed .nav-top .right {
+#header .container .gap .content .nav-top .right {
   position: absolute;
   top: 0;
   right: 20px;
 }
-#header .container .gap .content .fixed .nav-top .right ul {
+#header .container .gap .content .nav-top .right ul {
   display: flex;
   padding: 15px 0;
 }
-#header .container .gap .content .fixed .nav-top .right ul li a {
+#header .container .gap .content .nav-top .right ul li a {
   padding: 0 10px;
+  position: relative;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+#header .container .gap .content .nav-top .right ul li a.arrow::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-width: 0 0 2px 2px;
+  border-color: #999;
+  border-style: solid;
+  transform: rotate(-45deg);
+}
+#header .container .gap .content .sub1 {
+  z-index: 10;
+  position: absolute;
+  top: 45.25px;
+  right: 10px;
+  width: 160px;
+  height: 222.781px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+#header .container .gap .content .sub1 .wrap {
+  width: 100%;
+}
+#header .container .gap .content .sub1 .wrap ul {
+  width: 100%;
+}
+#header .container .gap .content .sub1 .wrap ul li {
+  width: 100%;
+}
+#header .container .gap .content .sub1 .wrap ul li a {
+  font-size: 14px;
+  display: block;
+  padding: 10px 17px;
+  color: #999;
+}
+#header .container .gap .content .sub1 .wrap ul li a span {
+  background: url(../img/ico-lang.png) no-repeat left top;
+  padding: 0 0 0 23px;
+}
+#header .container .gap .content .sub1 .wrap ul li a span.ko {
+  background-position: -10px -250px;
+}
+#header .container .gap .content .sub1 .wrap ul li a span.ja {
+  background-position: -10px -90px;
+}
+#header .container .gap .content .sub1 .wrap ul li a span.ch {
+  background-position: -10px -9px;
+}
+#header .container .gap .content .sub1 .wrap ul li a span.ru {
+  background-position: -10px -169px;
+}
+#header .container .gap .content .sub1 .wrap ul li a span.vi {
+  background-position: -10px -209px;
+}
+#header .container .gap .content .sub1 .wrap ul li a span.my {
+  background-position: -10px -130px;
+}
+#header .container .gap .content .fixed {
+  z-index: 2;
+  position: relative;
+  transition: all 1s;
+  width: 100%;
 }
 #header .container .gap .content .fixed .nav-bottom {
   width: 100%;
   height: 85px;
-  position: relative;
   border-bottom: 1px solid #ccc;
   background: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
 #header .container .gap .content .fixed .nav-bottom ul {
   display: flex;
@@ -87,59 +154,84 @@
 #header .container .gap .content .fixed .nav-bottom ul li:nth-child(1) a {
   color: #998465;
 }
+#header .container .gap .content .fixed .nav-bottom button {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  background: #ad9e87;
+  border: 0;
+  letter-spacing: -1px;
+  width: 9.45vw;
+  min-width: 160px;
+  height: 40px;
+  padding: 0 13px;
+  font-size: 12px;
+  color: #fff;
+}
 #header .container .gap .content .fixed .reservation {
+  z-index: 1;
+  position: absolute;
+  top: 85px;
+  left: 0;
   width: 100%;
   height: 113px;
-  border-bottom: 1px solid #ccc;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+#header .container .gap .content .fixed .reservation .reserv_content {
+  position: relative;
   background: rgba(173, 158, 135, 0.97);
 }
-#header .container .gap .content .fixed .reservation .col-gap {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap {
+  position: relative;
   width: 100%;
   max-width: 1696px;
   height: 100%;
   margin: 0 auto;
   padding: 0 80px;
 }
-#header .container .gap .content .fixed .reservation .col-gap form {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form {
   width: 100%;
   height: 100%;
   padding: 26px 0 22px 0;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul {
   width: 100%;
   height: 100%;
   display: flex;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li {
   display: flex;
   justify-content: space-around;
   border-right: 1px solid #ccc;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li:nth-child(1) {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li:nth-child(1) {
   width: 23.96%;
   padding: 0 0 0 25px;
   justify-content: flex-start;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li:nth-child(2) {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li:nth-child(2) {
   width: 26.52%;
   padding: 0 30px;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li:nth-child(3) {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li:nth-child(3) {
   width: 18.15%;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li:nth-child(4) {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li:nth-child(4) {
   width: 12.73%;
+  border: 0;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li:nth-child(5) {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li:nth-child(5) {
   width: 18.61%;
+  border: 0;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div {
   text-align: center;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div.pad_top {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div.pad_top {
   padding: 24px 0 0 0;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div h4 {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div h4 {
   text-align: left;
   color: #000;
   font-size: 14px;
@@ -147,7 +239,7 @@
   font-family: "Open Sans";
   padding: 0 0 10px 0;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div input {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div input {
   width: 100%;
   font-size: 16px;
   color: #fff;
@@ -155,27 +247,27 @@
   line-height: 34px;
   border: 0;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div input::-moz-placeholder {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div input::-moz-placeholder {
   color: #fff;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div input::placeholder {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div input::placeholder {
   color: #fff;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div input:focus {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div input:focus {
   outline: 0;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div a {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div a {
   color: #fff;
   line-height: 34px;
   font-size: 14px;
   text-align: center;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div a.prom {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div a.prom {
   display: block;
   padding: 10px 0 0 0;
   text-decoration: underline;
 }
-#header .container .gap .content .fixed .reservation .col-gap form ul li div button {
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap form ul li div button {
   width: 231.922px;
   height: 65px;
   padding: 0 30px;
@@ -183,5 +275,17 @@
   border: 2px solid #fff;
   color: #fff;
   font-size: 18px;
+  cursor: pointer;
+}
+#header .container .gap .content .fixed .reservation .reserv_content .col-gap > button {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 20px 0 0;
+  background: url(../img/btn_reservation_close.png) no-repeat right 50%;
+  border: 0;
+  width: 50px;
   cursor: pointer;
 }
