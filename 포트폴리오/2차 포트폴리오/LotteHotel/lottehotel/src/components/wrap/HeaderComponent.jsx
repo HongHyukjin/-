@@ -41,6 +41,46 @@ export default function HeaderComponent (){
         reservation.stop().animate({"top" : "-113px"}, 1000);
     }
 
+    // const bindfn=()=>{
+    //     result = abc.map(()=>{
+    //         return(
+    //             <td>
+
+    //             </td>
+    //         )
+    //     })
+    // }
+
+    // React.useEffect(() => {
+    //     let txt = '';
+    //     let cnt = 0;
+    //     const day_table = $('#header #day_table')
+    //     console.log(day_table)
+        
+        
+    //     for(let i=0; i<7; i++){
+    //         txt += '<tr>';
+    //         for(let j=0; j<4; j++){
+    //             cnt ++;
+    //             txt += `<td>${cnt}</td>`
+
+    //             return(
+    //                 <td>
+
+    //                 </td>
+    //             )
+    //         }
+    //         txt += '</tr>'
+    //     }
+
+
+    //     // txt = '<tr><td>3<td/></tr>'
+    //     console.log(txt);
+    //     // day_table.innerHTML = txt;
+
+    //     // day_table.dangerouslySetInnerHTML={{__html:txt}}
+    // })
+
 
 
     return (
@@ -165,6 +205,34 @@ export default function HeaderComponent (){
                                     </div>
                                 </div>
                             </div>
+                            <div className="header_modal">
+                            <div className="wrap">
+                                <ul>
+                                    <li>
+                                        <div className="caption">
+                                            <h3>April</h3>
+                                            <h3>2023</h3>
+                                        </div>
+                                        <table>
+                                            <thead>
+                                                <tr>    
+                                                    <th>Sun</th>
+                                                    <th>Mon</th>
+                                                    <th>Tue</th>
+                                                    <th>Wed</th>
+                                                    <th>Thu</th>
+                                                    <th>Fri</th>
+                                                    <th>Sat</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="day_table">
+                                                
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>

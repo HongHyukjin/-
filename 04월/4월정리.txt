@@ -1,0 +1,8 @@
+// 문자열 출력
+String.format("%d", 변수);
+// 오른쪽 정렬
+String.format("%20d", 변수);
+// 3자리마다 ,출력
+String.format("%,d", 변수);
+
+Calendar cal = Calendar.getInstance();

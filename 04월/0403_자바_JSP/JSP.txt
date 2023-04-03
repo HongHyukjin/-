@@ -1,0 +1,41 @@
+JSP
+Java Server Page
+웹개발 자바코딩 포함된 서버사이드 스크립트언어
+
+헤어코딩은
+문서시작 위치에
+페이지 디렉티브를 표기한다.
+<%@ %>
+
+<%@
+  page
+  language="java"
+  contentType = "text/html;charset=UTF-8"
+  pageEncoding = "UTF-8"
+%>
+
+//한줄코딩
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+
+페이지 실행은
+톰캣 서버가 실행되어야 한다.
+검색어
+톰캣(Apache Tomcat)
+JAVA 1.8(8버전)
+톰캣 8.5(9버전)
+C:\풀스택홍혁진\apache-tomcat-9.0.73\bin 이동
+startup.bat 실행
+C:\풀스택홍혁진\apache-tomcat-9.0.73\webapps 이동
+webapps/ROOT/웨딩/
+
+
+포트는 기본이 localhost:8080 포트 사용
+포트는 기본이 127.0.0.1:8080 포트 사용
+개인 IP 주소  192.168.40.79:8080 포트 사용
+
+localhost:8080/폴더명/
+
+header.jsp
+main.jsp
+footer.jsp
+go_top.jsp
