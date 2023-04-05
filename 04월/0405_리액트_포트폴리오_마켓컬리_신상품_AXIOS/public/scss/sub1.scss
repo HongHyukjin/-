@@ -1,0 +1,136 @@
+#wrap{
+    width:100%;
+    #sub1 {
+        width:100%;
+        #section1{
+            width:100%;
+            padding: 0 0 70px 0;
+            .container{
+                width:100%;
+                max-width:1050px;
+                margin:0 auto;
+                .gap {
+                    width:100%;
+                    .content {
+                        width:100%;
+                        a {
+                            display: block;
+                            width:100%;
+                            img {
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+        #section2{
+            width:100%;
+            .container{
+                width:100%;
+                max-width: 1050px;
+                margin : 0 auto;
+                .gap{
+                    width:100%;
+                    .title{
+                        width:100%;
+                        padding : 0 0 60px 0;
+                        h2{
+                            font-size: 28px;
+                            color : #333;
+                        }
+                    }
+                    .content{
+                        width:100%;
+                        display: flex;
+                        .left{
+                            width : 262.5px;
+                            .left-title{
+                                width : 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                strong{}
+                                span{
+                                    img{}
+                                    em{}
+                                }
+                            }
+                            .left-content{
+                                div{
+                                    a{
+                                        span{}
+                                    }
+                                    .sub{
+                                        ul{
+                                            li{
+                                                label{
+                                                    input{
+    
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right{
+                            width : 262.5px * 3;
+                            .right-title{
+                                display: flex;
+                                justify-content: space-between;
+                                strong{}
+                                span{
+                                    a{
+                                        img{}
+                                    }
+                                    i{}
+                                }
+                            }
+                            .right-content{
+                                width : 100%;
+                                >ul{
+                                    width : 100%;
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                    justify-content: space-between;
+                                    >li{
+                                        width : 250px;
+                                        padding : 0 0 90px 0;
+                                        >a{
+                                            width : 100%;
+                                            .img-box{
+                                                width : 100%;
+                                                >img{
+                                                    width : 100%;
+                                                }
+                                                span{
+                                                    img{
+
+                                                    }
+                                                }
+                                            }
+                                            .tit-box{
+                                                ul{
+                                                    li{
+                                                        strong{}
+                                                        em{}
+                                                        span{
+                                                            &.rate-price{}
+                                                            &.panme-price{}
+                                                        }
+                                                        s{}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,3 +6,19 @@ String.format("%20d", 변수);
 String.format("%,d", 변수);
 
 Calendar cal = Calendar.getInstance();
+
+JSP 시작
+
+페이지 디렉티브
+<%@
+  page
+  language="java"
+  contentType="text/html; charset="UTF-8"
+  pageEncoding="UTF-8"
+%>
+
+선언문(Declaration)   : <%! %>  전역변수, 메서드 선언
+스크립트릿(Scriptlet) : <% %>   지역변수 선언, 자바 코딩
+표현식(Expression)    : <%= %>  화면에 변수, 메서드 출력
+
+jsp 조각들로 나눠져 있는것들을 모아주는 index.jsp
