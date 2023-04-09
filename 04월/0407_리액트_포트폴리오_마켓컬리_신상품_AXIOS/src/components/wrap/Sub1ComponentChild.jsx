@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function Sub1ComponentChild ({신상품}) {
+export default function Sub1ComponentChild ({신상품, 베스트, 알뜰쇼핑, 특가혜택}) {
 
   const newProductList = () => {
     신상품.map((item, idx) => {
       // console.log(idx, item);
-      console.log(item);
+      // console.log(item);
     })
   }
 

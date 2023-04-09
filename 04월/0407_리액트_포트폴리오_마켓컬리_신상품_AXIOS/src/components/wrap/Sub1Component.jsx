@@ -6,7 +6,10 @@ import Sub1ComponentChild from './Sub1ComponentChild';
 export default function Sub1Component() {
 
     const [state,setstate] = React.useState({
-        신상품 : []
+        신상품 : [],
+        베스트 : [],
+        알뜰쇼핑 : [],
+        특가혜택 : []
     })
 
     // 신상품 가져오기
@@ -16,9 +19,13 @@ export default function Sub1Component() {
             method:'GET'
         })
         .then((res)=>{
+            console.log(res.data);
             setstate({
                 ...state,
-                신상품 : res.data.신상품
+                신상품 : res.data.신상품,
+                베스트 : res.data.베스트,
+                알뜰쇼핑 : res.data.알뜰쇼핑,
+                특가혜택 : res.data.특가혜택
             })
         })
         .catch((err)=>{
@@ -421,7 +428,7 @@ export default function Sub1Component() {
                                 </div>
                                 <div className="right-content">
                                     {/* state.신상품 => 하위컴포넌트 프롭스 데이터 내려주기 */}
-                                    <Sub1ComponentChild 신상품={state.신상품}/>
+                                    <Sub1ComponentChild 신상품={state.신상품} 베스트={state.베스트} 알뜰쇼핑={state.알뜰쇼핑} 특가혜택={state.특가혜택}/>
                                 </div>
                             </div>
                        </div>     
