@@ -22,3 +22,5 @@ JSP 시작
 표현식(Expression)    : <%= %>  화면에 변수, 메서드 출력
 
 jsp 조각들로 나눠져 있는것들을 모아주는 index.jsp
+
+form태그 autocomplete="off" => form태그 자동완성을 막아줌
