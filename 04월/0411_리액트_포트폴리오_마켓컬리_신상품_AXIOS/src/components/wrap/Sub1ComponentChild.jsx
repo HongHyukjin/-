@@ -43,7 +43,7 @@ export default function Sub1ComponentChild ({신상품, 베스트, 알뜰쇼핑,
                     <li><strong>[{item.제조사}]</strong> <em>{item.제품명}</em></li>
                     <li>{item.제품특성}</li>
                     <li><span className='rate-price'>{item.할인율===0?'':`${Math.round(item.할인율*100)}%`}</span> {item.할인율>0 && (<span className='panme-price'>{`${item.정가 * (1 - item.할인율)}원`}</span>)}</li>
-                    <li>{ item.할인율 === 0 ? <span className='panme-price'>{commaPrice(item.정가)}</span> : <s>{commaPrice(item.정가)}`</s> }</li>
+                    <li>{ item.할인율 === 0 ? <span className='panme-price'>{commaPrice(item.정가)}</span> : <s>{commaPrice(item.정가)}</s> }</li>
                     <li>{item.판매처}</li>
                 </ul>
             </div>
