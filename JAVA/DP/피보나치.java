@@ -1,6 +1,6 @@
 package DP;
 import java.util.Scanner;
-public class fibo {
+public class 피보나치 {
 
   static int fiboFn1(int num){
     int[] result = new int[num+1];
