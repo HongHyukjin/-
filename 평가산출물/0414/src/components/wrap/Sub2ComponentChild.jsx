@@ -40,7 +40,7 @@ export default function Sub2ComponentChild ({베스트}) {
             <div className="tit-box">
                 <ul>
                     <li>{item.배송구분}</li>
-                    <li><strong>[{item.제조사}]</strong> <em>{item.제품명}</em></li>
+                    <li><strong></strong> <em>{item.제품명}</em></li>
                     <li>{item.제품특성}</li>
                     <li><span className='rate-price'>{item.할인율===0?'':`${Math.round(item.할인율*100)}%`}</span> {item.할인율>0 && (<span className='panme-price'>{`${item.정가 * (1 - item.할인율)}원`}</span>)}</li>
                     <li>{ item.할인율 === 0 ? <span className='panme-price'>{commaPrice(item.정가)}</span> : <s>{commaPrice(item.정가)}</s> }</li>
