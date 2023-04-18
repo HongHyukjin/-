@@ -1,5 +1,5 @@
 import java.util.*;
-public class test {
+public class 이차원배열_정렬 {
   public static void main(String[] args) {
     String[][] arr = {{"C","D"}, {"A", "B"},  {"E", "F"}};
 

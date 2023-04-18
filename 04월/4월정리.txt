@@ -24,3 +24,12 @@ JSP 시작
 jsp 조각들로 나눠져 있는것들을 모아주는 index.jsp
 
 form태그 autocomplete="off" => form태그 자동완성을 막아줌
+
+mysql 8.0.32 설치
+id : root
+비번 : 1234
+
+JDBC 학습자료실에서 다운로드 후
+톰캣 폴더의 examples의 WEB_INF 내용물 복사 후
+ROOT의 WEB_INF에 붙여넣기
+jdbc .jar파일 WEB_INF/lib에 넣기
