@@ -1,0 +1,80 @@
+*{
+  margin : 0;
+  padding : 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+html, body{
+  width : 100%;
+  height : 100%;
+}
+body{
+  font : normal 15px/1 "맑은고딕", 'arial';
+  color : #444;
+  background: #fff;
+}
+#wrap{
+  width : 100%;
+}
+#wrap .bottom{
+  width : 100%;
+  max-width: 1000px;
+  text-align: right;
+  padding: 50px 0;
+}
+#wrap .bottom a{
+  color : #38a;
+  font-size: 16px;
+  font-weight: 600;
+}
+#wrap .bottom a{
+  text-decoration: none;
+  color : rgba(51,136,170, 0.7);
+}
+#wrap .bottom a:hover{
+  color : rgba(51,136,170, 1);
+  transition : all 0.3s;
+}
+#wrap table{
+  width : 100%;
+  max-width: 1000px;
+  margin : 0 auto;
+}
+#wrap table caption{
+  padding : 100px 0 50px 0;
+  font-size: 40px;
+  font-weight: 600;
+  color : #38a;
+}
+#wrap table th,td{
+  /* width : 100%; */
+  border-bottom : 1px solid rgba(51,136,170, 0.3);
+}
+#wrap table th{
+  height : 60px;
+  font-size: 17px;
+  font-weight: 500;
+  color : #fff;
+  background : #38a;
+  border-top: 1px solid #38a;
+}
+#wrap table th:nth-child(1){
+  width : 100px;
+}
+#wrap table th:nth-child(2){
+  border-left: 1px solid rgba(51,136,170, 0.3);
+  border-right: 1px solid rgba(51,136,170, 0.3);
+}
+#wrap table th:nth-child(3){
+  width : 200px;
+}
+#wrap table td{
+  height : 50px;
+  color : #555;
+  font-size: 15px;
+  text-align: center;
+  padding : 0 20px;
+}
+#wrap table td:nth-child(2){
+  text-align: left;
+}

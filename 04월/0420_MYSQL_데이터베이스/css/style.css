@@ -1,0 +1,65 @@
+*{
+  margin : 0;
+  padding : 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+html, body{
+  width : 100%;
+  height : 100%;
+}
+body{
+  font : normal 15px/1 "맑은고딕", 'arial';
+  color : #444;
+  background: #fff;
+}
+#wrap{
+  width : 100%;
+}
+#wrap form{
+  width : 100%;
+  max-width: 1000px;
+  padding : 50px 150px 100px 150px;
+  margin : 100px auto;
+  background: #f0f0f0;
+}
+#wrap form table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#wrap form table th,td{
+  width : 100%;
+}
+#wrap form table th{
+  height : 150px;
+  font-size : 50px;
+  font-weight: 600;
+  color : #000;
+}
+#wrap form table td{
+  height : 70px;
+}
+#wrap form table td:focus{
+  outline-offset : -1px;
+  outline : 1px solid transparent;
+}
+#wrap form table td input{
+  width : 100%;
+  height : 100%;
+  background: #fff;
+  text-align: center;
+  border: 0;
+  font-size: 17px;
+}
+#wrap form button{
+  width : 100%;
+  height : 60px;
+  border: 0;
+  margin : 50px 0 0 0;
+  background: #48a;
+  color : #fff;
+  cursor: pointer;
+}
+
+  

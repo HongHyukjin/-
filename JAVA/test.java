@@ -2,8 +2,8 @@ import java.util.*;
 public class test {
 
   public static void main(String[] args) {
-    int[] arr = {1,1,3,3,5};
-    System.out.println(Arrays.asList(arr).indexOf(1));
+    String num = "123";
+    System.out.println(num.substring(1,1));
 
     
   }

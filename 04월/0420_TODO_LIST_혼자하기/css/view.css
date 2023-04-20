@@ -1,0 +1,26 @@
+#wrap{
+  width : 100%;
+}
+#wrap table{
+  width : 100%;
+  max-width: 1000px;
+  margin : 0 auto;
+  text-align: center;
+}
+#wrap table th,td{
+  
+}
+#wrap table th{
+  height : 60px;
+  background: #38a;
+  border : 1px solid #38a;
+}
+#wrap table td{
+  height : 50px;
+  border-top : 1px solid #38a;
+  border-bottom : 1px solid #38a;
+}
+#wrap table td:nth-child(2){
+  text-align: left;
+  padding : 0 0 0 20px;
+}
