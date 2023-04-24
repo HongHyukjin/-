@@ -1,0 +1,80 @@
+*{
+  margin : 0;
+  padding : 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+#wrap{
+  width : 100%;
+}
+#wrap h1{
+  text-align: center;
+  padding : 50px 0 0 0;
+}
+#wrap form{
+  position: relative;
+  width : 100%;
+  max-width: 500px;
+  margin : 100px auto;
+}
+#wrap form caption{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+#wrap form label{
+  position: relative;
+  display: block;
+  width : 100%;
+  font-size: 17px;
+  padding : 15px 0;
+  margin : 15px 0;
+}
+#wrap form label div{
+  width : 300px;
+  position : absolute;
+  top : 0;
+  left : 100px;
+  height : 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap form label .radio1{
+  width : 30px;
+}
+#wrap form label .radio2{
+  width : 30px;
+}
+#wrap form label input{
+  height : 100%;
+  /* padding : 10px 10px 10px 20px; */
+}
+#wrap form label input[type='text']{
+  position : absolute;
+  top : 0;
+  left : 100px;
+  width : 300px;
+  padding : 10px 10px 10px 20px;
+}
+#wrap form label input[type='radio']{
+  display: inline-block;
+  padding : 0 0 0 100px;
+  font-size: 30px;
+}
+#wrap form label select{
+  position : absolute;
+  top : 0;
+  left : 100px;
+  width : 300px;
+  height : 53px;
+  text-align: center;
+  font-size: 15px;
+}
+#wrap form button{
+  margin : 50px 0 0 100px;
+  width : 300px;
+  height : 53px;
+  border : 1px solid #ccc;
+  cursor: pointer;
+}

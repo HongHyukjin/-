@@ -1,0 +1,23 @@
+DB : hyukjin
+
+DB 설계
+필드             타입      
+idx 
+아이디  
+비밀번호
+성별
+가입경로
+주소지
+메모
+가입 날짜
+
+CREATE TABLE member(
+  idx int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  id VARCHAR(15) NOT NULL,
+  pw VARCHAR(15) NOT NULL,
+  gender VARCHAR(15),
+  path VARCHAR(15),
+  addr VARCHAR(30),
+  memo VARCHAR(200),
+  create_date timestamp DEFAULT CURRENT_TIMESTAMP
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

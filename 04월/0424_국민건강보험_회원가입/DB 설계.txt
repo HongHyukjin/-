@@ -1,0 +1,30 @@
+필드
+idx int   PRIMARY KEY  AUTO_INCREMENT 
+num varchar(20) NOT NULL
+symbol1 varchar(20) NOT NULL
+symbol2 varchar(20) NOT NULL
+id  varchar(20) NOT NULL
+pw  varchar(20) NOT NULL
+pw_q varchar(20) NOT NULL
+pw_a varchar(20) NOT NULL
+hp varchar(20) NOT NULL
+manager_name varchar(20) NOT NULL
+email varchar(50) NOT NULL
+message varchar(200) NOT NULL
+create_date timestamp DEFAULT CURRENT_TIMESTAMP
+
+CREATE TABLE member2(
+    idx int PRIMARY KEY AUTO_INCREMENT,
+    num VARCHAR(20) NOT NULL,
+    symbol1 VARCHAR(20) NOT NULL,
+    symbol2 VARCHAR(20) NOT NULL,
+    id VARCHAR(20) NOT NULL,
+    pw VARCHAR(20) NOT NULL,
+    pw_q varchar(20) NOT NULL,
+    pw_a varchar(20) NOT NULL,
+    hp varchar(20) NOT NULL,
+    manager_name varchar(20) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    message varchar(200) NOT NULL,
+    create_date timestamp DEFAULT CURRENT_TIMESTAMP
+)ENGINE InnoDB DEFAULT CHARSET=utf8mb4;

@@ -1,0 +1,29 @@
+#wrap{
+  width : 100%;
+}
+#wrap table{
+  width : 100%;
+  max-width: 1000px;
+  margin : 100px auto;
+}
+#wrap table caption{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color : #39c;
+  padding : 0 0 50px 0;
+}
+#wrap table th,td{
+  
+}
+#wrap table th{
+  font-size: 17px;
+  background: #39c;
+  color : #fff;
+  height : 60px;
+}
+#wrap table td{
+  text-align: center;
+  height : 50px;
+  border-bottom: 1px solid #ddd;
+}
