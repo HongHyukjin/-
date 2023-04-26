@@ -40,3 +40,7 @@ public : 모든 클래스에서 접근 가능
 private : 동일 클래스만 접근 가능
 protected : 동일 패지키와 상속받은 서브클래스는 접근 가능
 default : 같은 패키지 내의 클래스는 접근 가능
+
+Router 설치
+BrowserRouter > Routes > Route/index/element > Route/path/element
+Header로 가서 router의 Link, Outlet 비구조화로 불러옴

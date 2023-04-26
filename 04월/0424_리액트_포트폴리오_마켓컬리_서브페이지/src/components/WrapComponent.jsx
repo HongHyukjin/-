@@ -1,21 +1,22 @@
 import React from 'react';
 import TopModalComponent from './wrap/TopModalComponent';
-import HeaderComponent from './wrap/HeaderComponent';
-import IntroMainComponent from './wrap/IntroMainComponent';
+import HeaderComponent   from './wrap/HeaderComponent';
+import IntroMainComponent from './wrap/IntroMainComponent'; // 인트로 메인페이지
 import Sub1Component from './wrap/Sub1Component';
 import Sub2Component from './wrap/Sub2Component';
 import Sub3Component from './wrap/Sub3Component';
 import Sub4Component from './wrap/Sub4Component';
 import SignUpComponent from './wrap/SignUpComponent';
-// 로그인 페이지
-// 아이디찾기 페이지
+// 로그인
+// 아이디찾기 페이지 - 이름,휴대폰 탭 / 이름,이메일 탭
 // 찾은페이지결과 페이지
-// 비밀번호찾기 페이지
-// 비밀번호 새로설정 페이지
+// 비밀번호찾기 페이지 - 이름,휴대폰 탭 / 이름,이메일 탭
+// 비밀번호새로설정페이지
 // BBS
 // 공지사항
-// 1:1 문의
+// 1:1문의
 import FooterComponent from './wrap/FooterComponent';
+
 
 export default function WrapComponent() {
 

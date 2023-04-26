@@ -1,0 +1,93 @@
+MYSQL 조작어
+- 데이터베이스 이름 : USER > 
+  - TABLE > 테이블이름 : todo_list
+    - 필드(field) = 열(칸) = 아이템(ITEM)
+      - 레코드(RECORD) = 행(줄) = 튜플(TUPLE)
+
+문제1) 데이터 조회 : 셀렉트(SELECT)
+
+- 조건 -
+todo_list 테이블 안에 있는 데이터 중
+필드이름이 todo_list만 목록 보여라
+
+SELECT todo_list from todo_list;
+
+- 조건4 -
+todo_list 테이블안에 있는 데이터 중
+idx가 5인 레코드를 보여라
+
+SELECT * FROM todo_list where idx=5;
+
+- 조건5 -
+todo_list 테이블안에 있는 데이터 중
+idx가 5보다 크거나 같은 레코드를 보여라
+SELECT * FROM todo_list WHERE idx>=5;
+
+- 조건6 -
+todo_list 테이블안에 있는 데이터 중
+idx가 5보다 크거나 같고 10보다 작거나 같은 레코드를 보여라
+SELECT * FROM todo_list WHERE idx>=5 AND idx<=10;
+
+- 조건7 -
+todo_list 테이블안에 있는 데이터 중
+create_date를 내림차순 정렬
+SELECT * FROM todo_list ORDER BY create_date DESC;
+create_date를 오름차순 정렬
+SELECT * FROM todo_list,idx ORDER BY create_date ASC;
+
+- 조건9 -
+todo_list 테이블안에 있는 데이터 중
+todo_list를 내림차순 정렬
+SELECT * FROM todo_list ORDER BY todo_list;
+
+- 조건10 -
+todo_list 테이블안에 있는 데이터 중
+todo_list에서 '핫도그'가 들어간 행을 출력
+SELECT * FROM todo_list
+WHERE todo_list LIKE '%핫도그%';
+
+- 조건10 -
+todo_list 테이블안에 있는 데이터 중
+todo_list에서 '기'로 끝나는 행을 출력 todo_list로 오름차순 정렬
+SELECT * FROM todo_list WHERE todo_list LIKE '%기' ORDER BY todo_list ASC;
+
+- 조건11 -
+todo_list 테이블안에 있는 데이터 중
+todo_list에서 '기'로 끝나는 행을 출력 idx로 내림차순 정렬
+SELECT * FROM todo_list WHERE todo_list LIKE '%기' ORDER BY idx DESC;
+
+- 조건 14 -
+todo_list 테이블안에 있는 데이터 중
+IDX 10번 이상이거나,
+todo_list의 내용중 "TODO"가 포함되고
+create_date의 날짜를 기준 내림차순 정렬
+SELECT * FROM todo_list WHERE IDX >= 10 OR todo_list LIKE '%TODO' ORDER BY create_date DESC;
+
+- 조건 15 -
+todo_list 테이블안에 있는 데이터 중
+todo_list의 내용중 "TODO"가 포함되지 않은 데이터를
+create_date의 날짜를 기준 오름차순 정렬
+SELECT * FROM todo_list WHERE todo_list NOT LIKE '%TODO%' ORDER BY create_date;
+
+- 조건 16 -
+todo_list 테이블안에 있는 데이터 중
+create_date의 날짜를 조건으로
+19일 1일간 데이터 출력
+
+SELECT * FROM todo_list WHERE create_date BETWEEN '2023-04-19 00:00:00' AND '2023-04-19 23:59:00';
+
+- 조건 17 -
+todo_list 테이블안에 있는 데이터 중
+create_date의 날짜를 조건으로
+19일 1일간 데이터 출력
+
+SELECT * FROM todo_list WHERE create_date BETWEEN DATE('2023-04-19') AND DATE('2023-04-20');
+
+- 조건 18 -
+todo_list 테이블안에 있는 데이터 중
+create_date의 날짜를 조건으로
+19일 15시 ~ 23시 데이터 출력
+
+SELECT * FROM todo_list WHERE create_date BETWEEN DATE('2023-04-19') AND DATE('2023-04-20') 
+AND HOUR(create_date) BETWEEN 15 AND 23;
+

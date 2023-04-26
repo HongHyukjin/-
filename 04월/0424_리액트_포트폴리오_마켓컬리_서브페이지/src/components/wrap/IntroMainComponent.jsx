@@ -1,4 +1,6 @@
 import React from 'react';
+import $ from 'jquery';
+
 
 export default function IntroMainComponent() {
     return (
@@ -6,13 +8,14 @@ export default function IntroMainComponent() {
             <section id="section1">
                 <div className="container">
                     <div className="gap">
-                        <div className="title hide">
+                        <div className="title  hide">
                             <h2>마켓컬리 메인 슬라이드</h2>
                         </div>
                         <div className="content">
                             <div className="slide-container">
                                 <div className="slide-view">
                                     <ul className="slide-wrap">
+                                        {/* li.slide$@0*23>a[href=!#]>img[src=./images/intro/intro_main_slide$$@1.jpg] */}
                                         <li className="slide slide22"><a href="!#"><img src="./images/intro/intro_main_slide23.jpg" alt="" /></a></li>
                                         <li className="slide slide0" ><a href="!#"><img src="./images/intro/intro_main_slide01.jpg" alt="" /></a></li>
                                         <li className="slide slide1" ><a href="!#"><img src="./images/intro/intro_main_slide02.jpg" alt="" /></a></li>
@@ -37,7 +40,7 @@ export default function IntroMainComponent() {
                                         <li className="slide slide20"><a href="!#"><img src="./images/intro/intro_main_slide21.jpg" alt="" /></a></li>
                                         <li className="slide slide21"><a href="!#"><img src="./images/intro/intro_main_slide22.jpg" alt="" /></a></li>
                                         <li className="slide slide22"><a href="!#"><img src="./images/intro/intro_main_slide23.jpg" alt="" /></a></li>
-                                        <li className="slide slide0" ><a href="!#"><img src="./images/intro/intro_main_slide01.jpg" alt="" /></a></li>
+                                        <li className="slide slide0"><a href="!#"><img src="./images/intro/intro_main_slide01.jpg" alt="" /></a></li>                                        
                                     </ul>
                                 </div>
                             </div>
@@ -45,6 +48,8 @@ export default function IntroMainComponent() {
                     </div>
                 </div>
             </section>
+
+
 
             <section id="section2">
                 <div className="container">
@@ -56,21 +61,21 @@ export default function IntroMainComponent() {
                             <div className="slide-container">
                                 <div className="slide-view">
                                     <ul className="slide-wrap">
-                                        <li className="slide slide12">
+                                    <li className="slide slide12">
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -79,17 +84,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -98,17 +103,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -117,17 +122,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -136,17 +141,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -155,17 +160,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -174,17 +179,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -193,17 +198,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -213,17 +218,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/0d4c4db5-81b8-4c85-9548-0579fbf760e6.jpeg' alt="" />
+                                                        <img src='./images/intro/9c4cbb5a-4a1f-4ff0-92e7-92011d236602.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -232,17 +237,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/9ac79acc-2ffb-4978-af87-51596e2e1d77.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -251,17 +256,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/317f1e18-08d9-4358-9135-2c8a63028ab1.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -270,17 +275,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/165303902534l0.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -289,17 +294,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -308,17 +313,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -327,17 +332,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -346,17 +351,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -365,17 +370,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -384,17 +389,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -403,17 +408,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -422,17 +427,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -441,17 +446,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -460,17 +465,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -479,17 +484,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -498,17 +503,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -517,17 +522,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -536,17 +541,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -555,17 +560,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -574,38 +579,37 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
                                         </li>
 
-
                                         <li className="slide slide0">
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/0d4c4db5-81b8-4c85-9548-0579fbf760e6.jpeg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -614,17 +618,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -633,17 +637,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -652,17 +656,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -671,17 +675,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -690,17 +694,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -709,17 +713,17 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
@@ -728,21 +732,21 @@ export default function IntroMainComponent() {
                                             <div className="col-gap">
                                                 <a href="!#">
                                                     <div className="img-box">
-                                                        <img src='./images/intro/00fee6ce-d99c-463c-aed7-c659d9344f99.jpg' alt="" />
+                                                        <img src='./images/intro/3fdf8c0a-d5ed-4148-9ced-d5440a43315f.jpg' alt="" />
                                                         <span>
                                                             <img src="./images/sub1/icon_cart.svg" alt="" />
                                                         </span>
                                                     </div>
-                                                    <div className="text-box">
-                                                        <ul>
-                                                            <li><strong>[아이소이]</strong> <em>수분탱크 마스크 20mlx1매</em></li>
+                                                    <div className="tex-box">
+                                                        <ul>                                                        
+                                                            <li><strong>[풀무원]</strong> <em>로스팅 돈코츠라멘 (4개입)</em></li>                                                        
                                                             <li>5,450</li>
                                                             <li>후기</li>
-                                                        </ul>
+                                                        </ul> 
                                                     </div>
                                                 </a>
                                             </div>
-                                        </li>
+                                        </li>                                        
                                     </ul>
                                 </div>
                             </div>
