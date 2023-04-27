@@ -1,0 +1,66 @@
+조회 SELECT
+수정 UPDATE
+삭제 DELETE
+입력 INSERT
+
+CRUD
+Create : 데이터베이스 생성 => 테이블 생성 => 데이터 입력
+Read : 조회
+Update : 수정
+Delete : 삭제
+
+/////////////////////////////////////////////////////////
+수정 UPDATE
+
+UPDATE 테이블이름 SET 필드명 = '수정할값' WHERE 조건
+
+테이블 이름이 TODO_LIST의 테이블을 수정하라
+필드는 TODO_LIST의 내용을 '러시아의 전쟁 만혹 참혹'으로 수정하라
+조건은 IDX가 13인 레코드만 수정하라.
+
+UPDATE TODO_LIST SET TODO_LIST = '수정할값' WHERE 조건
+UPDATE TODO_LIST SET TODO_LIST = '러시아의 전쟁 만행 참혹' WHERE IDX=6;
+UPDATE TODO_LIST SET TODO_LIST = '러시아의 전쟁 만행 참혹' WHERE IDX=7;
+
+UPDATE TODO_LIST SET TODO_LIST ='국제 국방력 순위 9위' WHERE TODO_LIST LIKE '%TEST%';
+
+수정문제)
+테이블이름이 TODO_LIST
+조건은 IDX가 5 그리고 12번인 레코드 모두를 수정하라
+수정필드는 TODO_LIST 수정내용은 '연잎핫도그'
+UPDATE TODO_LIST SET TODO_LIST='연잎바닐라핫도그' WHERE IDX IN(3, 5, 8);
+
+mysql> SELECT * FROM TODO_LIST;
++-----+----------------------------------+---------------------+
+| idx | todo_list                        | create_date         |
++-----+----------------------------------+---------------------+
+|   1 | 친구랑 안성 오모리 부대찌개 먹기 | 2023-04-19 15:58:17 |
+|   2 | 안성 팜랜드 초원 걷기            | 2023-04-19 15:58:17 |
+|   3 | 연잎바닐라핫도그                 | 2023-04-19 15:58:17 |
+|   4 | 연잎핫도그 먹으러 가기           | 2023-04-19 15:58:17 |
+|   5 | 연잎바닐라핫도그                 | 2023-04-19 15:58:17 |
+|   6 | 러시아의 전쟁 만행 참혹          | 2023-04-19 18:00:23 |
+|   8 | 연잎바닐라핫도그                 | 2023-04-20 14:35:57 |
+|   9 | TODO LIST 혼자하기               | 2023-04-20 15:11:17 |
+|  10 | 미국의 국빈방문 방문             | 2023-04-27 13:54:44 |
+|  11 | 국제 국방력 순위 9위             | 2023-04-27 14:06:38 |
+|  12 | TEST                             | 2023-04-27 14:32:01 |
++-----+----------------------------------+---------------------+
+11 rows in set (0.00 sec)
+
+조건)
+TODO_LIST 내용이 연잎이 포함되지 않은 레코드를 모두 "우거지 뼈다귀 감자탕"으로 수정하시오
+
+UPDATE TODO_LIST 
+SET TODO_LIST = '우거지 뼈다귀 감자탕" 
+WHERE TODO_LIST NOT LIKE '%연잎%';
+
+/////////////////////////////////////////////////////////
+삭제 DELETE
+
+DELETE FROM 테이블이름 조건
+
+DELETE FROM 테이블이름 WHERE IDX=5;
+DELETE FROM TODO_LIST WHERE IDX=9;
+DELETE FROM TODO_LIST WHERE TODO_LIST='연잎바닐라핫도그';
+
