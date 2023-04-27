@@ -4,6 +4,10 @@ import $ from 'jquery';
 
 export default function IntroMainComponent() {
 
+    const [state,setState] = React.useState({
+        count : 1
+    });
+
     // 판매가격, 정가 콤마형식 함수
     const commaPrice=(price)=>{
         let value = price.toString();
@@ -52,16 +56,22 @@ export default function IntroMainComponent() {
         // 2. 다음카운트함수
         function nextCount(){
             cnt++;
-
-            slidePageEvent();
+            setState({
+                ...state,
+                count : (cnt+1>23)?1:(cnt+1===0?n:cnt+1)
+            })
+            // slidePageEvent();
             mainSlide();
         }
 
         // 2. 이전카운트함수
         function prevCount(){
             cnt--;
-
-            slidePageEvent();
+            setState({
+                ...state,
+                count : (cnt+1>23)?1:(cnt+1===0?n:cnt+1)
+            })
+            // slidePageEvent();
             mainSlide();
         }
 
@@ -163,7 +173,7 @@ export default function IntroMainComponent() {
                                 <a href="!#" className='right-arrow-btn'><img src="./images/intro/icon_right_arrow_gray.svg" alt="" /></a>
 
                                 <span className='page-count-box'>
-                                    <em className='current-number'>{1}</em>
+                                    <em className='current-number'>{state.count}</em>
                                     <i>/</i>
                                     <em className='total-number'>{23}</em>
                                 </span>
@@ -981,3 +991,4 @@ export default function IntroMainComponent() {
         </main>
     );
 };
+
