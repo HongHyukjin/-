@@ -8,15 +8,17 @@ import java.util.*;
  * 이 행동을 큐가 빌때까지(모든 노드를 한번씩 방문할때까지) 반복한다.
  */
 public class BFS_QUEUE {
-    static boolean[] visited;
+    public static boolean[] visited;
     public static ArrayList<Integer> bfs(int start, boolean[] visited, int[][] graph){
         ArrayList<Integer> result = new ArrayList<>();
         Queue<Integer> queue = new LinkedList<>();
         visited = new boolean[graph.length];
         queue.offer(start);
         visited[start] = true;
+        visited[0] = true;
         while(!queue.isEmpty()){
             int node = queue.poll();
+            visited[node] = true;
             result.add(node);
             for(int n : graph[node]){
                 if(visited[n] == false){
@@ -24,7 +26,6 @@ public class BFS_QUEUE {
                 }
             }
         }
-
 
         return result;
     }
@@ -35,5 +36,7 @@ public class BFS_QUEUE {
         for(Integer num : result){
             System.out.println(num);
         }
+
+        
     }    
 }
