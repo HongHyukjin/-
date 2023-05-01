@@ -44,3 +44,6 @@ default : 같은 패키지 내의 클래스는 접근 가능
 Router 설치
 BrowserRouter > Routes > Route/index/element > Route/path/element
 Header로 가서 router의 Link, Outlet 비구조화로 불러옴
+
+UPDATE 테이블명 SET 필드명 '내용' WHERE 조건
+ALTER TABLE 테이블명 ADD COLUMN 필드명 타입 NOT NULL;
