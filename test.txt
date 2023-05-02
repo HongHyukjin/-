@@ -1,0 +1,21 @@
+FRONT : REACT
+BACK : JSP, MYSQL, TOMCAT
+
+1. 메인페이지
+2. 회원가입페이지
+3. 로그인페이지
+4. 아이디, 비밀번호 찾기(모달창?)
+5. 게시글 작성 페이지
+6. 게시글 목록 페이지
+(7. 공지사항 페이지)
+
+
+REACT 프로젝트 내에서 작업
+테이블
+1. 회원(Member) 테이블
+필드 : idx, id, pw, name, email, hp, address, gender, birth, create_date
+2. 게시글(Post) 테이블
+필드 : idx, title, content, report_date, view_num
+3. 공지사항(Notice) 
+필드 : idx, title, content, report_date, view_num
+

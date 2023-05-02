@@ -1,0 +1,67 @@
+데이터베이스 테이블 만들기
+회원가입 테이블
+member_table 
+
+데이터베이스 이름 : user
+데이터베이스 테이블이름 : member_table
+데이터베이스 아이디 : root
+데이터베이스 비밀번호 : 1234
+
+CREATE TABLE member_table(
+  user_id    VARCHAR(16)  NOT NULL PRIMARY KEY,
+  user_pw    VARCHAR(16)  NOT NULL,
+  user_name  VARCHAR(30)  NOT NULL,
+  user_hp    VARCHAR(13)  NOT NULL,
+  user_email VARCHAR(250) NOT NULL
+);
+
+mysql> desc member_table;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| user_id    | varchar(16)  | NO   | PRI | NULL    |       |
+| user_pw    | varchar(16)  | NO   |     | NULL    |       |
+| user_name  | varchar(30)  | NO   |     | NULL    |       |
+| user_hp    | varchar(13)  | NO   |     | NULL    |       |
+| user_email | varchar(250) | NO   |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+DAO
+MemberDAO.java
+
+데이터베이스 URL : 'jdbc:mysql://localhost:3306/user'
+데이터베이스 이름 : user
+데이터베이스 테이블이름 : member_table
+데이터베이스 아이디 : root
+데이터베이스 비밀번호 : 1234
+
+// jdbc 드라이버
+Class.forName("com.mysql.jdbc.Driver");
+
+// Connection 데이터베이스 커넥션(DBURL, DB아이디, DB비밀번호)
+private Connection conn = null;
+
+String DBURL = 'jdbc:mysql://localhost:3306/user';
+String DBID = 'root';
+String DBPW = '1234';
+
+conn = DriverManager.getConnection(DBURL, DBID, DBPW);
+
+
+JSP
+////////////////////////////////////////////
+입력화면 디자인
+////////////////////////////////////////////
+member_insert.jsp
+
+JSP(DAO & DTO 연동) => useBean 설정 setter 함수 구현
+////////////////////////////////////////////
+입력화면 데이터 받아서 설정하는 DTO 연결
+////////////////////////////////////////////
+액션파일 => member_insert_action.jsp
+
+
+JSP : UPDATE
+수정폼 만들기
+수정 액션 만들기
