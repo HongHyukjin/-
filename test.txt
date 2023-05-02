@@ -7,11 +7,12 @@ BACK : JSP, MYSQL, TOMCAT
 4. 아이디, 비밀번호 찾기(모달창?)
 5. 게시글 작성 페이지
 6. 게시글 목록 페이지
-(7. 공지사항 페이지)
+7. 게시글 상세보기 페이지
+8. 공지사항 페이지(시간남으면)
 
 
 REACT 프로젝트 내에서 작업
-테이블
+테이블(필요할때마다 추가)
 1. 회원(Member) 테이블
 필드 : idx, id, pw, name, email, hp, address, gender, birth, create_date
 2. 게시글(Post) 테이블
