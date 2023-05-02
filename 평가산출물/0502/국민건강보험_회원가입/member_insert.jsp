@@ -40,7 +40,7 @@
         </div>
         <div class="content">
           <p>표는 필수 입력 사항이며, [동일아이디검색] 및 [가입여부확인] 버튼을 반드시 눌러주세요.</p>
-          <form name="sign_up" id="signUp" method="post" action="member_write.jsp">
+          <form name="sign_up" id="signUp" method="post" action="member_insert_action.jsp">
             <ul>
               <li>
                 <label for="">사업장 관리번호</label>
@@ -73,7 +73,7 @@
               <li>
                 <label for="">비밀번호</label>
                 <div>
-                  <input class="wid4" type="text" name="pw1" id="pw1" placeholder="영문+숫자+특수문자(!@#$) 각 1자 이상 포함하여 9~12자 이내 비밀번호 입력">
+                  <input class="wid4" type="text" name="pw" id="pw1" placeholder="영문+숫자+특수문자(!@#$) 각 1자 이상 포함하여 9~12자 이내 비밀번호 입력">
                 </div>
               </li>
               <li>
