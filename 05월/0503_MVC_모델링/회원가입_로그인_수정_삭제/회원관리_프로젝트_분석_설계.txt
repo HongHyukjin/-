@@ -1,0 +1,47 @@
+회원관리 테이블
+gaib_table
+idx         int         NOT NULL    PRIMARY KEY   AUTO_INCREMENT,
+user_id     VARCHAR(16)     NOT NULL,
+user_pw     VARCHAR(16)     NOT NULL,
+user_name   VARCHAR(16)     NOT NULL,
+user_hp     VARCHAR(16)     NOT NULL,
+user_email  VARCHAR(16),
+user_addr   VARCHAR(16)
+
+
+CREATE TABLE gaib_table(
+  idx         int             NOT NULL    PRIMARY KEY   AUTO_INCREMENT,
+  user_id     VARCHAR(16)     NOT NULL,
+  user_pw     VARCHAR(16)     NOT NULL,
+  user_name   VARCHAR(30)     NOT NULL,
+  user_hp     VARCHAR(13)     NOT NULL,
+  user_email  VARCHAR(250),
+  user_addr   VARCHAR(250)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT
+SELECT
+UPDATE
+DELETE
+
+DTO
+멤버변수
+user_id
+user_pw
+user_name
+user_hp
+user_email
+user_addr
+
+user_id, user_pw, user_name, user_hp, user_email, user_addr
+
+GaibDTO.java
+GaibDAO.java
+
+// 회원가입 메서드    : signup
+// 회원가입 폼        : gaib_signup.jsp
+// 회원가입 폼 액션   : gaib_signup_action.jsp
+
+// 회원로그인 메서드   : signin
+// 회원정보수정 메서드 : update
+// 회원정보삭제 메서드 : delete
