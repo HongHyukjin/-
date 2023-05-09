@@ -1,0 +1,27 @@
+*{
+  margin : 0;
+  padding : 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+#wrap{
+  width : 100%;
+}
+#wrap table{
+  width : 100%;
+  max-width: 1600px;
+  margin : 100px auto;
+}
+#wrap table th,td{
+  text-align: center;
+}
+#wrap table th{
+  height : 60px;
+  background: #37c;
+  color : #fff;
+}
+#wrap table td{
+  height : 50px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}

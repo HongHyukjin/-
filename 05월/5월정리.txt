@@ -13,3 +13,10 @@
 
 SQL 데이터 삭제
 DELETE FROM 테이블이름 WHERE 조건
+
+JSP(JAVA SERVER PAGE)
+서버에서 자바코드를 처리하고 사용자에게는 html만 보여줌
+
+https://dev-monkey-dugi.tistory.com/120
+
+https://velog.io/@yoho98/%EC%84%9C%EB%B8%94%EB%A6%BFServlet%EA%B3%BC-%EC%84%9C%EB%B8%94%EB%A6%BF-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88Servlet-Container-y88kny7g
