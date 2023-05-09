@@ -1,0 +1,38 @@
+#wrap {
+  width: 100%;
+}
+#wrap #signup.main {
+  width: 100%;
+  padding: 100px 0;
+}
+#wrap #signup.main .container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #f0f0f0;
+  padding: 50px;
+}
+#wrap #signup.main .container .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 60px 0;
+}
+#wrap #signup.main .container .title h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #39c;
+}
+#wrap #signup.main .container .content {
+  width: 100%;
+}
+#wrap #signup.main .container .content ul {
+  width: 100%;
+}
+#wrap #signup.main .container .content ul h2 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  color: #39c;
+}
+#wrap #signup.main .container .content ul li {
+  text-align: center;
+}
