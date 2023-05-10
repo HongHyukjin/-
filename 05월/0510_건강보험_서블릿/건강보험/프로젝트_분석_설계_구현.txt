@@ -1,0 +1,59 @@
+데이터베이스 테이블 만들기
+회원가입 테이블
+
+member_table
+
+데이터베이스 이름 : user
+
+
+create table member_table(
+    user_id varchar(16) not null primary key,
+    user_pw varchar(16) not null,
+    user_name varchar(30) not null,
+    user_hp varchar(13) not null,
+    user_email varchar(250) not null
+);
+
+
+DAO
+
+2.MemberDAO.java
+
+데이터베이스 URL : 'jdbc:데이터베이스종류://로컬호스트:포트번호/데이터베이스이름'
+데이터베이스 URL : 'jdbc:mysql://localhost:3306/user'
+데이터베이스 이름 : 'user'
+데이터베이스 테이블이름 : 'member_table'
+데이터베이스 아이디 : 'root'
+데이터베이스 비밀번호 : '1234'
+
+// jdbc 드라이버 설정 
+Class.forName('com.mysql.jdbc.Driver');
+
+//Connection 데이터베이스 컨넥션(DBURL, DB아이디, DB비밀번호)
+private Connection conn=null;
+
+STRING DBURL = 'jdbc:mysql://localhost:3306/user';
+STRING DBID = 'root';
+STRING DBPW = '1234';
+
+conn = DriverManager.getConnection(DBURL, DBID, DBPW);
+
+  
+입력화면 설계
+member_insert.jsp
+
+
+create table bohum(
+    menu1 varchar(16) not null primary key,
+    menu2 varchar(250) not null,
+    menu3 varchar(250) not null,
+    menu4 varchar(250) not null,
+    menu5 varchar(250) not null,
+    menu6 varchar(250) not null,
+    menu7 varchar(250) not null,
+    menu8 varchar(250) not null,
+    menu9 varchar(250) not null,
+    menu10 varchar(250) not null,
+    menu11 varchar(250) not null,
+    menu12 varchar(250) not null
+);
