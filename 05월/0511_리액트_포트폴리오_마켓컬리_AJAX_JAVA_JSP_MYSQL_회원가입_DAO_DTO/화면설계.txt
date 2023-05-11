@@ -29,9 +29,8 @@
     -서브4페이지
     -서브4페이지
     -서브4페이지
-
 Sub1Component.jsx
-Sub1ComponentChild.jsx
+Sub2ComponentChild.jsx
 Sub2Component.jsx
 Sub2ComponentChild.jsx
 Sub3Component.jsx

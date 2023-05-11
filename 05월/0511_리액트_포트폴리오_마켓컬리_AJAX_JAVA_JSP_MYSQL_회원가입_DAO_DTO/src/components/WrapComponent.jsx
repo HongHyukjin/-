@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route}  from 'react-router-dom';
 
 import TopModalComponent from './wrap/TopModalComponent';
 import HeaderComponent   from './wrap/HeaderComponent';
@@ -83,17 +83,17 @@ export default function WrapComponent() {
                 
                 <BrowserRouter>
                     <Routes>
-                        <Route path='/' element={<HeaderComponent mapText={state.mapText} isMap={state.isMap} />}>
-                            <Route index element={<IntroMainComponent />}/>
-                            <Route path='/메인' element={<IntroMainComponent />}/>
-                            <Route path='/서브1페이지' element={<Sub1Component />}/>    
-                            <Route path='/서브2페이지' element={<Sub2Component />}/>
-                            <Route path='/서브3페이지' element={<Sub3Component />}/>
-                            <Route path='/서브4페이지' element={<Sub4Component />}/>
-                            <Route path='/회원가입' element={<SignUpComponent mapAddressFn={mapAddressFn} timer={state} timerCounterfn={timerCounterfn} />}/>
+                        <Route path='/' element={<HeaderComponent mapText={state.mapText} isMap={state.isMap} />}>                            
+                            <Route index element={<IntroMainComponent />} />
+                            <Route path='/메인' element={<IntroMainComponent />} />
+                            <Route path='/신상품' element={<Sub1Component />} />
+                            <Route path='/베스트' element={<Sub2Component />} />
+                            <Route path='/알뜰상품' element={<Sub3Component />} />
+                            <Route path='/특가혜택' element={<Sub4Component />} />
+                            <Route path='/회원가입' element={<SignUpComponent mapAddressFn={mapAddressFn} timer={state} timerCounterfn={timerCounterfn} />} />                                                        
                         </Route>
                     </Routes>
-                </BrowserRouter>
+                </BrowserRouter>    
 
                 <FooterComponent/>                
         </div>

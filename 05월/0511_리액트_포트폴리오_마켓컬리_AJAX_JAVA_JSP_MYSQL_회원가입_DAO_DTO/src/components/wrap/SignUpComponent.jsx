@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { ajax } from 'jquery';
 import $ from 'jquery';
 
 export default function SignUpComponent({회원가입, timer, timerCounterfn, mapAddressFn}) {
@@ -1039,32 +1040,7 @@ export default function SignUpComponent({회원가입, timer, timerCounterfn, ma
     // 폼데이터 전송  onSubmit={} 이벤트
     const onSubmitSignupEvent=(e)=>{
         e.preventDefault();
-        
-        // 가입하기 버튼 클릭 했을 때 검증 조건문
-        // 입력폼 화면의 필수 항목과 선택 항목, 그리고 중복확인, 인증등 항목들의
-        // 빠짐없는 항목을 체크하고 가용성있는 폼데이터를 전송한다.
-        // 1. 아이디 : 빈값이면 입력 요구
-        // 2. 아이디 중복확인 : 중복확인을 검사한다. isIdOk
-        // 3. 비밀번호: 빈값이면 입력 요구
-        // 4. 비밀번호확인: 두개비밀번호 비교 확인 isPw2 false이고 빈값이아니면
-        // 5. 이름:  빈값이면 입력 요구
-        // 6. 이메일: 빈값이면 입력 요구
-        // 7. 이메일 중복확인 : isEmailOk
-        // 7. 휴대폰 : 빈값이면 입력 요구
-        // 8. 휴대폰 : 인증번호 성공 여부확인  //인증성공 추가  isHpOk true 이면 성공
-        // 9. 주소1, 주소2 : 빈값이면 입력 요구
-        
-        // 10. 성별 : 선택사항이므로 유효성에서 제외
-        // 11. 생년월일 : 선택사항이므로 유효성에서 제외
-        // 12. 추가입력사항 : 선택사항이므로 유효성에서 제외
-
-        // 13. 이용약관동의 : //필수항목 3개 확인 추가 검증
-        //     가입하기 클릭하면 이용약관동의 배열값내용중 필수 항복을 카운트한다. 변수에 대입
-        
-        // 14. 1 ~ 13 까지 이상없으면 전송
-
-
-
+       
 
 
         // 이용약관동의 필수항목 체크 3개
@@ -1173,44 +1149,77 @@ export default function SignUpComponent({회원가입, timer, timerCounterfn, ma
             // 끝   숫자4자리  (그룹3)  $3
             const regExpHp = /^(\d{3})(\d{3,4})(\d{4})$/g;  //010-7942-5305   010-348-6441
 
+            // AJAX 전송하기
+            let 약관동의 = '';
+            state.이용약관동의.map((item, idx)=>{
+                if(idx===state.이용약관동의.length-1){
+                    약관동의 += item
+                }
+                else{
+                    약관동의 += item + ','
+                }
+                
+            })
+
+            const formData = {
+                "user_id":    state.아이디,                  
+                "user_pw":   state.비밀번호 ,    
+                "user_irum":  state.이름,          
+                "user_email": state.이메일,          
+                "user_hp":     state.휴대폰.replace(regExpHp, '$1-$2-$3'),     
+                "user_addr":    `${state.주소1} ${state.주소2}`,        
+                "user_gender":   state.성별,       
+                "user_birth":    `${state.생년}-${state.생월}-${state.생일}`,       
+                "user_chooga":      `${state.추가입력사항} ${state.추천인아이디} ${state.참여이벤트명}`,    
+                "user_service":     약관동의    
+            }
+
+            $.ajax({
+                url:'localhost:8080/JSP/0511_MVC_모델링_프로젝트_AJAX_DTO_DAO/쇼핑몰고객관리/kurly_user_signup_action.jsp',
+                type:'POST',
+                data: formData,
+                success(res){
+                    console.log('AJAX 성공 : ' + res);
+                },
+                error(err){
+                    console.log('AJAX 실패 : ' + err);
+                }
+            });
+
+
             // 전송할 폼데이터 생성 
             // AXIOS 폼데이터 생성 생성자를 이용 폼데이터 삽입
-            let newFormData = new FormData();
-            newFormData.append('user_id',        state.아이디);
-            newFormData.append('user_pw',        state.비밀번호);
-            newFormData.append('user_name',      state.이름);
-            newFormData.append('user_email',     state.이메일);
-            newFormData.append('user_hp',        state.휴대폰.replace(regExpHp, '$1-$2-$3')); 
-            newFormData.append('user_addr',      `${state.주소1} ${state.주소2}` );
-            newFormData.append('user_gender',    state.성별 );
-            newFormData.append('user_birth',     `${state.생년}-${state.생월}-${state.생일}`);
-            newFormData.append('user_add_input', `${state.추가입력사항} ${state.추천인아이디} ${state.참여이벤트명}`);
-            newFormData.append('user_service',   state.이용약관동의);
-            newFormData.append('user_gaib_date', `${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`);
+            // let newFormData = new FormData();
+            // newFormData.append('user_id',        state.아이디);
+            // newFormData.append('user_pw',        state.비밀번호);
+            // newFormData.append('user_name',      state.이름);
+            // newFormData.append('user_email',     state.이메일);
+            // newFormData.append('user_hp',        state.휴대폰.replace(regExpHp, '$1-$2-$3')); 
+            // newFormData.append('user_addr',      `${state.주소1} ${state.주소2}` );
+            // newFormData.append('user_gender',    state.성별 );
+            // newFormData.append('user_birth',     `${state.생년}-${state.생월}-${state.생일}`);
+            // newFormData.append('user_add_input', `${state.추가입력사항} ${state.추천인아이디} ${state.참여이벤트명}`);
+            // newFormData.append('user_service',   state.이용약관동의);
+            // newFormData.append('user_gaib_date', `${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`);
 
-            // AXIOS API(REST API)
-            // CORS(Cross Origin Resource Sharing)
-            // Node.js기반에서 리액트가 있는 위치 http://localhost:3000/  => http://moonjong.dothome.co.kr:80/signup_db/form_data_insert.php
-            // 프로토콜://도메인:포트번호/경로/index.html
-            // 브라워저가  보낸는주소(출처)와 받는주소가 같은지 검사 정책 SOP RFC 6454 보안정책 
-            // => 출처가 같은 출처에서만 공유할 수 있다는 정책 규칙
-            axios({
-                url: 'http://moonjong.dothome.co.kr/signup_db/form_data_insert.php',  // 닷홈 호스팅 서버 : 서버사이드 스크립트 언어(JSP, PHP, ASP) => SQL => 데이터베이스 저장소 
-                method:'POST',
-                data: newFormData
-            })
-            .then((res)=>{
-                if(res.status===200){
-                    setState({
-                        ...state,
-                        isConfirmModal: true,
-                        confirmMsg: '마켓컬리 회원가입을 축하드립니다.'
-                    })
-                }
-            })
-            .catch((err)=>{
-                console.log( 'AXIOS 실패!', err );
-            });
+            
+            // axios({
+            //     url: 'http://moonjong.dothome.co.kr/signup_db/form_data_insert.php',  // 닷홈 호스팅 서버 : 서버사이드 스크립트 언어(JSP, PHP, ASP) => SQL => 데이터베이스 저장소 
+            //     method:'POST',
+            //     data: newFormData
+            // })
+            // .then((res)=>{
+            //     if(res.status===200){
+            //         setState({
+            //             ...state,
+            //             isConfirmModal: true,
+            //             confirmMsg: '마켓컬리 회원가입을 축하드립니다.'
+            //         })
+            //     }
+            // })
+            // .catch((err)=>{
+            //     console.log( 'AXIOS 실패!', err );
+            // });
 
         }
         
