@@ -1,0 +1,19 @@
+package com.example.kurly.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorldController {
+    @GetMapping("hello")
+    public String test(){
+        return "Hello, World!";
+    }
+
+    @GetMapping("home")
+    public String test2()
+    {
+        return "index.html";
+
+    }
+}
