@@ -1,0 +1,123 @@
+#main {
+  width: 100%;
+}
+#main #starbucks {
+  width: 100%;
+  padding: 130px 0;
+}
+#main #starbucks .container {
+  width: 1100px;
+  margin: 0 auto;
+}
+#main #starbucks .container .gap {
+  width: 100%;
+}
+#main #starbucks .container .gap .title {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 91px;
+  display: flex;
+  align-items: center;
+}
+#main #starbucks .container .gap .title h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
+#main #starbucks .container .gap .title div {
+  z-index: 2;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+#main #starbucks .container .gap .title div a {
+  display: block;
+  font-size: 12px;
+  color: #222222;
+  margin: 0 3px;
+}
+#main #starbucks .container .gap .title div a img {
+  width: 100%;
+  height: 100%;
+}
+#main #starbucks .container .gap .title div img {
+  width: 6px;
+  height: 11px;
+}
+#main #starbucks .container .gap .content {
+  width: 100%;
+}
+#main #starbucks .container .gap .content .search {
+  position: relative;
+  width: 100%;
+  height: 78px;
+  padding: 20px 30px;
+  background: #f4f4f2;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  display: flex;
+}
+#main #starbucks .container .gap .content .search p {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+#main #starbucks .container .gap .content .search p input {
+  width: 321px;
+  height: 36px;
+  border: 1px solid #ddd;
+  padding: 7px;
+}
+#main #starbucks .container .gap .content .search p input::-moz-placeholder {
+  color: #666;
+}
+#main #starbucks .container .gap .content .search p input::placeholder {
+  color: #666;
+}
+#main #starbucks .container .gap .content .search p button {
+  width: 54px;
+  height: 38px;
+  background: #777;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  margin: 0 0 0 5px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#main #starbucks .container .gap .content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#main #starbucks .container .gap .content table thead th {
+  height: 50px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 17px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222222;
+}
+#main #starbucks .container .gap .content table tbody td {
+  height: 50px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 28.8px;
+  color: #666666;
+}
+#main #starbucks .container .gap .content table tbody td:nth-child(2) {
+  padding: 17px 0 17px 20px;
+}
+#main #starbucks .container .gap .content table tbody td:nth-child(1), #main #starbucks .container .gap .content table tbody td:nth-child(3), #main #starbucks .container .gap .content table tbody td:nth-child(4) {
+  text-align: center;
+  padding: 17px 0;
+}
+#main #starbucks .container .gap .content table tbody td a:hover {
+  text-decoration: underline;
+}
