@@ -1,0 +1,18 @@
+1. wrapcomponent에서 basename을 지정해준다.
+<BrowserRouter basename={process.env.PUBLIC_URL}>
+
+2. goTopComponent에서 section4가 없으면 에러가 난다.
+따라서 section4가 없어도 goTop을 구현하기위해 try catch를 실행시켜준다.
+let sec4Top =  0;
+let goTop =  $('#goTop');
+let gotopBtn =  $('.gotop-btn');      
+
+// console.log(sec4Top);
+try {
+    sec4Top = $('#section4').offset().top;
+    
+} catch (error) {
+    sec4Top = 1200
+}
+
+3. Quick menu에서도 section1이 없거나 intro가 아닌경우에는 top값을 상태관리로 조절하도록 변경한다.
