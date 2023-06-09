@@ -287,10 +287,10 @@ export default function SignUpComponent () {
             data: JSON.stringify(formData),
             contentType : 'application/json; charset=utf-8',
             success(res) {
-                // console.log('AJAX 성공!');
-                // console.log(res);
+                console.log('AJAX 성공!');
+                console.log(res);
                 // console.log(JSON.parse(res));
-                // window.location.href = '/'
+//                 window.location.href = '/'
             },
             error(err) {
                 console.log('AJAX 실패!' + err);

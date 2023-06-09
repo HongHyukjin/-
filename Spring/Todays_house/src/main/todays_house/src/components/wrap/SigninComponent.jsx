@@ -41,28 +41,28 @@ export default function SigninComponent(){
             "user_email2": state.이메일.substring(index+1),
             "user_pw": state.비밀번호
         }
-
+        console.log(formData);
         
         $.ajax({
-            url: 'http://localhost:8080/JSP/ohouse/signin_action.jsp',
+            url: '/member/login',
             type: 'POST',
-            data: formData,
-            dataType : 'json',
+            data: JSON.stringify(formData),
+            contentType : 'application/json; charset=utf-8',
             success(res) {
                 console.log('AJAX 성공!');
-                console.log(res.result);
-                if(res.result === '1'){
-                    // session에 이메일 저장 
-                    sessionStorage.setItem('user_email', state.이메일);
-                    // main으로 이동 
-                    window.location.href='/';
-                }
-                else if(res.result === '0'){
-                    alert('비밀번호를 확인해주세요!');
-                }
-                else{
-                    alert('이메일을 확인해주세요!');
-                }
+                console.log(res);
+//                 if(res.result === 1){
+//                     // session에 이메일 저장
+//                     sessionStorage.setItem('user_email', state.이메일);
+//                     // main으로 이동
+//                     window.location.href='/';
+//                 }
+//                 else if(res.result === 0){
+//                     alert('비밀번호를 확인해주세요!');
+//                 }
+//                 else{
+//                     alert('이메일을 확인해주세요!');
+//                 }
             },
             error(err) {
                 console.log('AJAX 실패!' + err);
@@ -81,7 +81,7 @@ export default function SigninComponent(){
                             <input
                             type="text"
                             id="username"
-                            name="username"
+                            name="user_email"
                             position="top"
                             placeholder='이메일'
                             onChange={onChangeEmail}
@@ -94,7 +94,7 @@ export default function SigninComponent(){
                             <input
                             type="password"
                             id="password"
-                            name="password"
+                            name="user_pw"
                             placeholder='비밀번호'
                             onChange={onChangePw}
                             />

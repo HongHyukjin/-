@@ -3,14 +3,14 @@ package Todays_house.domain.member;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
-@Getter
+@Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Member {
 
-    private int idx;
     private String user_email1;
     private String user_email2;
     private String user_pw;
