@@ -50,19 +50,18 @@ export default function SigninComponent(){
             contentType : 'application/json; charset=utf-8',
             success(res) {
                 console.log('AJAX 성공!');
-                console.log(res);
-//                 if(res.result === 1){
-//                     // session에 이메일 저장
-//                     sessionStorage.setItem('user_email', state.이메일);
-//                     // main으로 이동
-//                     window.location.href='/';
-//                 }
-//                 else if(res.result === 0){
-//                     alert('비밀번호를 확인해주세요!');
-//                 }
-//                 else{
-//                     alert('이메일을 확인해주세요!');
-//                 }
+                if(res === 1){
+                    // session에 이메일 저장
+                    sessionStorage.setItem('user_email', state.이메일);
+                    // main으로 이동
+                    window.location.href='/';
+                }
+                else if(res === 0){
+                    alert('비밀번호를 확인해주세요!');
+                }
+                else{
+                    alert('이메일을 확인해주세요!');
+                }
             },
             error(err) {
                 console.log('AJAX 실패!' + err);

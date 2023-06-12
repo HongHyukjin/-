@@ -4,6 +4,7 @@ import Todays_house.domain.member.Member;
 import Todays_house.domain.member.MemberLoginDTO;
 import Todays_house.domain.member.MemberSignupDTO;
 import lombok.RequiredArgsConstructor;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -30,19 +31,22 @@ public class MemberRepositoryImpl implements MemberRepository {
     }
 
     @Override
-    public int find(MemberLoginDTO memberLoginDTO){
-        String SQL = "SELECT count(*) FROM ohouse_member where user_email=? && user_pw=?";
-        int result = template.queryForObject(SQL, new Object[]{memberLoginDTO.getUser_email1()+"@"+memberLoginDTO.getUser_email2(), memberLoginDTO.getUser_pw()},
-                Integer.class);
-        return result;
+    public MemberLoginDTO findByEmail(MemberLoginDTO memberLoginDTO){
+        String SQL = "SELECT user_pw FROM ohouse_member where user_email=?";
+        MemberLoginDTO memberLoginDTO1 = null;
+        try{
+            return memberLoginDTO1 = template.queryForObject(SQL, new Object[]{memberLoginDTO.getUser_email1()+"@"+memberLoginDTO.getUser_email2()}, memberRowMapper());
+        }
+        catch (EmptyResultDataAccessException e){
+            return memberLoginDTO1;
+        }
     }
 
-    private RowMapper<Member> memberRowMapper() {
+    private RowMapper<MemberLoginDTO> memberRowMapper() {
         return (rs, rowNum) -> {
-            Member member = new Member();
-            member.setUser_email1(rs.getString("user_email"));
-            member.setUser_pw(rs.getString("pw"));
-            return member;
+            MemberLoginDTO memberLoginDTO = new MemberLoginDTO();
+            memberLoginDTO.setUser_pw(rs.getString("user_pw"));
+            return memberLoginDTO;
         };
     }
 

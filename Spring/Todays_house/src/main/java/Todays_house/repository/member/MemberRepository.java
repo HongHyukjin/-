@@ -6,6 +6,6 @@ import Todays_house.domain.member.MemberSignupDTO;
 public interface MemberRepository {
 
     public int save(MemberSignupDTO memberSignupDTO);
-    public int find(MemberLoginDTO memberLoginDTO);
+    public MemberLoginDTO findByEmail(MemberLoginDTO memberLoginDTO);
 
 }

@@ -35,16 +35,20 @@ public class MemberController {
     }
 
     @PostMapping(value = "/member/login")
-    public ResponseEntity<String> login(@RequestBody MemberLoginDTO memberLoginDTO){
+    public ResponseEntity<Integer> login(@RequestBody MemberLoginDTO memberLoginDTO){
         int result = memberService.login(memberLoginDTO);
         log.info("{}", result);
         if(result == 1){
             log.info("로그인 되었습니다");
-            return new ResponseEntity<>("SUCCESS", HttpStatus.OK);
+            return new ResponseEntity<>(result, HttpStatus.OK);
+        }
+        else if(result == 0){
+            log.info("비밀번호를 확인해주세요");
+            return new ResponseEntity<>(result, HttpStatus.OK);
         }
         else{
-            log.info("로그인 실패");
-            return new ResponseEntity<>("FAILED", HttpStatus.CONFLICT);
+            log.info("아이디를 확인해주세요");
+            return new ResponseEntity<>(result, HttpStatus.OK);
         }
     }
 }
