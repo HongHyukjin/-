@@ -1,0 +1,136 @@
+.wrap{
+  height: 1000px;
+  #content{
+    height: auto;
+    min-height: 100%;
+      /* footer높이 */
+    padding-bottom: 300px; 
+    .sec{
+      background-color:#dee1e9;
+      padding: 6rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      >img{
+        width: 900px;
+      }
+    }
+    #sec1{
+      display: block;
+      /* background-color: #E6F3E6; */
+    }
+    #sec2{
+      img{
+        width:25%;
+      }
+      .textBox{
+        display:inline-block;
+        padding:0 20px; 
+        text-align: left;
+      }
+    }
+    #sec4{
+      display: block;
+    }
+  }
+  #footer{
+    height: 300px;
+    position : relative;
+    transform : translateY(-100%);
+  }
+}
+
+#up_button{
+  position: fixed;
+  bottom: 70px;
+  right: 200px;
+  z-index: 1000;
+}
+#delivery{
+  width:50%;
+  height:50%;
+  float:left;
+}
+#room{
+  width:50%;
+  height:50%;
+  clear:right;
+  float:right;
+}
+#notice{
+  float:left;
+  width:50%;
+  height:50%;
+}
+#event{
+  width:50%;
+  height:50%;
+  clear:right;
+  float:right;
+}
+
+
+
+header{
+    border-bottom: 1px #ececec solid;
+    .header{
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 15px 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            margin: 0px 10px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            >img{
+              width : 25px;
+              margin: 3px 10px;
+            }
+        }
+    }
+}
+.menutext{
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+}
+.chatlogo {
+    display: inline-block;
+    vertical-align: middle;
+}
+.item{
+    margin: 0px 5px;
+    color: black;
+    text-decoration: none;
+}
+.item button{
+    box-sizing: border-box;
+    width: 106px;
+    height: 32px;
+    margin: 0px 15px;
+    background-color: #7aab85;
+    border: 1px solid #7aab85;
+    border-radius: 10px;
+    color: white;
+}
+.header .router-link-exact-active button{
+    background-color: white;
+    border: 1px solid #afafaf;
+    color: #5d5d5d;
+}
+#u_name{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+#logout{
+   cursor: pointer;
+}
