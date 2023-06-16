@@ -12,14 +12,6 @@ export default function MainComponent() {
             <a href="#!" class="item">로그인</a> |
             <a href="#!" class="item">회원가입</a>
           </div>
-          <div>
-            <a href="#!" class="menutext">공지사항</a>
-            {/* <a href="#!" class="chatlogo"><img src="./img/chat.png" /></a> */}
-            <a href="#!" class="item"><button>배달 같이하기</button></a>
-            <a href="#!" id="u_name">홍혁진</a>
-            님 |
-            <span id="logout">로그아웃</span>
-          </div>
         </div>
       </header>
       <div id="content">
