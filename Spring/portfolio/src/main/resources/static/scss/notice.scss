@@ -1,0 +1,52 @@
+#notice{
+  width : 100%;
+  border-top : 1px solid #ececec;
+  .container{
+    width: 900px;
+    height : 835px;
+    margin : 0 auto;
+    .title{
+      display: flex;
+      padding: 30px 0;
+      border-bottom: 2px solid #000;
+      align-items: center;
+      h1{
+        width: 100%;
+        margin: 0 0;
+        display: inline;
+        font-family: Noto Sans KR,sans-serif;
+        text-align: left;
+        font-size: 32px;
+        font-weight: 700;
+        color : #000;
+      }
+    }
+    .content{
+      height : 670px;
+      .listbox{
+        border-bottom: 1px solid rgba(0,0,0,0.205);
+        height: 42px;
+        margin: 16px 0 0 0;
+        display: flex;
+        text-align: center;
+        h4{
+          font-weight: 700;
+          font-size: 15px;
+          color : #000;
+        }
+        .num{
+          width : 100px;
+        }
+        .head{
+          width : 500px;
+        }
+        .date{
+          width : 150px;
+        }
+        .view{
+          width : 150px;
+        }
+      }
+    }
+  }
+}

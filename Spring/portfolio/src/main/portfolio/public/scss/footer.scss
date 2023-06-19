@@ -1,0 +1,47 @@
+#footer{
+  height: 300px;
+  position: relative;
+  // transform: translateY(-100%);
+  background-color: #f8f8f8;
+  color: #d0d0d0;
+  display: flex;
+  justify-content: space-around;
+  .intro{
+    text-align: left;
+    margin: 30px auto;
+    padding: 50px 10px;
+    font-size: small;
+    color: #d0d0d0;
+    .logo{
+      height : 25px;
+      img{
+        width: 25px;
+        margin: 0 5px 0 0;
+      }
+    }
+    p{
+      margin : 13px 0;
+      b{
+        font-weight: bold;
+      }
+      a{
+        color: #d0d0d0;
+      }
+    }
+  }
+  .contact{
+    text-align: right;
+    margin: 30px auto;
+    padding: 50px 10px;
+    font-size: small;
+    p{
+      b{
+        font-weight: bold;
+      }
+      margin : 13px 0;
+      a{
+        color: #d0d0d0;
+      }
+    }
+  }
+}

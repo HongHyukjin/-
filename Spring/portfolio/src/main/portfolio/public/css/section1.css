@@ -1,0 +1,26 @@
+#section1 {
+  padding: 120px 0;
+  background: #dee1e9;
+  border-top: 1px solid #ececec;
+}
+#section1 div {
+  text-align: center;
+}
+#section1 div h2 {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+#section1 div p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin: 23px 0;
+}
+#section1 img {
+  display: block;
+  width: 900px;
+  margin: 3px auto;
+  text-align: center;
+}

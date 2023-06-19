@@ -1,0 +1,26 @@
+#section2 {
+  background-color: #dee1e9;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#section2 img {
+  display: block;
+  width: 25%;
+  margin: 3px;
+  text-align: center;
+}
+#section2 div h2 {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+#section2 div p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin: 23px 0;
+}

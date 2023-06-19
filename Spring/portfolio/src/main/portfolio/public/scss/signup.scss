@@ -1,0 +1,117 @@
+#signup{
+  width: 360px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+  text-align: center;
+  .container{
+    width: 100%;
+    .title{
+      width : 100%;
+      h3{
+        font-size: 18.72px;
+        font-weight: 700;
+        color : #000;
+        line-height: 27px;
+        margin: 18.72px 0;
+      }
+    }
+    .content{
+      border-top: 1px solid #e2e2e2;
+      padding : 50px 0 0 0;
+      form{
+        text-align: center;
+        .inputDiv{
+          margin : 0 0 30px 0;
+          label{
+            margin: 0 0 12px;
+            color: #292929;
+            font-size: 15px;
+            font-weight: 700;
+            text-align: left;
+            display: block;
+          }
+          .input, select{
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+            margin: 0 0 7px 0;
+            padding: 8px 15px 9px;
+            background: #fafafa;
+            border: 1px solid #bdbdbd;
+            border-radius: 8px;
+            font-family: Noto Sans KR,sans-serif;
+            outline: none;
+            &::placeholder{
+              color : #ccc;
+            }
+          }
+          .emailGroup{
+            width : 100%;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            .emailItem1{
+              width : 45%;
+            }
+            .emailItem2{
+              width : 10%;
+              padding : 0 10px;
+            }
+            .emailItem3{
+              width : 45%;
+            }
+          }
+          button{
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+            background: #fff;
+            border: 1px solid #7aab85;
+            border-radius: 13px;
+            color: #7aab85;
+            font-family: Noto Sans KR,sans-serif;
+            padding : 8px 15px 9px;
+          }
+          .textBox{
+            padding: 30px;
+            font-size: 13px;
+            border-radius: 10px;
+            background-color: #f8f8f8;
+            display: inline-block;
+            text-align: left;
+            color : #000;
+            small{
+              font-size: smaller;
+              line-height: 150%;
+              b{
+                font-weight: bold;
+              }
+            }
+            .agreeBox{
+              label{
+                font-size: 12px;
+                display: inline-block;
+                margin: 0;
+                input[type='checkbox']{
+                  margin : 0 5px 2px 0;
+                }
+              }
+            }
+          }
+        }
+        .submitBtn{
+          background: #7aab85;
+          border: 1px solid #7aab85;
+          color: #fff;
+          font-weight: 700;
+          box-sizing: border-box;
+          width: 100%;
+          height: 40px;
+          border-radius: 13px;
+          font-family: Noto Sans KR,sans-serif;
+          padding : 8px 15px 9px;
+        }
+      }
+    }
+  }
+}

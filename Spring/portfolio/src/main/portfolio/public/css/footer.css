@@ -1,0 +1,46 @@
+#footer {
+  height: 300px;
+  position: relative;
+  background-color: #f8f8f8;
+  color: #d0d0d0;
+  display: flex;
+  justify-content: space-around;
+}
+#footer .intro {
+  text-align: left;
+  margin: 30px auto;
+  padding: 50px 10px;
+  font-size: small;
+  color: #d0d0d0;
+}
+#footer .intro .logo {
+  height: 25px;
+}
+#footer .intro .logo img {
+  width: 25px;
+  margin: 0 5px 0 0;
+}
+#footer .intro p {
+  margin: 13px 0;
+}
+#footer .intro p b {
+  font-weight: bold;
+}
+#footer .intro p a {
+  color: #d0d0d0;
+}
+#footer .contact {
+  text-align: right;
+  margin: 30px auto;
+  padding: 50px 10px;
+  font-size: small;
+}
+#footer .contact p {
+  margin: 13px 0;
+}
+#footer .contact p b {
+  font-weight: bold;
+}
+#footer .contact p a {
+  color: #d0d0d0;
+}
