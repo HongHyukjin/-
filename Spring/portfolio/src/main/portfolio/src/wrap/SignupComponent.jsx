@@ -1,15 +1,77 @@
 import React from 'react';
 import HeaderCompponent from './HeaderCompponent';
+import DaumPostcodeEmbed from 'react-daum-postcode';
 
 export default function SignupComponent() {
 
   const [state,setState] = React.useState({
     닉네임 : '',
     이메일 : '',
+    이메일도메인 : '',
     비밀번호 : '',
     비밀번호확인 : '',
-    지역 : ''
+    지역 : '',
+    isOpenPost : false
   })
+
+  const onChangeNick = (e) => {
+    const {value} = e.target;
+    setState({
+      ...state,
+      닉네임 : value
+    })
+  }
+
+  const onChangeEmail = (e) => {
+    const {value} = e.target;
+    setState({
+      ...state,
+      이메일 : value
+    })
+  }
+
+  const onChangeEmailDomain = (e) => {
+    const {value} = e.target;
+    setState({
+      ...state,
+      이메일도메인 : value
+    })
+  }
+
+  const onChangePw = (e) => {
+    const {value} = e.target;
+    setState({
+      ...state,
+      비밀번호 : value
+    })
+  }
+
+  const onChangeAddr = (e) => {
+    const {value} = e.target;
+    setState({
+      ...state,
+      지역 : value
+    })
+  }
+
+  const onClickAddrPopupOpenApi=(e)=>{
+      e.preventDefault();
+      setState({
+        ...state,
+        isOpenPost : true
+      })
+  }
+
+  const postCodeStyle = {
+    display: 'block',
+    position: 'absolute',
+    'z-index' : 2,
+    top: '0%',
+    width: '400px',
+    height: '400px',
+    padding: '7px',
+  };
+  
 
   return (
     <>
@@ -27,17 +89,17 @@ export default function SignupComponent() {
             <form action="" name='signup' id='signup' method='post'>
               <div className="inputDiv">
                 <label htmlFor="">닉네임</label>
-                <input className='input' name='user_name' id='user_name' type="text" placeholder='별명 (2~8자)' autoComplete='off' />
+                <input className='input' onChange={onChangeNick} name='user_nick' id='user_nick' type="text" placeholder='별명 (2~8자)' autoComplete='off' />
               </div>
               <div className="inputDiv">
                 <label htmlFor="">이메일</label>
                 <div className="emailGroup">
                   <span>
-                    <input className='emailItem1 input' type="text" autoComplete='off' placeholder='아이디' />
+                    <input className='emailItem1 input' onChange={onChangeEmail} type="text" autoComplete='off' placeholder='아이디' />
                   </span>
                   <span className='emailItem2'>@</span>
                   <span>
-                    <select className='emailItem3' name="domain" id="userId">
+                    <select className='emailItem3' onChange={onChangeEmailDomain} name="domain" id="userId">
                       <option value selected='selected'>----- 선택 -----</option>
                       <option value="naver.com">naver.com</option>
                       <option value="gmail.com">gmail.com</option>
@@ -48,7 +110,7 @@ export default function SignupComponent() {
               </div>
               <div className="inputDiv">
                 <label htmlFor="">비밀번호</label>
-                <input className='input' name='user_pw' id='user_pw' type="password" placeholder='비밀번호 (영어, 숫자, 특수문자 포함 8~20자)' autoComplete='off' />
+                <input className='input' onChange={onChangePw} name='user_pw' id='user_pw' type="password" placeholder='비밀번호 (영어, 숫자, 특수문자 포함 8~20자)' autoComplete='off' />
               </div>
               <div className="inputDiv">
                 <label htmlFor="">비밀번호 확인</label>
@@ -56,8 +118,8 @@ export default function SignupComponent() {
               </div>
               <div className="inputDiv">
                 <label htmlFor="">지역설정</label>
-                <input className='input' name='user_area' id='user_area' type="text" readOnly placeholder='지역명(ex. 성북구 정릉동)' />
-                <button type='button' className='btn'>지역검색</button>
+                <input className='input' onChange={onChangeAddr} name='user_area' id='user_area' type="text" readOnly placeholder='지역명(ex. 성북구 정릉동)' />
+                <button type='button' className='btn' onClick={onClickAddrPopupOpenApi}>지역검색</button>
               </div>
               <div className="inputDiv">
                 <label htmlFor="">개인정보 수집 및 이용 안내</label>
@@ -95,6 +157,10 @@ export default function SignupComponent() {
           </div>
         </div>
       </div>
+      {
+        state.isOpenPost &&
+          <DaumPostcodeEmbed style={postCodeStyle} />
+      }
     </>
   );
 };

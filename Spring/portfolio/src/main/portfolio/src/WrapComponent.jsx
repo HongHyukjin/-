@@ -4,6 +4,7 @@ import {BrowserRouter,Routes,Route } from 'react-router-dom';
 import SignupComponent from './wrap/SignupComponent';
 import LoginComponent from './wrap/LoginComponent';
 import NoticeComponent from './wrap/NoticeComponent';
+import PostListComponent from './wrap/PostListComponent';
 
 export default function WrapComponent () {
   return (
@@ -15,6 +16,7 @@ export default function WrapComponent () {
           <Route path='/signup' element={<SignupComponent />} />
           <Route path='/login' element={<LoginComponent />} />
           <Route path='/notice' element={<NoticeComponent />} />
+          <Route path='/postlist' element={<PostListComponent />} />
         </Routes>
       </BrowserRouter>
     </div>
