@@ -165,7 +165,7 @@ export default function SignupComponent() {
               </div>
               <div className="inputDiv">
                 <label htmlFor="">지역설정</label>
-                <input className='input' onChange={onChangeAddr} value={state.지역} name='user_area' id='user_area' type="text" readOnly placeholder='지역명(ex. 성북구 정릉동)' />
+                <input className='input' onFocus={onChangeAddr} readOnly value={state.지역} name='user_area' id='user_area' type="text" placeholder='지역명(ex. 성북구 정릉동)' />
                 <button type='button' className='btn' onClick={onClickAddrPopupOpenApi}>지역검색</button>
               </div>
               <div className="inputDiv">
