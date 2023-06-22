@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderCompponent from './HeaderCompponent';
-import DaumPostcodeEmbed from 'react-daum-postcode';
+import $ from 'jquery';
 
 export default function SignupComponent() {
 
@@ -54,24 +54,71 @@ export default function SignupComponent() {
     })
   }
 
-  const onClickAddrPopupOpenApi=(e)=>{
-      e.preventDefault();
-      setState({
-        ...state,
-        isOpenPost : true
-      })
+  const openPopupDaumPostApi = () => {
+    const popupFile = './popup.html';
+    const popupName = '_popupAddressApi';
+    const popupWidth = 530;
+    const popupHeight = 570;
+    const popupTop = (window.innerHeight - popupHeight) / 2;
+    const popupLeft = (window.innerWidth - popupWidth) / 2;
+
+    window.open(popupFile, popupName, `width=${popupWidth}, height=${popupHeight}, top=${popupTop}, left=${popupLeft}`);
   }
 
-  const postCodeStyle = {
-    display: 'block',
-    position: 'absolute',
-    'z-index' : 2,
-    top: '0%',
-    width: '400px',
-    height: '400px',
-    padding: '7px',
-  };
-  
+  const onClickAddrPopupOpenApi=(e)=>{
+      e.preventDefault();
+      openPopupDaumPostApi();
+  }
+
+  const onSubmitSignUp = (e) => {
+    e.preventDefault();
+    const formData = {
+      "nick":state.닉네임,
+      "email":state.이메일+"@"+state.이메일도메인,
+      "pw":state.비밀번호,
+      "area":state.지역
+    }
+    $.ajax({
+      url:'/signup',
+      type:'POST',
+      data:JSON.stringify(formData),
+      contentType:'application/json; charset=utf-8',
+      success(res){
+        console.log('AJAX 성공!')
+        console.log(res);
+      },
+      error(err){
+        console.log('AJAX 실패!', err);
+      }
+    })
+  }
+
+  React.useEffect(()=>{
+    const user_area = document.getElementById("user_area");
+    const initialValue = user_area.value;
+
+    const handleInputChange = (event) => {
+      const newValue = event.target.value;
+      console.log(newValue);
+      updateState(newValue);
+    };
+
+    const updateState = (value) => {
+      // 상태 업데이트 로직 작성
+      // 예시: 상태를 useState를 통해 업데이트
+      setState({
+        ...state,
+        지역 : value
+      });
+      console.log("상태 업데이트:", value);
+    };
+
+    user_area.addEventListener("input", handleInputChange);
+
+    return () => {
+      user_area.removeEventListener("input", handleInputChange);
+    };
+  },)
 
   return (
     <>
@@ -86,7 +133,7 @@ export default function SignupComponent() {
             <h3>회원가입</h3>
           </div>
           <div className="content">
-            <form action="" name='signup' id='signup' method='post'>
+            <form action="" name='signup' id='signup' method='post' onSubmit={onSubmitSignUp} >
               <div className="inputDiv">
                 <label htmlFor="">닉네임</label>
                 <input className='input' onChange={onChangeNick} name='user_nick' id='user_nick' type="text" placeholder='별명 (2~8자)' autoComplete='off' />
@@ -118,7 +165,7 @@ export default function SignupComponent() {
               </div>
               <div className="inputDiv">
                 <label htmlFor="">지역설정</label>
-                <input className='input' onChange={onChangeAddr} name='user_area' id='user_area' type="text" readOnly placeholder='지역명(ex. 성북구 정릉동)' />
+                <input className='input' onChange={onChangeAddr} value={state.지역} name='user_area' id='user_area' type="text" readOnly placeholder='지역명(ex. 성북구 정릉동)' />
                 <button type='button' className='btn' onClick={onClickAddrPopupOpenApi}>지역검색</button>
               </div>
               <div className="inputDiv">
@@ -157,10 +204,6 @@ export default function SignupComponent() {
           </div>
         </div>
       </div>
-      {
-        state.isOpenPost &&
-          <DaumPostcodeEmbed style={postCodeStyle} />
-      }
     </>
   );
 };
