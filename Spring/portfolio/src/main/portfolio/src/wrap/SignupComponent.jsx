@@ -86,6 +86,8 @@ export default function SignupComponent() {
       success(res){
         console.log('AJAX 성공!')
         console.log(res);
+        alert('회원가입 성공!');
+        window.location.href="/";
       },
       error(err){
         console.log('AJAX 실패!', err);

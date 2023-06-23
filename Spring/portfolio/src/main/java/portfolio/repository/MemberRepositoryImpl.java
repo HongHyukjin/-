@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 import portfolio.domain.Member;
 import portfolio.domain.MemberDTO;
+import portfolio.domain.MemberLoginDTO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -21,5 +22,10 @@ public class MemberRepositoryImpl implements MemberRepository{
         Member member = memberDTO.toEntity();
         em.persist(member);
         log.info("-----save success------");
+    }
+
+    @Override
+    public Member findByNick(String nick){
+        return em.find(Member.class, nick);
     }
 }
