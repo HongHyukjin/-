@@ -21,6 +21,7 @@ public class MemberDTO {
                 .email(email)
                 .pw(pw)
                 .area(area)
+                .roles(Collections.singletonList("ROLE_USER"))
                 .build();
     }
 }
