@@ -41,8 +41,9 @@ export default function LoginComponent () {
       success(res){
         console.log('AJAX 성공!')
         console.log(res);
+        sessionStorage.setItem('token', res);
         alert('로그인 성공!');
-        // window.location.href="/";
+        window.location.href="/";
       },
       error(err){
         console.log('AJAX 실패!', err);
