@@ -1,0 +1,25 @@
+#post{
+  background: #f2f2f2;
+  height : 800px;
+  padding : 80px 0;
+  .container{
+    width : 800px;
+    height : 570px;
+    padding : 40px 50px 30px 50px;
+    margin : 0 auto;
+    border-radius: 30px;
+    background-color: #fff;
+    text-align: left;
+    font-size: 15px;
+    box-sizing: content-box;
+    .content{
+      width : 100%;
+      .left-box{
+        
+      }
+      .right-box{
+
+      }
+    }
+  }
+}

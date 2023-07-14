@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Mail List 출력하기</title>
+    <link rel="stylesheet" href="./css/write.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+                <span class="left">
+                    <a href="./index.html">HOME</a>
+                </span>
+            <span class="right">
+                    <a href="/write.do">글쓰기</a>
+                </span>
+        </nav>
+    </header>
+    <div id='write'>
+        <div class='container'>
+            <div class='content'>
+                <div class="title">
+                    <h2>Form Mail</h2>
+                </div>
+                <form>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Hp</th>
+                            <th>Email</th>
+                            <th>Subject</th>
+                        </tr>
+                        <tr>
+                            <td>이순신</td>
+                            <td>010-7942-5305</td>
+                            <td>gurwlszx@naver.com</td>
+                            <td>[단독]“文정부 4대강 평가委, 용도 다른 예전 지표 활용해 보 해체 결정”</td>
+                        </tr>
+                        <tr>
+                            <td>이순신</td>
+                            <td>010-7942-5305</td>
+                            <td>gurwlszx@naver.com</td>
+                            <td>[단독]“文정부 4대강 평가委, 용도 다른 예전 지표 활용해 보 해체 결정”</td>
+                        </tr>
+                        <tr>
+                            <td>이순신</td>
+                            <td>010-7942-5305</td>
+                            <td>gurwlszx@naver.com</td>
+                            <td>[단독]“文정부 4대강 평가委, 용도 다른 예전 지표 활용해 보 해체 결정”</td>
+                        </tr>
+
+                        {{#userList}}
+                            <tr>
+                                <td>{{userName}}</td>
+                                <td>{{userHp}}</td>
+                                <td>{{userEmail}}</td>
+                                <td>{{userSubject}}</td>
+                                <td>{{userContent}}</td>
+                            </tr>
+                        {{/userList}}
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

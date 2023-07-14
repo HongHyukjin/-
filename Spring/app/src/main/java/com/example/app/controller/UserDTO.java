@@ -14,6 +14,7 @@ public class UserDTO {
     private String UserContent;
 
 
-
-
+    public UserDTOEntity toEntity() {
+        return new UserDTOEntity(null, UserName, UserHp, UserEmail, UserSubject, UserContent);
+    }
 }

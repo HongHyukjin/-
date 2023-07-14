@@ -5,6 +5,7 @@ import SignupComponent from './wrap/SignupComponent';
 import LoginComponent from './wrap/LoginComponent';
 import NoticeComponent from './wrap/NoticeComponent';
 import PostListComponent from './wrap/PostListComponent';
+import PostComponent from './wrap/PostComponent';
 
 export default function WrapComponent () {
   return (
@@ -17,6 +18,7 @@ export default function WrapComponent () {
           <Route path='/login' element={<LoginComponent />} />
           <Route path='/notice' element={<NoticeComponent />} />
           <Route path='/postlist' element={<PostListComponent />} />
+          <Route path='/post' element={<PostComponent />} />
         </Routes>
       </BrowserRouter>
     </div>

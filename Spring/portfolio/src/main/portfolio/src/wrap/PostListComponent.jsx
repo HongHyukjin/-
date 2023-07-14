@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderCompponent from './HeaderCompponent';
+import {Link} from 'react-router-dom';
 
 export default function PostListComponent() {
   return (
@@ -41,9 +42,9 @@ export default function PostListComponent() {
                 <button className='btn'>지역검색</button>
               </div>
               <div className="add-btn">
-                <a href="" class="link">
+                <Link to="/post" class="link">
                   <i class="fa-solid fa-circle-plus"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="list">
