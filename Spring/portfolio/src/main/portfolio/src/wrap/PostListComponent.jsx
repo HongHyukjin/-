@@ -3,6 +3,15 @@ import HeaderCompponent from './HeaderCompponent';
 import {Link} from 'react-router-dom';
 
 export default function PostListComponent() {
+
+  const [postlist, setPostlist] = React.useState([]);
+
+  const getPost = () => {
+    const formData = {
+      
+    }
+  }
+
   return (
     <>
       <HeaderCompponent />
@@ -48,7 +57,39 @@ export default function PostListComponent() {
               </div>
             </div>
             <div className="list">
-
+              <ul>
+                <li>
+                  <img src="./img/category/CHI.png" alt="" />
+                  <div className="listbox-content">
+                    <div className="listbox-head">
+                      <div className="name">
+                        <a href="/postlist/postview/1">중국음식 배달시간</a>
+                      </div>
+                      <div className="category">중식</div>
+                      <div className="time">
+                        <small>130일 남음</small>
+                      </div>
+                    </div>
+                    <a href="/postlist/postview/1">
+                      <p>중국음식 배달시간4 내용</p>
+                    </a>
+                    <div className="listbox-foot">
+                      <div className="detail-info">
+                        <small>서울 성북구 정릉동</small>
+                        <button className="area-btn">
+                          <img src="./img/icon.png" alt="" />
+                          북악
+                        </button>
+                        <img src="./img/people.png" alt="" />
+                        <small>1/5</small>
+                      </div>
+                      <div className="ago">
+                        <small>5일 전 게시</small>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

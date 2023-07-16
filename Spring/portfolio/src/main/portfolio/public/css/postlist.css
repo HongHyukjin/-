@@ -77,3 +77,108 @@
 #postlist .container .content .category .add-btn .link .fa-solid::before {
   content: "\f055";
 }
+#postlist .container .content .list ul li {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeef;
+  display: flex;
+}
+#postlist .container .content .list ul li img {
+  width: 100px;
+  margin: 0 30px;
+  border-radius: 10px;
+}
+#postlist .container .content .list ul li .listbox-content {
+  -webkit-box-flex: 1;
+  padding: 0 15px 0 0;
+  width: 100%;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-head {
+  line-height: 20px;
+  display: -webkit-box;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-head .name {
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 17px;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-head .name a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-head .category {
+  background-color: #ff6e6c;
+  height: 19px;
+  margin: 12px 7px 0 10px;
+  padding: 0 7px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: xx-small;
+  vertical-align: middle;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-head .time {
+  -webkit-box-flex: 1;
+  color: #ff6b33;
+  text-align: right;
+  line-height: 20px;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-head .time small {
+  font-size: 11px;
+  vertical-align: middle;
+}
+#postlist .container .content .list ul li .listbox-content a {
+  display: block;
+  text-decoration: none;
+  margin: 10px 0;
+}
+#postlist .container .content .list ul li .listbox-content a p {
+  color: #666;
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-foot {
+  display: flex;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-foot .detail-info {
+  width: 80%;
+  text-align: left;
+  line-height: 30px;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-foot .detail-info .area-btn {
+  box-sizing: border-box;
+  height: 30px;
+  margin: 0 8px;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #afafaf;
+  border-radius: 27px;
+  color: #5d5d5d;
+  cursor: pointer;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-foot .detail-info .area-btn > img {
+  margin: 0;
+  width: 17px;
+  vertical-align: middle;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-foot .detail-info > img {
+  width: 20px;
+  vertical-align: middle;
+  margin: 3px;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-foot .detail-info > small {
+  padding-left: 5px;
+  font-family: "Roboto";
+  line-height: 20px;
+  text-align: left;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-foot .ago {
+  color: #959595;
+  text-align: right;
+  line-height: 30px;
+}
+#postlist .container .content .list ul li .listbox-content .listbox-foot .ago > small {
+  font-size: 11px;
+  vertical-align: middle;
+}

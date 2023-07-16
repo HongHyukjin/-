@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderCompponent from './HeaderCompponent';
 import $ from 'jquery';
+import {Link} from 'react-router-dom';
 
 export default function SignupComponent() {
 
@@ -126,7 +127,7 @@ export default function SignupComponent() {
     <>
       <header id='header'>
         <div className="container">
-          <a href="/home" className="logo"><img src="./img/logo.c33abdcc.png" />발자취</a>
+          <Link to="/home" className="logo"><img src="./img/logo.c33abdcc.png" />발자취</Link>
         </div>
       </header>
       <div id='signup'>

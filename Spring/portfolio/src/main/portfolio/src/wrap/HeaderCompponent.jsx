@@ -8,7 +8,7 @@ export default function HeaderCompponent() {
   return (
     <header id='header'>
       <div className="container">
-        <a href="/home" className="logo"><img src="./img/logo.c33abdcc.png" />발자취</a>
+        <Link to="/home" className="logo"><img src="./img/logo.c33abdcc.png" />발자취</Link>
         <div>
           <Link to="/notice" className="menutext">공지사항</Link>
           <Link to="/postlist" className="item"><button>배달 같이하기</button></Link>

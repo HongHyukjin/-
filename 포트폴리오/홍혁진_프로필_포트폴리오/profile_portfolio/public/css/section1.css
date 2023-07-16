@@ -1,0 +1,77 @@
+#main {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+#main #section1 {
+  width: 100%;
+  padding: 153px 0 50px 0;
+  background-color: #fff;
+}
+#main #section1 .container {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+#main #section1 .container .title {
+  width: 100%;
+  padding: 0 0 100px 0;
+  text-align: center;
+}
+#main #section1 .container .title h1 {
+  font-size: 55px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 50px 0;
+}
+#main #section1 .container .title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 30px 0;
+}
+#main #section1 .container .content {
+  width: 100%;
+}
+#main #section1 .container .content ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#main #section1 .container .content ul li {
+  margin-bottom: 5rem;
+  width: 33%;
+}
+#main #section1 .container .content ul li .basic-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+#main #section1 .container .content ul li .basic-info .icon-img {
+  padding: 0 0 0 100px;
+  width: 40%;
+  height: 2rem;
+  margin-top: 0.2rem;
+  margin-right: 2rem;
+}
+#main #section1 .container .content ul li .basic-info .icon-img img {
+  width: 40px;
+}
+#main #section1 .container .content ul li .basic-info .aboutme {
+  width: 60%;
+}
+#main #section1 .container .content ul li .basic-info .aboutme .label {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+#main #section1 .container .content ul li .basic-info .aboutme .value {
+  font-weight: 400;
+  font-size: 1rem;
+}
+#main #section1 .container .content ul li .basic-info .aboutme .value a {
+  color: #258ddb;
+}
